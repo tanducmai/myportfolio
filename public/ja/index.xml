@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>石見 優丞</title>
-    <link>http://www.example.com/ja/</link>
+    <link>https://blissful-mayer-90b8fc.netlify.app/ja/</link>
     <description>Recent content on 石見 優丞</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 03 Aug 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.example.com/ja/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blissful-mayer-90b8fc.netlify.app/ja/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>CoderPortfolioの特徴</title>
-      <link>http://www.example.com/ja/posts/featuresofcoderportfolio/</link>
+      <link>https://blissful-mayer-90b8fc.netlify.app/ja/posts/featuresofcoderportfolio/</link>
       <pubDate>Fri, 03 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/ja/posts/featuresofcoderportfolio/</guid>
+      <guid>https://blissful-mayer-90b8fc.netlify.app/ja/posts/featuresofcoderportfolio/</guid>
       <description>変更点 ShortCode &amp;ldquo;private content&amp;quot;を追加しました 綺麗なサイトを崩さずに、あなたの個人的なコンテンツ（趣味や感情）を簡単に伝えることができます。
 実際の動きについては、&amp;ldquo;テーマデモ&amp;quot;をご覧ください。
 リンクに赤い下線のアニメーションを追加しました サイトがよりカラフルに美しくなりました。
@@ -29,10 +29,10 @@ ShortCode &amp;ldquo;portfolio&amp;quot;を追加しました あなたの作品
     
     <item>
       <title>テーマデモ</title>
-      <link>http://www.example.com/ja/posts/theme-demo/</link>
+      <link>https://blissful-mayer-90b8fc.netlify.app/ja/posts/theme-demo/</link>
       <pubDate>Fri, 03 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/ja/posts/theme-demo/</guid>
+      <guid>https://blissful-mayer-90b8fc.netlify.app/ja/posts/theme-demo/</guid>
       <description>Style Demo h1 Heading h2 Heading h3 Heading h4 Heading h5 Heading h6 Heading  This is bold text
 This is bold text
 This is italic text
@@ -45,10 +45,10 @@ $$ \sum_{n=1}^{\infty} 2^{-n} = 1 $$
     
     <item>
       <title>About Hugo</title>
-      <link>http://www.example.com/ja/about/</link>
+      <link>https://blissful-mayer-90b8fc.netlify.app/ja/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/ja/about/</guid>
+      <guid>https://blissful-mayer-90b8fc.netlify.app/ja/about/</guid>
       <description>このテーマはhugo-coderを元に作成をしています。
 一見綺麗なポートフォリをサイトですが、より個人的なことも伝えられるようにしました。
 変更点の詳細はブログから、&amp;ldquo;FeaturesOfCoderPortfolio&amp;quot;を見てください。
@@ -63,10 +63,10 @@ Setup Some fun facts about Hugo:
     
     <item>
       <title>Contact</title>
-      <link>http://www.example.com/ja/contact/</link>
+      <link>https://blissful-mayer-90b8fc.netlify.app/ja/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/ja/contact/</guid>
+      <guid>https://blissful-mayer-90b8fc.netlify.app/ja/contact/</guid>
       <description>連絡をとりたいですか? 質問や報告などの連絡は下記からお願いします。
  open an issue on GitHub ask me on Twitter  </description>
     </item>

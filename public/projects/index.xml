@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Tan Duc Mai</title>
-    <link>http://www.example.com/projects/</link>
+    <link>https://blissful-mayer-90b8fc.netlify.app/projects/</link>
     <description>Recent content in Projects on Tan Duc Mai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 26 Dec 2021 02:27:17 +1030</lastBuildDate>
     
-	<atom:link href="http://www.example.com/projects/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blissful-mayer-90b8fc.netlify.app/projects/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Prime Checker</title>
-      <link>http://www.example.com/projects/prime-checker/</link>
+      <link>https://blissful-mayer-90b8fc.netlify.app/projects/prime-checker/</link>
       <pubDate>Sun, 26 Dec 2021 02:27:17 +1030</pubDate>
       
-      <guid>http://www.example.com/projects/prime-checker/</guid>
+      <guid>https://blissful-mayer-90b8fc.netlify.app/projects/prime-checker/</guid>
       <description>3 different ways to check if a number is prime. I came up with three different algorithms for determining whether a number is prime, each of which is therefore coded differently:
  Exclude n if it is less than 2. Now, find its square root, then use a for loop in the range between 2 and that square root plus 1. If there is no number in the loop that is divisible by n, then n is prime.</description>
     </item>
