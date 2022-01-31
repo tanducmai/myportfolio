@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>clean-code on Tan Duc Mai</title>
+    <link>http://www.example.com/categories/clean-code/</link>
+    <description>Recent content in clean-code on Tan Duc Mai</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 29 Dec 2021 05:36:31 +1030</lastBuildDate>
+    
+	<atom:link href="http://www.example.com/categories/clean-code/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python Naming Conventions</title>
+      <link>http://www.example.com/posts/python-naming-conventions/</link>
+      <pubDate>Wed, 29 Dec 2021 05:36:31 +1030</pubDate>
+      
+      <guid>http://www.example.com/posts/python-naming-conventions/</guid>
+      <description>An Introduction to Clean Code in Python Although you are allowed to make up your own names for variables,you must follow these rules:
+  You cannot use one of Python&amp;rsquo;s keywords as a variable name.
+  A variable name cannot contain spaces.
+  The first character must be one of the letters a..z, A..Z, or an underscore character ( __ ).
+  After the first character, you may use the letters a.</description>
+    </item>
+    
+  </channel>
+</rss>
