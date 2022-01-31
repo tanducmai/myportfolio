@@ -1,8 +1,7 @@
-baseurl = "https://blissful-mayer-90b8fc.netlify.app/" # Hostname (and path) to the root.
-title = "Tan Duc Mai" # Site title.
-theme = "coder-portfolio" # Set the theme.
-languagecode = "en" # The site’s language code used to generate RSS.
-defaultcontentlanguage = "en" # The default content language.
+baseurl = "https://blissful-mayer-90b8fc.netlify.app/"
+theme = "coder-portfolio"
+languagecode = "en"
+defaultcontentlanguage = "en"
 
 paginate = 20 # Default number of pages per page in pagination.
 
@@ -14,10 +13,6 @@ pygmentsUseClasses = true # new add
 disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
 
 [params] # theme parameters
-    author = "Tan Duc Mai" # Author's name.
-    info = "Python Developer" # Author's job title or info.
-    description = "Tan Duc Mai's personal website" # Site description.
-    keywords = "blog,developer,personal" # Site keywords.
     avatarurl = "images/avatar.jpg" # Contain the path of the optionnal avatar in the static folder.
 
     footercontent = "Enter a text here." # Add footer content
@@ -81,7 +76,7 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
         [languages.en.params]
         author = "Tan Duc Mai"
         info = "Python Developer"
-        description = "Tan Duc Mai's personal website"
+        description = "My Programming Portfolio and Personal Website"
         keywords = "blog,developer,personal"
 
         [languages.en.menu] # It is possible to change the menu too.
