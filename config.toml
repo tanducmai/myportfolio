@@ -15,13 +15,13 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
 [params] # theme parameters
     avatarurl = "images/avatar.jpg" # Contain the path of the optionnal avatar in the static folder.
 
-    footercontent = "Thanks for reading till the end." # Add footer content
+    footercontent = "- Thanks for reading till the end! -" # Add footer content
     fixedbarContent = "Please share it if you like it → " # Add fixedbar content
-    fixedbarContentAfter = "Thank You" # Add fixedbar content after click
+    fixedbarContentAfter = "Thank you! Please choose which platform to share →" # Add fixedbar content after click
 
     # Whether you want to hide copyright and credits in the footer.
-    hideCredits = false
-    hideCopyright = false
+    hideCredits = true
+    hideCopyright = true
 
     # Custom CSS
     custom_css = []
@@ -33,13 +33,13 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
     rtl = false
 
     # Bottom sns share
-    snsShare = true # new add
+    snsShare = true            # new add
     # Popular sns share
     # if you want add sns. please message!
     enableTwitterShare = true  # new add
     enableFacebookShare = true # new add
-    enableHatenaShare = true   # new add
-    enableLineShare = true     # new add
+    enableHatenaShare = false  # new add
+    enableLineShare = false    # new add
     enableLinkedInShare = true # new add
 
     thumbnail = "images/tn.png" # default sns thumbnail
@@ -54,10 +54,15 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
     weight = 1
     url = "https://github.com/tanducmai/"
 [[params.social]]
-    name = "Twitter"
-    icon = "fab fa-twitter"
+    name = "Facebook"
+    icon = "fab fa-facebook"
     weight = 2
-    url = "https://twitter.com/HenryMai14/"
+    url = "https://facebook.com/henry.mai.372/"
+# [[params.social]]
+#     name = "Instagram"
+#     icon = "fab fa-instagram"
+#     weight = 2
+#     url = "https://instagram.com/henry.maii/"
 [[params.social]]
     name = "LinkedIn"
     icon = "fab fa-linkedin"
