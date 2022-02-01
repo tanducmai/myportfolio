@@ -58,11 +58,6 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
     icon = "fab fa-facebook"
     weight = 2
     url = "https://facebook.com/henry.mai.372/"
-# [[params.social]]
-#     name = "Instagram"
-#     icon = "fab fa-instagram"
-#     weight = 2
-#     url = "https://instagram.com/henry.maii/"
 [[params.social]]
     name = "LinkedIn"
     icon = "fab fa-linkedin"
@@ -92,12 +87,12 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
         url = "about"
 
         [[languages.en.menu.main]]
-        name = "Blog"
+        name = "Blogs"
         weight = 2.0
         url = "posts"
 
         [[languages.en.menu.main]]
-        name = "Project"
+        name = "Portfolio"
         weight = 2.0
         url = "projects"
 
