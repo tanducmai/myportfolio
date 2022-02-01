@@ -6,19 +6,19 @@
     <description>Recent content in Projects on Tan Duc Mai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 26 Dec 2021 02:27:17 +1030</lastBuildDate>
     
 	<atom:link href="https://blissful-mayer-90b8fc.netlify.app/projects/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Prime Checker</title>
-      <link>https://blissful-mayer-90b8fc.netlify.app/projects/prime-checker/</link>
-      <pubDate>Sun, 26 Dec 2021 02:27:17 +1030</pubDate>
+      <title>Example Portfolio Content</title>
+      <link>https://blissful-mayer-90b8fc.netlify.app/projects/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://blissful-mayer-90b8fc.netlify.app/projects/prime-checker/</guid>
-      <description>3 different ways to check if a number is prime. I came up with three different algorithms for determining whether a number is prime, each of which is therefore coded differently:
- Exclude n if it is less than 2. Now, find its square root, then use a for loop in the range between 2 and that square root plus 1. If there is no number in the loop that is divisible by n, then n is prime.</description>
+      <guid>https://blissful-mayer-90b8fc.netlify.app/projects/projects/</guid>
+      <description>Portfolio Demo  Coder Portfolio This theme is created based on hugo-coder.
+I made it possible to tell yourself more by my change.
+   </description>
     </item>
     
   </channel>
