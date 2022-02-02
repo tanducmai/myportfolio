@@ -24,5 +24,15 @@
   After the first character, you may use the letters a.</description>
     </item>
     
+    <item>
+      <title>Credit Card Validator</title>
+      <link>https://blissful-mayer-90b8fc.netlify.app/projects/credit-card-validator/</link>
+      <pubDate>Fri, 17 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blissful-mayer-90b8fc.netlify.app/projects/credit-card-validator/</guid>
+      <description>→ Go to GitHub  Algorithm / Pseudocode According to Luhn’s algorithm, it can be determined if a credit card number is (syntactically) valid:
+prompt for a credit card number (string type) reverse the number FOR each digit in number double every second digit starting from left IF product &amp;gt; 9 THEN sum each digit of product add doubled digits with the undoubled digits IF the total modulo (%) 10 equates to 0 THEN output &amp;#39;valid&amp;#39; ELSE THEN output &amp;#39;invalid&amp;#39;     Introduction Chances are you have a credit card in your wallet or purse.</description>
+    </item>
+    
   </channel>
 </rss>

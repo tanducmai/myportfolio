@@ -88,6 +88,21 @@
   </url>
   
   <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/projects/credit-card-validator/</loc>
+    <lastmod>2021-12-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/projects/</loc>
+    <lastmod>2021-12-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/categories/python/</loc>
+    <lastmod>2021-12-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blissful-mayer-90b8fc.netlify.app/posts/featuresofcoderportfolio/</loc>
     <lastmod>2018-08-03T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -207,10 +222,6 @@
   
   <url>
     <loc>https://blissful-mayer-90b8fc.netlify.app/projects/projects/</loc>
-  </url>
-  
-  <url>
-    <loc>https://blissful-mayer-90b8fc.netlify.app/projects/</loc>
   </url>
   
 </urlset>

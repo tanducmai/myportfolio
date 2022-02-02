@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on Tan Duc Mai</title>
-    <link>https://blissful-mayer-90b8fc.netlify.app/projects/</link>
-    <description>Recent content in Projects on Tan Duc Mai</description>
+    <title>python on Tan Duc Mai</title>
+    <link>https://blissful-mayer-90b8fc.netlify.app/categories/python/</link>
+    <description>Recent content in python on Tan Duc Mai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 17 Dec 2021 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://blissful-mayer-90b8fc.netlify.app/projects/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blissful-mayer-90b8fc.netlify.app/categories/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,17 +19,6 @@
       <guid>https://blissful-mayer-90b8fc.netlify.app/projects/credit-card-validator/</guid>
       <description>→ Go to GitHub  Algorithm / Pseudocode According to Luhn’s algorithm, it can be determined if a credit card number is (syntactically) valid:
 prompt for a credit card number (string type) reverse the number FOR each digit in number double every second digit starting from left IF product &amp;gt; 9 THEN sum each digit of product add doubled digits with the undoubled digits IF the total modulo (%) 10 equates to 0 THEN output &amp;#39;valid&amp;#39; ELSE THEN output &amp;#39;invalid&amp;#39;     Introduction Chances are you have a credit card in your wallet or purse.</description>
-    </item>
-    
-    <item>
-      <title>Example Portfolio Content</title>
-      <link>https://blissful-mayer-90b8fc.netlify.app/projects/projects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blissful-mayer-90b8fc.netlify.app/projects/projects/</guid>
-      <description>Portfolio Demo  Coder Portfolio This theme is created based on hugo-coder.
-I made it possible to tell yourself more by my change.
-   </description>
     </item>
     
   </channel>
