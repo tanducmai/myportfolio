@@ -20,7 +20,7 @@ Most cards use an algorithm invented by Hans Peter Luhn, a scientist who worked
 for IBM. According to Luhn's algorithm, this program will validate if a credit
 card number is valid.
 
-##### Sample Output && Algorithm
+##### Sample Output && Pseudocode
 {{% portfolio image="/images/credit-card-validator.png" alt="Project Demo" %}}
 
 According to Luhn’s algorithm, it can be determined if a credit card number is
