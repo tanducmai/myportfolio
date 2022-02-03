@@ -11,11 +11,11 @@ aliases = "/petals-around-the-rose/"
 ### → [Go to GitHub](https://github.com/tanducmai/petals-around-the-rose)
 
 ##### Introduction
-The the game is Petals Around the Rose and the name of the game is important.
-The computer will roll five dice and ask the user to guess the score for the
-roll. The score will always be an even number (including zero). The user’s
-mission is to work out how the computer calculates the score in order to become
-a Potentate of the Rose.
+The name of the game is Petals Around the Rose and the name of the game is
+important.  The computer will roll five dice and ask the user to guess the score
+for the roll. The score will always be an even number (including zero). The
+user’s mission is to work out how the computer calculates the score in order to
+become a Potentate of the Rose.
 
 ##### Sample Output ([ - PDF Version - ](https://github.com/tanducmai/petals-around-the-rose/blob/main/sample-output.pdf))
 ```
