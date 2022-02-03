@@ -34,6 +34,15 @@
     </item>
     
     <item>
+      <title>Blackjack</title>
+      <link>https://blissful-mayer-90b8fc.netlify.app/projects/blackjack/</link>
+      <pubDate>Fri, 10 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blissful-mayer-90b8fc.netlify.app/projects/blackjack/</guid>
+      <description>Introduction In a standard game of 2-player Blackjack the player and the dealer are dealt 2 cards. The player shows both cards face-up. The dealer shows one of their cards face-up and one face-down. The player decides to draw cards by saying, &amp;ldquo;hit&amp;rdquo;, or stop drawing cards by saying, &amp;ldquo;stand&amp;rdquo;. They will draw cards trying to get their total hand value as close to 21 as possible without going over. If the total value of cards in their hand exceeds 21, the player &amp;ldquo;busts&amp;rdquo;, which means they lose.</description>
+    </item>
+    
+    <item>
       <title>Petals Around The Rose</title>
       <link>https://blissful-mayer-90b8fc.netlify.app/projects/petals-around-the-rose/</link>
       <pubDate>Wed, 06 Oct 2021 00:00:00 +0000</pubDate>
