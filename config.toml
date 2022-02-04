@@ -15,9 +15,9 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
 [params] # theme parameters
     avatarurl = "images/avatar.jpg" # Contain the path of the optionnal avatar in the static folder.
 
-    footercontent = "- Thanks for reading till the end! -" # Add footer content
-    fixedbarContent = "Please share it if you like it → " # Add fixedbar content
-    fixedbarContentAfter = "Thank you! Please choose which platform to share →" # Add fixedbar content after click
+    footercontent = "Thanks for reading! -> Please click on an icon to share" # Add footer content
+    # fixedbarContent = "Please share it if you like it → " # Add fixedbar content
+    # fixedbarContentAfter = "Thank you! Please choose which platform to share →" # Add fixedbar content after click
 
     # Whether you want to hide copyright and credits in the footer.
     hideCredits = true
