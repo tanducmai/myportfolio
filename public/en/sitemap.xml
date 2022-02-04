@@ -4,12 +4,12 @@
   
   <url>
     <loc>https://blissful-mayer-90b8fc.netlify.app/tags/beginner/</loc>
-    <lastmod>2021-12-29T05:36:31+10:30</lastmod>
+    <lastmod>2021-12-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://blissful-mayer-90b8fc.netlify.app/categories/</loc>
-    <lastmod>2021-12-29T05:36:31+10:30</lastmod>
+    <lastmod>2021-12-29T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -24,12 +24,12 @@
   
   <url>
     <loc>https://blissful-mayer-90b8fc.netlify.app/categories/clean-code/</loc>
-    <lastmod>2021-12-29T05:36:31+10:30</lastmod>
+    <lastmod>2021-12-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://blissful-mayer-90b8fc.netlify.app/posts/</loc>
-    <lastmod>2021-12-29T05:36:31+10:30</lastmod>
+    <lastmod>2021-12-29T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -44,22 +44,27 @@
   
   <url>
     <loc>https://blissful-mayer-90b8fc.netlify.app/tags/python/</loc>
-    <lastmod>2021-12-29T05:36:31+10:30</lastmod>
+    <lastmod>2021-12-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://blissful-mayer-90b8fc.netlify.app/posts/python-naming-conventions/</loc>
-    <lastmod>2021-12-29T05:36:31+10:30</lastmod>
+    <lastmod>2021-12-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/tags/syntax/</loc>
+    <lastmod>2021-12-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://blissful-mayer-90b8fc.netlify.app/categories/syntax/</loc>
-    <lastmod>2021-12-29T05:36:31+10:30</lastmod>
+    <lastmod>2021-12-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://blissful-mayer-90b8fc.netlify.app/tags/</loc>
-    <lastmod>2021-12-29T05:36:31+10:30</lastmod>
+    <lastmod>2021-12-29T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -74,7 +79,7 @@
   
   <url>
     <loc>https://blissful-mayer-90b8fc.netlify.app/</loc>
-    <lastmod>2021-12-29T05:36:31+10:30</lastmod>
+    <lastmod>2021-12-29T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"

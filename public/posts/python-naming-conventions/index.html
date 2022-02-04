@@ -13,7 +13,7 @@
     <meta property="og:title" content="
   Python Naming Conventions - Tan Duc Mai
 ">
-    <meta property="og:description" content="An overview of Python&#39;s naming best practices described in PEP-8">
+    <meta property="og:description" content="Python Naming Conventions">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://blissful-mayer-90b8fc.netlify.app/posts/python-naming-conventions/">
     <meta property="og:image" content="https://blissful-mayer-90b8fc.netlify.app/">
@@ -116,41 +116,162 @@
       
     </header>
 
-    <h2 id="an-introduction-to-clean-code-in-python">An Introduction to Clean Code in Python</h2>
-<p>Although you are allowed to make up your own names for variables,you must follow
-these rules:</p>
+    <p>Although you are allowed to make up your own names for variables, you must
+follow these rules:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">1. You cannot use one of Python&#39;s keywords as a variable name
+   (see below for a table of keywords).
+
+2. A variable or function name cannot contain spaces.
+
+3. The first character must be one of the letters a..z, A..Z, or an underscore
+   character &#39;_&#39;.
+
+4. After the first character, you may use the letters a..z, A..Z, the digits
+   0..0, or underscore characters.
+
+5. Uppercase and lowercase characters are distinct. This means that the variable
+   named &#39;ItemsOrdered&#39; is not akin to the one named &#39;itemsordered&#39;.
+</code></pre></div><h5 id="the-python-keywords">The Python Keywords</h5>
+<table>
+<thead>
+<tr>
+<th>Some</th>
+<th>Of</th>
+<th>Common</th>
+<th>Python</th>
+<th>Keywords</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>and</td>
+<td>continue</td>
+<td>finally</td>
+<td>is</td>
+<td>raise</td>
+</tr>
+<tr>
+<td>as</td>
+<td>def</td>
+<td>for</td>
+<td>lambda</td>
+<td>return</td>
+</tr>
+<tr>
+<td>assert</td>
+<td>del</td>
+<td>from</td>
+<td>None</td>
+<td>True</td>
+</tr>
+<tr>
+<td>async</td>
+<td>elif</td>
+<td>global</td>
+<td>nonlocal</td>
+<td>try</td>
+</tr>
+<tr>
+<td>await</td>
+<td>else</td>
+<td>if</td>
+<td>not</td>
+<td>while</td>
+</tr>
+<tr>
+<td>break</td>
+<td>except</td>
+<td>import</td>
+<td>or</td>
+<td>with</td>
+</tr>
+<tr>
+<td>class</td>
+<td>False</td>
+<td>in</td>
+<td>pass</td>
+<td>yield</td>
+</tr>
+</tbody>
+</table>
+<h5 id="readability-matters">Readability Matters</h5>
+<p>Because a variable&rsquo;s name should reflect the variable’s purpose, programmers
+often find themselves creating names that are made of multiple words. For
+example, consider the following variable names:</p>
+<ul>
+<li>grosspay</li>
+<li>payrate</li>
+<li>hotdogssoldtoday</li>
+</ul>
+<p>Unfortunately, these names are not easily read by the human eye because the
+words aren’t separated. Because we can’t have spaces in variable names, we need
+to find another way to separate the words in a multi-word variable name and make
+it more readable to the human eye.</p>
+<p>One way to do this is to use the underscore character to represent a space. For
+example, the following variable names are easier to read than those previously
+shown:</p>
+<ul>
+<li>gross_pay</li>
+<li>pay_rate</li>
+<li>hot_dogs_sold_today</li>
+</ul>
+<h5 id="style-of-naming-variables">Style Of Naming Variables</h5>
+<p>In terms of the above section, using underscore characters to separate words in
+a variable name is a popular style among Python programmers. Nonetheless, there
+are other popular styles, such as the camelCase naming convention (which is
+quite popular among Java programmers). camelCase names are written in the
+following manner:</p>
 <ol>
-<li>
-<p>You cannot use one of Python&rsquo;s keywords as a variable name.</p>
-</li>
-<li>
-<p>A variable name cannot contain spaces.</p>
-</li>
-<li>
-<p>The first character must be one of the letters a..z, A..Z, or an underscore
-character ( __ ).</p>
-</li>
-<li>
-<p>After the first character, you may use the letters a..z, A..Z, the digits
-0..0, or underscore characters.</p>
-</li>
-<li>
-<p>Uppercase and lowercase characters are distinct. This means that the variable
-name <code>ItemsOrdered</code> is not akin to <code>itemsordered</code>.</p>
-</li>
+<li>The variable name begins with lowercase letters.</li>
+<li>The first character of the second and subsequent words is written in
+uppercase.</li>
 </ol>
-<hr>
-<p>To make variables more human readable, we can use:</p>
-<ol>
-<li>
-<p>regular_variables</p>
-<div class="highlight"><pre class="chroma"><code class="language-python3" data-lang="python3"><span class="n">names</span> <span class="o">=</span> <span class="s1">&#39;Python&#39;</span>
-<span class="n">job_title</span> <span class="o">=</span> <span class="s1">&#39;Software Engineer&#39;</span>
-<span class="n">populated_countries_list</span> <span class="o">=</span> <span class="p">[]</span>
-</code></pre></div></li>
-</ol>
-<p>For a comprehensive, complete documentation, please go to
-<a href="https://www.python.org/dev/peps/pep-0008/">documentation</a>.</p>
+<p>For example, the following variable names are written in camelCase:</p>
+<ul>
+<li>grossPay</li>
+<li>payRate</li>
+<li>hotDogsSoldToday</li>
+</ul>
+<p><em>NOTE</em>: This style of naming is called
+<em><a href="https://upload.wikimedia.org/wikipedia/commons/e/ef/CamelCase.svg">camelCase</a></em>
+because the uppercase characters that appear in a name may suggest a camel’s
+humps.</p>
+<h5 id="sample-variable-names">Sample Variable Names</h5>
+<table>
+<thead>
+<tr>
+<th>Variable Name</th>
+<th>Legal or Illegal?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>units_per_day</td>
+<td>Legal</td>
+</tr>
+<tr>
+<td>dayOfWeek</td>
+<td>Legal</td>
+</tr>
+<tr>
+<td>3dGraph</td>
+<td>Illegal. Variable names cannot begin with a digit.</td>
+</tr>
+<tr>
+<td>June1997</td>
+<td>Legal</td>
+</tr>
+<tr>
+<td>Mixture#3</td>
+<td>Illegal. Variable names may only use letters, digits, or underscores</td>
+</tr>
+</tbody>
+</table>
+<h5 id="reference">Reference</h5>
+<p>Gaddis, T 2021, <em>Starting Out With Python</em>, 5th edn, Pearson.</p>
+<h5 id="further-research">Further Research</h5>
+<p>For a comprehensive, complete documentation, please see
+<em><a href="https://www.python.org/dev/peps/pep-0008/#naming-conventions">PEP-8</a></em>.</p>
 
   </article>
 
