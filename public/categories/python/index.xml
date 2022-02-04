@@ -39,6 +39,16 @@
     </item>
     
     <item>
+      <title>Three Prime Checker</title>
+      <link>https://blissful-mayer-90b8fc.netlify.app/projects/three-prime-checker/</link>
+      <pubDate>Thu, 12 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blissful-mayer-90b8fc.netlify.app/projects/three-prime-checker/</guid>
+      <description>→ GitHub Introduction I came up with three different algorithms for determining whether a number is prime. After running the three, I use a special procedure to time the efficiency of each algorithm to find out which is better than another. The core of this project is to adopt different perspectives on a problem, with each way of handling a problem will have pros or cons over another.
+Algorithms 1. Exclude n if n&amp;lt;2.</description>
+    </item>
+    
+    <item>
       <title>Multi-level Guessing Game</title>
       <link>https://blissful-mayer-90b8fc.netlify.app/projects/multi-level-guessing-game/</link>
       <pubDate>Thu, 15 Jul 2021 00:00:00 +0000</pubDate>
