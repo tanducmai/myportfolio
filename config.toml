@@ -13,7 +13,7 @@ pygmentsUseClasses = true # new add
 disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
 
 [params] # theme parameters
-    avatarurl = "images/avatar.jpg" # Contain the path of the optionnal avatar in the static folder.
+    avatarurl = "images/avatar.svg" # Contain the path of the optionnal avatar in the static folder.
 
     footercontent = "Thanks for reading! -> Please click on an icon to share" # Add footer content
     # fixedbarContent = "Please share it if you like it → " # Add fixedbar content
