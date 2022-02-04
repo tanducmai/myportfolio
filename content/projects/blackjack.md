@@ -5,7 +5,7 @@ slug = "Blackjack"
 description = "Blackjack"
 tags = ['python']
 categories = ['python']
-aliases = "/Blackjack/"
+aliases = "/blackjack/"
 +++
 
 ##### Introduction
