@@ -52,6 +52,16 @@
     </item>
     
     <item>
+      <title>Multi-level Guessing Game</title>
+      <link>https://blissful-mayer-90b8fc.netlify.app/projects/multi-level-guessing-game/</link>
+      <pubDate>Thu, 15 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blissful-mayer-90b8fc.netlify.app/projects/multi-level-guessing-game/</guid>
+      <description>→ GitHub Aim Create a number guessing game divided into three levels of difficulty. I divide this project into small functions and place them in separate files to be used as modules.
+Implementation I begin by greeting the user and prompt them to choose which level (easy, medium, or hard) they want to play | welcome.py. With that option, I then start the corresponding function which is stored in options.py</description>
+    </item>
+    
+    <item>
       <title>Features Of CoderPortfolio</title>
       <link>https://blissful-mayer-90b8fc.netlify.app/posts/featuresofcoderportfolio/</link>
       <pubDate>Fri, 03 Aug 2018 00:00:00 +0000</pubDate>

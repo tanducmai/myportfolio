@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Tan Duc Mai">
+    <meta name="description" content="https://blissful-mayer-90b8fc.netlify.app/">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta property="og:site_name" content="Tan Duc Mai">
+    <meta property="og:title" content="
+  Multi-level Guessing Game - Tan Duc Mai
+">
+    <meta property="og:description" content="Multi-level Guessing Game">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://blissful-mayer-90b8fc.netlify.app/projects/multi-level-guessing-game/">
+    <meta property="og:image" content="https://blissful-mayer-90b8fc.netlify.app/images/multi-level-guessing-game.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://blissful-mayer-90b8fc.netlify.app/projects/multi-level-guessing-game/">
+    <meta name="twitter:image" content="https://blissful-mayer-90b8fc.netlify.app/images/multi-level-guessing-game.png">
+
+    <base href="https://blissful-mayer-90b8fc.netlify.app/projects/multi-level-guessing-game/">
+    <title>
+  Multi-level Guessing Game - Tan Duc Mai
+</title>
+
+    <link rel="canonical" href="https://blissful-mayer-90b8fc.netlify.app/projects/multi-level-guessing-game/">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="/css/normalize.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    
+      <link rel="alternate" href="https://blissful-mayer-90b8fc.netlify.app/index.xml" type="application/rss+xml" title="Tan Duc Mai">
+      <link href="https://blissful-mayer-90b8fc.netlify.app/index.xml" rel="feed" type="application/rss+xml" title="Tan Duc Mai" />
+    
+
+    <meta name="generator" content="Hugo 0.68.3" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">Tan Duc Mai</a>
+    <input type="checkbox" id="menu-control"/>
+    <label class="menu-mobile  float-right " for="menu-control">
+      <span class="btn-mobile  float-right ">&#9776;</span>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://blissful-mayer-90b8fc.netlify.app/about">About</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://blissful-mayer-90b8fc.netlify.app/posts">Blogs</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://blissful-mayer-90b8fc.netlify.app/projects">Portfolio</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            <li class= " mobile-menu-lang-separator-centered ">
+              <hr />
+            </li>
+          
+          
+            
+          
+            
+              
+                
+                  <li class="multilingual-separator">
+                    <p>|</p>
+                  </li>
+                
+                
+              
+              <li class="navigation-item  align-center ">
+                <a href="https://blissful-mayer-90b8fc.netlify.app/ja/">Japanese</a>
+              </li>
+            
+          
+        
+      </ul>
+    </label>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Multi-level Guessing Game</h1>
+    </header>
+
+    <h3 id="-githubhttpsgithubcomtanducmaimulti-level-guessing-game">→ <a href="https://github.com/tanducmai/multi-level-guessing-game">GitHub</a></h3>
+<h5 id="aim">Aim</h5>
+<p>Create a number guessing game divided into three levels of difficulty.
+I divide this project into small functions and place them in separate files to
+be used as modules.</p>
+<h5 id="implementation">Implementation</h5>
+<p>I begin by greeting the user and prompt them to choose which level (easy,
+medium, or hard) they want to play | welcome.py. With that option, I then start
+the corresponding function which is stored in options.py</p>
+<p>Taking easy level as an example, when the game starts (which now go to the
+module operations.py, I generate random numbers by importing the random module
+and referencing the randint() function defined in that module (ranging from 1 to
+10). I then assign the random number generated to a variable called random.
+Since the user fails after six tries, I assign 6 to the guess_limit variable and
+they will lose one every time a guess is made. The guess is assigned to the
+guess variable. A False Boolean is assigned to the done variable to keep the
+game running until it becomes True, which means that the game is done</p>
+<p>Whenever a guess is made, it is evaluated by the function validate_input(), using
+a while loop to check whether it is valid, which means whether it is in the
+range between 1 and 6. If it is an invalid guess (the function returns False),
+the user has to make a new one until it is valid (the function returns True).
+Provided that the guess is invalid, the user still maintains their number of
+guesses.</p>
+<p>Now that the guess is valid, one chance will be taken away. Afterwards, a while
+loop is used to evaluate that guess so long as the user still has at least one
+chance, and the game is not done.</p>
+<p>If the user has more than zero chance left, their guess will be compared to the
+random number generated to check whether it is too low or too high, or equal:</p>
+<ul>
+<li>If they are equal, a congratulatory message will be printed, which also shows
+how many times it took the user to guess correctly. In this case, the done
+variable becomes True and ends the game.</li>
+<li>If they are not equal, the user then makes another guess on the condition that
+they have not lost all chances and the game is still running. As always, the
+new guess is then evaluated again by the function validate_input() to check
+for its validity.</li>
+</ul>
+<p>When the user reaches their last chance and the game still runs, meaning that
+the user has used up all of the six attempts, their last guessed number will be
+evaluated with the number generated, and only two options are presented:</p>
+<ul>
+<li>If they are equal, a congratulatory message will be printed.</li>
+<li>If they are still not equal, a &lsquo;Game Over&rsquo; message will be printed.</li>
+</ul>
+<p>In both cases, the game ends and the while loop is displayed.</p>
+<h5 id="for-loop-or-while-loop-to-be-used-">For loop or While loop to be used ?</h5>
+<table>
+<thead>
+<tr>
+<th><em>While</em> loops</th>
+<th><em>For</em> loops</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Condition-controlled loop</td>
+<td>Count-controlled loop</td>
+</tr>
+<tr>
+<td>They are better to use whenever the programmer needs to keep on repeating some code while a certain condition is met.</td>
+<td>They are not necessary but simplify the code when the number of repetitions is known.</td>
+</tr>
+</tbody>
+</table>
+<p>Regarding the while loop evaluating whether the guessed number is valid, it
+helps rule out any invalid guess. In this case, the number of times this loop
+would repeat is unpredictable, given that it depends upon the input from the
+user. Furthermore, this loop only gets finished provided that a certain
+condition – the user input guess is between 1 and 5 – is met. This problem,
+therefore, should be addressed with a while loop instead of a for loop.</p>
+<h5 id="sample-output">Sample Output</h5>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">Hello, Welcome to the Number Guessing Game!
+I&#39;m Henry! What&#39;s Your Name? Jack
+Okay, Jack. Let&#39;s Begin The Guessing Game!
+Choose a level:
+1. Easy
+2. Medium
+3. Hard
+Pick a number: 3
+
+You are to guess a number between 1 and 50 in no more than 3 attempts.
+What is your guess? 3
+It should be higher than 3.
+You still have 2 chances left.
+
+Try a new guess: 15
+It should be higher than 15.
+You still have 1 chances left.
+
+Try a new guess: 20
+GAME OVER! It took you more than 3 attempts. The correct number is 41.
+
+Do you want to play again? [Y/n] n
+
+Thanks for playing !
+</code></pre></div>
+  </article>
+</section>
+
+
+      </div>
+      
+        <footer class="footer">
+  <section class="container">
+    
+      <div class="sns-shares sp-sns-shares">
+        
+          <a class="sns-share twitter-share" href="https://twitter.com/intent/tweet?original_referer=https%3a%2f%2fblissful-mayer-90b8fc.netlify.app%2fprojects%2fmulti-level-guessing-game%2f&ref_src=twsrc%5Etfw&text=Multi-level%20Guessing%20Game Tan%20Duc%20Mai&tw_p=tweetbutton&url=https%3a%2f%2fblissful-mayer-90b8fc.netlify.app%2fprojects%2fmulti-level-guessing-game%2f"><i class="fab fa-twitter"></i></a>
+        
+        
+          <a class="fb btn sns-share fb-share" href="http://www.facebook.com/share.php?u=https%3a%2f%2fblissful-mayer-90b8fc.netlify.app%2fprojects%2fmulti-level-guessing-game%2f" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fab fa-facebook-f"></i></a>
+        
+        
+        
+        
+          <a class="sns-share linkedIn-share" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fblissful-mayer-90b8fc.netlify.app%2fprojects%2fmulti-level-guessing-game%2f"><i class="fab fa-linkedin"></i></a>
+        
+      </div>
+    
+    
+      <p>Thanks for reading! -&gt; Please click on an icon to share</p>
+    
+     
+
+  </section>
+</footer>
+<div class="fixed-bar">
+  <section class="container">
+    
+    
+      <div class="sns-shares pc-sns-shares">
+        
+          <a class="sns-share twitter-share" href="https://twitter.com/intent/tweet?original_referer=https%3a%2f%2fblissful-mayer-90b8fc.netlify.app%2fprojects%2fmulti-level-guessing-game%2f&ref_src=twsrc%5Etfw&text=Multi-level%20Guessing%20Game Tan%20Duc%20Mai&tw_p=tweetbutton&url=https%3a%2f%2fblissful-mayer-90b8fc.netlify.app%2fprojects%2fmulti-level-guessing-game%2f"><i class="fab fa-twitter"></i></a>
+        
+        
+          <a class="fb btn sns-share fb-share" href="http://www.facebook.com/share.php?u=https%3a%2f%2fblissful-mayer-90b8fc.netlify.app%2fprojects%2fmulti-level-guessing-game%2f" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fab fa-facebook-f"></i></a>
+        
+        
+        
+        
+          <a class="sns-share linkedIn-share" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fblissful-mayer-90b8fc.netlify.app%2fprojects%2fmulti-level-guessing-game%2f"><i class="fab fa-linkedin"></i></a>
+        
+      </div>
+    
+  </section>
+</div>
+
+      
+    </main>
+
+    
+
+  <script src="/js/app.js"></script>
+  
+  </body>
+</html>
