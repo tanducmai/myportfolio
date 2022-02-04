@@ -72,7 +72,7 @@ user. Furthermore, this loop only gets finished provided that a certain
 condition – the user input guess is between 1 and 5 – is met. This problem,
 therefore, should be addressed with a while loop instead of a for loop.
 
-##### Sample Output
+##### Sample Output ( - [PDF Version](https://github.com/tanducmai/multi-level-guessing-game/blob/main/sample_output.pdf) - )
 ```
 Hello, Welcome to the Number Guessing Game!
 I'm Henry! What's Your Name? Jack
