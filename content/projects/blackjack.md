@@ -8,6 +8,8 @@ categories = ['python']
 aliases = "/blackjack/"
 +++
 
+### → [GitHub](https://github.com/tanducmai/blackjack)
+
 ##### Introduction
 In a standard game of 2-player Blackjack the player and the dealer are dealt 2
 cards. The player shows both cards face-up. The dealer shows one of their cards

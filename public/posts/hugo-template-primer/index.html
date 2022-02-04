@@ -399,7 +399,7 @@ so, such as in this example:</p>
       </div>
     
     
-      <p>- Thanks for reading till the end! -</p>
+      <p>Thanks for reading! -&gt; Please click on an icon to share</p>
     
      
 
@@ -407,8 +407,6 @@ so, such as in this example:</p>
 </footer>
 <div class="fixed-bar">
   <section class="container">
-    
-      <p id="privateTriggerText">Please share it if you like it → <a id="privateTrigger">Click!</a></p>
     
     
       <div class="sns-shares pc-sns-shares">
@@ -434,17 +432,6 @@ so, such as in this example:</p>
     
 
   <script src="/js/app.js"></script>
-  
-  <script>
-  (function($) {
-    $(function() {
-      $('#privateTrigger').on('click', function() {
-        $('.private').slideToggle();
-        $('#privateTriggerText').text("Thank you! Please choose which platform to share →");
-      });
-    });
-   })(jQuery);
-  </script>
   
   </body>
 </html>

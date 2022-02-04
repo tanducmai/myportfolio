@@ -8,7 +8,7 @@ categories = ['python']
 aliases = "/petals-around-the-rose/"
 +++
 
-### → [Go to GitHub](https://github.com/tanducmai/petals-around-the-rose)
+### → [GitHub](https://github.com/tanducmai/petals-around-the-rose)
 
 ##### Introduction
 The name of the game is Petals Around the Rose and the name of the game is

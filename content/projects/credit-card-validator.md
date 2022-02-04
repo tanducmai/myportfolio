@@ -9,7 +9,7 @@ categories = ['python']
 aliases = "/credit-card-validator/"
 +++
 
-### → [Go to GitHub](https://github.com/tanducmai/credit-card-validator)
+### → [GitHub](https://github.com/tanducmai/credit-card-validator)
 
 ##### Introduction
 Chances are you have a credit card in your wallet or purse. Credit card numbers
