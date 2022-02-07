@@ -16,10 +16,10 @@
     <meta property="og:description" content="Caesar Cipher Cryptography">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://blissful-mayer-90b8fc.netlify.app/projects/caesar-cipher-cryptography/">
-    <meta property="og:image" content="https://blissful-mayer-90b8fc.netlify.app/images/caesar-cipher-cryptography.png">
+    <meta property="og:image" content="https://blissful-mayer-90b8fc.netlify.app/images/caesar-cipher/printable-ascii.png">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="https://blissful-mayer-90b8fc.netlify.app/projects/caesar-cipher-cryptography/">
-    <meta name="twitter:image" content="https://blissful-mayer-90b8fc.netlify.app/images/caesar-cipher-cryptography.png">
+    <meta name="twitter:image" content="https://blissful-mayer-90b8fc.netlify.app/images/caesar-cipher/printable-ascii.png">
 
     <base href="https://blissful-mayer-90b8fc.netlify.app/projects/caesar-cipher-cryptography/">
     <title>
@@ -122,7 +122,7 @@ Caesar</a>, the Roman Emperor. This
 method takes each character in a message and replaces it with one which is a
 certain distance (offset) along the alphabet from it.</p>
 <p>For example:
-<img src="/images/caesar-cipher-cryptography.png" alt="Exaxmple of the technique"></p>
+<img src="/images/caesar-cipher/example.png" alt="Exaxmple of the technique"></p>
 <p>If the offset is 3 then A becomes D, B becomes E, C becomes F etc.</p>
 <p>Encrypting DIG with the offset of +3 will result in GLJ. The decrypt GLJ, simply
 offset by the same amount in the opposite direction (i.e. with the negative
@@ -176,6 +176,37 @@ should then be removed from the message.</p>
 <p>Displays a goodbye message to the screen and quits the program.</p>
 </li>
 </ol>
+<h5 id="encryption-process">Encryption Process</h5>
+<p>To start with, choose 1 as the offset. In this case, if the message &lsquo;abG&rsquo; is
+enterered, after the encryption, the result should be &lsquo;bcH&rsquo;. Now that it is
+working, use the <em>randint()</em> function from the <em>random</em> module to make the
+offset a random number between 32 and 126.</p>
+<p><img src="/images/caesar-cipher/printable-ascii.png" alt="Printable ASCII character set"></p>
+<p>The program only work with the printable ASCII character set. That is, all the
+characters from ASCII 32 (Space) to ASCII 126 (~). When the ASCII value of the
+encrypted character points to a character beyond 126 it should <em>wrap</em> around to
+the beginning of the set.</p>
+<p>For example, if the offset is 4 and the character is &lsquo;}&rsquo; (ASCII 125) then it
+will encrypt to ASCII 129. This is beyond 126 so you should subtract the total
+number of characters in the set (95) to wrap back to the beginning. The
+resulting encrypted character will be the double-quote character &quot; (129-95,
+ASCII 34). You may have to subtract 95 multiple times until it is within the
+set, for example, &lsquo;}&rsquo; + &lsquo;}&rsquo; is 250, and minus 95 is 155. This is still out of
+bounds. Use a loop. Note that if the encrypted string contains characters that
+are not in the table above, then your ASCII values are not &lsquo;wrapping&rsquo; correctly.</p>
+<h5 id="decryption-process">Decryption Process</h5>
+<p>The encryption key will be found as the last character in the string.  Subtract
+this offset from the ASCII value of each other character in the message
+variable. These ASCII values will then need to be converted back to characters
+using the chr(i) function.</p>
+<p>Again, the program only work with the printable ASCII character set. That is,
+all the characters from ASCII 32 (Space) to ASCII 126 (~). When the offset
+points to a character less than 32 it should <em>wrap</em> around to the end of the
+set.</p>
+<p>For example, if the offset is 4 and the character is &lsquo;!&rsquo; (ASCII 33) then it will
+decrypt to ASCII 29. This is less than 32 so wrap back to the end by adding the
+total number of characters (95). This gives character &lsquo;|&rsquo; (29+95, ASCII 124).
+You may have to add 95 multiple times until it is within the set. Use a loop.</p>
 <h5 id="sample-output----pdf-versionhttpsgithubcomtanducmaicaesar-cipher-cryptographyblobmainsample_outputpdf---">Sample Output ( - <a href="https://github.com/tanducmai/caesar-cipher-cryptography/blob/main/sample_output.pdf">PDF Version</a> - )</h5>
 <div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">-------------------
      MAIN MENU
