@@ -1,7 +1,7 @@
 +++
 date = "2021-12-10"
 title = "Blackjack"
-slug = "Blackjack"
+slug = "blackjack"
 description = "Blackjack"
 tags = ['python']
 categories = ['python']
