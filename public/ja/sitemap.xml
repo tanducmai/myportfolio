@@ -3,66 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://blissful-mayer-90b8fc.netlify.app/ja/posts/featuresofcoderportfolio/</loc>
-    <lastmod>2018-08-03T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blissful-mayer-90b8fc.netlify.app/posts/featuresofcoderportfolio/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://blissful-mayer-90b8fc.netlify.app/ja/posts/featuresofcoderportfolio/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://blissful-mayer-90b8fc.netlify.app/ja/posts/</loc>
-    <lastmod>2018-08-03T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blissful-mayer-90b8fc.netlify.app/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://blissful-mayer-90b8fc.netlify.app/ja/posts/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://blissful-mayer-90b8fc.netlify.app/ja/posts/theme-demo/</loc>
-    <lastmod>2018-08-03T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blissful-mayer-90b8fc.netlify.app/posts/theme-demo/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://blissful-mayer-90b8fc.netlify.app/ja/posts/theme-demo/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://blissful-mayer-90b8fc.netlify.app/ja/</loc>
-    <lastmod>2018-08-03T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blissful-mayer-90b8fc.netlify.app/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://blissful-mayer-90b8fc.netlify.app/ja/"
-                />
-  </url>
-  
-  <url>
     <loc>https://blissful-mayer-90b8fc.netlify.app/ja/about/</loc>
     <xhtml:link
                 rel="alternate"
@@ -115,6 +55,20 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://blissful-mayer-90b8fc.netlify.app/ja/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/ja/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blissful-mayer-90b8fc.netlify.app/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://blissful-mayer-90b8fc.netlify.app/ja/"
                 />
   </url>
   

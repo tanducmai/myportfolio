@@ -40,6 +40,17 @@
     </item>
     
     <item>
+      <title>Caesar Cipher Cryptography</title>
+      <link>https://blissful-mayer-90b8fc.netlify.app/projects/caesar-cipher-cryptography/</link>
+      <pubDate>Sun, 10 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blissful-mayer-90b8fc.netlify.app/projects/caesar-cipher-cryptography/</guid>
+      <description>→ GitHub Aim Use Caesar Cipher technique to encrypt or decrypt an inputted message.
+Introduction A simple way to encrypt data is attributed to Julius Caesar, the Roman Emperor. This method takes each character in a message and replaces it with one which is a certain distance (offset) along the alphabet from it.
+For example: If the offset is 3 then A becomes D, B becomes E, C becomes F etc.</description>
+    </item>
+    
+    <item>
       <title>Petals Around The Rose</title>
       <link>https://blissful-mayer-90b8fc.netlify.app/projects/petals-around-the-rose/</link>
       <pubDate>Wed, 06 Oct 2021 00:00:00 +0000</pubDate>

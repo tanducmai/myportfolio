@@ -30,16 +30,6 @@
   <url>
     <loc>https://blissful-mayer-90b8fc.netlify.app/posts/</loc>
     <lastmod>2021-12-29T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://blissful-mayer-90b8fc.netlify.app/ja/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blissful-mayer-90b8fc.netlify.app/posts/"
-                />
   </url>
   
   <url>
@@ -113,6 +103,11 @@
   </url>
   
   <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/projects/caesar-cipher-cryptography/</loc>
+    <lastmod>2021-10-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blissful-mayer-90b8fc.netlify.app/projects/petals-around-the-rose/</loc>
     <lastmod>2021-10-06T00:00:00+00:00</lastmod>
   </url>
@@ -125,96 +120,6 @@
   <url>
     <loc>https://blissful-mayer-90b8fc.netlify.app/projects/multi-level-guessing-game/</loc>
     <lastmod>2021-07-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blissful-mayer-90b8fc.netlify.app/posts/featuresofcoderportfolio/</loc>
-    <lastmod>2018-08-03T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://blissful-mayer-90b8fc.netlify.app/ja/posts/featuresofcoderportfolio/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blissful-mayer-90b8fc.netlify.app/posts/featuresofcoderportfolio/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://blissful-mayer-90b8fc.netlify.app/posts/theme-demo/</loc>
-    <lastmod>2018-08-03T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://blissful-mayer-90b8fc.netlify.app/ja/posts/theme-demo/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blissful-mayer-90b8fc.netlify.app/posts/theme-demo/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://blissful-mayer-90b8fc.netlify.app/posts/creating-a-new-theme/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blissful-mayer-90b8fc.netlify.app/posts/hugo-template-primer/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blissful-mayer-90b8fc.netlify.app/categories/development/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blissful-mayer-90b8fc.netlify.app/tags/development/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blissful-mayer-90b8fc.netlify.app/posts/hugoisforlovers/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blissful-mayer-90b8fc.netlify.app/tags/go/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blissful-mayer-90b8fc.netlify.app/tags/golang/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blissful-mayer-90b8fc.netlify.app/categories/golang/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blissful-mayer-90b8fc.netlify.app/tags/hugo/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blissful-mayer-90b8fc.netlify.app/tags/templates/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blissful-mayer-90b8fc.netlify.app/tags/themes/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blissful-mayer-90b8fc.netlify.app/posts/migrate-from-jekyll/</loc>
-    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
