@@ -40,6 +40,16 @@
     </item>
     
     <item>
+      <title>List Module</title>
+      <link>https://blissful-mayer-90b8fc.netlify.app/projects/list-module/</link>
+      <pubDate>Wed, 13 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blissful-mayer-90b8fc.netlify.app/projects/list-module/</guid>
+      <description>→ GitHub Introduction to Python Lists A list is an object that contains multiple data items. Lists are mutable, which means that their contents can be changed during a program’s execution. Lists are dynamic data structures, meaning that items may be added to them or removed from them. Indexing, slicing, and various methods can be used to work with lists in a program.
+Aim Create a list module containing several common Python list methods and built-in functions.</description>
+    </item>
+    
+    <item>
       <title>Caesar Cipher Cryptography</title>
       <link>https://blissful-mayer-90b8fc.netlify.app/projects/caesar-cipher-cryptography/</link>
       <pubDate>Sun, 10 Oct 2021 00:00:00 +0000</pubDate>
