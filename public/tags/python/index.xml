@@ -46,7 +46,7 @@
       
       <guid>https://blissful-mayer-90b8fc.netlify.app/projects/list-module/</guid>
       <description>→ GitHub Introduction to Python Lists A list is an object that contains multiple data items. Lists are mutable, which means that their contents can be changed during a program’s execution. Lists are dynamic data structures, meaning that items may be added to them or removed from them. Indexing, slicing, and various methods can be used to work with lists in a program.
-Aim Create a list module containing several common Python list methods and built-in functions.</description>
+For example: Iterating over the list [1, 2, 3, 4] Credit: Gaddis, T 2021, Starting Out With Python, 5th edn, Pearson.</description>
     </item>
     
     <item>

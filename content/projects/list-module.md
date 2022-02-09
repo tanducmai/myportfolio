@@ -18,9 +18,11 @@ dynamic data structures, meaning that items may be added to them or removed from
 them. Indexing, slicing, and various methods can be used to work with lists in a
 program.
 
-![Introduction to Python Lists](/images/list-module.png)
+For example: Iterating over the list [1, 2, 3, 4]
+![An exampe of iterating over a list](/images/list-module.png)
+Credit: Gaddis, T 2021, *Starting Out With Python*, 5th edn, Pearson.
 
-##### Aim
+##### Aim of the Project
 Create a list module containing several common Python list methods and built-in
 functions.
 
@@ -54,7 +56,7 @@ The following functions are defined:
    the list at the specified index.
 6. remove_index() receives a list and return a copy with the item at the
    specified index removed from the list.
-7. get_unique receives a list and return a copy which contains only the unique
+7. get_unique() receives a list and return a copy which contains only the unique
    items from the original list.
 
 ##### Restrictions
