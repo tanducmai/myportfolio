@@ -2,6 +2,7 @@
 date = "2021-12-10"
 title = "Blackjack"
 slug = "blackjack"
+thumbnail = "images/blackjack.png"
 description = "Blackjack"
 tags = ['python']
 categories = ['python']
@@ -38,6 +39,8 @@ In this implementation, after the player quits the game, the player's name and
 average wins will be added to a text file.  If their win percentage is higher
 than all other scores in the file, the game will display, "New High Score!", and
 display a table containing all players and their recorded scores.
+
+![Example](/images/blackjack.png)
 
 ##### Algorithm
 My implementation's gameplay is as follows:
