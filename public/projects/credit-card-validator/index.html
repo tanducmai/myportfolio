@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Tan Duc Mai">
+    <meta name="description" content="https://blissful-mayer-90b8fc.netlify.app/">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta property="og:site_name" content="Tan Duc Mai">
+    <meta property="og:title" content="
+  Credit Card Validator - Tan Duc Mai
+">
+    <meta property="og:description" content="Credit Card Validator">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://blissful-mayer-90b8fc.netlify.app/projects/credit-card-validator/">
+    <meta property="og:image" content="https://blissful-mayer-90b8fc.netlify.app/images/credit-card-valid.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://blissful-mayer-90b8fc.netlify.app/projects/credit-card-validator/">
+    <meta name="twitter:image" content="https://blissful-mayer-90b8fc.netlify.app/images/credit-card-valid.png">
+
+    <base href="https://blissful-mayer-90b8fc.netlify.app/projects/credit-card-validator/">
+    <title>
+  Credit Card Validator - Tan Duc Mai
+</title>
+
+    <link rel="canonical" href="https://blissful-mayer-90b8fc.netlify.app/projects/credit-card-validator/">
+    
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="/css/normalize.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    
+      <link rel="alternate" href="https://blissful-mayer-90b8fc.netlify.app/index.xml" type="application/rss+xml" title="Tan Duc Mai">
+      <link href="https://blissful-mayer-90b8fc.netlify.app/index.xml" rel="feed" type="application/rss+xml" title="Tan Duc Mai" />
+    
+
+    <meta name="generator" content="Hugo 0.68.3" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">Tan Duc Mai</a>
+    <input type="checkbox" id="menu-control"/>
+    <label class="menu-mobile  float-right " for="menu-control">
+      <span class="btn-mobile  float-right ">&#9776;</span>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://blissful-mayer-90b8fc.netlify.app/about">About</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://blissful-mayer-90b8fc.netlify.app/posts">Blog</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://blissful-mayer-90b8fc.netlify.app/projects">Portfolio</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            <li class= " mobile-menu-lang-separator-centered ">
+              <hr />
+            </li>
+          
+          
+            
+          
+            
+              
+                
+                  <li class="multilingual-separator">
+                    <p>|</p>
+                  </li>
+                
+                
+              
+              <li class="navigation-item  align-center ">
+                <a href="https://blissful-mayer-90b8fc.netlify.app/ja/">Japanese</a>
+              </li>
+            
+          
+        
+      </ul>
+    </label>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Credit Card Validator</h1>
+    </header>
+
+    <h3 id="-githubhttpsgithubcomtanducmaicredit-card-validator">→ <a href="https://github.com/tanducmai/credit-card-validator">GitHub</a></h3>
+<h5 id="introduction">Introduction</h5>
+<p>Chances are you have a credit card in your wallet or purse. Credit card numbers
+have a &lsquo;checksum&rsquo; built into them, a mathematical relationship between at least
+one number and the others. The checksum enables a computer to detect typos, if
+not fraudulent numbers, without having to query a database (which can be slow).
+Most cards use an algorithm invented by Hans Peter Luhn, a scientist who worked
+for IBM. According to Luhn&rsquo;s algorithm, this program will validate if a credit
+card number is valid.</p>
+<h5 id="sample-output--pseudocode">Sample Output &amp;&amp; Pseudocode</h5>
+
+
+  
+  
+
+
+
+
+
+<div class="portfolio">
+    <div class="portfolio-inner">
+        <div class="portfolio-image"><img src="/images/credit-card-validator.png" alt="Project Demo"></div>
+        <div class="portfolio-content">
+            <p>According to Luhn’s algorithm, it can be determined if a credit card number is
+(syntactically) valid:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">prompt for a credit card number (string type)
+reverse the number
+FOR each digit in number
+    double every second digit starting from left
+    IF product &gt; 9
+        THEN sum each digit of product
+    add doubled digits with the undoubled digits
+IF the total modulo (%) 10 equates to 0
+  THEN output &#39;valid&#39;
+ELSE
+  THEN output &#39;invalid&#39;
+</code></pre></div>
+        </div>
+	</div>
+</div>
+
+  </article>
+</section>
+
+
+      </div>
+      
+    </main>
+
+    
+
+  <script src="/js/app.js"></script>
+  
+  </body>
+</html>

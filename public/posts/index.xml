@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Tan Duc Mai</title>
+    <link>https://blissful-mayer-90b8fc.netlify.app/posts/</link>
+    <description>Recent content in Posts on Tan Duc Mai</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 29 Dec 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blissful-mayer-90b8fc.netlify.app/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python Naming Conventions</title>
+      <link>https://blissful-mayer-90b8fc.netlify.app/posts/python-naming-conventions/</link>
+      <pubDate>Wed, 29 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blissful-mayer-90b8fc.netlify.app/posts/python-naming-conventions/</guid>
+      <description>Although you are allowed to make up your own names for variables, you must follow these rules:
+1. You cannot use one of Python&amp;#39;s keywords as a variable name(see below for a table of keywords).2. A variable or function name cannot contain spaces.3. The first character must be one of the letters a..z, A..Z, or an underscorecharacter &amp;#39;_&amp;#39;.4. After the first character, you may use the letters a.</description>
+    </item>
+    
+  </channel>
+</rss>

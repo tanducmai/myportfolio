@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/tags/beginner/</loc>
+    <lastmod>2021-12-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/categories/</loc>
+    <lastmod>2021-12-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://blissful-mayer-90b8fc.netlify.app/ja/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blissful-mayer-90b8fc.netlify.app/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/categories/clean-code/</loc>
+    <lastmod>2021-12-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/posts/</loc>
+    <lastmod>2021-12-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/tags/python/</loc>
+    <lastmod>2021-12-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/posts/python-naming-conventions/</loc>
+    <lastmod>2021-12-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/tags/syntax/</loc>
+    <lastmod>2021-12-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/categories/syntax/</loc>
+    <lastmod>2021-12-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/tags/</loc>
+    <lastmod>2021-12-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://blissful-mayer-90b8fc.netlify.app/ja/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blissful-mayer-90b8fc.netlify.app/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/</loc>
+    <lastmod>2021-12-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://blissful-mayer-90b8fc.netlify.app/ja/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blissful-mayer-90b8fc.netlify.app/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/projects/credit-card-validator/</loc>
+    <lastmod>2021-12-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/projects/</loc>
+    <lastmod>2021-12-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/categories/python/</loc>
+    <lastmod>2021-12-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/projects/blackjack/</loc>
+    <lastmod>2021-12-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/projects/list-module/</loc>
+    <lastmod>2021-10-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/projects/caesar-cipher-cryptography/</loc>
+    <lastmod>2021-10-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/projects/petals-around-the-rose/</loc>
+    <lastmod>2021-10-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/projects/three-prime-checker/</loc>
+    <lastmod>2021-08-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/projects/multi-level-guessing-game/</loc>
+    <lastmod>2021-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://blissful-mayer-90b8fc.netlify.app/ja/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blissful-mayer-90b8fc.netlify.app/about/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/contact/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://blissful-mayer-90b8fc.netlify.app/ja/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blissful-mayer-90b8fc.netlify.app/contact/"
+                />
+  </url>
+  
+</urlset>
