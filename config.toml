@@ -15,7 +15,7 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
 [params] # theme parameters
     avatarurl = "images/avatar.svg" # Contain the path of the optionnal avatar in the static folder.
 
-    footercontent = "Thanks for reading! -> Please click on an icon to share" # Add footer content
+    # footercontent = "Thanks for reading! -> Please click on an icon to share" # Add footer content
     # fixedbarContent = "Please share it if you like it → " # Add fixedbar content
     # fixedbarContentAfter = "Thank you! Please choose which platform to share →" # Add fixedbar content after click
 
@@ -33,14 +33,14 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
     rtl = false
 
     # Bottom sns share
-    snsShare = false            # new add
+    # snsShare = false            # new add
     # Popular sns share
     # if you want add sns. please message!
-    enableTwitterShare = true  # new add
-    enableFacebookShare = true # new add
-    enableHatenaShare = false  # new add
-    enableLineShare = false    # new add
-    enableLinkedInShare = true # new add
+    # enableTwitterShare = true  # new add
+    # enableFacebookShare = true # new add
+    # enableHatenaShare = false  # new add
+    # enableLineShare = false    # new add
+    # enableLinkedInShare = true # new add
 
     thumbnail = "images/tn.png" # default sns thumbnail
 
@@ -48,21 +48,21 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
     langseparator = "|" # Separates menus from language selectors when site is multilingual.
 
 # Social links
-[[params.social]]
-    name = "Github"
-    icon = "fab fa-github"
-    weight = 1
-    url = "https://github.com/tanducmai/"
-[[params.social]]
-    name = "Facebook"
-    icon = "fab fa-facebook"
-    weight = 2
-    url = "https://facebook.com/henry.mai.372/"
-[[params.social]]
-    name = "LinkedIn"
-    icon = "fab fa-linkedin"
-    weight = 3
-    url = "https://www.linkedin.com/in/tanducmai/"
+# [[params.social]]
+#     name = "Github"
+#     icon = "fab fa-github"
+#     weight = 1
+#     url = "https://github.com/tanducmai/"
+# [[params.social]]
+#     name = "Facebook"
+#     icon = "fab fa-facebook"
+#     weight = 2
+#     url = "https://facebook.com/henry.mai.372/"
+# [[params.social]]
+#     name = "LinkedIn"
+#     icon = "fab fa-linkedin"
+#     weight = 3
+#     url = "https://www.linkedin.com/in/tanducmai/"
 
 [param]
     langseparator = "|" # separates menus from language selectors.
@@ -87,7 +87,7 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
         url = "about"
 
         [[languages.en.menu.main]]
-        name = "Blogs"
+        name = "Blog"
         weight = 2.0
         url = "posts"
 
