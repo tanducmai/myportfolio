@@ -12,6 +12,7 @@ aliases = "/list-module/"
 #### → [GitHub](https://github.com/tanducmai/list-module)
 
 #### Table of Contents
+
 1. [Introduction](#introduction-to-python-lists)
 1. [Aim](#aim-of-the-project)
 1. [Implementation](#implementation)

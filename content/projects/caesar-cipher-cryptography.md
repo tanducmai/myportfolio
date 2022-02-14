@@ -12,6 +12,7 @@ aliases = "/caesar-cipher-cryptography/"
 #### → [GitHub](https://github.com/tanducmai/caesar-cipher-cryptography)
 
 #### Table of Contents
+
 1. [Aim](#aim)
 1. [Introduction](#introduction)
 1. [Mainly Used Functions](#mainly-used-functions)

@@ -12,6 +12,7 @@ aliases = "/multi-level-guessing-game/"
 #### → [GitHub](https://github.com/tanducmai/multi-level-guessing-game)
 
 #### Table of Contents
+
 1. [Aim](#aim)
 1. [Implementation](#implementation)
 1. [Sample Output](https://github.com/tanducmai/multi-level-guessing-game/blob/main/sample_output.pdf)

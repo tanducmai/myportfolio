@@ -12,6 +12,7 @@ aliases = "/blackjack/"
 #### → [GitHub](https://github.com/tanducmai/blackjack)
 
 #### Table of Contents
+
 1. [Introduction](#introduction)
 1. [Algorithm](#algorithm)
 1. [Sample Output](https://github.com/tanducmai/blackjack/blob/master/sample_output.pdf)

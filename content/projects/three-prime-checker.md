@@ -12,6 +12,7 @@ aliases = "/three-prime-checker/"
 #### → [GitHub](https://github.com/tanducmai/three-prime-checker)
 
 #### Table of Contents
+
 1. [Introduction](#introduction)
 1. [Algorithms](#algorithm)
 1. [Sample Output](https://github.com/tanducmai/three-prime-checker/blob/main/sample_output.pdf)
