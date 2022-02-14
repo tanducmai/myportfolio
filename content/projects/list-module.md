@@ -20,7 +20,8 @@ program.
 
 For example: Iterating over the list [1, 2, 3, 4]
 ![An exampe of iterating over a list](/images/list-module.png)
-Credit: Gaddis, T 2021, *Starting Out With Python*, 5th edn, Pearson.
+Credit: Gaddis, T 2021, *Starting Out With Python*, 5th edn, Pearson Education,
+Inc.
 
 ##### Aim of the Project
 Create a list module containing several common Python list methods and built-in
