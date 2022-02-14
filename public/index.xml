@@ -17,8 +17,8 @@
       <pubDate>Wed, 29 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blissful-mayer-90b8fc.netlify.app/posts/python-naming-conventions/</guid>
-      <description>Although you are allowed to make up your own names for variables, you must follow these rules:
-1. You cannot use one of Python&amp;#39;s keywords as a variable name(see below for a table of keywords).2. A variable or function name cannot contain spaces.3. The first character must be one of the letters a..z, A..Z, or an underscorecharacter &amp;#39;_&amp;#39;.4. After the first character, you may use the letters a.</description>
+      <description>Rules The Python Keywords Readability Matters Style of Naming Variables Sample Variable Names Reference Further Research  Rules Although you are allowed to make up your own names for variables, you must follow these rules:
+1. You cannot use one of Python&amp;#39;s keywords as a variable name(see below for a table of keywords).2. A variable or function name cannot contain spaces.3. The first character must be one of the letters a.</description>
     </item>
     
     <item>
@@ -36,7 +36,7 @@
       <pubDate>Fri, 10 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blissful-mayer-90b8fc.netlify.app/projects/blackjack/</guid>
-      <description>→ GitHub Introduction In a standard game of 2-player Blackjack the player and the dealer are dealt 2 cards. The player shows both cards face-up. The dealer shows one of their cards face-up and one face-down. The player decides to draw cards by saying, &amp;ldquo;hit&amp;rdquo;, or stop drawing cards by saying, &amp;ldquo;stand&amp;rdquo;. They will draw cards trying to get their total hand value as close to 21 as possible without going over.</description>
+      <description>→ GitHub Table of Contents  Introduction Algorithm Sample Output  Introduction In a standard game of 2-player Blackjack the player and the dealer are dealt 2 cards. The player shows both cards face-up. The dealer shows one of their cards face-up and one face-down. The player decides to draw cards by saying, &amp;ldquo;hit&amp;rdquo;, or stop drawing cards by saying, &amp;ldquo;stand&amp;rdquo;. They will draw cards trying to get their total hand value as close to 21 as possible without going over.</description>
     </item>
     
     <item>
@@ -45,8 +45,7 @@
       <pubDate>Wed, 13 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blissful-mayer-90b8fc.netlify.app/projects/list-module/</guid>
-      <description>→ GitHub Introduction to Python Lists A list is an object that contains multiple data items. Lists are mutable, which means that their contents can be changed during a program’s execution. Lists are dynamic data structures, meaning that items may be added to them or removed from them. Indexing, slicing, and various methods can be used to work with lists in a program.
-For example: Iterating over the list [1, 2, 3, 4] Credit: Gaddis, T 2021, Starting Out With Python, 5th edn, Pearson.</description>
+      <description>→ GitHub Table of Contents  Introduction Aim Implementation Usage Restrictions Sample Output  Introduction to Python Lists A list is an object that contains multiple data items. Lists are mutable, which means that their contents can be changed during a program’s execution. Lists are dynamic data structures, meaning that items may be added to them or removed from them. Indexing, slicing, and various methods can be used to work with lists in a program.</description>
     </item>
     
     <item>
@@ -55,9 +54,8 @@ For example: Iterating over the list [1, 2, 3, 4] Credit: Gaddis, T 2021, Starti
       <pubDate>Sun, 10 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blissful-mayer-90b8fc.netlify.app/projects/caesar-cipher-cryptography/</guid>
-      <description>→ GitHub Aim Use Caesar Cipher technique to encrypt or decrypt an inputted message.
-Introduction A simple way to encrypt data is attributed to Julius Caesar, the Roman Emperor. This method takes each character in a message and replaces it with one which is a certain distance (offset) along the alphabet from it.
-For example: If the offset is 3 then A becomes D, B becomes E, C becomes F etc.</description>
+      <description>→ GitHub Table of Contents  Aim Introduction Mainly Used Functions Module options Encryption Process Decryption Process Sample Output  Aim Use Caesar Cipher technique to encrypt or decrypt an inputted message.
+Introduction A simple way to encrypt data is attributed to Julius Caesar, the Roman Emperor. This method takes each character in a message and replaces it with one which is a certain distance (offset) along the alphabet from it.</description>
     </item>
     
     <item>
@@ -75,8 +73,7 @@ For example: If the offset is 3 then A becomes D, B becomes E, C becomes F etc.<
       <pubDate>Thu, 12 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blissful-mayer-90b8fc.netlify.app/projects/three-prime-checker/</guid>
-      <description>→ GitHub Introduction I came up with three different algorithms for determining whether a number is prime. After running the three, I use a special procedure to time the efficiency of each algorithm to find out which is better than another. The core of this project is to adopt different perspectives on a problem, with each way of handling a problem will have pros or cons over another.
-Algorithms 1. Exclude n if n&amp;lt;2.</description>
+      <description>→ GitHub Table of Contents  Introduction Algorithms Sample Output  Introduction I came up with three different algorithms for determining whether a number is prime. After running the three, I use a special procedure to time the efficiency of each algorithm to find out which is better than another. The core of this project is to adopt different perspectives on a problem, with each way of handling a problem will have pros or cons over another.</description>
     </item>
     
     <item>
@@ -85,8 +82,8 @@ Algorithms 1. Exclude n if n&amp;lt;2.</description>
       <pubDate>Thu, 15 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blissful-mayer-90b8fc.netlify.app/projects/multi-level-guessing-game/</guid>
-      <description>→ GitHub Aim Create a number guessing game divided into three levels of difficulty. I divide this project into small functions and place them in separate files to be used as modules.
-Implementation I begin by greeting the user and prompt them to choose which level (easy, medium, or hard) they want to play | welcome.py. With that option, I then start the corresponding function which is stored in options.py</description>
+      <description>→ GitHub Table of Contents  Aim Implementation Sample Output  Aim Create a number guessing game divided into three levels of difficulty. I divide this project into small functions and place them in separate files to be used as modules.
+Implementation I begin by greeting the user and prompt them to choose which level (easy, medium, or hard) they want to play | welcome.py. With that option, I then start the corresponding function which is stored in options.</description>
     </item>
     
     <item>

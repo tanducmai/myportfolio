@@ -9,14 +9,21 @@ categories = ['python']
 aliases = "/multi-level-guessing-game/"
 +++
 
-### → [GitHub](https://github.com/tanducmai/multi-level-guessing-game)
+#### → [GitHub](https://github.com/tanducmai/multi-level-guessing-game)
+
+#### Table of Contents
+1. [Aim](#aim)
+1. [Implementation](#implementation)
+1. [Sample Output](https://github.com/tanducmai/multi-level-guessing-game/blob/main/sample_output.pdf)
 
 ##### Aim
+
 Create a number guessing game divided into three levels of difficulty.
 I divide this project into small functions and place them in separate files to
 be used as modules.
 
 ##### Implementation
+
 I begin by greeting the user and prompt them to choose which level (easy,
 medium, or hard) they want to play | welcome.py. With that option, I then start
 the corresponding function which is stored in options.py
@@ -43,6 +50,7 @@ chance, and the game is not done.
 
 If the user has more than zero chance left, their guess will be compared to the
 random number generated to check whether it is too low or too high, or equal:
+
 - If they are equal, a congratulatory message will be printed, which also shows
   how many times it took the user to guess correctly. In this case, the done
   variable becomes True and ends the game.
@@ -54,12 +62,14 @@ random number generated to check whether it is too low or too high, or equal:
 When the user reaches their last chance and the game still runs, meaning that
 the user has used up all of the six attempts, their last guessed number will be
 evaluated with the number generated, and only two options are presented:
+
 - If they are equal, a congratulatory message will be printed.
 - If they are still not equal, a 'Game Over' message will be printed.
 
 In both cases, the game ends and the while loop is displayed.
 
 ##### For loop or While loop to be used ?
+
 _While_ loops | _For_ loops
 ------------ | -------------
 Condition-controlled loop  | Count-controlled loop
@@ -73,7 +83,8 @@ condition – the user input guess is between 1 and 5 – is met. This problem,
 therefore, should be addressed with a while loop instead of a for loop.
 
 ##### Sample Output ( - [PDF Version](https://github.com/tanducmai/multi-level-guessing-game/blob/main/sample_output.pdf) - )
-```
+
+```text
 Hello, Welcome to the Number Guessing Game!
 I'm Henry! What's Your Name? Jack
 Okay, Jack. Let's Begin The Guessing Game!

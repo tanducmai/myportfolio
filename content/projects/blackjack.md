@@ -9,9 +9,15 @@ categories = ['python']
 aliases = "/blackjack/"
 +++
 
-### → [GitHub](https://github.com/tanducmai/blackjack)
+#### → [GitHub](https://github.com/tanducmai/blackjack)
+
+#### Table of Contents
+1. [Introduction](#introduction)
+1. [Algorithm](#algorithm)
+1. [Sample Output](https://github.com/tanducmai/blackjack/blob/master/sample_output.pdf)
 
 ##### Introduction
+
 In a standard game of 2-player Blackjack the player and the dealer are dealt 2
 cards. The player shows both cards face-up. The dealer shows one of their cards
 face-up and one face-down. The player decides to draw cards by saying, "hit", or
@@ -43,8 +49,10 @@ display a table containing all players and their recorded scores.
 ![Example](/images/blackjack.png)
 
 ##### Algorithm
+
 My implementation's gameplay is as follows:
-```
+
+```text
 1. The player and the dealer are dealt an initial hand of two cards each. The
    player shows both cards. The dealer shows only one card.
 2. If the dealer has Blackjack (the first two cards dealt total 21 points) and
@@ -73,7 +81,8 @@ My implementation's gameplay is as follows:
 ```
 
 ##### Sample Output ( - [PDF Version](https://github.com/tanducmai/blackjack/blob/master/sample_output.pdf) - )
-```
+
+```text
 --------- Welcome to Blackjack ---------
 
 File   : main.py

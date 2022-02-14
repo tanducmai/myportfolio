@@ -9,9 +9,18 @@ categories = ['python']
 aliases = "/list-module/"
 +++
 
-### → [GitHub](https://github.com/tanducmai/list-module)
+#### → [GitHub](https://github.com/tanducmai/list-module)
+
+#### Table of Contents
+1. [Introduction](#introduction-to-python-lists)
+1. [Aim](#aim-of-the-project)
+1. [Implementation](#implementation)
+1. [Usage](#usage)
+1. [Restrictions](#restrictions)
+1. [Sample Output](https://github.com/tanducmai/list-module/blob/main/sample_output.pdf)
 
 ##### Introduction to Python Lists
+
 A list is an object that contains multiple data items. Lists are mutable, which
 means that their contents can be changed during a program’s execution. Lists are
 dynamic data structures, meaning that items may be added to them or removed from
@@ -24,6 +33,7 @@ Credit: Gaddis, T 2021, *Starting Out With Python*, 5th edn, Pearson Education,
 Inc.
 
 ##### Aim of the Project
+
 Create a list module containing several common Python list methods and built-in
 functions.
 
@@ -32,43 +42,49 @@ Python. It also indicates my ability to understand how each list method and
 built-in function works; and to implement them in my program.
 
 ##### Implementation
+
 The program *list_function.py* solely contains functions that have been defined,
 whereas the program *tester.py* is a test driver that is able to be run to check
 the successful usage of each pre-defined function in the program
 *list_function.py*.
 
 The following functions are defined:
+
 1. size(my_list)
-2. to_string(my_list , sep=', ')
-3. count_item(value, my_list)
-4. search(value, my_list)
-5. insert_item(value, insert_position. my_list)
-6. remove_index(remove_position, my_list)
-7. get_unique(my_list)
+1. to_string(my_list , sep=', ')
+1. count_item(value, my_list)
+1. search(value, my_list)
+1. insert_item(value, insert_position. my_list)
+1. remove_index(remove_position, my_list)
+1. get_unique(my_list)
 
 ##### Usage
+
 1. size() processes a list and return its length.
-2. to_string() processes a list and return the string version of it.
-3. count_item() receives a value and return the occurrences of that value in the
+1. to_string() processes a list and return the string version of it.
+1. count_item() receives a value and return the occurrences of that value in the
    given list.
-4. search() receives a value and return the location of that value in the given
+1. search() receives a value and return the location of that value in the given
    list.
-5. insert_item() receives a list and return a copy with a value inserted into
+1. insert_item() receives a list and return a copy with a value inserted into
    the list at the specified index.
-6. remove_index() receives a list and return a copy with the item at the
+1. remove_index() receives a list and return a copy with the item at the
    specified index removed from the list.
-7. get_unique() receives a list and return a copy which contains only the unique
+1. get_unique() receives a list and return a copy which contains only the unique
    items from the original list.
 
 ##### Restrictions
+
 In order to keep the idea of the project pure, the followings are restricted to
 use:
-* Built-in functions such as len(), list(), slice(), sum(), min(), max().
-* List methods such as index(), pop(), count(), insert().
-* String methods such as join(), split(), count(), index().
+
+- Built-in functions such as len(), list(), slice(), sum(), min(), max().
+- List methods such as index(), pop(), count(), insert().
+- String methods such as join(), split(), count(), index().
 
 ##### Sample Output ( - [PDF Version](https://github.com/tanducmai/list-module/blob/main/sample_output.pdf) - )
-```
+
+```text
 -----------------
 | START TESTING |
 -----------------

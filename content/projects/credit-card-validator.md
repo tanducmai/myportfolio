@@ -9,9 +9,10 @@ categories = ['python']
 aliases = "/credit-card-validator/"
 +++
 
-### → [GitHub](https://github.com/tanducmai/credit-card-validator)
+#### → [GitHub](https://github.com/tanducmai/credit-card-validator)
 
 ##### Introduction
+
 Chances are you have a credit card in your wallet or purse. Credit card numbers
 have a 'checksum' built into them, a mathematical relationship between at least
 one number and the others. The checksum enables a computer to detect typos, if
@@ -20,12 +21,14 @@ Most cards use an algorithm invented by Hans Peter Luhn, a scientist who worked
 for IBM. According to Luhn's algorithm, this program will validate if a credit
 card number is valid.
 
-##### Sample Output && Pseudocode
+##### Sample Output and Pseudocode
+
 {{% portfolio image="/images/credit-card-validator.png" alt="Project Demo" %}}
 
 According to Luhn’s algorithm, it can be determined if a credit card number is
 (syntactically) valid:
-```
+
+```text
 prompt for a credit card number (string type)
 reverse the number
 FOR each digit in number
@@ -38,4 +41,5 @@ IF the total modulo (%) 10 equates to 0
 ELSE
   THEN output 'invalid'
 ```
+
 {{% /portfolio %}}
