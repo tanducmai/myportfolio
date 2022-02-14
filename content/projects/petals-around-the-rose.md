@@ -14,7 +14,8 @@ aliases = "/petals-around-the-rose/"
 
 1. [Aim](#aim)
 1. [Introduction](#introduction)
-1. [Sample Output](https://github.com/tanducmai/petals-around-the-rose/blob/main/sample-output.pdf)
+1. [Further Research](#further-research)
+1. [Sample Output](https://github.com/tanducmai/petals-around-the-rose/blob/main/sample_output.pdf)
 
 ##### Aim
 
@@ -32,7 +33,18 @@ for the roll. The score will always be an even number (including zero). The
 user’s mission is to work out how the computer calculates the score in order to
 become a Potentate of the Rose.
 
-##### Sample Output ([- PDF Version -](https://github.com/tanducmai/petals-around-the-rose/blob/main/sample-output.pdf))
+##### Further Research
+
+1. To see how this looks in practice, you may like to play a *[web
+   version](http://www.borrett.id.au/computing/petals-j.htm)* of the game.
+1. You may also like to read the *[online
+   article](http://www.borrett.id.au/computing/petals-bg.htm)* about Bill Gates
+   and Petals Around the Rose.
+1. The *[solution](https://en.wikipedia.org/wiki/Petals_Around_the_Rose)* or
+   *[formula](https://en.wikipedia.org/wiki/Petals_Around_the_Rose)* for Petals
+   Around the Rose.
+
+##### Sample Output ([- PDF Version -](https://github.com/tanducmai/petals-around-the-rose/blob/main/sample_output.pdf))
 
 ```text
 File:         petals.py
