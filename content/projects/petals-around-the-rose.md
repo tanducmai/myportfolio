@@ -10,6 +10,20 @@ aliases = "/petals-around-the-rose/"
 
 #### → [GitHub](https://github.com/tanducmai/petals-around-the-rose)
 
+#### Table of Contents
+
+1. [Aim](#aim)
+1. [Introduction](#introduction)
+1. [Sample Output](https://github.com/tanducmai/petals-around-the-rose/blob/main/sample-output.pdf)
+
+##### Aim
+
+Write a Pytram that allows a user to play a game called Petals Around the Rose.
+The program allows the user to repeatedly guess the answer to the puzzle until
+the user chooses to stop guessing/playing. Once the user chooses to stop
+guessing, the program will report the user’s and game play statistics to the
+screen.
+
 ##### Introduction
 
 The name of the game is Petals Around the Rose and the name of the game is

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Tan Duc Mai">
+    <meta name="description" content="https://blissful-mayer-90b8fc.netlify.app/">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta property="og:site_name" content="Tan Duc Mai">
+    <meta property="og:title" content="
+  City Life Turtle Graphics - Tan Duc Mai
+">
+    <meta property="og:description" content="City Life Turtle Graphics">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://blissful-mayer-90b8fc.netlify.app/projects/city-life-turtle-graphics/">
+    <meta property="og:image" content="https://blissful-mayer-90b8fc.netlify.app/images/caesar-cipher/city-life-turtle-graphics.jpg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://blissful-mayer-90b8fc.netlify.app/projects/city-life-turtle-graphics/">
+    <meta name="twitter:image" content="https://blissful-mayer-90b8fc.netlify.app/images/caesar-cipher/city-life-turtle-graphics.jpg">
+
+    <base href="https://blissful-mayer-90b8fc.netlify.app/projects/city-life-turtle-graphics/">
+    <title>
+  City Life Turtle Graphics - Tan Duc Mai
+</title>
+
+    <link rel="canonical" href="https://blissful-mayer-90b8fc.netlify.app/projects/city-life-turtle-graphics/">
+    
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="/css/normalize.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    
+      <link rel="alternate" href="https://blissful-mayer-90b8fc.netlify.app/index.xml" type="application/rss+xml" title="Tan Duc Mai">
+      <link href="https://blissful-mayer-90b8fc.netlify.app/index.xml" rel="feed" type="application/rss+xml" title="Tan Duc Mai" />
+    
+
+    <meta name="generator" content="Hugo 0.68.3" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">Tan Duc Mai</a>
+    <input type="checkbox" id="menu-control"/>
+    <label class="menu-mobile  float-right " for="menu-control">
+      <span class="btn-mobile  float-right ">&#9776;</span>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://blissful-mayer-90b8fc.netlify.app/about">About</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://blissful-mayer-90b8fc.netlify.app/posts">Blog</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://blissful-mayer-90b8fc.netlify.app/projects">Portfolio</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            <li class= " mobile-menu-lang-separator-centered ">
+              <hr />
+            </li>
+          
+          
+            
+          
+            
+              
+                
+                  <li class="multilingual-separator">
+                    <p>|</p>
+                  </li>
+                
+                
+              
+              <li class="navigation-item  align-center ">
+                <a href="https://blissful-mayer-90b8fc.netlify.app/ja/">Japanese</a>
+              </li>
+            
+          
+        
+      </ul>
+    </label>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>City Life Turtle Graphics</h1>
+    </header>
+
+    <h4 id="-githubhttpsgithubcomtanducmaicity-life-turtle-graphics">→ <a href="https://github.com/tanducmai/city-life-turtle-graphics">GitHub</a></h4>
+<h4 id="table-of-contents">Table of Contents</h4>
+<ol>
+<li><a href="#aim">Aim</a></li>
+<li><a href="#implementation">Implementation</a></li>
+<li><a href="#production">Production / Output</a></li>
+</ol>
+<h5 id="aim">Aim</h5>
+<p>Use Turtle graphics (<em>turtle</em> module) to draw an illustration of the city life,
+with house, car, animal, and so on.</p>
+<h5 id="implementation">Implementation</h5>
+<p>To begin, I import the <em>turtle</em> module, after which I define all of the
+functions I am going to use in the code. I then set the window for the project
+by setting the height and width. What is interesting is that I apply a gif image
+to the background to make it look more realistic and colourful. Therefore, I
+include that gif in the same zip file with other code so that it would run
+smoothly without error. Furthermore, for almost every element, I specify it with
+an appropriate name, such as house, roof, and dog using <em>Turtle()</em> method.</p>
+<p>There are seven pieces of code bundled into 7 function stored in the
+<strong>drawing_functions</strong> module to be invoked in the <strong>main</strong> module so as to
+optimise and improve code legibility and code reuse.</p>
+<p>Inside the <em>draw_window</em>(window, x, y) function (with the two arguments being the
+x- and y- coordinates of the window), a short for loop is used to draw the
+square-shape border of the window.</p>
+<p>The <em>draw_wheel</em>(wheel, x1, y1) function has two arguments being the x- and y-
+coordinates of the wheel. These coordinates will be specified later when I get
+to that part. Inside that function, I divide it into two circumstances, which
+simply refers to the two wheels, after which I use a while loop to draw the
+wheel at the particular (x2, y2) position.</p>
+<p>I begin drawing by going through the order:</p>
+<ul>
+<li>House overall</li>
+<li>Left, middle, and right roofs</li>
+<li>Door</li>
+<li>Windows (2 times)
+<ul>
+<li>Now I specify the coordinates of each window as arguments of the
+<em>draw_window</em>(x, y) function.</li>
+</ul>
+</li>
+<li>Middle big window</li>
+<li>Chimney</li>
+<li>Street</li>
+<li>Roadside</li>
+<li>Broken lines
+<ul>
+<li>I use a while loop to repeatedly draw a straight line, each of which is
+separated by 150 units – specified by the i variable – until i equals 250.</li>
+</ul>
+</li>
+<li>Little stair in front of the door</li>
+<li>Oval trees (4 times)</li>
+<li>Big tree</li>
+<li>Leaf of the tree</li>
+<li>The lower part of the car</li>
+<li>The upper part of the car</li>
+<li>Wheels (2 times)
+<ul>
+<li>Now I specify the coordinates of each wheel as arguments of the
+<em>draw_wheel</em>(x1, y1) function.</li>
+</ul>
+</li>
+<li>Flag</li>
+<li>The star on the flag</li>
+<li>Dog face
+<ul>
+<li>I use the <em>circle</em>(18) function to draw the face with a radius of 18 units.</li>
+</ul>
+</li>
+<li>Eyes (2 times)
+<ul>
+<li>Now I specify the coordinates of each eye as arguments of the <em>draw_eye</em>(x,
+y) function.</li>
+</ul>
+</li>
+<li>Mouth
+<ul>
+<li>I use the <em>circle</em>(3, 160) function to draw a circle of 3 units radius, but
+only 160 degrees of it is drawn to make it look better.</li>
+</ul>
+</li>
+<li>Left ear</li>
+<li>Right ear</li>
+<li>Body</li>
+<li>Legs (4 times)
+<ul>
+<li>Now I specify the coordinates of each leg as arguments of the <em>draw_leg</em>(x,
+y) function.</li>
+</ul>
+</li>
+<li>Tail</li>
+</ul>
+<h5 id="production">Production</h5>
+<p><img src="/images/city-life-turtle-graphics.jpg" alt="The output after executing the main module"></p>
+
+  </article>
+</section>
+
+
+      </div>
+      
+    </main>
+
+    
+
+  <script src="/js/app.js"></script>
+  
+  </body>
+</html>

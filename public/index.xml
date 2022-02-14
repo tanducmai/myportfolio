@@ -64,7 +64,8 @@ Introduction A simple way to encrypt data is attributed to Julius Caesar, the Ro
       <pubDate>Wed, 06 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blissful-mayer-90b8fc.netlify.app/projects/petals-around-the-rose/</guid>
-      <description>→ GitHub Introduction The name of the game is Petals Around the Rose and the name of the game is important. The computer will roll five dice and ask the user to guess the score for the roll. The score will always be an even number (including zero). The user’s mission is to work out how the computer calculates the score in order to become a Potentate of the Rose.</description>
+      <description>→ GitHub Table of Contents  Aim Introduction Sample Output  Aim Write a Pytram that allows a user to play a game called Petals Around the Rose. The program allows the user to repeatedly guess the answer to the puzzle until the user chooses to stop guessing/playing. Once the user chooses to stop guessing, the program will report the user’s and game play statistics to the screen.
+Introduction The name of the game is Petals Around the Rose and the name of the game is important.</description>
     </item>
     
     <item>
@@ -74,6 +75,16 @@ Introduction A simple way to encrypt data is attributed to Julius Caesar, the Ro
       
       <guid>https://blissful-mayer-90b8fc.netlify.app/projects/three-prime-checker/</guid>
       <description>→ GitHub Table of Contents  Introduction Algorithms Sample Output  Introduction I came up with three different algorithms for determining whether a number is prime. After running the three, I use a special procedure to time the efficiency of each algorithm to find out which is better than another. The core of this project is to adopt different perspectives on a problem, with each way of handling a problem will have pros or cons over another.</description>
+    </item>
+    
+    <item>
+      <title>City Life Turtle Graphics</title>
+      <link>https://blissful-mayer-90b8fc.netlify.app/projects/city-life-turtle-graphics/</link>
+      <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blissful-mayer-90b8fc.netlify.app/projects/city-life-turtle-graphics/</guid>
+      <description>→ GitHub Table of Contents  Aim Implementation Production / Output  Aim Use Turtle graphics (turtle module) to draw an illustration of the city life, with house, car, animal, and so on.
+Implementation To begin, I import the turtle module, after which I define all of the functions I am going to use in the code. I then set the window for the project by setting the height and width.</description>
     </item>
     
     <item>
