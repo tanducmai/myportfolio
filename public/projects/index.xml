@@ -67,6 +67,17 @@ Introduction A simple way to encrypt data is attributed to Julius Caesar, the Ro
     </item>
     
     <item>
+      <title>Olympic Medals Turtle Graphics</title>
+      <link>https://blissful-mayer-90b8fc.netlify.app/projects/olympic-medals-turtle-graphics/</link>
+      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blissful-mayer-90b8fc.netlify.app/projects/olympic-medals-turtle-graphics/</guid>
+      <description>→ GitHub Table of Contents  Aim Leaderboard Implementation Output Video Production  Aim Use Turtle graphics (turtle module) to draw a pie chart representing the share of gold medals at the Olympic Games Tokyo as of 2 August 2021.
+Leaderboard Source: Adelaide Advertiser 3 August 2021
+Implementation To begin, I convert the numbers of gold medals into percentages in order to draw the pie chart’s segments. The corresponding percentage is converted by dividing the number of gold medals by 360%.</description>
+    </item>
+    
+    <item>
       <title>City Life Turtle Graphics</title>
       <link>https://blissful-mayer-90b8fc.netlify.app/projects/city-life-turtle-graphics/</link>
       <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
