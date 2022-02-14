@@ -91,9 +91,9 @@ I begin drawing by going through the order:
 
 ##### Output
 
-![The output after executing the main module](/images/city-life-turtle-graphics.jpg)
+![The output of the program](/images/city-life-turtle-graphics.jpg)
 
 # Video Production
 
-![The process after executing the main
+[Execute the **main**
 module](https://raw.githubusercontent.com/tanducmai/city-life-turtle-graphics/main/assets/video_production.mp4)
