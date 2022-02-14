@@ -142,69 +142,46 @@ to that part. Inside that function, I divide it into two circumstances, which
 simply refers to the two wheels, after which I use a while loop to draw the
 wheel at the particular (x2, y2) position.</p>
 <p>I begin drawing by going through the order:</p>
-<ul>
-<li>House overall</li>
-<li>Left, middle, and right roofs</li>
-<li>Door</li>
-<li>Windows (2 times)
-<ul>
-<li>Now I specify the coordinates of each window as arguments of the
-<em>draw_window</em>(x, y) function.</li>
-</ul>
-</li>
-<li>Middle big window</li>
-<li>Chimney</li>
-<li>Street</li>
-<li>Roadside</li>
-<li>Broken lines
-<ul>
-<li>I use a while loop to repeatedly draw a straight line, each of which is
-separated by 150 units – specified by the i variable – until i equals 250.</li>
-</ul>
-</li>
-<li>Little stair in front of the door</li>
-<li>Oval trees (4 times)</li>
-<li>Big tree</li>
-<li>Leaf of the tree</li>
-<li>The lower part of the car</li>
-<li>The upper part of the car</li>
-<li>Wheels (2 times)
-<ul>
-<li>Now I specify the coordinates of each wheel as arguments of the
-<em>draw_wheel</em>(x1, y1) function.</li>
-</ul>
-</li>
-<li>Flag</li>
-<li>The star on the flag</li>
-<li>Dog face
-<ul>
-<li>I use the <em>circle</em>(18) function to draw the face with a radius of 18 units.</li>
-</ul>
-</li>
-<li>Eyes (2 times)
-<ul>
-<li>Now I specify the coordinates of each eye as arguments of the <em>draw_eye</em>(x,
-y) function.</li>
-</ul>
-</li>
-<li>Mouth
-<ul>
-<li>I use the <em>circle</em>(3, 160) function to draw a circle of 3 units radius, but
-only 160 degrees of it is drawn to make it look better.</li>
-</ul>
-</li>
-<li>Left ear</li>
-<li>Right ear</li>
-<li>Body</li>
-<li>Legs (4 times)
-<ul>
-<li>Now I specify the coordinates of each leg as arguments of the <em>draw_leg</em>(x,
-y) function.</li>
-</ul>
-</li>
-<li>Tail</li>
-</ul>
-<h5 id="output">Output</h5>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">- House overall
+- Left, middle, and right roofs
+- Door
+- Windows (2 times)
+  - Now I specify the coordinates of each window as arguments of the
+     *draw_window*(x, y) function.
+- Middle big window
+- Chimney
+- Street
+- Roadside
+- Broken lines
+  - I use a while loop to repeatedly draw a straight line, each of which is
+     separated by 150 units – specified by the i variable – until i equals 250.
+- Little stair in front of the door
+- Oval trees (4 times)
+- Big tree
+- Leaf of the tree
+- The lower part of the car
+- The upper part of the car
+- Wheels (2 times)
+  - Now I specify the coordinates of each wheel as arguments of the
+     *draw_wheel*(x1, y1) function.
+- Flag
+- The star on the flag
+- Dog face
+  - I use the *circle*(18) function to draw the face with a radius of 18 units.
+- Eyes (2 times)
+  - Now I specify the coordinates of each eye as arguments of the *draw_eye*(x,
+     y) function.
+- Mouth
+  - I use the *circle*(3, 160) function to draw a circle of 3 units radius, but
+     only 160 degrees of it is drawn to make it look better.
+- Left ear
+- Right ear
+- Body
+- Legs (4 times)
+  - Now I specify the coordinates of each leg as arguments of the *draw_leg*(x,
+     y) function.
+- Tail
+</code></pre></div><h5 id="output">Output</h5>
 <p><img src="/images/city-life-turtle-graphics.jpg" alt="The output of the program"></p>
 <h1 id="video-production">Video Production</h1>
 <p><a href="https://raw.githubusercontent.com/tanducmai/city-life-turtle-graphics/main/assets/video_production.mp4">Execute the <strong>main</strong>

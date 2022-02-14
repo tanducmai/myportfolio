@@ -58,6 +58,16 @@ Introduction A simple way to encrypt data is attributed to Julius Caesar, the Ro
     </item>
     
     <item>
+      <title>Solar System Turtle Graphics</title>
+      <link>https://blissful-mayer-90b8fc.netlify.app/projects/solar-system-turtle-graphics/</link>
+      <pubDate>Wed, 25 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blissful-mayer-90b8fc.netlify.app/projects/solar-system-turtle-graphics/</guid>
+      <description>→ GitHub Table of Contents  Aim Implementation Output Video Production  Aim Use Turtle graphics to draw an illustration of the Solar System, with appropriate scaling.
+Implementation There are two algorithms that I constantly use when working with a Python Turtle project, which is making a turtle and moving it. Accordingly, I define the two functions to eliminate repetitive code and put them into a new Python file. This is to make it possible to break up such a large program into manageable sized parts, and to keep related parts together.</description>
+    </item>
+    
+    <item>
       <title>Three Prime Checker</title>
       <link>https://blissful-mayer-90b8fc.netlify.app/projects/three-prime-checker/</link>
       <pubDate>Thu, 12 Aug 2021 00:00:00 +0000</pubDate>
