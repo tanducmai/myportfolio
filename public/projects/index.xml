@@ -72,7 +72,7 @@ Introduction A simple way to encrypt data is attributed to Julius Caesar, the Ro
       <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blissful-mayer-90b8fc.netlify.app/projects/city-life-turtle-graphics/</guid>
-      <description>→ GitHub Table of Contents  Aim Implementation Production / Output  Aim Use Turtle graphics (turtle module) to draw an illustration of the city life, with house, car, animal, and so on.
+      <description>→ GitHub Table of Contents  Aim Implementation Output Video Production  Aim Use Turtle graphics (turtle module) to draw an illustration of the city life, with house, car, animal, and so on.
 Implementation To begin, I import the turtle module, after which I define all of the functions I am going to use in the code. I then set the window for the project by setting the height and width.</description>
     </item>
     

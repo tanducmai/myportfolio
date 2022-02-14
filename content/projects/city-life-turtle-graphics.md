@@ -15,7 +15,8 @@ aliases = "/city-life-turtle-graphics/"
 
 1. [Aim](#aim)
 1. [Implementation](#implementation)
-1. [Production / Output](#production)
+1. [Output](#output)
+1. [Video Production](https://raw.githubusercontent.com/tanducmai/city-life-turtle-graphics/main/assets/video_production.mp4)
 
 ##### Aim
 
@@ -88,6 +89,11 @@ I begin drawing by going through the order:
      y) function.
 - Tail
 
-##### Production
+##### Output
 
 ![The output after executing the main module](/images/city-life-turtle-graphics.jpg)
+
+# Video Production
+
+![The process after executing the main
+module](https://raw.githubusercontent.com/tanducmai/city-life-turtle-graphics/main/assets/video_production.mp4)
