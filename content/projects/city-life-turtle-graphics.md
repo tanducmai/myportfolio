@@ -2,7 +2,7 @@
 date = "2021-07-22"
 title = "City Life Turtle Graphics"
 slug = "city-life-turtle-graphics"
-thumbnail = "images/caesar-cipher/city-life-turtle-graphics.jpg"
+thumbnail = "images/city-life-turtle-graphics.jpg"
 description = "City Life Turtle Graphics"
 tags = ['python']
 categories = ['python']
