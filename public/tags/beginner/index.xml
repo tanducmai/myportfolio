@@ -6,15 +6,24 @@
     <description>Recent content in beginner on Tan Duc Mai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 29 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Dec 2021 00:00:00 +1030</lastBuildDate>
     
 	<atom:link href="https://blissful-mayer-90b8fc.netlify.app/tags/beginner/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Python Class Fundamentals</title>
+      <link>https://blissful-mayer-90b8fc.netlify.app/posts/python-class-fundamentals/</link>
+      <pubDate>Mon, 13 Dec 2021 00:00:00 +1030</pubDate>
+      
+      <guid>https://blissful-mayer-90b8fc.netlify.app/posts/python-class-fundamentals/</guid>
+      <description>Objects </description>
+    </item>
+    
+    <item>
       <title>Python Naming Conventions</title>
       <link>https://blissful-mayer-90b8fc.netlify.app/posts/python-naming-conventions/</link>
-      <pubDate>Wed, 29 Dec 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blissful-mayer-90b8fc.netlify.app/posts/python-naming-conventions/</guid>
       <description>Rules The Python Keywords Use of Underscores Readability Matters Style of Naming Variables Sample Variable Names Reference Further Research  Rules Although you are allowed to make up your own names for variables, you must follow these rules:
