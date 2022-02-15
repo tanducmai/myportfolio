@@ -17,6 +17,7 @@ categories = [
 
 - [Rules](#rules)
 - [The Python Keywords](#the-python-keywords)
+- [Use of Underscores](#use-of-underscores)
 - [Readability Matters](#readability-matters)
 - [Style of Naming Variables](#style-of-naming-variables)
 - [Sample Variable Names](#sample-variable-names)
@@ -58,6 +59,14 @@ async  | elif     | global  | nonlocal | try
 await  | else     | if      | not      | while
 break  | except   | import  | or       | with
 class  | False    | in      | pass     | yield
+
+##### Use of Underscores
+
+With regards to naming conventions, names with leading underscores are intended
+to be private to a class, and names starting with double underscores may have
+special meaning, such as `__init__` or `__add__`.
+
+Therefore, avoid using names that start with double underscores.
 
 ##### Readability Matters
 
