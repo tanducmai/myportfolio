@@ -114,20 +114,20 @@
       
     </header>
 
-    <ul>
+    <ol>
 <li><a href="#rules">Rules</a></li>
 <li><a href="#the-python-keywords">The Python Keywords</a></li>
+<li><a href="#use-of-underscores">Use of Underscores</a></li>
 <li><a href="#readability-matters">Readability Matters</a></li>
 <li><a href="#style-of-naming-variables">Style of Naming Variables</a></li>
 <li><a href="#sample-variable-names">Sample Variable Names</a></li>
 <li><a href="#reference">Reference</a></li>
 <li><a href="#further-research">Further Research</a></li>
-</ul>
+</ol>
 <h5 id="rules">Rules</h5>
 <p>Although you are allowed to make up your own names for variables, you must
 follow these rules:</p>
 <div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">1. You cannot use one of Python&#39;s keywords as a variable name
-   (see below for a table of keywords).
 
 2. A variable or function name cannot contain spaces.
 
@@ -146,65 +146,70 @@ again improvements to Python introduce or eliminate one or two):</p>
 <table>
 <thead>
 <tr>
-<th>Some</th>
-<th>Common</th>
-<th>Python</th>
-<th>Keywords</th>
-<th>Include</th>
+<th align="center">Some</th>
+<th align="center">Common</th>
+<th align="center">Python</th>
+<th align="center">Keywords</th>
+<th align="center">Include</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>and</td>
-<td>continue</td>
-<td>finally</td>
-<td>is</td>
-<td>raise</td>
+<td align="center">and</td>
+<td align="center">continue</td>
+<td align="center">finally</td>
+<td align="center">is</td>
+<td align="center">raise</td>
 </tr>
 <tr>
-<td>as</td>
-<td>def</td>
-<td>for</td>
-<td>lambda</td>
-<td>return</td>
+<td align="center">as</td>
+<td align="center">def</td>
+<td align="center">for</td>
+<td align="center">lambda</td>
+<td align="center">return</td>
 </tr>
 <tr>
-<td>assert</td>
-<td>del</td>
-<td>from</td>
-<td>None</td>
-<td>True</td>
+<td align="center">assert</td>
+<td align="center">del</td>
+<td align="center">from</td>
+<td align="center">None</td>
+<td align="center">True</td>
 </tr>
 <tr>
-<td>async</td>
-<td>elif</td>
-<td>global</td>
-<td>nonlocal</td>
-<td>try</td>
+<td align="center">async</td>
+<td align="center">elif</td>
+<td align="center">global</td>
+<td align="center">nonlocal</td>
+<td align="center">try</td>
 </tr>
 <tr>
-<td>await</td>
-<td>else</td>
-<td>if</td>
-<td>not</td>
-<td>while</td>
+<td align="center">await</td>
+<td align="center">else</td>
+<td align="center">if</td>
+<td align="center">not</td>
+<td align="center">while</td>
 </tr>
 <tr>
-<td>break</td>
-<td>except</td>
-<td>import</td>
-<td>or</td>
-<td>with</td>
+<td align="center">break</td>
+<td align="center">except</td>
+<td align="center">import</td>
+<td align="center">or</td>
+<td align="center">with</td>
 </tr>
 <tr>
-<td>class</td>
-<td>False</td>
-<td>in</td>
-<td>pass</td>
-<td>yield</td>
+<td align="center">class</td>
+<td align="center">False</td>
+<td align="center">in</td>
+<td align="center">pass</td>
+<td align="center">yield</td>
 </tr>
 </tbody>
 </table>
+<h5 id="use-of-underscores">Use of Underscores</h5>
+<p>With regards to naming conventions, names with leading underscores are intended
+to be private to a class, and names starting with double underscores may have
+special meaning, such as <code>__init__</code> or <code>__add__</code>.</p>
+<p>Therefore, avoid using names that start with double underscores.</p>
 <h5 id="readability-matters">Readability Matters</h5>
 <p>Because a variable&rsquo;s name should reflect the variable’s purpose, programmers
 often find themselves creating names that are made of multiple words. For

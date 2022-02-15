@@ -1,10 +1,10 @@
 +++ 
+date = {{ .Date }}
 title = ""
-description = ""
 slug = "" 
+description = ""
+thumbnail = "{{ .Site.Params.thumbnail }}"
 tags = []
 categories = []
-thumbnail = "{{ .Site.Params.thumbnail }}"
-date = {{ .Date }}
 draft = true
 +++
