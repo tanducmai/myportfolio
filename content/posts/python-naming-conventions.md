@@ -1,5 +1,5 @@
 +++
-date = "2021-12-29"
+date = "2021-10-11"
 title = "Python Naming Conventions"
 slug = "python-naming-conventions"
 description = "Python Naming Conventions"
