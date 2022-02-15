@@ -15,14 +15,14 @@ categories = [
 ]
 +++
 
-- [Rules](#rules)
-- [The Python Keywords](#the-python-keywords)
-- [Use of Underscores](#use-of-underscores)
-- [Readability Matters](#readability-matters)
-- [Style of Naming Variables](#style-of-naming-variables)
-- [Sample Variable Names](#sample-variable-names)
-- [Reference](#reference)
-- [Further Research](#further-research)
+1. [Rules](#rules)
+1. [The Python Keywords](#the-python-keywords)
+1. [Use of Underscores](#use-of-underscores)
+1. [Readability Matters](#readability-matters)
+1. [Style of Naming Variables](#style-of-naming-variables)
+1. [Sample Variable Names](#sample-variable-names)
+1. [Reference](#reference)
+1. [Further Research](#further-research)
 
 ##### Rules
 
@@ -117,12 +117,12 @@ humps.
 ##### Sample Variable Names
 
 Variable Name | Legal or Illegal?
---- | ---
+---           | ---
 units_per_day | Legal
-dayOfWeek | Legal
-3dGraph | Illegal. Variable names cannot begin with a digit
-June1997 | Legal
-Mixture#3 | Illegal. Variable names may only use letters, digits, or underscores
+dayOfWeek     | Legal
+3dGraph       | Illegal. Variable names cannot begin with a digit
+June1997      | Legal
+Mixture#3     | Illegal. Variable names may only use letters, digits, or underscores
 
 ##### Reference
 
