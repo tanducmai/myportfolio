@@ -30,7 +30,6 @@ follow these rules:
 
 ```text
 1. You cannot use one of Python's keywords as a variable name
-   (see below for a table of keywords).
 
 2. A variable or function name cannot contain spaces.
 
@@ -50,15 +49,15 @@ Keywords define the language’s syntax rules and structure, and they cannot be
 used as variable names. Python has thirty-something keywords (and every now and
 again improvements to Python introduce or eliminate one or two):
 
-Some | Common | Python | Keywords | Include |
---- | --- | --- | --- | --- |
-and | continue | finally | is | raise
-as | def | for | lambda | return
-assert | del | from | None | True
-async | elif | global | nonlocal | try
-await | else | if | not | while
-break | except | import | or | with
-class | False | in | pass | yield
+Some   | Common   | Python  | Keywords | Include
+:---:  | :---:    | :---:   | :---:    | :---:
+and    | continue | finally | is       | raise
+as     | def      | for     | lambda   | return
+assert | del      | from    | None     | True
+async  | elif     | global  | nonlocal | try
+await  | else     | if      | not      | while
+break  | except   | import  | or       | with
+class  | False    | in      | pass     | yield
 
 ##### Readability Matters
 
