@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://blissful-mayer-90b8fc.netlify.app/categories/</loc>
-    <lastmod>2021-12-17T00:00:00+00:00</lastmod>
+    <lastmod>2022-02-21T11:11:42+10:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -14,6 +14,61 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://blissful-mayer-90b8fc.netlify.app/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/tags/database/</loc>
+    <lastmod>2022-02-21T11:11:42+10:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/categories/database/</loc>
+    <lastmod>2022-02-21T11:11:42+10:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/posts/database-fundamentals/</loc>
+    <lastmod>2022-02-21T11:11:42+10:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/tags/fundamentals/</loc>
+    <lastmod>2022-02-21T11:11:42+10:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/posts/</loc>
+    <lastmod>2022-02-21T11:11:42+10:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/tags/</loc>
+    <lastmod>2022-02-21T11:11:42+10:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://blissful-mayer-90b8fc.netlify.app/ja/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blissful-mayer-90b8fc.netlify.app/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/</loc>
+    <lastmod>2022-02-21T11:11:42+10:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://blissful-mayer-90b8fc.netlify.app/ja/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blissful-mayer-90b8fc.netlify.app/"
                 />
   </url>
   
@@ -38,47 +93,7 @@
   </url>
   
   <url>
-    <loc>https://blissful-mayer-90b8fc.netlify.app/tags/</loc>
-    <lastmod>2021-12-17T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://blissful-mayer-90b8fc.netlify.app/ja/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blissful-mayer-90b8fc.netlify.app/tags/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://blissful-mayer-90b8fc.netlify.app/</loc>
-    <lastmod>2021-12-17T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://blissful-mayer-90b8fc.netlify.app/ja/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blissful-mayer-90b8fc.netlify.app/"
-                />
-  </url>
-  
-  <url>
     <loc>https://blissful-mayer-90b8fc.netlify.app/tags/beginner/</loc>
-    <lastmod>2021-12-13T00:00:00+10:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blissful-mayer-90b8fc.netlify.app/tags/fundamentals/</loc>
-    <lastmod>2021-12-13T00:00:00+10:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blissful-mayer-90b8fc.netlify.app/posts/</loc>
     <lastmod>2021-12-13T00:00:00+10:30</lastmod>
   </url>
   

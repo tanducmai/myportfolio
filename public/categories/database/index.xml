@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>fundamentals on Tan Duc Mai</title>
-    <link>https://blissful-mayer-90b8fc.netlify.app/tags/fundamentals/</link>
-    <description>Recent content in fundamentals on Tan Duc Mai</description>
+    <title>database on Tan Duc Mai</title>
+    <link>https://blissful-mayer-90b8fc.netlify.app/categories/database/</link>
+    <description>Recent content in database on Tan Duc Mai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 21 Feb 2022 11:11:42 +1030</lastBuildDate>
     
-	<atom:link href="https://blissful-mayer-90b8fc.netlify.app/tags/fundamentals/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blissful-mayer-90b8fc.netlify.app/categories/database/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,15 +20,6 @@
       <description>What is a database? A collection of tables containing data that are used to retrieve information.
 A collection of potentially useful data that models real-world or conceptual objects and their relationships.
  Objects/Entities like People, Items, Students, etc. Relationships like Henry purchased an apple. Conceptual like films and songs (intangible).  Database Management System (DBMS) A database is managed by a Database Management System - a system that may be manual or computerised.</description>
-    </item>
-    
-    <item>
-      <title>Python Class Fundamentals</title>
-      <link>https://blissful-mayer-90b8fc.netlify.app/posts/python-class-fundamentals/</link>
-      <pubDate>Mon, 13 Dec 2021 00:00:00 +1030</pubDate>
-      
-      <guid>https://blissful-mayer-90b8fc.netlify.app/posts/python-class-fundamentals/</guid>
-      <description>Objects </description>
     </item>
     
   </channel>
