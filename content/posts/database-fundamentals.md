@@ -16,6 +16,7 @@ draft = false
 +++
 
 ### Table of Contents
+
 1. [What Is A Database?](#what-is-a-database)
 1. [Database Management System (DBMS)](#database-management-system)
 1. [Example](#example)

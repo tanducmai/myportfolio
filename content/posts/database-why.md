@@ -15,6 +15,7 @@ draft = false
 +++
 
 ### Table of Contents
+
 1. [Traditional & Physical Data
    Storage](#problems-with-traditional-and-physical-data-storage)
 1. [Modern & Digital Data Storage](#modern-and-digital-data-storage)
