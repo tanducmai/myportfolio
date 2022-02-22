@@ -9,21 +9,21 @@ categories = ['python']
 aliases = "/city-life-turtle-graphics/"
 +++
 
-#### → [GitHub](https://github.com/tanducmai/city-life-turtle-graphics)
+### → [GitHub](https://github.com/tanducmai/city-life-turtle-graphics)
 
-#### Table of Contents
+### Table of Contents
 
 1. [Aim](#aim)
 1. [Implementation](#implementation)
 1. [Output](#output)
 1. [Video Production](https://raw.githubusercontent.com/tanducmai/city-life-turtle-graphics/main/assets/video_production.mp4)
 
-##### Aim
+### Aim
 
 Use Turtle graphics (*turtle* module) to draw an illustration of the city life,
 with house, car, animal, and so on.
 
-##### Implementation
+### Implementation
 
 To begin, I import the *turtle* module, after which I define all of the
 functions I am going to use in the code. I then set the window for the project
@@ -91,7 +91,7 @@ I begin drawing by going through the order:
 - Tail
 ```
 
-##### Output
+### Output
 
 ![The output of the program](/images/city-life-turtle-graphics.jpg)
 

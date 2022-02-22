@@ -9,21 +9,21 @@ categories = ['python']
 aliases = "/multi-level-guessing-game/"
 +++
 
-#### → [GitHub](https://github.com/tanducmai/multi-level-guessing-game)
+### → [GitHub](https://github.com/tanducmai/multi-level-guessing-game)
 
-#### Table of Contents
+### Table of Contents
 
 1. [Aim](#aim)
 1. [Implementation](#implementation)
 1. [Sample Output](https://github.com/tanducmai/multi-level-guessing-game/blob/main/sample_output.pdf)
 
-##### Aim
+### Aim
 
 Create a number guessing game divided into three levels of difficulty.
 I divide this project into small functions and place them in separate files to
 be used as modules.
 
-##### Implementation
+### Implementation
 
 I begin by greeting the user and prompt them to choose which level (easy,
 medium, or hard) they want to play | welcome.py. With that option, I then start
@@ -69,7 +69,7 @@ evaluated with the number generated, and only two options are presented:
 
 In both cases, the game ends and the while loop is displayed.
 
-##### For loop or While loop to be used ?
+### For loop or While loop to be used ?
 
 _While_ loops | _For_ loops
 ------------ | -------------
@@ -83,7 +83,7 @@ user. Furthermore, this loop only gets finished provided that a certain
 condition – the user input guess is between 1 and 5 – is met. This problem,
 therefore, should be addressed with a while loop instead of a for loop.
 
-##### Sample Output ( - [PDF Version](https://github.com/tanducmai/multi-level-guessing-game/blob/main/sample_output.pdf) - )
+### Sample Output ( - [PDF Version](https://github.com/tanducmai/multi-level-guessing-game/blob/main/sample_output.pdf) - )
 
 ```text
 Hello, Welcome to the Number Guessing Game!

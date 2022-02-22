@@ -9,9 +9,9 @@ categories = ['python']
 aliases = "/list-module/"
 +++
 
-#### → [GitHub](https://github.com/tanducmai/list-module)
+### → [GitHub](https://github.com/tanducmai/list-module)
 
-#### Table of Contents
+### Table of Contents
 
 1. [Introduction](#introduction-to-python-lists)
 1. [Aim](#aim-of-the-project)
@@ -20,7 +20,7 @@ aliases = "/list-module/"
 1. [Restrictions](#restrictions)
 1. [Sample Output](https://github.com/tanducmai/list-module/blob/main/sample_output.pdf)
 
-##### Introduction to Python Lists
+### Introduction to Python Lists
 
 A list is an object that contains multiple data items. Lists are mutable, which
 means that their contents can be changed during a program’s execution. Lists are
@@ -33,7 +33,7 @@ For example: Iterating over the list [1, 2, 3, 4]
 Credit: Gaddis, T 2021, *Starting Out With Python*, 5th edn, Pearson Education,
 Inc.
 
-##### Aim of the Project
+### Aim of the Project
 
 Create a list module containing several common Python list methods and built-in
 functions.
@@ -42,7 +42,7 @@ Working on this project helps build a strong understanding of **lists** in
 Python. It also indicates my ability to understand how each list method and
 built-in function works; and to implement them in my program.
 
-##### Implementation
+### Implementation
 
 The program *list_function.py* solely contains functions that have been defined,
 whereas the program *tester.py* is a test driver that is able to be run to check
@@ -59,7 +59,7 @@ The following functions are defined:
 1. remove_index(remove_position, my_list)
 1. get_unique(my_list)
 
-##### Usage
+### Usage
 
 1. size() processes a list and return its length.
 1. to_string() processes a list and return the string version of it.
@@ -74,7 +74,7 @@ The following functions are defined:
 1. get_unique() receives a list and return a copy which contains only the unique
    items from the original list.
 
-##### Restrictions
+### Restrictions
 
 In order to keep the idea of the project pure, the followings are restricted to
 use:
@@ -83,7 +83,7 @@ use:
 - List methods such as index(), pop(), count(), insert().
 - String methods such as join(), split(), count(), index().
 
-##### Sample Output ( - [PDF Version](https://github.com/tanducmai/list-module/blob/main/sample_output.pdf) - )
+### Sample Output ( - [PDF Version](https://github.com/tanducmai/list-module/blob/main/sample_output.pdf) - )
 
 ```text
 -----------------

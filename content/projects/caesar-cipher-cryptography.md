@@ -9,9 +9,9 @@ categories = ['python']
 aliases = "/caesar-cipher-cryptography/"
 +++
 
-#### → [GitHub](https://github.com/tanducmai/caesar-cipher-cryptography)
+### → [GitHub](https://github.com/tanducmai/caesar-cipher-cryptography)
 
-#### Table of Contents
+### Table of Contents
 
 1. [Aim](#aim)
 1. [Introduction](#introduction)
@@ -21,11 +21,11 @@ aliases = "/caesar-cipher-cryptography/"
 1. [Decryption Process](#decryption-process)
 1. [Sample Output](https://github.com/tanducmai/caesar-cipher-cryptography/blob/main/sample_output.pdf)
 
-##### Aim
+### Aim
 
 Use Caesar Cipher technique to encrypt or decrypt an inputted message.
 
-##### Introduction
+### Introduction
 
 A simple way to encrypt data is attributed to [Julius
 Caesar](http://en.wikipedia.org/wiki/Caesar_cipher), the Roman Emperor. This
@@ -45,7 +45,7 @@ Instead of restricting the cipher to the alphabetic characters only, we will use
 all the printable ASCII characters. That is, all the characters from ASCII 32
 (Space) to ASCII 126 (~).
 
-##### Mainly used functions
+### Mainly used functions
 
 1. **ord(c)**
 
@@ -61,7 +61,7 @@ all the printable ASCII characters. That is, all the characters from ASCII 32
 
    For example: *chr(97)* returns the string '*a*'
 
-##### Module *options*
+### Module *options*
 
 Includes many functions that collectively simulate a menu driven program that
 will allow the user to enter commands and process these commands until the quit
@@ -93,7 +93,7 @@ The following commands should be allowed:
 
    Displays a goodbye message to the screen and quits the program.
 
-##### Encryption Process
+### Encryption Process
 
 To start with, choose 1 as the offset. In this case, if the message 'abG' is
 enterered, after the encryption, the result should be 'bcH'. Now that it is
@@ -116,7 +116,7 @@ set, for example, '}' + '}' is 250, and minus 95 is 155. This is still out of
 bounds. Use a loop. Note that if the encrypted string contains characters that
 are not in the table above, then your ASCII values are not 'wrapping' correctly.
 
-##### Decryption Process
+### Decryption Process
 
 The encryption key will be found as the last character in the string.  Subtract
 this offset from the ASCII value of each other character in the message
@@ -133,7 +133,7 @@ decrypt to ASCII 29. This is less than 32 so wrap back to the end by adding the
 total number of characters (95). This gives character '|' (29+95, ASCII 124).
 You may have to add 95 multiple times until it is within the set. Use a loop.
 
-##### Sample Output ( - [PDF Version](https://github.com/tanducmai/caesar-cipher-cryptography/blob/main/sample_output.pdf) - )
+### Sample Output ( - [PDF Version](https://github.com/tanducmai/caesar-cipher-cryptography/blob/main/sample_output.pdf) - )
 
 ```text
 -------------------

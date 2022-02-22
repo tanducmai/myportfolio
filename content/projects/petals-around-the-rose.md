@@ -8,16 +8,16 @@ categories = ['python']
 aliases = "/petals-around-the-rose/"
 +++
 
-#### → [GitHub](https://github.com/tanducmai/petals-around-the-rose)
+### → [GitHub](https://github.com/tanducmai/petals-around-the-rose)
 
-#### Table of Contents
+### Table of Contents
 
 1. [Aim](#aim)
 1. [Introduction](#introduction)
 1. [Further Research](#further-research)
 1. [Sample Output](https://github.com/tanducmai/petals-around-the-rose/blob/main/sample_output.pdf)
 
-##### Aim
+### Aim
 
 Write a Pytram that allows a user to play a game called Petals Around the Rose.
 The program allows the user to repeatedly guess the answer to the puzzle until
@@ -25,7 +25,7 @@ the user chooses to stop guessing/playing. Once the user chooses to stop
 guessing, the program will report the user’s and game play statistics to the
 screen.
 
-##### Introduction
+### Introduction
 
 The name of the game is Petals Around the Rose and the name of the game is
 important.  The computer will roll five dice and ask the user to guess the score
@@ -33,7 +33,7 @@ for the roll. The score will always be an even number (including zero). The
 user’s mission is to work out how the computer calculates the score in order to
 become a Potentate of the Rose.
 
-##### Further Research
+### Further Research
 
 1. To see how this looks in practice, you may like to play a *[web
    version](http://www.borrett.id.au/computing/petals-j.htm)* of the game.
@@ -44,7 +44,7 @@ become a Potentate of the Rose.
    *[formula](https://en.wikipedia.org/wiki/Petals_Around_the_Rose)* for Petals
    Around the Rose.
 
-##### Sample Output ([- PDF Version -](https://github.com/tanducmai/petals-around-the-rose/blob/main/sample_output.pdf))
+### Sample Output ([- PDF Version -](https://github.com/tanducmai/petals-around-the-rose/blob/main/sample_output.pdf))
 
 ```text
 File:         petals.py

@@ -9,15 +9,15 @@ categories = ['python']
 aliases = "/three-prime-checker/"
 +++
 
-#### → [GitHub](https://github.com/tanducmai/three-prime-checker)
+### → [GitHub](https://github.com/tanducmai/three-prime-checker)
 
-#### Table of Contents
+### Table of Contents
 
 1. [Introduction](#introduction)
 1. [Algorithms](#algorithm)
 1. [Sample Output](https://github.com/tanducmai/three-prime-checker/blob/main/sample_output.pdf)
 
-##### Introduction
+### Introduction
 
 I came up with three different algorithms for determining whether a number is
 prime. After running the three, I use a special procedure to time the efficiency
@@ -25,7 +25,7 @@ of each algorithm to find out which is better than another. The core of this
 project is to adopt different perspectives on a problem, with each way of
 handling a problem will have pros or cons over another.
 
-##### Algorithms
+### Algorithms
 
 ```text
 1. Exclude n if n<2. Now, find its square root, then use a for loop in the range
@@ -42,7 +42,7 @@ n, add 1 to the variable divisible. When the loop is finished, if the variable
 divisible is equal to 2 (means only 1 and n is divisible by n), then n is prime.
 ```
 
-##### Sample Output ( - [PDF Version](https://github.com/tanducmai/three-prime-checker/blob/main/sample_output.pdf) - )
+### Sample Output ( - [PDF Version](https://github.com/tanducmai/three-prime-checker/blob/main/sample_output.pdf) - )
 
 ```text
 A program to check if a number is prime.

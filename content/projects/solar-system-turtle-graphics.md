@@ -9,21 +9,21 @@ categories = ['python']
 aliases = "/solar-system-turtle-graphics/"
 +++
 
-#### → [GitHub](https://github.com/tanducmai/solar-system-turtle-graphics)
+### → [GitHub](https://github.com/tanducmai/solar-system-turtle-graphics)
 
-#### Table of Contents
+### Table of Contents
 
 1. [Aim](#aim)
 1. [Implementation](#implementation)
 1. [Output](#output)
 1. [Video Production](https://raw.githubusercontent.com/tanducmai/solar-system-turtle-graphics/main/assets/video_production.mp4)
 
-##### Aim
+### Aim
 
 Use Turtle graphics to draw an illustration of the Solar System, with
 appropriate scaling.
 
-##### Implementation
+### Implementation
 
 There are two algorithms that I constantly use when working with a Python Turtle
 project, which is making a turtle and moving it. Accordingly, I define the two
@@ -74,11 +74,11 @@ As for each planet:
 The last part is to go to the right side of the window and draw a legend table.
 I again use the same for loop iterating over the defined list of eight planets.
 
-##### Output
+### Output
 
 ![The output of the program](/images/solar-system-turtle-graphics.jpg)
 
-##### Video Production
+### Video Production
 
 [Execute the **main**
 module](https://raw.githubusercontent.com/tanducmai/solar-system-turtle-graphics/main/assets/video_production.mp4)

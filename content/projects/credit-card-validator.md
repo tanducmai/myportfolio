@@ -9,9 +9,9 @@ categories = ['python']
 aliases = "/credit-card-validator/"
 +++
 
-#### → [GitHub](https://github.com/tanducmai/credit-card-validator)
+### → [GitHub](https://github.com/tanducmai/credit-card-validator)
 
-##### Introduction
+### Introduction
 
 Chances are you have a credit card in your wallet or purse. Credit card numbers
 have a 'checksum' built into them, a mathematical relationship between at least
@@ -21,7 +21,7 @@ Most cards use an algorithm invented by Hans Peter Luhn, a scientist who worked
 for IBM. According to Luhn's algorithm, this program will validate if a credit
 card number is valid.
 
-##### Sample Output and Pseudocode
+### Sample Output and Pseudocode
 
 {{% portfolio image="/images/credit-card-validator.png" alt="Project Demo" %}}
 

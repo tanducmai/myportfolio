@@ -9,9 +9,9 @@ categories = ['python']
 aliases = "/olympic-medals-turtle-graphics/"
 +++
 
-#### → [GitHub](https://github.com/tanducmai/olympic-medals-turtle-graphics)
+### → [GitHub](https://github.com/tanducmai/olympic-medals-turtle-graphics)
 
-#### Table of Contents
+### Table of Contents
 
 1. [Aim](#aim)
 1. [Leaderboard](#leaderboard)
@@ -19,18 +19,18 @@ aliases = "/olympic-medals-turtle-graphics/"
 1. [Output](#output)
 1. [Video Production](https://raw.githubusercontent.com/tanducmai/olympic-medals-turtle-graphics/main/assets/video_production.mp4)
 
-##### Aim
+### Aim
 
 Use Turtle graphics (*turtle* module) to draw a pie chart representing the share
 of gold medals at the Olympic Games Tokyo as of 2 August 2021.
 
-##### Leaderboard
+### Leaderboard
 
 ![The leaderboard as of 2 August 2021](/images/olympic-medals-turtle-graphics/leaderboard.png)
 
 *Source*: Adelaide Advertiser 3 August 2021
 
-##### Implementation
+### Implementation
 
 To begin, I convert the numbers of gold medals into percentages in order to draw
 the pie chart’s segments. The corresponding percentage is converted by dividing
@@ -101,11 +101,11 @@ country from having the highest portion, China, to having the lowest portion,
 Netherlands. The writing is done with the corresponding colour using the defined
 *country*(colour, y2, name) function.
 
-##### Output
+### Output
 
 ![The output of the program](/images/olympic-medals-turtle-graphics/output.jpg)
 
-##### Video Production
+### Video Production
 
 [Execute the **main**
 module](https://raw.githubusercontent.com/tanducmai/olympic-medals-turtle-graphics/main/assets/video_production.mp4)
