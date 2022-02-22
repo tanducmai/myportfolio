@@ -53,7 +53,7 @@
       <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blissful-mayer-90b8fc.netlify.app/posts/python-naming-conventions/</guid>
-      <description>Rules The Python Keywords Use of Underscores Readability Matters Style of Naming Variables Sample Variable Names Reference Further Research  Rules Although you are allowed to make up your own names for variables, you must follow these rules:
+      <description>Table of Contents  Rules The Python Keywords Use of Underscores Readability Matters Style of Naming Variables Sample Variable Names Reference Further Research  Rules Although you are allowed to make up your own names for variables, you must follow these rules:
 1. You cannot use one of Python&amp;#39;s keywords as a variable name2. A variable or function name cannot contain spaces.3. The first character must be one of the letters a.</description>
     </item>
     

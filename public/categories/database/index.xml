@@ -26,10 +26,9 @@
       <pubDate>Mon, 21 Feb 2022 11:11:42 +1030</pubDate>
       
       <guid>https://blissful-mayer-90b8fc.netlify.app/posts/database-fundamentals/</guid>
-      <description>Table of Contents  What Is A Database? Database Management System (DBMS) Example Why Bother Storing Data? Examples of Facts Analysed from Stored Data  Source: Toptal
+      <description>Table of Contents  What is a Database? Database Management System (DBMS) Example of a Database Why Bother Storing Data? Examples of Facts Analysed from Stored Data How to Query the Database? More about the Role of a DBMS Structure of a DBMS  Source: Toptal
 What Is A Database A collection of tables containing data that are used to retrieve information.
-A collection of potentially useful data that models real-world or conceptual objects and their relationships.
- Objects/Entities like People, Items, Students, etc. Relationships like Henry purchased an apple.</description>
+A collection of potentially useful data that models real-world or conceptual objects and their relationships.</description>
     </item>
     
   </channel>
