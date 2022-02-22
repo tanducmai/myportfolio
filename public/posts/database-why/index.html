@@ -11,22 +11,22 @@
 
     <meta property="og:site_name" content="Tan Duc Mai">
     <meta property="og:title" content="
-  Class Fundamentals - Tan Duc Mai
+  Database - Why? - Tan Duc Mai
 ">
-    <meta property="og:description" content="">
+    <meta property="og:description" content="Why Databases?">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://blissful-mayer-90b8fc.netlify.app/posts/class-fundamentals/">
-    <meta property="og:image" content="https://blissful-mayer-90b8fc.netlify.app/images/tn.png">
+    <meta property="og:url" content="https://blissful-mayer-90b8fc.netlify.app/posts/database-why/">
+    <meta property="og:image" content="https://blissful-mayer-90b8fc.netlify.app/images/database-fundamentals.png">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="https://blissful-mayer-90b8fc.netlify.app/posts/class-fundamentals/">
-    <meta name="twitter:image" content="https://blissful-mayer-90b8fc.netlify.app/images/tn.png">
+    <meta name="twitter:site" content="https://blissful-mayer-90b8fc.netlify.app/posts/database-why/">
+    <meta name="twitter:image" content="https://blissful-mayer-90b8fc.netlify.app/images/database-fundamentals.png">
 
-    <base href="https://blissful-mayer-90b8fc.netlify.app/posts/class-fundamentals/">
+    <base href="https://blissful-mayer-90b8fc.netlify.app/posts/database-why/">
     <title>
-  Class Fundamentals - Tan Duc Mai
+  Database - Why? - Tan Duc Mai
 </title>
 
-    <link rel="canonical" href="https://blissful-mayer-90b8fc.netlify.app/posts/class-fundamentals/">
+    <link rel="canonical" href="https://blissful-mayer-90b8fc.netlify.app/posts/database-why/">
     
     <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
     <link rel="stylesheet" href="/css/normalize.min.css">
@@ -108,26 +108,61 @@
   <section class="container post">
   <article>
     <header>
-      <h1 class="title">Class Fundamentals</h1>
-      <h2 class="date">September 26, 2021</h2>
+      <h1 class="title">Database - Why?</h1>
+      <h2 class="date">February 21, 2022</h2>
 
       
     </header>
 
-    <p>date = &ldquo;2021-12-29&rdquo;
-title = &ldquo;Python Naming Conventions&rdquo;
-slug = &ldquo;python-naming-conventions&rdquo;
-description = &ldquo;Python Naming Conventions&rdquo;
-aliases = &ldquo;/python-naming-conventions/&rdquo;
-tags = [
-&ldquo;python&rdquo;,
-&ldquo;beginner&rdquo;,
-&ldquo;syntax&rdquo;,
-]
-categories = [
-&ldquo;syntax&rdquo;,
-&ldquo;clean-code&rdquo;,
-]</p>
+    <h3 id="table-of-contents">Table of Contents</h3>
+<ol>
+<li><a href="#problems-with-traditional-and-physical-data-storage">Traditional &amp; Physical Data
+Storage</a></li>
+<li><a href="#modern-and-digital-data-storage">Modern &amp; Digital Data Storage</a></li>
+</ol>
+<h3 id="problems-with-traditional-and-physical-data-storage">Problems With Traditional And Physical Data Storage</h3>
+<ol>
+<li>Limited by physical size</li>
+<li>Limited multi-access - a borrowed book can only be viewed by one person at a
+time.</li>
+<li>Limited search methods (title, author, subject)</li>
+<li>Slow turn-around</li>
+<li>Multiple indexes that must be rigorously maintained.</li>
+<li>Complex Query Limitations - vast amounts of time wasted counting the number
+of books on a subject or by an author.</li>
+<li>Anomalies: - What IFs:</li>
+</ol>
+<ul>
+<li>A card is misplaced?</li>
+<li>A catalogue card is misplaced?</li>
+<li>An item is entered into / deleted in one index but not the others?</li>
+</ul>
+<p><img src="/images/database-why/traditional.webp" alt="Traditional Data Storage">
+Source:
+<em><a href="https://www.britannica.com/story/a-brief-history-of-libraries">Britannica</a></em></p>
+<h3 id="modern-and-digital-data-storage">Modern And Digital Data Storage</h3>
+<p>Data can now be stored in files, such as text files, Excel sheets, Word
+documents.</p>
+<p><img src="/images/database-why/modern.jpg" alt="Modern Data Storage">
+Source: <em><a href="https://orangematter.solarwinds.com/2018/09/06/databases-101-factors-to-consider-when-choosing-a-database/">Orange
+Matter</a></em></p>
+<h5 id="advantages">Advantages</h5>
+<ol>
+<li>Low cost</li>
+<li>No extra software / hardware is needed</li>
+</ol>
+<h5 id="disadvantages">Disadvantages</h5>
+<ol>
+<li>Size - the larger the volume of data, the slower the retrieval of them (yet
+still better than physical data).</li>
+<li>Update / Synchronisation - files are hard to share. Updates from multiple
+users often end up with multiple versions of the same file or even
+overwriting someone&rsquo;s changes!</li>
+<li>Accuracy - duplication is wasteful and can cause confusion (inconsistent
+data).</li>
+<li>Security - restriction to some fields is more difficult to manage (e.g., Tax
+File Numbers, IDs + usernames).</li>
+</ol>
 
   </article>
 

@@ -111,8 +111,8 @@
       <h1>Caesar Cipher Cryptography</h1>
     </header>
 
-    <h4 id="-githubhttpsgithubcomtanducmaicaesar-cipher-cryptography">→ <a href="https://github.com/tanducmai/caesar-cipher-cryptography">GitHub</a></h4>
-<h4 id="table-of-contents">Table of Contents</h4>
+    <h3 id="-githubhttpsgithubcomtanducmaicaesar-cipher-cryptography">→ <a href="https://github.com/tanducmai/caesar-cipher-cryptography">GitHub</a></h3>
+<h3 id="table-of-contents">Table of Contents</h3>
 <ol>
 <li><a href="#aim">Aim</a></li>
 <li><a href="#introduction">Introduction</a></li>
@@ -122,9 +122,9 @@
 <li><a href="#decryption-process">Decryption Process</a></li>
 <li><a href="https://github.com/tanducmai/caesar-cipher-cryptography/blob/main/sample_output.pdf">Sample Output</a></li>
 </ol>
-<h5 id="aim">Aim</h5>
+<h3 id="aim">Aim</h3>
 <p>Use Caesar Cipher technique to encrypt or decrypt an inputted message.</p>
-<h5 id="introduction">Introduction</h5>
+<h3 id="introduction">Introduction</h3>
 <p>A simple way to encrypt data is attributed to <a href="http://en.wikipedia.org/wiki/Caesar_cipher">Julius
 Caesar</a>, the Roman Emperor. This
 method takes each character in a message and replaces it with one which is a
@@ -138,7 +138,7 @@ offset -3).</p>
 <p>Instead of restricting the cipher to the alphabetic characters only, we will use
 all the printable ASCII characters. That is, all the characters from ASCII 32
 (Space) to ASCII 126 (~).</p>
-<h5 id="mainly-used-functions">Mainly used functions</h5>
+<h3 id="mainly-used-functions">Mainly used functions</h3>
 <ol>
 <li>
 <p><strong>ord(c)</strong></p>
@@ -153,7 +153,7 @@ with an ASCII code is equal to the integer <em>i</em>.</p>
 <p>For example: <em>chr(97)</em> returns the string &lsquo;<em>a</em>&rsquo;</p>
 </li>
 </ol>
-<h5 id="module-options">Module <em>options</em></h5>
+<h3 id="module-options">Module <em>options</em></h3>
 <p>Includes many functions that collectively simulate a menu driven program that
 will allow the user to enter commands and process these commands until the quit
 command is entered.</p>
@@ -184,7 +184,7 @@ should then be removed from the message.</p>
 <p>Displays a goodbye message to the screen and quits the program.</p>
 </li>
 </ol>
-<h5 id="encryption-process">Encryption Process</h5>
+<h3 id="encryption-process">Encryption Process</h3>
 <p>To start with, choose 1 as the offset. In this case, if the message &lsquo;abG&rsquo; is
 enterered, after the encryption, the result should be &lsquo;bcH&rsquo;. Now that it is
 working, use the <em>randint()</em> function from the <em>random</em> module to make the
@@ -202,7 +202,7 @@ ASCII 34). You may have to subtract 95 multiple times until it is within the
 set, for example, &lsquo;}&rsquo; + &lsquo;}&rsquo; is 250, and minus 95 is 155. This is still out of
 bounds. Use a loop. Note that if the encrypted string contains characters that
 are not in the table above, then your ASCII values are not &lsquo;wrapping&rsquo; correctly.</p>
-<h5 id="decryption-process">Decryption Process</h5>
+<h3 id="decryption-process">Decryption Process</h3>
 <p>The encryption key will be found as the last character in the string.  Subtract
 this offset from the ASCII value of each other character in the message
 variable. These ASCII values will then need to be converted back to characters
@@ -215,7 +215,7 @@ set.</p>
 decrypt to ASCII 29. This is less than 32 so wrap back to the end by adding the
 total number of characters (95). This gives character &lsquo;|&rsquo; (29+95, ASCII 124).
 You may have to add 95 multiple times until it is within the set. Use a loop.</p>
-<h5 id="sample-output----pdf-versionhttpsgithubcomtanducmaicaesar-cipher-cryptographyblobmainsample_outputpdf---">Sample Output ( - <a href="https://github.com/tanducmai/caesar-cipher-cryptography/blob/main/sample_output.pdf">PDF Version</a> - )</h5>
+<h3 id="sample-output----pdf-versionhttpsgithubcomtanducmaicaesar-cipher-cryptographyblobmainsample_outputpdf---">Sample Output ( - <a href="https://github.com/tanducmai/caesar-cipher-cryptography/blob/main/sample_output.pdf">PDF Version</a> - )</h3>
 <div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">-------------------
      MAIN MENU
 -------------------

@@ -12,18 +12,19 @@
     
     
     <item>
-      <title>Database Fundamentals</title>
+      <title>Database - Fundamentals</title>
       <link>https://blissful-mayer-90b8fc.netlify.app/posts/database-fundamentals/</link>
       <pubDate>Mon, 21 Feb 2022 11:11:42 +1030</pubDate>
       
       <guid>https://blissful-mayer-90b8fc.netlify.app/posts/database-fundamentals/</guid>
-      <description>What is a database? A collection of tables containing data that are used to retrieve information.
+      <description>Table of Contents  What Is A Database? Database Management System (DBMS) Example Why Bother Storing Data? Examples of Facts Analysed from Stored Data  Source: Toptal
+What Is A Database A collection of tables containing data that are used to retrieve information.
 A collection of potentially useful data that models real-world or conceptual objects and their relationships.
- Objects/Entities like People, Items, Students, etc. Relationships like Henry purchased an apple. Conceptual like films and songs (intangible).  Database Management System (DBMS) A database is managed by a Database Management System - a system that may be manual or computerised.</description>
+ Objects/Entities like People, Items, Students, etc. Relationships like Henry purchased an apple.</description>
     </item>
     
     <item>
-      <title>Python Class Fundamentals</title>
+      <title>Python - Class Fundamentals</title>
       <link>https://blissful-mayer-90b8fc.netlify.app/posts/python-class-fundamentals/</link>
       <pubDate>Mon, 13 Dec 2021 00:00:00 +1030</pubDate>
       
