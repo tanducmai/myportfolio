@@ -15,6 +15,8 @@ categories = [
 ]
 +++
 
+### Table of Contents
+
 1. [Rules](#rules)
 1. [The Python Keywords](#the-python-keywords)
 1. [Use of Underscores](#use-of-underscores)
@@ -24,7 +26,7 @@ categories = [
 1. [Reference](#reference)
 1. [Further Research](#further-research)
 
-##### Rules
+### Rules
 
 Although you are allowed to make up your own names for variables, you must
 follow these rules:
@@ -44,7 +46,7 @@ follow these rules:
    named 'ItemsOrdered' is not akin to the one named 'itemsordered'.
 ```
 
-##### The Python Keywords
+### The Python Keywords
 
 Keywords define the language’s syntax rules and structure, and they cannot be
 used as variable names. Python has thirty-something keywords (and every now and
@@ -60,7 +62,7 @@ await  | else     | if      | not      | while
 break  | except   | import  | or       | with
 class  | False    | in      | pass     | yield
 
-##### Use of Underscores
+### Use of Underscores
 
 With regards to naming conventions, names with leading underscores are intended
 to be private to a class, and names starting with double underscores may have
@@ -68,7 +70,7 @@ special meaning, such as `__init__` or `__add__`.
 
 Therefore, avoid using names that start with double underscores.
 
-##### Readability Matters
+### Readability Matters
 
 Because a variable's name should reflect the variable’s purpose, programmers
 often find themselves creating names that are made of multiple words. For
@@ -91,7 +93,7 @@ shown:
 - pay_rate
 - hot_dogs_sold_today
 
-##### Style of Naming Variables
+### Style of Naming Variables
 
 In terms of the above section, using underscore characters to separate words in
 a variable name is a popular style among Python programmers. Nonetheless, there
@@ -114,7 +116,7 @@ For example, the following variable names are written in camelCase:
 because the uppercase characters that appear in a name may suggest a camel’s
 humps.
 
-##### Sample Variable Names
+### Sample Variable Names
 
 Variable Name | Legal or Illegal?
 ---           | ---
@@ -124,11 +126,11 @@ dayOfWeek     | Legal
 June1997      | Legal
 Mixture#3     | Illegal. Variable names may only use letters, digits, or underscores
 
-##### Reference
+### Reference
 
 Gaddis, T 2021, *Starting Out With Python*, 5th edn, Pearson Education, Inc.
 
-##### Further Research
+### Further Research
 
 For a comprehensive, complete documentation, please see
 *[PEP-8](https://www.python.org/dev/peps/pep-0008/#naming-conventions)*.
