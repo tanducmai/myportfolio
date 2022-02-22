@@ -1,10 +1,10 @@
 +++
-date = 2022-02-21T11:23:37+10:30
+date = 2022-02-21T06:23:37+10:30
 title = "Database - Why?"
 slug = "database-why"
 aliases = "/database-why/"
 description = "Why Databases?"
-thumbnail = "images/database-fundamentals.png"
+thumbnail = "images/database-why/modern.jpg"
 tags = [
     "database",
 ]

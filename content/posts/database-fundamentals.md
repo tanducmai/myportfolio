@@ -1,10 +1,10 @@
 +++
-date = 2022-02-21T11:11:42+10:30
+date = 2022-02-21T05:11:42+10:30
 title = "Database - Fundamentals"
 slug = "database-fundamentals"
 aliases = "/database-fundamentals/"
 description = "Database Fundamentals"
-thumbnail = "images/database-fundamentals.png"
+thumbnail = "images/database-fundamentals/database.png"
 tags = [
     "database",
     "fundamentals",
