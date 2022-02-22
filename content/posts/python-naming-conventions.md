@@ -1,6 +1,6 @@
 +++
 date = "2021-10-11"
-title = "Python Naming Conventions"
+title = "Python - Naming Conventions"
 slug = "python-naming-conventions"
 description = "Python Naming Conventions"
 aliases = "/python-naming-conventions/"
