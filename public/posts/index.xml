@@ -6,15 +6,26 @@
     <description>Recent content in Posts on Tan Duc Mai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 21 Feb 2022 11:23:37 +1030</lastBuildDate>
+    <lastBuildDate>Wed, 23 Feb 2022 07:58:02 +1030</lastBuildDate>
     
 	<atom:link href="https://blissful-mayer-90b8fc.netlify.app/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Database - Relational Concepts</title>
+      <link>https://blissful-mayer-90b8fc.netlify.app/posts/database-relational-concepts/</link>
+      <pubDate>Wed, 23 Feb 2022 07:58:02 +1030</pubDate>
+      
+      <guid>https://blissful-mayer-90b8fc.netlify.app/posts/database-relational-concepts/</guid>
+      <description>Table of Contents  General Terminology  General Terminology    Relational Name Common Name Alternative     relation table -   attribute colum field   tuple row record    Within a table, every column name must be UNIQUE.
+Within a Table every row must be UNIQUE (no duplicate data!).
+Every Row must have a unique Primary Key that can identify that data row only!</description>
+    </item>
+    
+    <item>
       <title>Database - Why?</title>
       <link>https://blissful-mayer-90b8fc.netlify.app/posts/database-why/</link>
-      <pubDate>Mon, 21 Feb 2022 11:23:37 +1030</pubDate>
+      <pubDate>Tue, 22 Feb 2022 06:23:37 +1030</pubDate>
       
       <guid>https://blissful-mayer-90b8fc.netlify.app/posts/database-why/</guid>
       <description>Table of Contents  Traditional &amp;amp; Physical Data Storage Modern &amp;amp; Digital Data Storage  Problems With Traditional And Physical Data Storage  Limited by physical size Limited multi-access - a borrowed book can only be viewed by one person at a time. Limited search methods (title, author, subject) Slow turn-around Multiple indexes that must be rigorously maintained. Complex Query Limitations - vast amounts of time wasted counting the number of books on a subject or by an author.</description>
@@ -23,7 +34,7 @@
     <item>
       <title>Database - Fundamentals</title>
       <link>https://blissful-mayer-90b8fc.netlify.app/posts/database-fundamentals/</link>
-      <pubDate>Mon, 21 Feb 2022 11:11:42 +1030</pubDate>
+      <pubDate>Mon, 21 Feb 2022 05:11:42 +1030</pubDate>
       
       <guid>https://blissful-mayer-90b8fc.netlify.app/posts/database-fundamentals/</guid>
       <description>Table of Contents  What is a Database? Database Management System (DBMS) Example of a Database Why Bother Storing Data? Examples of Facts Analysed from Stored Data How to Query the Database? More about the Role of a DBMS Structure of a DBMS  Source: Toptal

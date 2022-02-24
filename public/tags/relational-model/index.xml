@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>relational model on Tan Duc Mai</title>
+    <link>https://blissful-mayer-90b8fc.netlify.app/tags/relational-model/</link>
+    <description>Recent content in relational model on Tan Duc Mai</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 23 Feb 2022 07:58:02 +1030</lastBuildDate>
+    
+	<atom:link href="https://blissful-mayer-90b8fc.netlify.app/tags/relational-model/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Database - Relational Concepts</title>
+      <link>https://blissful-mayer-90b8fc.netlify.app/posts/database-relational-concepts/</link>
+      <pubDate>Wed, 23 Feb 2022 07:58:02 +1030</pubDate>
+      
+      <guid>https://blissful-mayer-90b8fc.netlify.app/posts/database-relational-concepts/</guid>
+      <description>Table of Contents  General Terminology  General Terminology    Relational Name Common Name Alternative     relation table -   attribute colum field   tuple row record    Within a table, every column name must be UNIQUE.
+Within a Table every row must be UNIQUE (no duplicate data!).
+Every Row must have a unique Primary Key that can identify that data row only!</description>
+    </item>
+    
+  </channel>
+</rss>

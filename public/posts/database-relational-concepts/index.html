@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Tan Duc Mai">
+    <meta name="description" content="https://blissful-mayer-90b8fc.netlify.app/">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta property="og:site_name" content="Tan Duc Mai">
+    <meta property="og:title" content="
+  Database - Relational Concepts - Tan Duc Mai
+">
+    <meta property="og:description" content="Database - Relational Concepts">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://blissful-mayer-90b8fc.netlify.app/posts/database-relational-concepts/">
+    <meta property="og:image" content="https://blissful-mayer-90b8fc.netlify.app/images/database-fundamentals/database.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://blissful-mayer-90b8fc.netlify.app/posts/database-relational-concepts/">
+    <meta name="twitter:image" content="https://blissful-mayer-90b8fc.netlify.app/images/database-fundamentals/database.png">
+
+    <base href="https://blissful-mayer-90b8fc.netlify.app/posts/database-relational-concepts/">
+    <title>
+  Database - Relational Concepts - Tan Duc Mai
+</title>
+
+    <link rel="canonical" href="https://blissful-mayer-90b8fc.netlify.app/posts/database-relational-concepts/">
+    
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="/css/normalize.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    
+      <link rel="alternate" href="https://blissful-mayer-90b8fc.netlify.app/index.xml" type="application/rss+xml" title="Tan Duc Mai">
+      <link href="https://blissful-mayer-90b8fc.netlify.app/index.xml" rel="feed" type="application/rss+xml" title="Tan Duc Mai" />
+    
+
+    <meta name="generator" content="Hugo 0.68.3" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">Tan Duc Mai</a>
+    <input type="checkbox" id="menu-control"/>
+    <label class="menu-mobile  float-right " for="menu-control">
+      <span class="btn-mobile  float-right ">&#9776;</span>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://blissful-mayer-90b8fc.netlify.app/about">About</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://blissful-mayer-90b8fc.netlify.app/posts">Blog</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://blissful-mayer-90b8fc.netlify.app/projects">Portfolio</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            <li class= " mobile-menu-lang-separator-centered ">
+              <hr />
+            </li>
+          
+          
+            
+          
+            
+              
+                
+                  <li class="multilingual-separator">
+                    <p>|</p>
+                  </li>
+                
+                
+              
+              <li class="navigation-item  align-center ">
+                <a href="https://blissful-mayer-90b8fc.netlify.app/ja/">Japanese</a>
+              </li>
+            
+          
+        
+      </ul>
+    </label>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+  <article>
+    <header>
+      <h1 class="title">Database - Relational Concepts</h1>
+      <h2 class="date">February 23, 2022</h2>
+
+      
+    </header>
+
+    <h3 id="table-of-contents">Table of Contents</h3>
+<ol>
+<li><a href="#terminology">General Terminology</a></li>
+</ol>
+<h3 id="general-terminology">General Terminology</h3>
+<table>
+<thead>
+<tr>
+<th align="center">Relational Name</th>
+<th align="center">Common Name</th>
+<th align="center">Alternative</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">relation</td>
+<td align="center">table</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">attribute</td>
+<td align="center">colum</td>
+<td align="center">field</td>
+</tr>
+<tr>
+<td align="center">tuple</td>
+<td align="center">row</td>
+<td align="center">record</td>
+</tr>
+</tbody>
+</table>
+<p>Within a table, every <strong>column name</strong> must be UNIQUE.</p>
+<p>Within a Table every <strong>row</strong> must be UNIQUE (no duplicate data!).</p>
+<p>Every Row must have a <strong>unique Primary Key</strong> that can identify that data row
+only!</p>
+<h3 id="relations">Relations</h3>
+<p>A <strong>RELATION</strong> defines a <em>real world</em> or <em>conceptual</em> object we collect
+information about.</p>
+<p>When a relation is implemented in a Database Management System (DBMS), it is
+often called a Table.</p>
+<p>A relational database (model) consists of a serries of relations with distinct
+names.</p>
+<p>For example, the SCHOOL table stores LecturerInfo, StudentID, Courses.</p>
+<h3 id="attributes">Attributes</h3>
+<p>An <strong>ATTRIBUTE</strong> is a name assigned to column in a relational table.</p>
+<p>Each Attribute must have a unique name in a given relational table.</p>
+<p>For example, the SCHOOL table has columns (attributes) for collecting the
+Lecturer’s information, Student ID, and Courses.</p>
+<p>Every attribute has a <strong>domain</strong>.</p>
+<h3 id="domains">Domains</h3>
+<p>A <strong>Domain</strong> dictates - determines the acceptable values of an attribute.</p>
+<p>To simplify, a domain is often referred to as a data type - as in Programming.</p>
+<p>For a list of common Database data type, please read:
+<em><a href="https://www.w3schools.com/sql/sql_datatypes.asp">W3Schools</a></em> or
+<em><a href="https://teachcomputerscience.com/database-data-types/">Teach Computer Science</a></em></p>
+<p>For example:</p>
+<table>
+<thead>
+<tr>
+<th>Attribute Name</th>
+<th>Domain (Data Type)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FirstName</td>
+<td>varchar</td>
+</tr>
+<tr>
+<td>LastName</td>
+<td>varchar</td>
+</tr>
+<tr>
+<td>Email</td>
+<td>varchar</td>
+</tr>
+<tr>
+<td>ContactNo</td>
+<td>char</td>
+</tr>
+<tr>
+<td>Username</td>
+<td>varchar</td>
+</tr>
+<tr>
+<td>AddressLine1</td>
+<td>varchar</td>
+</tr>
+<tr>
+<td>AddressLine2</td>
+<td>varchar</td>
+</tr>
+</tbody>
+</table>
+<h3 id="table-schemas">Table Schemas</h3>
+<p>A <strong>TABLE SCHEMA</strong> defines the structure of a relational table in a relational
+database.</p>
+<p>Format: RELATION_NAME(attributeNames)</p>
+<p>Example: CUSTOMER(CustomerID, FirstName, FamilyName, Address, Age)</p>
+<h3 id="tuples">Tuples</h3>
+<p>A <strong>TUPLE</strong> is an instance of a relation or entity and contains the actual raw data.</p>
+<p>To simplify, a Tuple is a row of data.</p>
+<p>A relation consists of one or more unordered tuples</p>
+<p>Within a relation, every tuple has a fixed number of values, hence the name
+&lsquo;tuple&rsquo;.</p>
+<h3 id="keys">Keys</h3>
+<p>A <strong>KEY</strong> is a set of one or more attributes whose values can uniquely identify
+a given tuple in a relation.</p>
+<p>There are generally six types of keys:</p>
+<ol>
+<li>Primary Key (PK) is a value that identifies a particular tuple.</li>
+<li>Candidate Key (CK) (name given to all keys)</li>
+<li>Super Key</li>
+<li>Unique Key</li>
+<li>Surrogate Key</li>
+<li>Natural Key</li>
+</ol>
+<h3 id="put-it-all-together">Put it all together</h3>
+<p><img src="/images/database-relational-concepts/terms-and-notations.png" alt="Terms andNotations"></p>
+
+  </article>
+
+  <br/>
+
+  
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "tanducmai" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
+  
+</section>
+
+      </div>
+      
+    </main>
+
+    
+
+  <script src="/js/app.js"></script>
+  
+  </body>
+</html>

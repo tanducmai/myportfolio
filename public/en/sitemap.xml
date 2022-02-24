@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://blissful-mayer-90b8fc.netlify.app/categories/</loc>
-    <lastmod>2022-02-21T11:23:37+10:30</lastmod>
+    <lastmod>2022-02-23T07:58:02+10:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -19,27 +19,42 @@
   
   <url>
     <loc>https://blissful-mayer-90b8fc.netlify.app/tags/database/</loc>
-    <lastmod>2022-02-21T11:23:37+10:30</lastmod>
+    <lastmod>2022-02-23T07:58:02+10:30</lastmod>
   </url>
   
   <url>
     <loc>https://blissful-mayer-90b8fc.netlify.app/categories/database/</loc>
-    <lastmod>2022-02-21T11:23:37+10:30</lastmod>
+    <lastmod>2022-02-23T07:58:02+10:30</lastmod>
   </url>
   
   <url>
-    <loc>https://blissful-mayer-90b8fc.netlify.app/posts/database-why/</loc>
-    <lastmod>2022-02-21T11:23:37+10:30</lastmod>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/posts/database-relational-concepts/</loc>
+    <lastmod>2022-02-23T07:58:02+10:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/tags/fundamentals/</loc>
+    <lastmod>2022-02-23T07:58:02+10:30</lastmod>
   </url>
   
   <url>
     <loc>https://blissful-mayer-90b8fc.netlify.app/posts/</loc>
-    <lastmod>2022-02-21T11:23:37+10:30</lastmod>
+    <lastmod>2022-02-23T07:58:02+10:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/tags/relational-concepts/</loc>
+    <lastmod>2022-02-23T07:58:02+10:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/tags/relational-model/</loc>
+    <lastmod>2022-02-23T07:58:02+10:30</lastmod>
   </url>
   
   <url>
     <loc>https://blissful-mayer-90b8fc.netlify.app/tags/</loc>
-    <lastmod>2022-02-21T11:23:37+10:30</lastmod>
+    <lastmod>2022-02-23T07:58:02+10:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -54,7 +69,7 @@
   
   <url>
     <loc>https://blissful-mayer-90b8fc.netlify.app/</loc>
-    <lastmod>2022-02-21T11:23:37+10:30</lastmod>
+    <lastmod>2022-02-23T07:58:02+10:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -68,13 +83,13 @@
   </url>
   
   <url>
-    <loc>https://blissful-mayer-90b8fc.netlify.app/posts/database-fundamentals/</loc>
-    <lastmod>2022-02-21T11:11:42+10:30</lastmod>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/posts/database-why/</loc>
+    <lastmod>2022-02-22T06:23:37+10:30</lastmod>
   </url>
   
   <url>
-    <loc>https://blissful-mayer-90b8fc.netlify.app/tags/fundamentals/</loc>
-    <lastmod>2022-02-21T11:11:42+10:30</lastmod>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/posts/database-fundamentals/</loc>
+    <lastmod>2022-02-21T05:11:42+10:30</lastmod>
   </url>
   
   <url>
