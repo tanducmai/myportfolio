@@ -64,7 +64,7 @@ Each Attribute must have a unique name in a given relational table.
 For example, the SCHOOL table has columns (attributes) for collecting the
 Lecturer’s information, Student ID, and Courses.
 
-Every attribute has a **domain**.
+Every attribute has a domain.
 
 ### Domains
 
@@ -93,7 +93,7 @@ For example:
 A **TABLE SCHEMA** defines the structure of a relational table in a relational
 database.
 
-Format: RELATION_NAME(attributeNames)
+Format: [ **RELATION_NAME(AttributeNames)** ]
 
 Example: CUSTOMER(CustomerID, FirstName, FamilyName, Address, Age)
 
