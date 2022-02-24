@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Tan Duc Mai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 23 Feb 2022 07:58:02 +1030</lastBuildDate>
+    <lastBuildDate>Thu, 24 Feb 2022 21:29:52 +1030</lastBuildDate>
     
 	<atom:link href="https://blissful-mayer-90b8fc.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>database</title>
       <link>https://blissful-mayer-90b8fc.netlify.app/tags/database/</link>
-      <pubDate>Wed, 23 Feb 2022 07:58:02 +1030</pubDate>
+      <pubDate>Thu, 24 Feb 2022 21:29:52 +1030</pubDate>
       
       <guid>https://blissful-mayer-90b8fc.netlify.app/tags/database/</guid>
       <description></description>
@@ -23,9 +23,27 @@
     <item>
       <title>fundamentals</title>
       <link>https://blissful-mayer-90b8fc.netlify.app/tags/fundamentals/</link>
-      <pubDate>Wed, 23 Feb 2022 07:58:02 +1030</pubDate>
+      <pubDate>Thu, 24 Feb 2022 21:29:52 +1030</pubDate>
       
       <guid>https://blissful-mayer-90b8fc.netlify.app/tags/fundamentals/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>key concepts</title>
+      <link>https://blissful-mayer-90b8fc.netlify.app/tags/key-concepts/</link>
+      <pubDate>Thu, 24 Feb 2022 21:29:52 +1030</pubDate>
+      
+      <guid>https://blissful-mayer-90b8fc.netlify.app/tags/key-concepts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>relational model</title>
+      <link>https://blissful-mayer-90b8fc.netlify.app/tags/relational-model/</link>
+      <pubDate>Thu, 24 Feb 2022 21:29:52 +1030</pubDate>
+      
+      <guid>https://blissful-mayer-90b8fc.netlify.app/tags/relational-model/</guid>
       <description></description>
     </item>
     
@@ -35,15 +53,6 @@
       <pubDate>Wed, 23 Feb 2022 07:58:02 +1030</pubDate>
       
       <guid>https://blissful-mayer-90b8fc.netlify.app/tags/relational-concepts/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>relational model</title>
-      <link>https://blissful-mayer-90b8fc.netlify.app/tags/relational-model/</link>
-      <pubDate>Wed, 23 Feb 2022 07:58:02 +1030</pubDate>
-      
-      <guid>https://blissful-mayer-90b8fc.netlify.app/tags/relational-model/</guid>
       <description></description>
     </item>
     

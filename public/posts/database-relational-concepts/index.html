@@ -16,10 +16,10 @@
     <meta property="og:description" content="Database - Relational Concepts">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://blissful-mayer-90b8fc.netlify.app/posts/database-relational-concepts/">
-    <meta property="og:image" content="https://blissful-mayer-90b8fc.netlify.app/images/database-fundamentals/database.png">
+    <meta property="og:image" content="https://blissful-mayer-90b8fc.netlify.app/images/database-relational-concepts/terms-and-notations.png">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="https://blissful-mayer-90b8fc.netlify.app/posts/database-relational-concepts/">
-    <meta name="twitter:image" content="https://blissful-mayer-90b8fc.netlify.app/images/database-fundamentals/database.png">
+    <meta name="twitter:image" content="https://blissful-mayer-90b8fc.netlify.app/images/database-relational-concepts/terms-and-notations.png">
 
     <base href="https://blissful-mayer-90b8fc.netlify.app/posts/database-relational-concepts/">
     <title>
@@ -117,6 +117,12 @@
     <h3 id="table-of-contents">Table of Contents</h3>
 <ol>
 <li><a href="#terminology">General Terminology</a></li>
+<li><a href="#relations">Relations</a></li>
+<li><a href="#attributes">Attributes</a></li>
+<li><a href="#domains">Domains</a></li>
+<li><a href="#table-schemas">Table Schemas</a></li>
+<li><a href="#tuples">Tuples</a></li>
+<li><a href="#put-it-all-together">Put It All Together</a></li>
 </ol>
 <h3 id="general-terminology">General Terminology</h3>
 <table>
@@ -162,7 +168,7 @@ names.</p>
 <p>Each Attribute must have a unique name in a given relational table.</p>
 <p>For example, the SCHOOL table has columns (attributes) for collecting the
 Lecturer’s information, Student ID, and Courses.</p>
-<p>Every attribute has a <strong>domain</strong>.</p>
+<p>Every attribute has a domain.</p>
 <h3 id="domains">Domains</h3>
 <p>A <strong>Domain</strong> dictates - determines the acceptable values of an attribute.</p>
 <p>To simplify, a domain is often referred to as a data type - as in Programming.</p>
@@ -211,27 +217,16 @@ Lecturer’s information, Student ID, and Courses.</p>
 <h3 id="table-schemas">Table Schemas</h3>
 <p>A <strong>TABLE SCHEMA</strong> defines the structure of a relational table in a relational
 database.</p>
-<p>Format: RELATION_NAME(attributeNames)</p>
+<p>Format: [ <strong>RELATION_NAME(AttributeNames)</strong> ]</p>
 <p>Example: CUSTOMER(CustomerID, FirstName, FamilyName, Address, Age)</p>
 <h3 id="tuples">Tuples</h3>
-<p>A <strong>TUPLE</strong> is an instance of a relation or entity and contains the actual raw data.</p>
+<p>A <strong>TUPLE</strong> is an instance of a relation or entity and contains the actual raw
+data.</p>
 <p>To simplify, a Tuple is a row of data.</p>
 <p>A relation consists of one or more unordered tuples</p>
 <p>Within a relation, every tuple has a fixed number of values, hence the name
 &lsquo;tuple&rsquo;.</p>
-<h3 id="keys">Keys</h3>
-<p>A <strong>KEY</strong> is a set of one or more attributes whose values can uniquely identify
-a given tuple in a relation.</p>
-<p>There are generally six types of keys:</p>
-<ol>
-<li>Primary Key (PK) is a value that identifies a particular tuple.</li>
-<li>Candidate Key (CK) (name given to all keys)</li>
-<li>Super Key</li>
-<li>Unique Key</li>
-<li>Surrogate Key</li>
-<li>Natural Key</li>
-</ol>
-<h3 id="put-it-all-together">Put it all together</h3>
+<h3 id="put-it-all-together">Put It All Together</h3>
 <p><img src="/images/database-relational-concepts/terms-and-notations.png" alt="Terms andNotations"></p>
 
   </article>

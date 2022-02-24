@@ -3,20 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://blissful-mayer-90b8fc.netlify.app/ja/about/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blissful-mayer-90b8fc.netlify.app/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://blissful-mayer-90b8fc.netlify.app/ja/about/"
-                />
-  </url>
-  
-  <url>
     <loc>https://blissful-mayer-90b8fc.netlify.app/ja/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -55,6 +41,20 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://blissful-mayer-90b8fc.netlify.app/ja/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/ja/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blissful-mayer-90b8fc.netlify.app/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://blissful-mayer-90b8fc.netlify.app/ja/about/"
                 />
   </url>
   

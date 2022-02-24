@@ -6,10 +6,21 @@
     <description>Recent content in database on Tan Duc Mai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 23 Feb 2022 07:58:02 +1030</lastBuildDate>
+    <lastBuildDate>Thu, 24 Feb 2022 21:29:52 +1030</lastBuildDate>
     
 	<atom:link href="https://blissful-mayer-90b8fc.netlify.app/tags/database/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Database - Key Concepts</title>
+      <link>https://blissful-mayer-90b8fc.netlify.app/posts/database-key-concepts/</link>
+      <pubDate>Thu, 24 Feb 2022 21:29:52 +1030</pubDate>
+      
+      <guid>https://blissful-mayer-90b8fc.netlify.app/posts/database-key-concepts/</guid>
+      <description>Table Of Contents  What is a Key? Super Keys  What Is A Key A KEY in the DBMS is a set of one or more attributes whose values can uniquely identify a given tuple within a relation.
+There are generally eight types of keys:
+ Super Key Candidate Key (CK) (name given to all keys) Primary Key (PK) is a value that identifies a particular tuple. Unique Key Composite Key Foreign Key Surrogate Key Natural Key  Super Keys The SUPER KEY is the set of all the keys that, taken collectively, help to uniquely identify a tuple within a relation.</description>
+    </item>
     
     <item>
       <title>Database - Relational Concepts</title>
@@ -17,7 +28,7 @@
       <pubDate>Wed, 23 Feb 2022 07:58:02 +1030</pubDate>
       
       <guid>https://blissful-mayer-90b8fc.netlify.app/posts/database-relational-concepts/</guid>
-      <description>Table of Contents  General Terminology  General Terminology    Relational Name Common Name Alternative     relation table -   attribute colum field   tuple row record    Within a table, every column name must be UNIQUE.
+      <description>Table of Contents  General Terminology Relations Attributes Domains Table Schemas Tuples Put It All Together  General Terminology    Relational Name Common Name Alternative     relation table -   attribute colum field   tuple row record    Within a table, every column name must be UNIQUE.
 Within a Table every row must be UNIQUE (no duplicate data!).
 Every Row must have a unique Primary Key that can identify that data row only!</description>
     </item>
