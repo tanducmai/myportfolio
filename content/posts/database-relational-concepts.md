@@ -4,7 +4,7 @@ title = "Database - Relational Concepts"
 slug = "database-relational-concepts"
 aliases = "/database-relational-concepts/"
 description = "Database - Relational Concepts"
-thumbnail = "images/database-fundamentals/database.png"
+thumbnail = "images/database-relational-concepts/terms-and-notations.png"
 tags = [
     "database",
     "relational model",
@@ -20,6 +20,12 @@ draft = false
 ### Table of Contents
 
 1. [General Terminology](#terminology)
+1. [Relations](#relations)
+1. [Attributes](#attributes)
+1. [Domains](#domains)
+1. [Table Schemas](#table-schemas)
+1. [Tuples](#tuples)
+1. [Put It All Together](#put-it-all-together)
 
 ### General Terminology
 
@@ -93,7 +99,8 @@ Example: CUSTOMER(CustomerID, FirstName, FamilyName, Address, Age)
 
 ### Tuples
 
-A **TUPLE** is an instance of a relation or entity and contains the actual raw data.
+A **TUPLE** is an instance of a relation or entity and contains the actual raw
+data.
 
 To simplify, a Tuple is a row of data.
 
@@ -102,21 +109,7 @@ A relation consists of one or more unordered tuples
 Within a relation, every tuple has a fixed number of values, hence the name
 'tuple'.
 
-### Keys
-
-A **KEY** is a set of one or more attributes whose values can uniquely identify
-a given tuple in a relation.
-
-There are generally six types of keys:
-
-1. Primary Key (PK) is a value that identifies a particular tuple.
-1. Candidate Key (CK) (name given to all keys)
-1. Super Key
-1. Unique Key
-1. Surrogate Key
-1. Natural Key
-
-### Put it all together
+### Put It All Together
 
 ![Terms and 
 Notations](/images/database-relational-concepts/terms-and-notations.png)
