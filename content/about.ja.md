@@ -1,43 +1,32 @@
 +++
-title = "About Hugo"
+title = "わたし"
 slug = "about"
 thumbnail = "images/tn.png"
-description = "about"
+description = "This is the introduction page in Japanese"
 +++
 
----------------------------
-このテーマは[hugo-coder](https://github.com/luizdepra/hugo-coder)を元に作成をしています。  
-一見綺麗なポートフォリをサイトですが、より個人的なことも伝えられるようにしました。  
-変更点の詳細はブログから、"FeaturesOfCoderPortfolio"を見てください。  
-それ以外のDEMOのコンテンツに関してはhugo-coderのものです。  
-質問や、報告がありましたら、下記からお願いいたします。  
+アインズベリー研究所で情報技術の卒業証書を取得しました ビジネスとテクノロジー（EIBT）の学部を取得しており、現在学部を取得しています。 南オーストラリア大学でネットワーキングとサイバーセキュリティの学位を取得
+（UniSA）。
 
-* [open an issue on GitHub](https://github.com/naro143/hugo-coder-portfolio/issues/new)  
-* [ask me on Twitter](https://twitter.com/naro143)  
+- 数学のバックグラウンドが強く、プログラミング言語がいくつかあります（特に
+  Python）、LAN（スイッチング、ルーティング）および再ルーティングの知識。
+- 作業成果の最大化に情熱を注いでいます。仕事に自信がある
+  過去の実務経験を通じて協力して。
+- 機会の成長と学習の可能性を備えたインターンシップを積極的に模索する
+  それは私の技術的知識を強化します。
 
----------------------------
+### スキル
 
-Hugo is a static site engine written in Go.
+- 熟練：Python（スクリプト、自動化、データ分析）
+- 以前の経験：HTML5、CSS3、Pascal、Markdown 
+- 言語：英語、日本語、ベトナム語
+- ツール：StackOverFlow、Git、Github / GitLab、Vim、VS Code
+- Linux（Ubuntu、Mint、Kali、CentOS）、macOS、Windows、Cisco 
+- Adobe Creative Cloud および Microsoft Office Suite
 
+---
 
-It makes use of a variety of open source projects including:
-
-* [Cobra](https://github.com/spf13/cobra)
-* [Viper](https://github.com/spf13/viper)
-* [J Walter Weatherman](https://github.com/spf13/jWalterWeatherman)
-* [Cast](https://github.com/spf13/cast)
-
-Learn more and contribute on [GitHub](https://github.com/spf13).
-
-## Setup
-
-Some fun facts about [Hugo](http://gohugo.io/):
-
-* Built in [Go](http://golang.org/)
-* Loosely inspired by [Jekyll](http://jekyllrb.com/)
-* Primarily developed by [spf13](http://spf13.com/) on the train while commuting to and from Manhattan.
-* Coded in [Vim](http://vim.org) using [spf13-vim](http://vim.spf13.com/)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/spf13/hugo/issues/new) or [ask me on Twitter](https://twitter.com/spf13).
-
-Thanks for reading!
+私の [LinkedIn](https://www.linkedin.com/in/tanducmai/)
+プロフィールを参照するか、 わたしの
+[履歴書](https://drive.google.com/file/d/18VFeKC3M4Dz2pzOF0dVfbuozrqqNESyX/view?fbclid=IwAR1mlPfASGMom2Dvh-pprOYTGYZbsMewgN5IVcr2yth64im6lcIxDsVVYfw)
+私の以前の実務経験と学業に関連する詳細については 歴史。

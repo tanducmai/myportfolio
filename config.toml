@@ -99,27 +99,27 @@ disqusShortname = "tanducmai" # Enable or disable Disqus.
 
     [languages.ja]
         languagename = "Japanese"
-        title = "石見 優丞"
+        title = "ヘンリ マイ"
 
         [languages.ja.params]
-            author = "石見 優丞"
+            author = "ヘンリ マイ"
             description = "石見 優丞のサイト"
             keywords = "blog,developer, ブログ, エンジニア"
-            info = "WEBとアプリのエンジニア"
+            info = "PYTHON エンジニア"
 
         [languages.ja.menu]
 
             [[languages.ja.menu.main]]
-            name = "石見とは"
+            name = "わたし"
             weight = 1.0
             url = "ja/about"
 
-            [[languages.ja.menu.main]]
-            name = "ブログ"
-            weight = 2.0
-            url = "ja/posts"
+            # [[languages.ja.menu.main]]
+            # name = "ブログ"
+            # weight = 2.0
+            # url = "ja/posts"
 
-            [[languages.ja.menu.main]]
-            name = "プロジェクト"
-            weight = 2.0
-            url = "ja/projects"
+            # [[languages.ja.menu.main]]
+            # name = "プロジェクト"
+            # weight = 2.0
+            # url = "ja/projects"
