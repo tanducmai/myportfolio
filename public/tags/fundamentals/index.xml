@@ -6,10 +6,21 @@
     <description>Recent content in fundamentals on Tan Duc Mai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 24 Feb 2022 21:29:52 +1030</lastBuildDate>
+    <lastBuildDate>Fri, 25 Feb 2022 01:05:26 +1030</lastBuildDate>
     
 	<atom:link href="https://blissful-mayer-90b8fc.netlify.app/tags/fundamentals/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Database - Normalisation</title>
+      <link>https://blissful-mayer-90b8fc.netlify.app/posts/database-normalisation/</link>
+      <pubDate>Fri, 25 Feb 2022 01:05:26 +1030</pubDate>
+      
+      <guid>https://blissful-mayer-90b8fc.netlify.app/posts/database-normalisation/</guid>
+      <description>Table of Contents  Good and Bad Database Designs Rule of Thumb Normalisation How to Normalise?  Good and Bad Database Designs When designing a database, people tend to do one that captures all or too much of the required information.
+It should be noted that more than one design are plausible.
+ One design may be better than another. A good design in one situation may perform poorly in another.</description>
+    </item>
     
     <item>
       <title>Database - Key Concepts</title>
