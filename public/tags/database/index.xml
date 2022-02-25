@@ -28,7 +28,7 @@ It should be noted that more than one design are plausible.
       <pubDate>Thu, 24 Feb 2022 21:29:52 +1030</pubDate>
       
       <guid>https://blissful-mayer-90b8fc.netlify.app/posts/database-key-concepts/</guid>
-      <description>Table Of Contents  What is a Key? Super Key Candidate Key Primary Key Unique Key Surrogate Key Natural Key Foreign Key  Source: Arvindzeclass
+      <description>Table Of Contents  What is a Key? Super Key Candidate Key Primary Key Unique Key Surrogate Key Natural Key Foreign Key  Image Source: Arvindzeclass
 What Is A Key A KEY in the DBMS is a set of one or more attributes whose values can uniquely identify a given tuple within a relation.
 There are generally eight types of keys:
  Super Key Candidate Key (CK) (name given to all keys) Primary Key (PK) is a value that identifies a particular tuple.</description>
@@ -60,7 +60,7 @@ Every Row must have a unique Primary Key that can identify that data row only!</
       <pubDate>Mon, 21 Feb 2022 05:11:42 +1030</pubDate>
       
       <guid>https://blissful-mayer-90b8fc.netlify.app/posts/database-fundamentals/</guid>
-      <description>Table of Contents  What is a Database? Database Management System (DBMS) Example of a Database Why Bother Storing Data? Examples of Facts Analysed from Stored Data How to Query the Database? More about the Role of a DBMS Structure of a DBMS  Source: Toptal
+      <description>Table of Contents  What is a Database? Database Management System (DBMS) Example of a Database Why Bother Storing Data? Examples of Facts Analysed from Stored Data How to Query the Database? More about the Role of a DBMS Structure of a DBMS  Image Source: Toptal
 What Is A Database A collection of tables containing data that are used to retrieve information.
 A collection of potentially useful data that models real-world or conceptual objects and their relationships.</description>
     </item>

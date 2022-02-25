@@ -27,7 +27,7 @@ draft = false
 1. [Structure of a DBMS](#structure-of-a-dbms)
 
 ![Database Illustration](/images/database-fundamentals/database.png)
-Source:
+Image Source:
 *[Toptal](https://www.toptal.com/database/database-design-bad-practices)*
 
 ### What Is A Database

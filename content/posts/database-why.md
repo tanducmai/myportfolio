@@ -36,7 +36,7 @@ draft = false
 - An item is entered into / deleted in one index but not the others?
 
 ![Traditional Data Storage](/images/database-why/traditional.webp)
-Source:
+Image Source:
 *[Britannica](https://www.britannica.com/story/a-brief-history-of-libraries)*
 
 ### Modern And Digital Data Storage
@@ -45,7 +45,7 @@ Data can now be stored in files, such as text files, Excel sheets, Word
 documents.
 
 ![Modern Data Storage](/images/database-why/modern.jpg)
-Source: *[Orange
+Image Source: *[Orange
 Matter](https://orangematter.solarwinds.com/2018/09/06/databases-101-factors-to-consider-when-choosing-a-database/)*
 
 ##### Advantages

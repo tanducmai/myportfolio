@@ -30,7 +30,7 @@ draft = false
 
 ![Keys in DBMS](/images/database-key-concepts/thumbnail.png)
 
-Source:
+Image Source:
 *[Arvindzeclass](https://www.arvindzeclass.in/2021/06/What-is-primary-key.html)*
 
 ### What Is A Key
