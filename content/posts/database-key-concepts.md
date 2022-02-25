@@ -1,10 +1,10 @@
-+++ 
++++
 date = 2022-02-24T21:29:52+10:30
 title = "Database - Key Concepts"
 slug = "database-key-concepts"
 aliases = "/database-key-concepts/"
 description = "Database - Key Concepts"
-thumbnail = "images/database-fundamentals/database.png"
+thumbnail = "images/database-key-concepts/thumbnail.png"
 tags = [
     "database",
     "relational model",
@@ -14,7 +14,7 @@ tags = [
 categories = [
     "database",
 ]
-draft = true
+draft = false
 +++
 
 ### Table Of Contents
@@ -23,6 +23,15 @@ draft = true
 1. [Super Key](#super-key)
 1. [Candidate Key](#candidate-key)
 1. [Primary Key](#primary-key)
+1. [Unique Key](#unique-key)
+1. [Surrogate Key](#surrogate-key)
+1. [Natural Key](#natural-key)
+1. [Foreign Key](#foreign-key)
+
+![Keys in DBMS](/images/database-key-concepts/thumbnail.png)
+
+Source:
+*[Arvindzeclass](https://www.arvindzeclass.in/2021/06/What-is-primary-key.html)*
 
 ### What Is A Key
 
@@ -36,9 +45,9 @@ There are generally eight types of keys:
 1. Primary Key (PK) is a value that identifies a particular tuple.
 1. Unique Key
 1. Composite Key
-1. Foreign Key
 1. Surrogate Key
 1. Natural Key
+1. Foreign Key
 
 ### Super Key
 
@@ -46,7 +55,7 @@ The **SUPER KEY** is the set of *all* the keys that, taken collectively, help to
 *uniquely identify* a tuple within a relation.
 
 - Due to this feature, even a key that contains every attribute in a tupe is
-still considered a Super Key (SK).
+still considered a Super Key.
 
 From this huge collection of keys, extract those containing the minimum number of
 attributes to be used as Candidate Keys.
@@ -90,7 +99,7 @@ Further, any CK that is not selected as the PK can be implemented as a Unique
 Key constraint in the DBMS.
 
 - The data is checked to ensure that each entry is a unique value and does not
-exists in other tuples within a relation.
+  exists in other tuples within a relation.
 
 ### Composite Key
 
@@ -99,16 +108,50 @@ The **COMPOSITE KEY(S)** is a set of *two or more* attributes whose values can
 
 ### Surrogate Key
 
-A **SURROGATE KEY** is a ultimate lazy approach to implementing a PK.
+A **SURROGATE KEY** is an ultimate lazy approach to implementing a PK.
 
-It is simply an incremental number stored as an ID column in a table
+It is simply an incremental number stored as an ID column in a table.
+
+- E.g., row numbers (1, 2, 3) that is automatically assigned to each row in an
+  Excel spread sheet.
 
 It is a randomly generated alpha-numeric value and has nothing to do with the
 table data.
 
 ### Natural Key
 
-A **NATURAL KEY** exists if and only if a Surrogate Key does.
+A **NATURAL KEY** is a minimum set of one or more attributes that can be used or
+combined with others to *uniquely identify* each tuple within a relation.
+
+- E.g., BankAccount + TelephoneNo, Name + DOB.
+
+A Natural Key exists if and only if a Surrogate Key does.
+
+- Why is it called 'natural'? Given that a Surrogate Key is one that is made up
+  (not related to the relation); thus, the name 'Natural Key' could be natural
+  to the relation and to differentiate itself from the Surrogate Key.
 
 ### Foreign Key
 
+A **FOREIGN KEY** is a set of one or more attributes whose values are the PK of
+another relation (Primary or Unique!)
+
+To be more specific, the PK values are copied and stored in another relation as
+a Foreign Key (FK) value.
+
+The main purpose of Foreign Keys is to establish a relationship between two
+relations, hence the term "Relational Database"
+
+The relation containing the FK is called the *child* table, and the relation
+containing the PK is called the *referenced* or *parent* table.
+
+To modify (insert or delete) a FK value, the process must take place in the
+parent table, not the child one.
+
+Example: A course mark is of no use if it does not relate back to a student and
+a course:
+
+- Enrolment(StudentID) is a FK referencing Student(StudentID)
+- Enrolment(CourseID) is a FK referencing Course(CourseID)
+
+![Foreign Keys Example](/images/database-key-concepts/foreign-keys.png)

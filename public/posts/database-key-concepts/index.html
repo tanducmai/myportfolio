@@ -16,10 +16,10 @@
     <meta property="og:description" content="Database - Key Concepts">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://blissful-mayer-90b8fc.netlify.app/posts/database-key-concepts/">
-    <meta property="og:image" content="https://blissful-mayer-90b8fc.netlify.app/images/database-fundamentals/database.png">
+    <meta property="og:image" content="https://blissful-mayer-90b8fc.netlify.app/images/database-key-concepts/thumbnail.png">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="https://blissful-mayer-90b8fc.netlify.app/posts/database-key-concepts/">
-    <meta name="twitter:image" content="https://blissful-mayer-90b8fc.netlify.app/images/database-fundamentals/database.png">
+    <meta name="twitter:image" content="https://blissful-mayer-90b8fc.netlify.app/images/database-key-concepts/thumbnail.png">
 
     <base href="https://blissful-mayer-90b8fc.netlify.app/posts/database-key-concepts/">
     <title>
@@ -120,7 +120,14 @@
 <li><a href="#super-key">Super Key</a></li>
 <li><a href="#candidate-key">Candidate Key</a></li>
 <li><a href="#primary-key">Primary Key</a></li>
+<li><a href="#unique-key">Unique Key</a></li>
+<li><a href="#surrogate-key">Surrogate Key</a></li>
+<li><a href="#natural-key">Natural Key</a></li>
+<li><a href="#foreign-key">Foreign Key</a></li>
 </ol>
+<p><img src="/images/database-key-concepts/thumbnail.png" alt="Keys in DBMS"></p>
+<p>Source:
+<em><a href="https://www.arvindzeclass.in/2021/06/What-is-primary-key.html">Arvindzeclass</a></em></p>
 <h3 id="what-is-a-key">What Is A Key</h3>
 <p>A <strong>KEY</strong> in the DBMS is a set of one or more attributes whose values can
 <em>uniquely identify</em> a given tuple within a relation.</p>
@@ -131,16 +138,16 @@
 <li>Primary Key (PK) is a value that identifies a particular tuple.</li>
 <li>Unique Key</li>
 <li>Composite Key</li>
-<li>Foreign Key</li>
 <li>Surrogate Key</li>
 <li>Natural Key</li>
+<li>Foreign Key</li>
 </ol>
 <h3 id="super-key">Super Key</h3>
 <p>The <strong>SUPER KEY</strong> is the set of <em>all</em> the keys that, taken collectively, help to
 <em>uniquely identify</em> a tuple within a relation.</p>
 <ul>
 <li>Due to this feature, even a key that contains every attribute in a tupe is
-still considered a Super Key (SK).</li>
+still considered a Super Key.</li>
 </ul>
 <p>From this huge collection of keys, extract those containing the minimum number of
 attributes to be used as Candidate Keys.</p>
@@ -179,13 +186,44 @@ exists in other tuples within a relation.</li>
 <p>The <strong>COMPOSITE KEY(S)</strong> is a set of <em>two or more</em> attributes whose values can
 <em>uniquely identify</em> a given tuple within a relation.</p>
 <h3 id="surrogate-key">Surrogate Key</h3>
-<p>A <strong>SURROGATE KEY</strong> is a ultimate lazy approach to implementing a PK.</p>
-<p>It is simply an incremental number stored as an ID column in a table</p>
+<p>A <strong>SURROGATE KEY</strong> is an ultimate lazy approach to implementing a PK.</p>
+<p>It is simply an incremental number stored as an ID column in a table.</p>
+<ul>
+<li>E.g., row numbers (1, 2, 3) that is automatically assigned to each row in an
+Excel spread sheet.</li>
+</ul>
 <p>It is a randomly generated alpha-numeric value and has nothing to do with the
 table data.</p>
 <h3 id="natural-key">Natural Key</h3>
-<p>A <strong>NATURAL KEY</strong> exists if and only if a Surrogate Key does.</p>
+<p>A <strong>NATURAL KEY</strong> is a minimum set of one or more attributes that can be used or
+combined with others to <em>uniquely identify</em> each tuple within a relation.</p>
+<ul>
+<li>E.g., BankAccount + TelephoneNo, Name + DOB.</li>
+</ul>
+<p>A Natural Key exists if and only if a Surrogate Key does.</p>
+<ul>
+<li>Why is it called &lsquo;natural&rsquo;? Given that a Surrogate Key is one that is made up
+(not related to the relation); thus, the name &lsquo;Natural Key&rsquo; could be natural
+to the relation and to differentiate itself from the Surrogate Key.</li>
+</ul>
 <h3 id="foreign-key">Foreign Key</h3>
+<p>A <strong>FOREIGN KEY</strong> is a set of one or more attributes whose values are the PK of
+another relation (Primary or Unique!)</p>
+<p>To be more specific, the PK values are copied and stored in another relation as
+a Foreign Key (FK) value.</p>
+<p>The main purpose of Foreign Keys is to establish a relationship between two
+relations, hence the term &ldquo;Relational Database&rdquo;</p>
+<p>The relation containing the FK is called the <em>child</em> table, and the relation
+containing the PK is called the <em>referenced</em> or <em>parent</em> table.</p>
+<p>To modify (insert or delete) a FK value, the process must take place in the
+parent table, not the child one.</p>
+<p>Example: A course mark is of no use if it does not relate back to a student and
+a course:</p>
+<ul>
+<li>Enrolment(StudentID) is a FK referencing Student(StudentID)</li>
+<li>Enrolment(CourseID) is a FK referencing Course(CourseID)</li>
+</ul>
+<p><img src="/images/database-key-concepts/foreign-keys.png" alt="Foreign Keys Example"></p>
 
   </article>
 
