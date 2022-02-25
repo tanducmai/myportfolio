@@ -4,7 +4,7 @@ title = "Database - Normalisation"
 slug = "database-normalisation"
 aliases = "/database-normalisation"
 description = "Database - Normalisation"
-thumbnail = "images/database-key-concepts/thumbnail.png"
+thumbnail = "images/database-normalisation.png"
 tags = [
     "database",
     "relational model",
@@ -23,6 +23,8 @@ draft = true
 1. [Rule of Thumb](#rule-of-thumb)
 1. [Normalisation](#normalisation)
 1. [How to Normalise?](#how-to-normalise)
+
+![Normalisation Illustration](/images/database-normalisation.png)
 
 ### Good and Bad Database Designs
 
