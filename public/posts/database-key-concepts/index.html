@@ -117,7 +117,9 @@
     <h3 id="table-of-contents">Table Of Contents</h3>
 <ol>
 <li><a href="#what-is-a-key">What is a Key?</a></li>
-<li><a href="#super-keys">Super Keys</a></li>
+<li><a href="#super-key">Super Key</a></li>
+<li><a href="#candidate-key">Candidate Key</a></li>
+<li><a href="#primary-key">Primary Key</a></li>
 </ol>
 <h3 id="what-is-a-key">What Is A Key</h3>
 <p>A <strong>KEY</strong> in the DBMS is a set of one or more attributes whose values can
@@ -133,9 +135,57 @@
 <li>Surrogate Key</li>
 <li>Natural Key</li>
 </ol>
-<h3 id="super-keys">Super Keys</h3>
-<p>The <strong>SUPER KEY</strong> is the set of all the keys that, taken collectively, help to
+<h3 id="super-key">Super Key</h3>
+<p>The <strong>SUPER KEY</strong> is the set of <em>all</em> the keys that, taken collectively, help to
 <em>uniquely identify</em> a tuple within a relation.</p>
+<ul>
+<li>Due to this feature, even a key that contains every attribute in a tupe is
+still considered a Super Key (SK).</li>
+</ul>
+<p>From this huge collection of keys, extract those containing the minimum number of
+attributes to be used as Candidate Keys.</p>
+<h3 id="candidate-key">Candidate Key</h3>
+<p>The <strong>CANDIDATE KEY(S)</strong> is a minimum combination of attributes, extracted from
+the Super Key, that could become the Primary Key of a relation.</p>
+<ul>
+<li>If there is only one Candidate Key (CK), it is generally selected as the
+Primary Key.</li>
+<li>Otherwise, the developer must choose which CK will be used as the Primary Key.</li>
+</ul>
+<h3 id="primary-key">Primary Key</h3>
+<p>The <strong>PRIMARY KEY</strong> is a set of one or more attributes chosen to <em>uniquely
+identify</em> each tuple within a relation.</p>
+<p>It serves to distinguish one tuple from every other.</p>
+<p>The value(s) must be unique for each tuple.</p>
+<p>All relations require one and only one Primary Key (PK).</p>
+<p>Given a PK, we can locate the specific data within any tuple.</p>
+<p>Sometimes, it is an automatically generated number (e.g., the current row number
+in Excel).</p>
+<h3 id="unique-key">Unique Key</h3>
+<p>A <strong>UNIQUE KEY</strong> is, obviously, a set of attribute(s) whose values are always
+<em>unique</em>.</p>
+<p>Taking the below relation as an example:</p>
+<ul>
+<li>STUDENT(FirstName, LastName, Email, Username, ContactNo, Address)</li>
+<li>Email &amp; Username are two Unique Keys.</li>
+</ul>
+<p>Further, any CK that is not selected as the PK can be implemented as a Unique
+Key constraint in the DBMS.</p>
+<ul>
+<li>The data is checked to ensure that each entry is a unique value and does not
+exists in other tuples within a relation.</li>
+</ul>
+<h3 id="composite-key">Composite Key</h3>
+<p>The <strong>COMPOSITE KEY(S)</strong> is a set of <em>two or more</em> attributes whose values can
+<em>uniquely identify</em> a given tuple within a relation.</p>
+<h3 id="surrogate-key">Surrogate Key</h3>
+<p>A <strong>SURROGATE KEY</strong> is a ultimate lazy approach to implementing a PK.</p>
+<p>It is simply an incremental number stored as an ID column in a table</p>
+<p>It is a randomly generated alpha-numeric value and has nothing to do with the
+table data.</p>
+<h3 id="natural-key">Natural Key</h3>
+<p>A <strong>NATURAL KEY</strong> exists if and only if a Surrogate Key does.</p>
+<h3 id="foreign-key">Foreign Key</h3>
 
   </article>
 
