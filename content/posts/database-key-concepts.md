@@ -27,6 +27,7 @@ draft = false
 1. [Surrogate Key](#surrogate-key)
 1. [Natural Key](#natural-key)
 1. [Foreign Key](#foreign-key)
+1. [Non-key Attributes](#non-key-attributes)
 
 ![Keys in DBMS](/images/database-key-concepts/thumbnail.png)
 
@@ -155,3 +156,10 @@ a course:
 - Enrolment(CourseID) is a FK referencing Course(CourseID)
 
 ![Foreign Keys Example](/images/database-key-concepts/foreign-keys.png)
+
+### Non-key Attributes
+
+The *NON-KEY ATTRIBUTE(S)* does not have any relationship with any other keys
+(PK, CK, FK).
+
+It is simply not categorised as any key listed above.
