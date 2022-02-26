@@ -95,3 +95,58 @@ It works well where data is updated frequently, but at the expense of
 information retrieval
 
 ### How To Normalise
+
+1. **Data Initialisation**:
+
+- Identify the *Unnormalised form* (UNF).
+  - The unstructured data / information received from the client.
+- Find out the *repeating group*.
+  - Any value that has multiple entries.
+  - E.g. I take four courses this semester, hence four entries listed under my
+    name.
+
+2. **First Normal Form (1NF)**:
+
+- Identify the *Primary Key* (PK).
+- Remove the *repeating group*.
+- Bring the PK to the *child relation*.
+  - We now have a *proper schema*.
+- Identify the *partial dependency*
+  - Non-key attribute(s) partially depend on the PK.
+  - Meaning that the PK should be a Composite Key, and the Non-key attribute(s)
+    now depend on part of the PK (not the whole PK).
+  - For example:
+    - PK - Attribute1, Attribute2
+    - Non-key attribute depends on {Attribute1} or {Attribute1} -> Non-key
+      attribute.
+
+3. **Second Normal Form (2NF)**:
+
+- Remove the *partial dependency* which will become a new *child relation*.
+- Leave the child PK to the parent relation.
+- Identify the *transitive dependency*.
+  - A non-key attribute depend on another non-key attribute.
+  - For example:
+    - BOOK(BookName, AuthorName, AuthorAge)
+    - {BookName} -> {AuthorName}
+    - {AuthorName} -> {AuthorAge}
+    - Thus, {BookName} -> {AuthorAge}
+  - For this reason, a transitive dependency can only occur in a relation of
+    three of more attributes.
+
+4. **Third Normal Form (3NF)**:
+
+- Remove the *transitive dependency*.
+- Result in the *full dependency*.
+  - We are now left with no partial / transitive dependency.
+  - PK now determines the rest of the attributes.
+  - For example:
+    - Having removed the transitive dependency, we now have our schema:
+    - COURSE(CourseNumber, CourseName, CourseDescription, CourseValue)
+    - PK - CourseNumber
+    - CourseNumber -> CourseName, CourseDescription, CourseValue
+
+5. In the case that we have several reports, we then need to:
+
+- Collect all the 3NF.
+- Combine the relations.

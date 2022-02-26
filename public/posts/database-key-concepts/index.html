@@ -124,6 +124,7 @@
 <li><a href="#surrogate-key">Surrogate Key</a></li>
 <li><a href="#natural-key">Natural Key</a></li>
 <li><a href="#foreign-key">Foreign Key</a></li>
+<li><a href="#non-key-attributes">Non-key Attributes</a></li>
 </ol>
 <p><img src="/images/database-key-concepts/thumbnail.png" alt="Keys in DBMS"></p>
 <p>Image Source:
@@ -166,7 +167,7 @@ identify</em> each tuple within a relation.</p>
 <p>The value(s) must be unique for each tuple.</p>
 <p>All relations require one and only one Primary Key (PK).</p>
 <p>Given a PK, we can locate the specific data within any tuple.</p>
-<p>Sometimes, it is an automatically generated number (e.g., the current row number
+<p>Sometimes, it is an automatically generated number (e.g. the current row number
 in Excel).</p>
 <h3 id="unique-key">Unique Key</h3>
 <p>A <strong>UNIQUE KEY</strong> is, obviously, a set of attribute(s) whose values are always
@@ -189,7 +190,7 @@ exists in other tuples within a relation.</li>
 <p>A <strong>SURROGATE KEY</strong> is an ultimate lazy approach to implementing a PK.</p>
 <p>It is simply an incremental number stored as an ID column in a table.</p>
 <ul>
-<li>E.g., row numbers (1, 2, 3) that is automatically assigned to each row in an
+<li>E.g. row numbers (1, 2, 3) that is automatically assigned to each row in an
 Excel spread sheet.</li>
 </ul>
 <p>It is a randomly generated alpha-numeric value and has nothing to do with the
@@ -224,6 +225,11 @@ a course:</p>
 <li>Enrolment(CourseID) is a FK referencing Course(CourseID)</li>
 </ul>
 <p><img src="/images/database-key-concepts/foreign-keys.png" alt="Foreign Keys Example"></p>
+<h3 id="non-key-attributes">Non-key Attributes</h3>
+<p>The <strong>NON-KEY ATTRIBUTE(S)</strong> does not have any relationship with any other keys
+(PK, CK, FK).</p>
+<p>It is simply not categorised as any key listed above.</p>
+<p>A non-key attribute is also referred to as a <strong>NON-PRIME ATTRIBUTE</strong>.</p>
 
   </article>
 

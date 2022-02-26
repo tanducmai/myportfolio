@@ -224,6 +224,98 @@ smaller, more efficient ones.</p>
 <p>It works well where data is updated frequently, but at the expense of
 information retrieval</p>
 <h3 id="how-to-normalise">How To Normalise</h3>
+<ol>
+<li><strong>Data Initialisation</strong>:</li>
+</ol>
+<ul>
+<li>Identify the <em>Unnormalised form</em> (UNF).
+<ul>
+<li>The unstructured data / information received from the client.</li>
+</ul>
+</li>
+<li>Find out the <em>repeating group</em>.
+<ul>
+<li>Any value that has multiple entries.</li>
+<li>E.g. I take four courses this semester, hence four entries listed under my
+name.</li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li><strong>First Normal Form (1NF)</strong>:</li>
+</ol>
+<ul>
+<li>Identify the <em>Primary Key</em> (PK).</li>
+<li>Remove the <em>repeating group</em>.</li>
+<li>Bring the PK to the <em>child relation</em>.
+<ul>
+<li>We now have a <em>proper schema</em>.</li>
+</ul>
+</li>
+<li>Identify the <em>partial dependency</em>
+<ul>
+<li>Non-key attribute(s) partially depend on the PK.</li>
+<li>Meaning that the PK should be a Composite Key, and the Non-key attribute(s)
+now depend on part of the PK (not the whole PK).</li>
+<li>For example:
+<ul>
+<li>PK - Attribute1, Attribute2</li>
+<li>Non-key attribute depends on {Attribute1} or {Attribute1} -&gt; Non-key
+attribute.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ol start="3">
+<li><strong>Second Normal Form (2NF)</strong>:</li>
+</ol>
+<ul>
+<li>Remove the <em>partial dependency</em> which will become a new <em>child relation</em>.</li>
+<li>Leave the child PK to the parent relation.</li>
+<li>Identify the <em>transitive dependency</em>.
+<ul>
+<li>A non-key attribute depend on another non-key attribute.</li>
+<li>For example:
+<ul>
+<li>BOOK(BookName, AuthorName, AuthorAge)</li>
+<li>{BookName} -&gt; {AuthorName}</li>
+<li>{AuthorName} -&gt; {AuthorAge}</li>
+<li>Thus, {BookName} -&gt; {AuthorAge}</li>
+</ul>
+</li>
+<li>For this reason, a transitive dependency can only occur in a relation of
+three of more attributes.</li>
+</ul>
+</li>
+</ul>
+<ol start="4">
+<li><strong>Third Normal Form (3NF)</strong>:</li>
+</ol>
+<ul>
+<li>Remove the <em>transitive dependency</em>.</li>
+<li>Result in the <em>full dependency</em>.
+<ul>
+<li>We are now left with no partial / transitive dependency.</li>
+<li>PK now determines the rest of the attributes.</li>
+<li>For example:
+<ul>
+<li>Having removed the transitive dependency, we now have our schema:</li>
+<li>COURSE(CourseNumber, CourseName, CourseDescription, CourseValue)</li>
+<li>PK - CourseNumber</li>
+<li>CourseNumber -&gt; CourseName, CourseDescription, CourseValue</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ol start="5">
+<li>In the case that we have several reports, we then need to:</li>
+</ol>
+<ul>
+<li>Collect all the 3NF.</li>
+<li>Combine the relations.</li>
+</ul>
 
   </article>
 
