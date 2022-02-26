@@ -159,7 +159,9 @@ a course:
 
 ### Non-key Attributes
 
-The *NON-KEY ATTRIBUTE(S)* does not have any relationship with any other keys
+The **NON-KEY ATTRIBUTE(S)** does not have any relationship with any other keys
 (PK, CK, FK).
 
 It is simply not categorised as any key listed above.
+
+A non-key attribute is also referred to as a **NON-PRIME ATTRIBUTE**.
