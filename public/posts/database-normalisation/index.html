@@ -120,6 +120,7 @@
 <li><a href="#rule-of-thumb">Rule of Thumb</a></li>
 <li><a href="#normalisation">Normalisation</a></li>
 <li><a href="#how-to-normalise">How to Normalise?</a></li>
+<li><a href="#rules-of-the-first-three-normal-forms">Rules of the First Three Normal Forms</a></li>
 </ol>
 <p><img src="/images/database-normalisation.png" alt="Normalisation Illustration">
 Image Source: <em><a href="https://evilmartians.com/chronicles/normalization-consistency-and-clowne">Evil
@@ -235,14 +236,81 @@ information retrieval</p>
 <li>The unstructured data / information received from the client.</li>
 </ul>
 </li>
-<li>Find out the <em>repeating group</em>.
+<li>Find out the <em>repeating group</em> or <em>multi-value attributes</em>.
 <ul>
-<li>Any value that has multiple entries.</li>
-<li>E.g. I take four courses this semester, hence four entries listed under my
-name.</li>
+<li>Let&rsquo;s take some examples.</li>
+<li>Repeating group: Once a student enrols a course, their name is repeated
+everytime that it comes up.</li>
 </ul>
 </li>
 </ul>
+<table>
+<thead>
+<tr>
+<th align="center">Student</th>
+<th align="center">Age</th>
+<th align="center">Course</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Henry</td>
+<td align="center">20</td>
+<td align="center">OOP</td>
+</tr>
+<tr>
+<td align="center">Henry</td>
+<td align="center">20</td>
+<td align="center">SRUX</td>
+</tr>
+<tr>
+<td align="center">Mai</td>
+<td align="center">18</td>
+<td align="center">OOP</td>
+</tr>
+<tr>
+<td align="center">&hellip;</td>
+<td align="center">&hellip;</td>
+<td align="center">&hellip;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Multi-value attributes: Multiple values presented in a single attribute.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">Courses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">DDWT, SRUX, OOP</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>The correct way:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">Courses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">DDWT</td>
+</tr>
+<tr>
+<td align="center">SRUX</td>
+</tr>
+<tr>
+<td align="center">OOP</td>
+</tr>
+</tbody>
+</table>
 <ol start="2">
 <li><strong>First Normal Form (1NF)</strong>:</li>
 </ol>
@@ -318,6 +386,193 @@ three of more attributes.</li>
 <li>Collect all the 3NF.</li>
 <li>Combine the relations.</li>
 </ul>
+<h3 id="rules-of-the-first-three-normal-forms">Rules Of The First Three Normal Forms</h3>
+<ol>
+<li><strong>Data must be atomic (single values with meaning).</strong></li>
+</ol>
+<ul>
+<li><strong>Atomic data</strong> means there is only one piece of data per column</li>
+<li>Taking a COURSES relation as an example.</li>
+<li>Not atomic:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">CourseCodeAndCourseName</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">INFS 1025 DDWT</td>
+</tr>
+<tr>
+<td align="center">INFS1025 SRUX</td>
+</tr>
+<tr>
+<td align="center">COMP1046 OOP</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Atomic:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">CourseCode</th>
+<th align="center">CourseName</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">INFS 1025</td>
+<td align="center">DDWT</td>
+</tr>
+<tr>
+<td align="center">INFS1025</td>
+<td align="center">SRUX</td>
+</tr>
+<tr>
+<td align="center">COMP1046</td>
+<td align="center">OOP</td>
+</tr>
+</tbody>
+</table>
+<ol start="2">
+<li><strong>No repeating groups or multi-value attributes.</strong></li>
+</ol>
+<p>Refer to this <a href="#how-to-normalise">section</a>.</p>
+<ol start="3">
+<li><strong>Candidate Keys must be found.</strong></li>
+</ol>
+<p>A Candidate Key is the minimum number of attributes in a table required to
+uniquely identify each tuple. A given table may have more than one CK, but only
+one can be selected as the Primary Key. All other CKs can be
+implemented as Unique Keys.</p>
+<ol start="4">
+<li><strong>Each table contains relevant data to the candidate keys.</strong></li>
+</ol>
+<p>All data in a table should relate back to the
+candidate keys (e.g. a table should contain data about only one type of object).</p>
+<p>For example:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Title</th>
+<th align="center">Format</th>
+<th align="center">Author</th>
+<th align="center">GenreID</th>
+<th align="center">Genre</th>
+<th align="center">Price</th>
+<th align="center">Publisher</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Leaning SQL</td>
+<td align="center">E-book</td>
+<td align="center">John Steele</td>
+<td align="center">1</td>
+<td align="center">SQL</td>
+<td align="center">49.99</td>
+<td align="center">Collins</td>
+</tr>
+</tbody>
+</table>
+<p>So, in the given example, we can identify many different objects. Thus, we can
+separate them into their own relations, and where necessary, create new CKs
+(such as a Surrogate Key) to help uniquely identify the records in each new
+relation:</p>
+<p><em>BOOKS</em></p>
+<table>
+<thead>
+<tr>
+<th align="center">Title</th>
+<th align="center">AuthorID</th>
+<th align="center">GenreID</th>
+<th align="center">PublisherID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Learning SQL</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><em>PUBLISHERS</em></p>
+<table>
+<thead>
+<tr>
+<th align="center">PublisherID</th>
+<th align="center">Publisher</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">Collins</td>
+</tr>
+</tbody>
+</table>
+<p><em>AUTHORS</em></p>
+<table>
+<thead>
+<tr>
+<th align="center">AuthorID</th>
+<th align="center">Author</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">John Steele</td>
+</tr>
+</tbody>
+</table>
+<p><em>FORMATS</em></p>
+<table>
+<thead>
+<tr>
+<th align="center">FormatID</th>
+<th align="center">Format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">E-book</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">Hardback</td>
+</tr>
+</tbody>
+</table>
+<p><em>BOOK_FORMATS</em></p>
+<table>
+<thead>
+<tr>
+<th align="center">Title</th>
+<th align="center">FormatID</th>
+<th align="center">Price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Learning SQL</td>
+<td align="center">1</td>
+<td align="center">49.99</td>
+</tr>
+<tr>
+<td align="center">Learning SQL</td>
+<td align="center">2</td>
+<td align="center">149.99</td>
+</tr>
+</tbody>
+</table>
 
   </article>
 

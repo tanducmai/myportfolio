@@ -23,6 +23,7 @@ draft = false
 1. [Rule of Thumb](#rule-of-thumb)
 1. [Normalisation](#normalisation)
 1. [How to Normalise?](#how-to-normalise)
+1. [Rules of the First Three Normal Forms](#rules-of-the-first-three-normal-forms)
 
 ![Normalisation Illustration](/images/database-normalisation.png)
 Image Source: *[Evil
@@ -102,10 +103,31 @@ information retrieval
 
 - Identify the *Unnormalised form* (UNF).
   - The unstructured data / information received from the client.
-- Find out the *repeating group*.
-  - Any value that has multiple entries.
-  - E.g. I take four courses this semester, hence four entries listed under my
-    name.
+- Find out the *repeating group* or *multi-value attributes*.
+  - Let's take some examples.
+  - Repeating group: Once a student enrols a course, their name is repeated
+    everytime that it comes up.
+
+| Student | Age   | Course |
+| :---:   | :---: | :---:  |
+| Henry   | 20    | OOP    |
+| Henry   | 20    | SRUX   |
+| Mai     | 18    | OOP    |
+| ...     | ...   | ...    |
+
+  - Multi-value attributes: Multiple values presented in a single attribute.
+
+| Courses         |
+| :---:           |
+| DDWT, SRUX, OOP |
+
+ - The correct way:
+
+| Courses |
+| :---:    |
+| DDWT     |
+| SRUX     |
+| OOP      |
 
 2. **First Normal Form (1NF)**:
 
@@ -152,3 +174,84 @@ information retrieval
 
 - Collect all the 3NF.
 - Combine the relations.
+
+### Rules Of The First Three Normal Forms
+
+1. **Data must be atomic (single values with meaning).**
+
+  - **Atomic data** means there is only one piece of data per column
+  - Taking a COURSES relation as an example.
+  - Not atomic:
+
+| CourseCodeAndCourseName |
+| :---:                   |
+| INFS 1025 DDWT          |
+| INFS1025 SRUX           |
+| COMP1046 OOP            |
+
+  - Atomic:
+
+| CourseCode | CourseName |
+| :---:      | :---:      |
+| INFS 1025  | DDWT       |
+| INFS1025   | SRUX       |
+| COMP1046   | OOP        |
+
+2. **No repeating groups or multi-value attributes.**
+
+Refer to this [section](#how-to-normalise).
+
+3. **Candidate Keys must be found.**
+
+A Candidate Key is the minimum number of attributes in a table required to
+uniquely identify each tuple. A given table may have more than one CK, but only
+one can be selected as the Primary Key. All other CKs can be
+implemented as Unique Keys.
+
+4. **Each table contains relevant data to the candidate keys.**
+
+All data in a table should relate back to the
+candidate keys (e.g. a table should contain data about only one type of object).
+
+For example:
+
+| Title       | Format | Author      | GenreID | Genre | Price | Publisher |
+| :---:       | :---:  | :---:       | :---:   | :---: | :---: | :---:     |
+| Leaning SQL | E-book | John Steele | 1       | SQL   | 49.99 | Collins   |
+
+So, in the given example, we can identify many different objects. Thus, we can
+separate them into their own relations, and where necessary, create new CKs
+(such as a Surrogate Key) to help uniquely identify the records in each new
+relation:
+
+*BOOKS*
+
+| Title        | AuthorID | GenreID | PublisherID |
+| :---:        | :---:    | :---:   | :---:       |
+| Learning SQL | 1        | 1       | 1           |
+
+*PUBLISHERS*
+
+| PublisherID | Publisher |
+| :---:       | :---:     |
+| 1           | Collins   |
+
+*AUTHORS*
+
+| AuthorID | Author      |
+| :---:    | :---:       |
+| 1        | John Steele |
+
+*FORMATS*
+
+| FormatID | Format   |
+| :---:    | :---:    |
+| 1        | E-book   |
+| 2        | Hardback |
+
+*BOOK_FORMATS*
+
+| Title        | FormatID | Price  |
+| :---:        | :---:    | :---:  |
+| Learning SQL | 1        | 49.99  |
+| Learning SQL | 2        | 149.99 |
