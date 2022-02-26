@@ -132,7 +132,7 @@ information retrieval
 2. **First Normal Form (1NF)**:
 
 - Identify the *Primary Key* (PK).
-- Remove the *repeating group*.
+- Remove the *repeating group* which will become a new *child relation*.
 - Bring the PK to the *child relation*.
   - We now have a *proper schema*.
 - Identify the *partial dependency*
