@@ -82,7 +82,7 @@ All relations require one and only one Primary Key (PK).
 
 Given a PK, we can locate the specific data within any tuple.
 
-Sometimes, it is an automatically generated number (e.g., the current row number
+Sometimes, it is an automatically generated number (e.g. the current row number
 in Excel).
 
 ### Unique Key
@@ -112,7 +112,7 @@ A **SURROGATE KEY** is an ultimate lazy approach to implementing a PK.
 
 It is simply an incremental number stored as an ID column in a table.
 
-- E.g., row numbers (1, 2, 3) that is automatically assigned to each row in an
+- E.g. row numbers (1, 2, 3) that is automatically assigned to each row in an
   Excel spread sheet.
 
 It is a randomly generated alpha-numeric value and has nothing to do with the
