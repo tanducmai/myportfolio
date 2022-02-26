@@ -136,9 +136,9 @@ information retrieval
 - Bring the PK to the *child relation*.
   - We now have a *proper schema*.
 - Identify the *partial dependency*
-  - Non-key attribute(s) partially depend on the PK.
+  - Non-key attribute(s) partially depends on the PK.
   - Meaning that the PK should be a Composite Key, and the Non-key attribute(s)
-    now depend on part of the PK (not the whole PK).
+    now depends on part of the PK (not the whole PK).
   - For example:
     - PK - Attribute1, Attribute2
     - Non-key attribute depends on {Attribute1} or {Attribute1} -> Non-key
@@ -149,7 +149,7 @@ information retrieval
 - Remove the *partial dependency* which will become a new *child relation*.
 - Leave the child PK to the parent relation.
 - Identify the *transitive dependency*.
-  - A non-key attribute depend on another non-key attribute.
+  - A non-key attribute depends on another non-key attribute.
   - For example:
     - BOOK(BookName, AuthorName, AuthorAge)
     - {BookName} -> {AuthorName}
