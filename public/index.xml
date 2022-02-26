@@ -17,7 +17,8 @@
       <pubDate>Fri, 25 Feb 2022 01:05:26 +1030</pubDate>
       
       <guid>https://blissful-mayer-90b8fc.netlify.app/posts/database-normalisation/</guid>
-      <description>Table of Contents  Good and Bad Database Designs Rule of Thumb Normalisation How to Normalise?  Good and Bad Database Designs When designing a database, people tend to do one that captures all or too much of the required information.
+      <description>Table of Contents  Good and Bad Database Designs Rule of Thumb Normalisation How to Normalise?  Image Source: Evil Martians
+Good and Bad Database Designs When designing a database, people tend to do one that captures all or too much of the required information.
 It should be noted that more than one design are plausible.
  One design may be better than another. A good design in one situation may perform poorly in another.</description>
     </item>

@@ -25,6 +25,8 @@ draft = false
 1. [How to Normalise?](#how-to-normalise)
 
 ![Normalisation Illustration](/images/database-normalisation.png)
+Image Source: *[Evil
+Martians](https://evilmartians.com/chronicles/normalization-consistency-and-clowne)*
 
 ### Good and Bad Database Designs
 
