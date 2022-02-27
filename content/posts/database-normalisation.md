@@ -110,9 +110,10 @@ information retrieval
 
 - Identify the *Primary Key* (PK).
 - Remove the *repeating group* which will become a new *child relation*.
-- Bring the PK to the *child relation*.
-  - This PK may or may not be the PK of the child relation, or it can be part of
-    the child relation's PK.
+- Bring the parent relation's PK to the *child relation*.
+  - Next, identify the PK of the child relation.
+    - The parent PK may or may not be the child's PK, or it can just be part of
+      the child's PK.
   - We now have a *proper schema*.
 - Identify the *partial dependency*
   - Non-key attribute(s) partially depends on the PK.
