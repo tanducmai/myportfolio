@@ -134,11 +134,13 @@ information retrieval
 - Identify the *Primary Key* (PK).
 - Remove the *repeating group* which will become a new *child relation*.
 - Bring the PK to the *child relation*.
+  - This PK may or may not be the PK of the child relation, or it can be part of
+    the child relation's PK.
   - We now have a *proper schema*.
 - Identify the *partial dependency*
   - Non-key attribute(s) partially depends on the PK.
   - Meaning that the PK should be a Composite Key, and the Non-key attribute(s)
-    now depends on part of the PK (not the whole PK).
+    now can depend on part of it.
   - For example:
     - PK - Attribute1, Attribute2
     - Non-key attribute depends on {Attribute1} or {Attribute1} -> Non-key
@@ -147,9 +149,14 @@ information retrieval
 3. **Second Normal Form (2NF)**:
 
 - Remove the *partial dependency* which will become a new *child relation*.
-- Leave the child PK to the parent relation.
+  - If the partial dependency or part of it is part of the PK, it needs to stay
+    in the parent relation, and references itself in the child relation.
+- Leave the child PK to the parent relation (resulting in a FK in the parent
+  relation).
 - Identify the *transitive dependency*.
   - A non-key attribute depends on another non-key attribute.
+  - Meaning that the relation should have at least two non-key attributes in
+  order to check for the transitive dependency.
   - For example:
     - BOOK(BookName, AuthorName, AuthorAge)
     - {BookName} -> {AuthorName}

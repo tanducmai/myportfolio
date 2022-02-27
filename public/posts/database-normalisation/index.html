@@ -319,6 +319,8 @@ everytime that it comes up.</li>
 <li>Remove the <em>repeating group</em> which will become a new <em>child relation</em>.</li>
 <li>Bring the PK to the <em>child relation</em>.
 <ul>
+<li>This PK may or may not be the PK of the child relation, or it can be part of
+the child relation&rsquo;s PK.</li>
 <li>We now have a <em>proper schema</em>.</li>
 </ul>
 </li>
@@ -326,7 +328,7 @@ everytime that it comes up.</li>
 <ul>
 <li>Non-key attribute(s) partially depends on the PK.</li>
 <li>Meaning that the PK should be a Composite Key, and the Non-key attribute(s)
-now depends on part of the PK (not the whole PK).</li>
+now can depend on part of it.</li>
 <li>For example:
 <ul>
 <li>PK - Attribute1, Attribute2</li>
@@ -341,11 +343,19 @@ attribute.</li>
 <li><strong>Second Normal Form (2NF)</strong>:</li>
 </ol>
 <ul>
-<li>Remove the <em>partial dependency</em> which will become a new <em>child relation</em>.</li>
-<li>Leave the child PK to the parent relation.</li>
+<li>Remove the <em>partial dependency</em> which will become a new <em>child relation</em>.
+<ul>
+<li>If the partial dependency or part of it is part of the PK, it needs to stay
+in the parent relation, and references itself in the child relation.</li>
+</ul>
+</li>
+<li>Leave the child PK to the parent relation (resulting in a FK in the parent
+relation).</li>
 <li>Identify the <em>transitive dependency</em>.
 <ul>
 <li>A non-key attribute depends on another non-key attribute.</li>
+<li>Meaning that the relation should have at least two non-key attributes in
+order to check for the transitive dependency.</li>
 <li>For example:
 <ul>
 <li>BOOK(BookName, AuthorName, AuthorAge)</li>
