@@ -238,79 +238,10 @@ information retrieval</p>
 </li>
 <li>Find out the <em>repeating group</em> or <em>multi-value attributes</em>.
 <ul>
-<li>Let&rsquo;s take some examples.</li>
-<li>Repeating group: Once a student enrols a course, their name is repeated
-everytime that it comes up.</li>
+<li>Refer to this <em><a href="#rules-of-the-first-three-normal-forms">section</a></em>.</li>
 </ul>
 </li>
 </ul>
-<table>
-<thead>
-<tr>
-<th align="center">Student</th>
-<th align="center">Age</th>
-<th align="center">Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">Henry</td>
-<td align="center">20</td>
-<td align="center">OOP</td>
-</tr>
-<tr>
-<td align="center">Henry</td>
-<td align="center">20</td>
-<td align="center">SRUX</td>
-</tr>
-<tr>
-<td align="center">Mai</td>
-<td align="center">18</td>
-<td align="center">OOP</td>
-</tr>
-<tr>
-<td align="center">&hellip;</td>
-<td align="center">&hellip;</td>
-<td align="center">&hellip;</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>Multi-value attributes: Multiple values presented in a single attribute.</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">Courses</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">DDWT, SRUX, OOP</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>The correct way:</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">Courses</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">DDWT</td>
-</tr>
-<tr>
-<td align="center">SRUX</td>
-</tr>
-<tr>
-<td align="center">OOP</td>
-</tr>
-</tbody>
-</table>
 <ol start="2">
 <li><strong>First Normal Form (1NF)</strong>:</li>
 </ol>
@@ -398,6 +329,80 @@ three of more attributes.</li>
 </ul>
 <h3 id="rules-of-the-first-three-normal-forms">Rules Of The First Three Normal Forms</h3>
 <ol>
+<li><strong>No repeating groups or multi-value attributes.</strong></li>
+</ol>
+<ul>
+<li>Repeating group: Once a student enrols a course, their name is repeated
+everytime that it comes up.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">Student</th>
+<th align="center">Age</th>
+<th align="center">Course</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Henry</td>
+<td align="center">20</td>
+<td align="center">OOP</td>
+</tr>
+<tr>
+<td align="center">Henry</td>
+<td align="center">20</td>
+<td align="center">SRUX</td>
+</tr>
+<tr>
+<td align="center">Mai</td>
+<td align="center">18</td>
+<td align="center">OOP</td>
+</tr>
+<tr>
+<td align="center">&hellip;</td>
+<td align="center">&hellip;</td>
+<td align="center">&hellip;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Multi-value attributes: Multiple values presented in a single attribute.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">Courses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">DDWT, SRUX, OOP</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>The correct way:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">Courses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">DDWT</td>
+</tr>
+<tr>
+<td align="center">SRUX</td>
+</tr>
+<tr>
+<td align="center">OOP</td>
+</tr>
+</tbody>
+</table>
+<ol start="2">
 <li><strong>Data must be atomic (single values with meaning).</strong></li>
 </ol>
 <ul>
@@ -448,10 +453,6 @@ three of more attributes.</li>
 </tr>
 </tbody>
 </table>
-<ol start="2">
-<li><strong>No repeating groups or multi-value attributes.</strong></li>
-</ol>
-<p>Refer to this <a href="#how-to-normalise">section</a>.</p>
 <ol start="3">
 <li><strong>Candidate Keys must be found.</strong></li>
 </ol>
@@ -479,13 +480,13 @@ candidate keys (e.g. a table should contain data about only one type of object).
 </thead>
 <tbody>
 <tr>
-<td align="center">Leaning SQL</td>
+<td align="center">SQL for Dummies</td>
 <td align="center">E-book</td>
-<td align="center">John Steele</td>
+<td align="center">Taylor A</td>
 <td align="center">1</td>
 <td align="center">SQL</td>
 <td align="center">49.99</td>
-<td align="center">Collins</td>
+<td align="center">Wiley</td>
 </tr>
 </tbody>
 </table>
@@ -505,7 +506,7 @@ relation:</p>
 </thead>
 <tbody>
 <tr>
-<td align="center">Learning SQL</td>
+<td align="center">SQL for Dummies</td>
 <td align="center">1</td>
 <td align="center">1</td>
 <td align="center">1</td>
@@ -523,7 +524,7 @@ relation:</p>
 <tbody>
 <tr>
 <td align="center">1</td>
-<td align="center">Collins</td>
+<td align="center">Wiley</td>
 </tr>
 </tbody>
 </table>
@@ -538,7 +539,7 @@ relation:</p>
 <tbody>
 <tr>
 <td align="center">1</td>
-<td align="center">John Steele</td>
+<td align="center">Taylor A</td>
 </tr>
 </tbody>
 </table>
@@ -557,7 +558,7 @@ relation:</p>
 </tr>
 <tr>
 <td align="center">2</td>
-<td align="center">Hardback</td>
+<td align="center">Paperback</td>
 </tr>
 </tbody>
 </table>
@@ -572,14 +573,14 @@ relation:</p>
 </thead>
 <tbody>
 <tr>
-<td align="center">Learning SQL</td>
+<td align="center">SQL for Dummies</td>
 <td align="center">1</td>
-<td align="center">49.99</td>
+<td align="center">32.99</td>
 </tr>
 <tr>
-<td align="center">Learning SQL</td>
+<td align="center">SQL for Dummies</td>
 <td align="center">2</td>
-<td align="center">149.99</td>
+<td align="center">49.95</td>
 </tr>
 </tbody>
 </table>
