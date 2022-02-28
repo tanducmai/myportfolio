@@ -227,9 +227,7 @@ smaller, more efficient ones.</p>
 <p>It works well where data is updated frequently, but at the expense of
 information retrieval</p>
 <h3 id="how-to-normalise">How To Normalise</h3>
-<ol>
-<li><strong>Data Initialisation</strong>:</li>
-</ol>
+<p><strong>I. Data Initialisation</strong>:</p>
 <ul>
 <li>Identify the <em>Unnormalised form</em> (UNF).
 <ul>
@@ -242,16 +240,18 @@ information retrieval</p>
 </ul>
 </li>
 </ul>
-<ol start="2">
-<li><strong>First Normal Form (1NF)</strong>:</li>
-</ol>
+<p><strong>II. First Normal Form (1NF)</strong>:</p>
 <ul>
 <li>Identify the <em>Primary Key</em> (PK).</li>
 <li>Remove the <em>repeating group</em> which will become a new <em>child relation</em>.</li>
-<li>Bring the PK to the <em>child relation</em>.
+<li>Bring the parent relation&rsquo;s PK to the <em>child relation</em>.
 <ul>
-<li>This PK may or may not be the PK of the child relation, or it can be part of
-the child relation&rsquo;s PK.</li>
+<li>Next, identify the PK of the child relation.
+<ul>
+<li>The parent PK may or may not be the child&rsquo;s PK, or it can just be part of
+the child&rsquo;s PK.</li>
+</ul>
+</li>
 <li>We now have a <em>proper schema</em>.</li>
 </ul>
 </li>
@@ -270,21 +270,26 @@ attribute.</li>
 </ul>
 </li>
 </ul>
-<ol start="3">
-<li><strong>Second Normal Form (2NF)</strong>:</li>
-</ol>
+<p><strong>III. Second Normal Form (2NF)</strong>:</p>
 <ul>
 <li>Remove the <em>partial dependency</em> which will become a new <em>child relation</em>.
 <ul>
-<li>If the partial dependency or part of it is part of the PK, it needs to stay
-in the parent relation, and references itself in the child relation.</li>
-</ul>
-</li>
+<li>The relation whose elements have just been removed now becomes another
+parent relation.</li>
+<li>Next, identify the PK of the new child relation.
+<ul>
+<li>If the partial dependency or part of it is part of the new parent PK, it
+(or part of it) needs to stay in the parent relation and references itself
+in the new child relation.</li>
 <li>Leave the child PK to the parent relation (resulting in a FK in the parent
 relation).</li>
+</ul>
+</li>
+</ul>
+</li>
 <li>Identify the <em>transitive dependency</em>.
 <ul>
-<li>A non-key attribute depends on another non-key attribute.</li>
+<li>A non-key attribute(s) depends on another non-key attribute(s).</li>
 <li>Meaning that the relation should have at least two non-key attributes in
 order to check for the transitive dependency.</li>
 <li>For example:
@@ -300,18 +305,29 @@ three of more attributes.</li>
 </ul>
 </li>
 </ul>
-<ol start="4">
-<li><strong>Third Normal Form (3NF)</strong>:</li>
-</ol>
+<p><strong>IV. Third Normal Form (3NF)</strong>:</p>
 <ul>
-<li>Remove the <em>transitive dependency</em>.</li>
-<li>Result in the <em>full dependency</em>.
+<li>Remove the <em>transitive dependency</em> which will become a new <em>child relation</em>.
 <ul>
-<li>We are now left with no partial / transitive dependency.</li>
-<li>PK now determines the rest of the attributes.</li>
+<li>The relation whose elements have just been removed now becomes another
+parent relation.</li>
+<li>Next, identify the PK of the new child relation.
+<ul>
+<li>This is as clear as day: just look back at the previously identified
+transitive dependency.</li>
+<li>Leave the child PK to the parent relation (resulting in a FK in the parent
+relation).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Identify the <em>full dependency</em>.
+<ul>
+<li>Ensure that there is no partial and transitive dependency.</li>
+<li>The PK now determines the rest of the attributes.</li>
 <li>For example:
 <ul>
-<li>Having removed the transitive dependency, we now have our schema:</li>
+<li>Having removed the partial and transitive dependency, our schema is now:</li>
 <li>COURSE(CourseNumber, CourseName, CourseDescription, CourseValue)</li>
 <li>PK - CourseNumber</li>
 <li>CourseNumber -&gt; CourseName, CourseDescription, CourseValue</li>
@@ -320,12 +336,61 @@ three of more attributes.</li>
 </ul>
 </li>
 </ul>
-<ol start="5">
-<li>In the case that we have several reports, we then need to:</li>
+<p><strong>V. Consolidation</strong>:</p>
+<ul>
+<li>
+<p>In the case that we have several reports, we then need to collect all their
+3NFs and join them together into one, hence
+<em><a href="https://www.oxfordlearnersdictionaries.com/definition/english/consolidation">consolidation</a>:</em>.</p>
+</li>
+<li>
+<p>Rules: <code>Join all the relations (and their attributes) that have the same PK(s).</code></p>
+</li>
+<li>
+<p>For example, up to this stage, we have eight relations whose PKs are
+italicised:</p>
+<ol>
+<li>UNIT(<em>UnitNo</em>, UnitName, UnitDescrip, UnitValue)</li>
+<li>LECTURER(<em>LecturerNo</em>, LecturerName. LecturerOfficeNo, LecturerPhoneNo)</li>
+<li>UNIT_ADVISOR(<em>LecturerNo, UnitNo</em>)</li>
+<li>UNIT(<em>UnitNo</em>, UnitName)</li>
+<li>STUDENT(<em>StuNo</em>, StuName, StuAddr, ModeOfStudy, MentorNo)</li>
+<li>MENTOR(<em>MentorNo</em>, MentorName)</li>
+<li>ACADEMIC_RECORD(<em>StuNo, UnitNo, Year_Semester</em>, Grade)</li>
+<li>UNIT(<em>UnitNo</em>, UnitName)</li>
 </ol>
 <ul>
-<li>Collect all the 3NF.</li>
-<li>Combine the relations.</li>
+<li>The combination should be:
+<ul>
+<li>1 &amp; 4 &amp; 8
+<ul>
+<li>UNIT(<em>UnitNo</em>, UnitName, UnitDescrip, UnitValue)</li>
+</ul>
+</li>
+<li>2 &amp; 6
+<ul>
+<li>LECTURER(<em>LecturerNo</em>, LecturerName. LecturerOfficeNo, LecturerPhoneNo)</li>
+</ul>
+</li>
+<li>3
+<ul>
+<li>UNIT_ADVISOR(<em>LecturerNo, UnitNo</em>)</li>
+</ul>
+</li>
+<li>5
+<ul>
+<li>STUDENT(<em>StuNo</em>, StuName, StuAddr, ModeOfStudy, MentorNo)</li>
+</ul>
+</li>
+<li>7
+<ul>
+<li>ACADEMIC_RECORD(<em>StuNo, UnitNo, Year_Semester</em>, Grade)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <h3 id="rules-of-the-first-three-normal-forms">Rules Of The First Three Normal Forms</h3>
 <ol>

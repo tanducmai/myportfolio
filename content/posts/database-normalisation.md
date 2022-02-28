@@ -99,14 +99,14 @@ information retrieval
 
 ### How To Normalise
 
-1. **Data Initialisation**:
+**I. Data Initialisation**:
 
 - Identify the *Unnormalised form* (UNF).
   - The unstructured data / information received from the client.
 - Find out the *repeating group* or *multi-value attributes*.
   - Refer to this *[section](#rules-of-the-first-three-normal-forms)*.
 
-2. **First Normal Form (1NF)**:
+**II. First Normal Form (1NF)**:
 
 - Identify the *Primary Key* (PK).
 - Remove the *repeating group* which will become a new *child relation*.
@@ -124,17 +124,21 @@ information retrieval
     - Non-key attribute depends on {Attribute1} or {Attribute1} -> Non-key
       attribute.
 
-3. **Second Normal Form (2NF)**:
+**III. Second Normal Form (2NF)**:
 
 - Remove the *partial dependency* which will become a new *child relation*.
-  - If the partial dependency or part of it is part of the PK, it needs to stay
-    in the parent relation, and references itself in the child relation.
-- Leave the child PK to the parent relation (resulting in a FK in the parent
-  relation).
+  - The relation whose elements have just been removed now becomes another
+    parent relation.
+  - Next, identify the PK of the new child relation.
+    - If the partial dependency or part of it is part of the new parent PK, it
+      (or part of it) needs to stay in the parent relation and references itself
+      in the new child relation.
+    - Leave the child PK to the parent relation (resulting in a FK in the parent
+      relation).
 - Identify the *transitive dependency*.
-  - A non-key attribute depends on another non-key attribute.
+  - A non-key attribute(s) depends on another non-key attribute(s).
   - Meaning that the relation should have at least two non-key attributes in
-  order to check for the transitive dependency.
+    order to check for the transitive dependency.
   - For example:
     - BOOK(BookName, AuthorName, AuthorAge)
     - {BookName} -> {AuthorName}
@@ -143,29 +147,62 @@ information retrieval
   - For this reason, a transitive dependency can only occur in a relation of
     three of more attributes.
 
-4. **Third Normal Form (3NF)**:
+**IV. Third Normal Form (3NF)**:
 
-- Remove the *transitive dependency*.
-- Result in the *full dependency*.
-  - We are now left with no partial / transitive dependency.
-  - PK now determines the rest of the attributes.
+- Remove the *transitive dependency* which will become a new *child relation*.
+  - The relation whose elements have just been removed now becomes another
+    parent relation.
+  - Next, identify the PK of the new child relation.
+    - This is as clear as day: just look back at the previously identified
+      transitive dependency.
+    - Leave the child PK to the parent relation (resulting in a FK in the parent
+      relation).
+- Identify the *full dependency*.
+  - Ensure that there is no partial and transitive dependency.
+  - The PK now determines the rest of the attributes.
   - For example:
-    - Having removed the transitive dependency, we now have our schema:
+    - Having removed the partial and transitive dependency, our schema is now:
     - COURSE(CourseNumber, CourseName, CourseDescription, CourseValue)
     - PK - CourseNumber
     - CourseNumber -> CourseName, CourseDescription, CourseValue
 
-5. In the case that we have several reports, we then need to:
+**V. Consolidation**:
 
-- Collect all the 3NF.
-- Combine the relations.
+- In the case that we have several reports, we then need to collect all their
+  3NFs and join them together into one, hence
+  *[consolidation](https://www.oxfordlearnersdictionaries.com/definition/english/consolidation):*.
+- Rules: `Join all the relations (and their attributes) that have the same
+  PK(s).`
+- For example, up to this stage, we have eight relations whose PKs are
+  italicised:
+
+  1. UNIT(*UnitNo*, UnitName, UnitDescrip, UnitValue)
+  2. LECTURER(*LecturerNo*, LecturerName. LecturerOfficeNo, LecturerPhoneNo)
+  3. UNIT_ADVISOR(*LecturerNo, UnitNo*)
+  4. UNIT(*UnitNo*, UnitName)
+  5. STUDENT(*StuNo*, StuName, StuAddr, ModeOfStudy, MentorNo)
+  6. MENTOR(*MentorNo*, MentorName)
+  7. ACADEMIC_RECORD(*StuNo, UnitNo, Year_Semester*, Grade)
+  8. UNIT(*UnitNo*, UnitName)
+
+  - The combination should be:
+    - 1 & 4 & 8
+      - UNIT(*UnitNo*, UnitName, UnitDescrip, UnitValue)
+    - 2 & 6
+      - LECTURER(*LecturerNo*, LecturerName. LecturerOfficeNo, LecturerPhoneNo)
+    - 3
+      - UNIT_ADVISOR(*LecturerNo, UnitNo*)
+    - 5
+      - STUDENT(*StuNo*, StuName, StuAddr, ModeOfStudy, MentorNo)
+    - 7
+      - ACADEMIC_RECORD(*StuNo, UnitNo, Year_Semester*, Grade)
 
 ### Rules Of The First Three Normal Forms
 
 1. **No repeating groups or multi-value attributes.**
 
 - Repeating group: Once a student enrols a course, their name is repeated
-everytime that it comes up.
+  everytime that it comes up.
 
 | Student | Age   | Course |
 | :---:   | :---: | :---:  |
