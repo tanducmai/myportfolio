@@ -37,18 +37,19 @@ A collection of tables containing data that are used to retrieve information.
 A collection of potentially useful data that models **real-world** or
 **conceptual objects** and their **relationships**.
 
-- Objects/Entities like People, Items, Students, etc.
+- Objects/Entities like Person, Item, Staff, etc.
 - Relationships like Henry purchased an apple.
-- Conceptual like films and songs (*intangible*).
+- Real-word objects like Book and Student (*tangible*).
+- Conceptual like Course and Film (*intangible*).
 
 ### Database Management System
 
 A DBMS is software designed to store and manage collections of data across one
 or more databases.
 
-- It can handle large amounts of data (more than RAM can hold)
+- It can handle large amounts of data (more than RAM can hold).
 - It can share the data between various applications and users (web interfaces,
-  desktop/console applications incl. command line via the DBMS!)
+  desktop/console applications include the command line via the DBMS).
 
 A DBMS ensures:
 - Data is persistent (can be retrieved once it is created).
@@ -79,7 +80,7 @@ In fact, 90% of business data is rarely accessed again. So why bother?
 
 There are primarily two reasons for it:
 
-1. Compliance with laws and company regulations
+1. Compliance with laws and company regulations.
 1. Data Mining – maybe the data holds some hidden detail?
 
 When having data stored, we can extract information and use it for decision
@@ -114,11 +115,11 @@ done, how, and then returns the result.
 
 A DBMS performs all the maintenance and management functions for the data model:
 
-1. Exchanging data from the computer to human users (and vice versa)
-1. Managing disk space (shrink/expansion)
-1. Managing the creation of tables (and various indexes)
+1. Exchanging data from the computer to human users (and vice versa).
+1. Managing disk space (shrink/expansion).
+1. Managing the creation of tables (and various indexes).
 1. Managing the insertion, updating and deletion of data records – including
-   performing any necessary checks
+   performing any necessary checks.
 
 A DBMS performs complex query answering (searching and matching) of records.
 
@@ -138,17 +139,17 @@ The **Transaction Manager** ensures that queries (or actions involving data) are
 carried out in the correct order.
 
 - It ensures that if a specific query fails (eg and update or insert) that the
-  database will not have data left in an inconsistent state
+  database will not have data left in an inconsistent state.
 
 The **Lock Manager** is provided to control access to records when there are
 multiple users involved.
 
 - If both users are updating a record, or one is trying to retrieve a record
   that is being modified the Lock Manager may restrict or reject access to the
-  record
+  record.
 
 The **Recovery Manager** uses system logs created by the transaction manager to
-retain data integrity in the event of a system failure
+retain data integrity in the event of a system failure.
 
 The **System Catalogue** is a data dictionary (metadata) that holds information
 about schemas, users, applications etc.

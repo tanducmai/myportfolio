@@ -1,5 +1,5 @@
 +++
-date = 2022-02-25T01:05:26+10:30
+date = 2022-02-26T01:05:26+10:30
 title = "Database - Normalisation"
 slug = "database-normalisation"
 aliases = "/database-normalisation"
@@ -59,7 +59,7 @@ In contrast, a bad design can create data quality issues (anomalies):
 
 Taking a poorly designed database as an example:
 
-| Student | Course   | Room  |
+| student | course   | room  |
 | ---     | ---      | ---   |
 | Henry   | INFS1025 | C2-04 |
 | Mai     | INFS1025 | C2-04 |
@@ -140,10 +140,10 @@ information retrieval
   - Meaning that the relation should have at least two non-key attributes in
     order to check for the transitive dependency.
   - For example:
-    - BOOK(BookName, AuthorName, AuthorAge)
-    - {BookName} -> {AuthorName}
-    - {AuthorName} -> {AuthorAge}
-    - Thus, {BookName} -> {AuthorAge}
+    - Book(bookName, authorName, authorAge)
+    - {bookName} -> {authorName}
+    - {authorName} -> {authorAge}
+    - Thus, {bookName} -> {authorAge}
   - For this reason, a transitive dependency can only occur in a relation of
     three of more attributes.
 
@@ -162,9 +162,9 @@ information retrieval
   - The PK now determines the rest of the attributes.
   - For example:
     - Having removed the partial and transitive dependency, our schema is now:
-    - COURSE(CourseNumber, CourseName, CourseDescription, CourseValue)
-    - PK - CourseNumber
-    - CourseNumber -> CourseName, CourseDescription, CourseValue
+    - Course(courseNumber, courseName, courseDescription, courseValue)
+    - PK - courseNumber
+    - courseNumber -> courseName, courseDescription, courseValue
 
 **V. Consolidation**:
 
@@ -176,26 +176,26 @@ information retrieval
 - For example, up to this stage, we have eight relations whose PKs are
   italicised:
 
-  1. UNIT(*UnitNo*, UnitName, UnitDescrip, UnitValue)
-  2. LECTURER(*LecturerNo*, LecturerName. LecturerOfficeNo, LecturerPhoneNo)
-  3. UNIT_ADVISOR(*LecturerNo, UnitNo*)
-  4. UNIT(*UnitNo*, UnitName)
-  5. STUDENT(*StuNo*, StuName, StuAddr, ModeOfStudy, MentorNo)
-  6. MENTOR(*MentorNo*, MentorName)
-  7. ACADEMIC_RECORD(*StuNo, UnitNo, Year_Semester*, Grade)
-  8. UNIT(*UnitNo*, UnitName)
+  1. Unit(*unitNo*, unitName, unitDescrip, unitValue)
+  2. Lecturer(*lecturerNo*, lecturerName. lecturerOfficeNo, lecturerPhoneNo)
+  3. UnitAdvisor(*lecturerNo, unitNo*)
+  4. Unit(*unitNo*, unitName)
+  5. Student(*stuNo*, stuName, stuAddr, modeOfStudy, mentorNo)
+  6. Mentor(*mentorNo*, mentorName)
+  7. AcademicRecord(*stuNo, unitNo, yearSemester*, grade)
+  8. Unit(*unitNo*, unitName)
 
   - The combination should be:
     - 1 & 4 & 8
-      - UNIT(*UnitNo*, UnitName, UnitDescrip, UnitValue)
+      - Unit(*unitNo*, unitName, unitDescrip, unitValue)
     - 2 & 6
-      - LECTURER(*LecturerNo*, LecturerName. LecturerOfficeNo, LecturerPhoneNo)
+      - LectureR(*lecturerNo*, lecturerName. lecturerOfficeNo, lecturerPhoneNo)
     - 3
-      - UNIT_ADVISOR(*LecturerNo, UnitNo*)
+      - UnitAdvisor(*lecturerNo, unitNo*)
     - 5
-      - STUDENT(*StuNo*, StuName, StuAddr, ModeOfStudy, MentorNo)
+      - Student(*stuNo*, stuName, stuAddr, modeOfStudy, mentorNo)
     - 7
-      - ACADEMIC_RECORD(*StuNo, UnitNo, Year_Semester*, Grade)
+      - AcademicRecord(*stuNo, unitNo, yearSemester*, grade)
 
 ### Rules Of The First Three Normal Forms
 
@@ -204,7 +204,7 @@ information retrieval
 - Repeating group: Once a student enrols a course, their name is repeated
   everytime that it comes up.
 
-| Student | Age   | Course |
+| student | age   | course |
 | :---:   | :---: | :---:  |
 | Henry   | 20    | OOP    |
 | Henry   | 20    | SRUX   |
@@ -213,13 +213,13 @@ information retrieval
 
 - Multi-value attributes: Multiple values presented in a single attribute.
 
-| Courses         |
+| courses         |
 | :---:           |
 | DDWT, SRUX, OOP |
 
 - The correct way:
 
-| Courses |
+| courses |
 | :---:    |
 | DDWT     |
 | SRUX     |
@@ -231,7 +231,7 @@ information retrieval
   - Taking a COURSES relation as an example.
   - Not atomic:
 
-| CourseCodeAndCourseName |
+| courseCodeAndCourseName |
 | :---:                   |
 | INFS 1025 DDWT          |
 | INFS1025 SRUX           |
@@ -239,7 +239,7 @@ information retrieval
 
   - Atomic:
 
-| CourseCode | CourseName |
+| courseCode | courseName |
 | :---:      | :---:      |
 | INFS 1025  | DDWT       |
 | INFS1025   | SRUX       |
@@ -259,7 +259,7 @@ candidate keys (e.g. a table should contain data about only one type of object).
 
 For example:
 
-| Title           | Format | Author   | GenreID | Genre | Price | Publisher |
+| title           | format | author   | genreID | genre | price | publisher |
 | :---:           | :---:  | :---:    | :---:   | :---: | :---: | :---:     |
 | SQL for Dummies | E-book | Taylor A | 1       | SQL   | 49.99 | Wiley     |
 
@@ -268,34 +268,34 @@ separate them into their own relations, and where necessary, create new CKs
 (such as a Surrogate Key) to help uniquely identify the records in each new
 relation:
 
-*BOOKS*
+*Book*
 
-| Title           | AuthorID | GenreID | PublisherID |
+| title           | authorID | genreID | publisherID |
 | :---:           | :---:    | :---:   | :---:       |
 | SQL for Dummies | 1        | 1       | 1           |
 
-*PUBLISHERS*
+*Publisher*
 
-| PublisherID | Publisher |
+| publisherID | publisher |
 | :---:       | :---:     |
 | 1           | Wiley     |
 
-*AUTHORS*
+*Author*
 
-| AuthorID | Author   |
+| authorID | author   |
 | :---:    | :---:    |
 | 1        | Taylor A |
 
-*FORMATS*
+*Format*
 
-| FormatID | Format    |
+| formatID | format    |
 | :---:    | :---:     |
 | 1        | E-book    |
 | 2        | Paperback |
 
-*BOOK_FORMATS*
+*BookFormat*
 
-| Title           | FormatID | Price |
+| title           | formatID | price |
 | :---:           | :---:    | :---: |
 | SQL for Dummies | 1        | 32.99 |
 | SQL for Dummies | 2        | 49.95 |

@@ -18,6 +18,11 @@
   </url>
   
   <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/tags/conceptual-design/</loc>
+    <lastmod>2022-02-28T19:30:29+10:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blissful-mayer-90b8fc.netlify.app/tags/database/</loc>
     <lastmod>2022-02-28T19:30:29+10:30</lastmod>
   </url>
@@ -74,17 +79,27 @@
   
   <url>
     <loc>https://blissful-mayer-90b8fc.netlify.app/posts/database-normalisation/</loc>
-    <lastmod>2022-02-25T01:05:26+10:30</lastmod>
+    <lastmod>2022-02-26T01:05:26+10:30</lastmod>
   </url>
   
   <url>
     <loc>https://blissful-mayer-90b8fc.netlify.app/tags/normalisation/</loc>
-    <lastmod>2022-02-25T01:05:26+10:30</lastmod>
+    <lastmod>2022-02-26T01:05:26+10:30</lastmod>
   </url>
   
   <url>
     <loc>https://blissful-mayer-90b8fc.netlify.app/tags/relational-model/</loc>
-    <lastmod>2022-02-25T01:05:26+10:30</lastmod>
+    <lastmod>2022-02-26T01:05:26+10:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/posts/database-identify-the-primary-key/</loc>
+    <lastmod>2022-02-25T17:54:53+10:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blissful-mayer-90b8fc.netlify.app/tags/primary-key/</loc>
+    <lastmod>2022-02-25T17:54:53+10:30</lastmod>
   </url>
   
   <url>

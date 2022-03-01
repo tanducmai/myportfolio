@@ -13,7 +13,7 @@
     <meta property="og:title" content="
   Database - Conceptual Design - Tan Duc Mai
 ">
-    <meta property="og:description" content="Database Conceptual Design">
+    <meta property="og:description" content="Database - Conceptual Design">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://blissful-mayer-90b8fc.netlify.app/posts/database-conceptual-design/">
     <meta property="og:image" content="https://blissful-mayer-90b8fc.netlify.app/images/database-fundamentals/database.png">
@@ -117,7 +117,7 @@
     <h3 id="table-of-contents">Table of Contents</h3>
 <ol>
 <li><a href="#what-is-a-conceptual-design">What is a Conceptual Design?</a></li>
-<li><a href="#entity-relationship-(er)-model">Entity Relationship (ER) Model</a></li>
+<li><a href="#entity-relationship-(er)-model">Entity-Relationship (ER) Model</a></li>
 </ol>
 <h3 id="what-is-a-conceptualhttpswwwoxfordlearnersdictionariescomdefinitionenglishconceptualqconceptual-design">What Is A <a href="https://www.oxfordlearnersdictionaries.com/definition/english/conceptual?q=conceptual">Conceptual</a> Design</h3>
 <p>When designing a database, we should:</p>
@@ -135,45 +135,67 @@ that object.</li>
 <li>If so, pick the best one (usually the smallest one) as the <em>Primary Key</em>.</li>
 <li>If not, add an artificial PK - <em>Surrogate Key</em>.</li>
 </ul>
-<h3 id="entity-relationship-er-model">Entity Relationship (ER) Model</h3>
-<p><strong>Entities</strong></p>
+<h3 id="entity-relationship-er-model">Entity-Relationship (ER) Model</h3>
+<ol>
+<li><strong>Entities</strong></li>
+</ol>
 <ul>
 <li>Reflect <em>real-world</em> and <em>theoretical/conceptual objects</em>.
 <ul>
 <li>A real-world object is one that can be easily identifiable and
-distinguishable.</li>
-<li>Real-world: Book, Car, etc.</li>
-<li>Conceptual: Class, COurse, etc.</li>
+distinguishable.
+<ul>
+<li>E.g., Book, Car, Staff, etc.</li>
+</ul>
+</li>
+<li>A theoretical/conceptual object is one that is intangible/untouchable.
+<ul>
+<li>E.g., Class, Course, Sales, etc.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>Represent what the database keeps track of.</li>
 <li>Translated into <em>relations/tables</em> in the final database.</li>
 <li>Some entities may be the result of relationships between other entities.
 <ul>
-<li>E.g., StudentClasses, StudentCourses, CourseBooks</li>
+<li>E.g., StudentClasses, StudentCourses, CourseBooks, etc.</li>
 </ul>
 </li>
-<li>To simplify, entities correspond to classes in Object-Oriented Programming (OOP).
+<li>To simplify, an entity corresponds to a class in Object-Oriented Programming
+(OOP).
 <ul>
-<li>Tuples within a relation correspond to an instance of a class (an entity).</li>
+<li>A tuple within a relation corresponds to an instance of a class (an entity).</li>
 </ul>
 </li>
 </ul>
-<p><strong>Relationships &amp; Multiplicity</strong></p>
+<ol start="2">
+<li><strong>Relationships &amp; Multiplicity</strong></li>
+</ol>
 <ul>
 <li>Depict how many <em>objects</em> of one type <em>interact</em> with another.</li>
 </ul>
-<p><strong>Attributes</strong></p>
+<ol start="3">
+<li><strong>Attributes</strong></li>
+</ol>
 <ul>
 <li>Describe details of an entity.</li>
 <li>Can also be used to help record entity interactions.</li>
 <li>Can include the <em>domain</em>(data type, range of values).
 <ul>
-<li>Every attribute requires a data type (int, varchar, etc.)</li>
-<li>Depending on the situtation, it is not necessary to include the range of
-values.</li>
+<li>Every attribute requires a <em>data type</em> (int, varchar, etc.)</li>
+<li>Depending on the situation, it may not be necessary to include the <em>range of
+values</em>.</li>
 </ul>
 </li>
+</ul>
+<h3 id="uml-data-modelling">UML Data Modelling</h3>
+<p>In a UML (Unified Modelling Language) diagram:</p>
+<ul>
+<li>A <strong>Class</strong> is equivalent to an entity (table or relation) in the proposed
+Relational Database.</li>
+<li>An <strong>Object</strong> is an instance of a class (e.g. a tuple within a relation)</li>
+<li>An <strong>Association</strong> is a relationship between two classes.</li>
 </ul>
 
   </article>

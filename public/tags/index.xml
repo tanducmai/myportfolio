@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>conceptual design</title>
+      <link>https://blissful-mayer-90b8fc.netlify.app/tags/conceptual-design/</link>
+      <pubDate>Mon, 28 Feb 2022 19:30:29 +1030</pubDate>
+      
+      <guid>https://blissful-mayer-90b8fc.netlify.app/tags/conceptual-design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>database</title>
       <link>https://blissful-mayer-90b8fc.netlify.app/tags/database/</link>
       <pubDate>Mon, 28 Feb 2022 19:30:29 +1030</pubDate>
@@ -32,7 +41,7 @@
     <item>
       <title>normalisation</title>
       <link>https://blissful-mayer-90b8fc.netlify.app/tags/normalisation/</link>
-      <pubDate>Fri, 25 Feb 2022 01:05:26 +1030</pubDate>
+      <pubDate>Sat, 26 Feb 2022 01:05:26 +1030</pubDate>
       
       <guid>https://blissful-mayer-90b8fc.netlify.app/tags/normalisation/</guid>
       <description></description>
@@ -41,9 +50,18 @@
     <item>
       <title>relational model</title>
       <link>https://blissful-mayer-90b8fc.netlify.app/tags/relational-model/</link>
-      <pubDate>Fri, 25 Feb 2022 01:05:26 +1030</pubDate>
+      <pubDate>Sat, 26 Feb 2022 01:05:26 +1030</pubDate>
       
       <guid>https://blissful-mayer-90b8fc.netlify.app/tags/relational-model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>primary key</title>
+      <link>https://blissful-mayer-90b8fc.netlify.app/tags/primary-key/</link>
+      <pubDate>Fri, 25 Feb 2022 17:54:53 +1030</pubDate>
+      
+      <guid>https://blissful-mayer-90b8fc.netlify.app/tags/primary-key/</guid>
       <description></description>
     </item>
     

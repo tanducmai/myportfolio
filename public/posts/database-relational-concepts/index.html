@@ -162,68 +162,53 @@ information about.</p>
 often called a Table.</p>
 <p>A relational database (model) consists of a serries of relations with distinct
 names.</p>
-<p>For example, the SCHOOL table stores LecturerInfo, StudentID, Courses.</p>
+<ul>
+<li>It is a convention to name relations using the <em>PascalCase</em>.</li>
+</ul>
+<p>For example, a School relation stores lecturerInfo, studentID, courses.</p>
 <h3 id="attributes">Attributes</h3>
 <p>An <strong>ATTRIBUTE</strong> is a name assigned to column in a relational table.</p>
 <p>Each Attribute must have a unique name in a given relational table.</p>
-<p>For example, the SCHOOL table has columns (attributes) for collecting the
-Lecturer’s information, Student ID, and Courses.</p>
+<ul>
+<li>It is a convention to name attributes using the <em>camelCase</em>.</li>
+</ul>
+<p>For example, the School table (relation) has columns (attributes) for collecting
+the Lecturer’s information, Student ID, and Courses.</p>
 <p>Every attribute has a domain.</p>
 <h3 id="domains">Domains</h3>
-<p>A <strong>Domain</strong> dictates - determines the acceptable values of an attribute.</p>
-<p>To simplify, a domain is often referred to as a data type - as in Programming.</p>
+<p>A <strong>Domain</strong> dictates (determines) the data type and the range of acceptable values of an attribute.</p>
 <p>For a list of common Database data type, please read:
-<em><a href="https://www.w3schools.com/sql/sql_datatypes.asp">W3Schools</a></em> or
-<em><a href="https://teachcomputerscience.com/database-data-types/">Teach Computer Science</a></em></p>
+<em><a href="https://www.w3schools.com/sql/sql_datatypes.asp">W3Schools</a></em> or <em><a href="https://teachcomputerscience.com/database-data-types/">Teach
+Computer Science</a></em></p>
 <p>For example:</p>
 <table>
 <thead>
 <tr>
 <th>Attribute Name</th>
-<th>Domain (Data Type)</th>
+<th>Domain</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>FirstName</td>
-<td>varchar</td>
+<td>studentName</td>
+<td>varchar(100)</td>
 </tr>
 <tr>
-<td>LastName</td>
-<td>varchar</td>
-</tr>
-<tr>
-<td>Email</td>
-<td>varchar</td>
-</tr>
-<tr>
-<td>ContactNo</td>
-<td>char</td>
-</tr>
-<tr>
-<td>Username</td>
-<td>varchar</td>
-</tr>
-<tr>
-<td>AddressLine1</td>
-<td>varchar</td>
-</tr>
-<tr>
-<td>AddressLine2</td>
-<td>varchar</td>
+<td>favColour</td>
+<td>varchar(10) {red, green, blue}</td>
 </tr>
 </tbody>
 </table>
 <h3 id="table-schemas">Table Schemas</h3>
 <p>A <strong>TABLE SCHEMA</strong> defines the structure of a relational table in a relational
 database.</p>
-<p>Format: [ <strong>RELATION_NAME(AttributeNames)</strong> ]</p>
-<p>Example: CUSTOMER(CustomerID, FirstName, FamilyName, Address, Age)</p>
+<p>Format: <strong>RelationName(attributeNames)</strong></p>
+<p>Example: Customer(customerID, firstName, familyName, address, age)</p>
 <h3 id="tuples">Tuples</h3>
 <p>A <strong>TUPLE</strong> is an instance of a relation or entity and contains the actual raw
 data.</p>
 <p>To simplify, a Tuple is a row of data.</p>
-<p>A relation consists of one or more unordered tuples</p>
+<p>A relation consists of one or more unordered tuples.</p>
 <p>Within a relation, every tuple has a fixed number of values, hence the name
 &lsquo;tuple&rsquo;.</p>
 <h3 id="put-it-all-together">Put It All Together</h3>

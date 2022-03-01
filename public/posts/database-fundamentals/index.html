@@ -133,17 +133,18 @@ Image Source:
 <p>A collection of potentially useful data that models <strong>real-world</strong> or
 <strong>conceptual objects</strong> and their <strong>relationships</strong>.</p>
 <ul>
-<li>Objects/Entities like People, Items, Students, etc.</li>
+<li>Objects/Entities like Person, Item, Staff, etc.</li>
 <li>Relationships like Henry purchased an apple.</li>
-<li>Conceptual like films and songs (<em>intangible</em>).</li>
+<li>Real-word objects like Book and Student (<em>tangible</em>).</li>
+<li>Conceptual like Course and Film (<em>intangible</em>).</li>
 </ul>
 <h3 id="database-management-system">Database Management System</h3>
 <p>A DBMS is software designed to store and manage collections of data across one
 or more databases.</p>
 <ul>
-<li>It can handle large amounts of data (more than RAM can hold)</li>
+<li>It can handle large amounts of data (more than RAM can hold).</li>
 <li>It can share the data between various applications and users (web interfaces,
-desktop/console applications incl. command line via the DBMS!)</li>
+desktop/console applications include the command line via the DBMS).</li>
 </ul>
 <p>A DBMS ensures:</p>
 <ul>
@@ -172,7 +173,7 @@ between 0 and 100).</li>
 <p>In fact, 90% of business data is rarely accessed again. So why bother?</p>
 <p>There are primarily two reasons for it:</p>
 <ol>
-<li>Compliance with laws and company regulations</li>
+<li>Compliance with laws and company regulations.</li>
 <li>Data Mining – maybe the data holds some hidden detail?</li>
 </ol>
 <p>When having data stored, we can extract information and use it for decision
@@ -202,11 +203,11 @@ structured data (database).</p>
 done, how, and then returns the result.</p>
 <p>A DBMS performs all the maintenance and management functions for the data model:</p>
 <ol>
-<li>Exchanging data from the computer to human users (and vice versa)</li>
-<li>Managing disk space (shrink/expansion)</li>
-<li>Managing the creation of tables (and various indexes)</li>
+<li>Exchanging data from the computer to human users (and vice versa).</li>
+<li>Managing disk space (shrink/expansion).</li>
+<li>Managing the creation of tables (and various indexes).</li>
 <li>Managing the insertion, updating and deletion of data records – including
-performing any necessary checks</li>
+performing any necessary checks.</li>
 </ol>
 <p>A DBMS performs complex query answering (searching and matching) of records.</p>
 <p>The DBMS and its users communicate using a mutually understandable language:
@@ -221,17 +222,17 @@ Systems</a></em>
 carried out in the correct order.</p>
 <ul>
 <li>It ensures that if a specific query fails (eg and update or insert) that the
-database will not have data left in an inconsistent state</li>
+database will not have data left in an inconsistent state.</li>
 </ul>
 <p>The <strong>Lock Manager</strong> is provided to control access to records when there are
 multiple users involved.</p>
 <ul>
 <li>If both users are updating a record, or one is trying to retrieve a record
 that is being modified the Lock Manager may restrict or reject access to the
-record</li>
+record.</li>
 </ul>
 <p>The <strong>Recovery Manager</strong> uses system logs created by the transaction manager to
-retain data integrity in the event of a system failure</p>
+retain data integrity in the event of a system failure.</p>
 <p>The <strong>System Catalogue</strong> is a data dictionary (metadata) that holds information
 about schemas, users, applications etc.</p>
 <ul>

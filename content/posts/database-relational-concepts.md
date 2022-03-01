@@ -53,7 +53,9 @@ often called a Table.
 A relational database (model) consists of a serries of relations with distinct
 names.
 
-For example, the SCHOOL table stores LecturerInfo, StudentID, Courses.
+- It is a convention to name relations using the *PascalCase*.
+
+For example, a School relation stores lecturerInfo, studentID, courses.
 
 ### Attributes
 
@@ -61,41 +63,36 @@ An **ATTRIBUTE** is a name assigned to column in a relational table.
 
 Each Attribute must have a unique name in a given relational table.
 
-For example, the SCHOOL table has columns (attributes) for collecting the
-Lecturer’s information, Student ID, and Courses.
+- It is a convention to name attributes using the *camelCase*.
+
+For example, the School table (relation) has columns (attributes) for collecting
+the Lecturer’s information, Student ID, and Courses.
 
 Every attribute has a domain.
 
 ### Domains
 
-A **Domain** dictates - determines the acceptable values of an attribute.
-
-To simplify, a domain is often referred to as a data type - as in Programming.
+A **Domain** dictates (determines) the data type and the range of acceptable values of an attribute.
 
 For a list of common Database data type, please read:
-*[W3Schools](https://www.w3schools.com/sql/sql_datatypes.asp)* or
-*[Teach Computer Science](https://teachcomputerscience.com/database-data-types/)*
+*[W3Schools](https://www.w3schools.com/sql/sql_datatypes.asp)* or *[Teach
+Computer Science](https://teachcomputerscience.com/database-data-types/)*
 
 For example:
 
-| Attribute Name | Domain (Data Type) |
-| ---            | ---                |
-| FirstName      | varchar            |
-| LastName       | varchar            |
-| Email          | varchar            |
-| ContactNo      | char               |
-| Username       | varchar            |
-| AddressLine1   | varchar            |
-| AddressLine2   | varchar            |
+| Attribute Name | Domain                         |
+| ---            | ---                            |
+| studentName    | varchar(100)                   |
+| favColour      | varchar(10) {red, green, blue} |
 
 ### Table Schemas
 
 A **TABLE SCHEMA** defines the structure of a relational table in a relational
 database.
 
-Format: [ **RELATION_NAME(AttributeNames)** ]
+Format: **RelationName(attributeNames)**
 
-Example: CUSTOMER(CustomerID, FirstName, FamilyName, Address, Age)
+Example: Customer(customerID, firstName, familyName, address, age)
 
 ### Tuples
 
@@ -104,7 +101,7 @@ data.
 
 To simplify, a Tuple is a row of data.
 
-A relation consists of one or more unordered tuples
+A relation consists of one or more unordered tuples.
 
 Within a relation, every tuple has a fixed number of values, hence the name
 'tuple'.

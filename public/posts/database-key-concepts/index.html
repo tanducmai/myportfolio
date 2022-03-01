@@ -126,8 +126,8 @@
 <li><a href="#foreign-key">Foreign Key</a></li>
 <li><a href="#non-key-attributes">Non-key Attributes</a></li>
 </ol>
-<p><img src="/images/database-key-concepts/thumbnail.png" alt="Keys in DBMS"></p>
-<p>Image Source:
+<p><img src="/images/database-key-concepts/thumbnail.png" alt="Keys in DBMS">
+Image Source:
 <em><a href="https://www.arvindzeclass.in/2021/06/What-is-primary-key.html">Arvindzeclass</a></em></p>
 <h3 id="what-is-a-key">What Is A Key</h3>
 <p>A <strong>KEY</strong> in the DBMS is a set of one or more attributes whose values can
@@ -174,8 +174,8 @@ in Excel).</p>
 <em>unique</em>.</p>
 <p>Taking the below relation as an example:</p>
 <ul>
-<li>STUDENT(FirstName, LastName, Email, Username, ContactNo, Address)</li>
-<li>Email &amp; Username are two Unique Keys.</li>
+<li>Student(firstName, lastName, email, username, contactNo, address)</li>
+<li>email &amp; username are two Unique Keys.</li>
 </ul>
 <p>Further, any CK that is not selected as the PK can be implemented as a Unique
 Key constraint in the DBMS.</p>
@@ -199,7 +199,7 @@ table data.</p>
 <p>A <strong>NATURAL KEY</strong> is a minimum set of one or more attributes that can be used or
 combined with others to <em>uniquely identify</em> each tuple within a relation.</p>
 <ul>
-<li>E.g., BankAccount + TelephoneNo, Name + DOB.</li>
+<li>E.g., bankAccount + telephoneNo, name + dateOfBirth.</li>
 </ul>
 <p>A Natural Key exists if and only if a Surrogate Key does.</p>
 <ul>
@@ -221,8 +221,8 @@ parent table, not the child one.</p>
 <p>Example: A course mark is of no use if it does not relate back to a student and
 a course:</p>
 <ul>
-<li>Enrolment(StudentID) is a FK referencing Student(StudentID)</li>
-<li>Enrolment(CourseID) is a FK referencing Course(CourseID)</li>
+<li>Enrolment(studentID) is a FK referencing Student(studentID)</li>
+<li>Enrolment(courseID) is a FK referencing Course(courseID)</li>
 </ul>
 <p><img src="/images/database-key-concepts/foreign-keys.png" alt="Foreign Keys Example"></p>
 <h3 id="non-key-attributes">Non-key Attributes</h3>

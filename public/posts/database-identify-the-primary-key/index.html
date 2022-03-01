@@ -11,22 +11,22 @@
 
     <meta property="og:site_name" content="Tan Duc Mai">
     <meta property="og:title" content="
-  Database - Why? - Tan Duc Mai
+  Database - Identify the Primary Key - Tan Duc Mai
 ">
-    <meta property="og:description" content="Why Databases?">
+    <meta property="og:description" content="Database - Identify the Primary Key">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://blissful-mayer-90b8fc.netlify.app/posts/database-why/">
-    <meta property="og:image" content="https://blissful-mayer-90b8fc.netlify.app/images/database-why/modern.jpg">
+    <meta property="og:url" content="https://blissful-mayer-90b8fc.netlify.app/posts/database-identify-the-primary-key/">
+    <meta property="og:image" content="https://blissful-mayer-90b8fc.netlify.app/images/database-key-concepts/thumbnail.png">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="https://blissful-mayer-90b8fc.netlify.app/posts/database-why/">
-    <meta name="twitter:image" content="https://blissful-mayer-90b8fc.netlify.app/images/database-why/modern.jpg">
+    <meta name="twitter:site" content="https://blissful-mayer-90b8fc.netlify.app/posts/database-identify-the-primary-key/">
+    <meta name="twitter:image" content="https://blissful-mayer-90b8fc.netlify.app/images/database-key-concepts/thumbnail.png">
 
-    <base href="https://blissful-mayer-90b8fc.netlify.app/posts/database-why/">
+    <base href="https://blissful-mayer-90b8fc.netlify.app/posts/database-identify-the-primary-key/">
     <title>
-  Database - Why? - Tan Duc Mai
+  Database - Identify the Primary Key - Tan Duc Mai
 </title>
 
-    <link rel="canonical" href="https://blissful-mayer-90b8fc.netlify.app/posts/database-why/">
+    <link rel="canonical" href="https://blissful-mayer-90b8fc.netlify.app/posts/database-identify-the-primary-key/">
     
     <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
     <link rel="stylesheet" href="/css/normalize.min.css">
@@ -108,61 +108,42 @@
   <section class="container post">
   <article>
     <header>
-      <h1 class="title">Database - Why?</h1>
-      <h2 class="date">February 22, 2022</h2>
+      <h1 class="title">Database - Identify the Primary Key</h1>
+      <h2 class="date">February 25, 2022</h2>
 
       
     </header>
 
-    <h3 id="table-of-contents">Table of Contents</h3>
-<ol>
-<li><a href="#problems-with-traditional-and-physical-data-storage">Traditional &amp; Physical Data
-Storage</a></li>
-<li><a href="#modern-and-digital-data-storage">Modern &amp; Digital Data Storage</a></li>
-</ol>
-<h3 id="problems-with-traditional-and-physical-data-storage">Problems With Traditional And Physical Data Storage</h3>
-<ol>
-<li>Limited by physical size</li>
-<li>Limited multi-access - a borrowed book can only be viewed by one person at a
-time.</li>
-<li>Limited search methods (title, author, subject)</li>
-<li>Slow turn-around</li>
-<li>Multiple indexes that must be rigorously maintained.</li>
-<li>Complex Query Limitations - vast amounts of time wasted counting the number
-of books on a subject or by an author.</li>
-<li>Anomalies: - What IFs:</li>
-</ol>
-<ul>
-<li>A card is misplaced?</li>
-<li>A catalogue card is misplaced?</li>
-<li>An item is entered into / deleted in one index but not the others?</li>
-</ul>
-<p><img src="/images/database-why/traditional.webp" alt="Traditional Data Storage">
+    <p><img src="/images/database-key-concepts/thumbnail.png" alt="Keys in DBMS">
 Image Source:
-<em><a href="https://www.britannica.com/story/a-brief-history-of-libraries">Britannica</a></em></p>
-<h3 id="modern-and-digital-data-storage">Modern And Digital Data Storage</h3>
-<p>Data can now be stored in files, such as text files, Excel sheets, Word
-documents.</p>
-<p><img src="/images/database-why/modern.jpg" alt="Modern Data Storage">
-Image Source: <em><a href="https://orangematter.solarwinds.com/2018/09/06/databases-101-factors-to-consider-when-choosing-a-database/">Orange
-Matter</a></em></p>
-<h5 id="advantages">Advantages</h5>
-<ol>
-<li>Low cost.</li>
-<li>No extra software / hardware is needed.</li>
-</ol>
-<h5 id="disadvantages">Disadvantages</h5>
-<ol>
-<li>Size - the larger the volume of data, the slower the retrieval of them (yet
-still better than physical data).</li>
-<li>Update / Synchronisation - files are hard to share. Updates from multiple
-users often end up with multiple versions of the same file or even
-overwriting someone&rsquo;s changes!</li>
-<li>Accuracy - duplication is wasteful and can cause confusion (inconsistent
-data).</li>
-<li>Security - restriction to some fields is more difficult to manage (e.g.,
-taxFileNumbers, IDs + usernames).</li>
-</ol>
+<em><a href="https://www.arvindzeclass.in/2021/06/What-is-primary-key.html">Arvindzeclass</a></em></p>
+<p>Picking a good Primary Key from a list of available Candidate Keys might be an
+unappealing process, but try to stick to these rules to make your life easier.</p>
+<h3 id="keep-the-primary-key-as-small-as-possible">Keep The Primary Key As Small As Possible</h3>
+<p>Imagine that the PK will be distributed among other relations.</p>
+<ul>
+<li>1000s of copies of that PK value will appear in the database, which will
+overload the system.</li>
+</ul>
+<p>That is, the smaller they are, the fewer bytes the DBMS has to load into RAM to
+find related records.</p>
+<p>E.g. Picking <em>studentName + birthDate + address</em> is bad as it is large! Try to
+keep it below 3 attributes.</p>
+<h3 id="pick-primary-keys-from-attributes-that-are-stable">Pick Primary Keys From Attributes That Are Stable</h3>
+<p>You will definitely not want the DBMS to constantly update Foreign Key values
+that reference changing PK values!</p>
+<p>Thus, pick a column that has no inherent meaning for the entity or does not
+change.</p>
+<p>E.g. studentID and productID are good choices.</p>
+<p>Picking studentName + address or mobilePhone is bad since these can change over
+time.</p>
+<h3 id="where-possible-small-natural-keys-may-improve-data-readability">Where Possible, Small Natural Keys May Improve Data Readability</h3>
+<p>Abbreviated names can be excellent: <em>st</em> for street, <em>rd</em> for road, <em>ave</em> for
+avenue.</p>
+<p>Surrogate Keys have no meaning (e.g., streetTypeID = 1, streetType = ‘Road’).</p>
+<h3 id="still-have-not-got-any-good-primary-keys---use-a-surrogate-key">Still Have Not Got Any Good Primary Keys? - Use A Surrogate Key</h3>
+<p>Nonetheless, keep in mind that this is more data to manage which has no meaning
+or relationship to the business data.</p>
 
   </article>
 

@@ -50,8 +50,8 @@ Matter](https://orangematter.solarwinds.com/2018/09/06/databases-101-factors-to-
 
 ##### Advantages
 
-1. Low cost
-1. No extra software / hardware is needed
+1. Low cost.
+1. No extra software / hardware is needed.
 
 ##### Disadvantages
 
@@ -62,5 +62,5 @@ Matter](https://orangematter.solarwinds.com/2018/09/06/databases-101-factors-to-
    overwriting someone's changes!
 1. Accuracy - duplication is wasteful and can cause confusion (inconsistent
    data).
-1. Security - restriction to some fields is more difficult to manage (e.g., Tax
-   File Numbers, IDs + usernames).
+1. Security - restriction to some fields is more difficult to manage (e.g.,
+   taxFileNumbers, IDs + usernames).

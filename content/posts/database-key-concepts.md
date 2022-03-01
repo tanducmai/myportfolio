@@ -30,7 +30,6 @@ draft = false
 1. [Non-key Attributes](#non-key-attributes)
 
 ![Keys in DBMS](/images/database-key-concepts/thumbnail.png)
-
 Image Source:
 *[Arvindzeclass](https://www.arvindzeclass.in/2021/06/What-is-primary-key.html)*
 
@@ -93,8 +92,8 @@ A **UNIQUE KEY** is, obviously, a set of attribute(s) whose values are always
 
 Taking the below relation as an example:
 
-- STUDENT(FirstName, LastName, Email, Username, ContactNo, Address)
-- Email & Username are two Unique Keys.
+- Student(firstName, lastName, email, username, contactNo, address)
+- email & username are two Unique Keys.
 
 Further, any CK that is not selected as the PK can be implemented as a Unique
 Key constraint in the DBMS.
@@ -124,7 +123,7 @@ table data.
 A **NATURAL KEY** is a minimum set of one or more attributes that can be used or
 combined with others to *uniquely identify* each tuple within a relation.
 
-- E.g., BankAccount + TelephoneNo, Name + DOB.
+- E.g., bankAccount + telephoneNo, name + dateOfBirth.
 
 A Natural Key exists if and only if a Surrogate Key does.
 
@@ -152,8 +151,8 @@ parent table, not the child one.
 Example: A course mark is of no use if it does not relate back to a student and
 a course:
 
-- Enrolment(StudentID) is a FK referencing Student(StudentID)
-- Enrolment(CourseID) is a FK referencing Course(CourseID)
+- Enrolment(studentID) is a FK referencing Student(studentID)
+- Enrolment(courseID) is a FK referencing Course(courseID)
 
 ![Foreign Keys Example](/images/database-key-concepts/foreign-keys.png)
 

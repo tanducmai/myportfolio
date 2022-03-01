@@ -109,7 +109,7 @@
   <article>
     <header>
       <h1 class="title">Database - Normalisation</h1>
-      <h2 class="date">February 25, 2022</h2>
+      <h2 class="date">February 26, 2022</h2>
 
       
     </header>
@@ -169,9 +169,9 @@ information may be wrong.</li>
 <table>
 <thead>
 <tr>
-<th>Student</th>
-<th>Course</th>
-<th>Room</th>
+<th>student</th>
+<th>course</th>
+<th>room</th>
 </tr>
 </thead>
 <tbody>
@@ -294,10 +294,10 @@ relation).</li>
 order to check for the transitive dependency.</li>
 <li>For example:
 <ul>
-<li>BOOK(BookName, AuthorName, AuthorAge)</li>
-<li>{BookName} -&gt; {AuthorName}</li>
-<li>{AuthorName} -&gt; {AuthorAge}</li>
-<li>Thus, {BookName} -&gt; {AuthorAge}</li>
+<li>Book(bookName, authorName, authorAge)</li>
+<li>{bookName} -&gt; {authorName}</li>
+<li>{authorName} -&gt; {authorAge}</li>
+<li>Thus, {bookName} -&gt; {authorAge}</li>
 </ul>
 </li>
 <li>For this reason, a transitive dependency can only occur in a relation of
@@ -328,9 +328,9 @@ relation).</li>
 <li>For example:
 <ul>
 <li>Having removed the partial and transitive dependency, our schema is now:</li>
-<li>COURSE(CourseNumber, CourseName, CourseDescription, CourseValue)</li>
-<li>PK - CourseNumber</li>
-<li>CourseNumber -&gt; CourseName, CourseDescription, CourseValue</li>
+<li>Course(courseNumber, courseName, courseDescription, courseValue)</li>
+<li>PK - courseNumber</li>
+<li>courseNumber -&gt; courseName, courseDescription, courseValue</li>
 </ul>
 </li>
 </ul>
@@ -350,41 +350,41 @@ relation).</li>
 <p>For example, up to this stage, we have eight relations whose PKs are
 italicised:</p>
 <ol>
-<li>UNIT(<em>UnitNo</em>, UnitName, UnitDescrip, UnitValue)</li>
-<li>LECTURER(<em>LecturerNo</em>, LecturerName. LecturerOfficeNo, LecturerPhoneNo)</li>
-<li>UNIT_ADVISOR(<em>LecturerNo, UnitNo</em>)</li>
-<li>UNIT(<em>UnitNo</em>, UnitName)</li>
-<li>STUDENT(<em>StuNo</em>, StuName, StuAddr, ModeOfStudy, MentorNo)</li>
-<li>MENTOR(<em>MentorNo</em>, MentorName)</li>
-<li>ACADEMIC_RECORD(<em>StuNo, UnitNo, Year_Semester</em>, Grade)</li>
-<li>UNIT(<em>UnitNo</em>, UnitName)</li>
+<li>Unit(<em>unitNo</em>, unitName, unitDescrip, unitValue)</li>
+<li>Lecturer(<em>lecturerNo</em>, lecturerName. lecturerOfficeNo, lecturerPhoneNo)</li>
+<li>UnitAdvisor(<em>lecturerNo, unitNo</em>)</li>
+<li>Unit(<em>unitNo</em>, unitName)</li>
+<li>Student(<em>stuNo</em>, stuName, stuAddr, modeOfStudy, mentorNo)</li>
+<li>Mentor(<em>mentorNo</em>, mentorName)</li>
+<li>AcademicRecord(<em>stuNo, unitNo, yearSemester</em>, grade)</li>
+<li>Unit(<em>unitNo</em>, unitName)</li>
 </ol>
 <ul>
 <li>The combination should be:
 <ul>
 <li>1 &amp; 4 &amp; 8
 <ul>
-<li>UNIT(<em>UnitNo</em>, UnitName, UnitDescrip, UnitValue)</li>
+<li>Unit(<em>unitNo</em>, unitName, unitDescrip, unitValue)</li>
 </ul>
 </li>
 <li>2 &amp; 6
 <ul>
-<li>LECTURER(<em>LecturerNo</em>, LecturerName. LecturerOfficeNo, LecturerPhoneNo)</li>
+<li>LectureR(<em>lecturerNo</em>, lecturerName. lecturerOfficeNo, lecturerPhoneNo)</li>
 </ul>
 </li>
 <li>3
 <ul>
-<li>UNIT_ADVISOR(<em>LecturerNo, UnitNo</em>)</li>
+<li>UnitAdvisor(<em>lecturerNo, unitNo</em>)</li>
 </ul>
 </li>
 <li>5
 <ul>
-<li>STUDENT(<em>StuNo</em>, StuName, StuAddr, ModeOfStudy, MentorNo)</li>
+<li>Student(<em>stuNo</em>, stuName, stuAddr, modeOfStudy, mentorNo)</li>
 </ul>
 </li>
 <li>7
 <ul>
-<li>ACADEMIC_RECORD(<em>StuNo, UnitNo, Year_Semester</em>, Grade)</li>
+<li>AcademicRecord(<em>stuNo, unitNo, yearSemester</em>, grade)</li>
 </ul>
 </li>
 </ul>
@@ -403,9 +403,9 @@ everytime that it comes up.</li>
 <table>
 <thead>
 <tr>
-<th align="center">Student</th>
-<th align="center">Age</th>
-<th align="center">Course</th>
+<th align="center">student</th>
+<th align="center">age</th>
+<th align="center">course</th>
 </tr>
 </thead>
 <tbody>
@@ -437,7 +437,7 @@ everytime that it comes up.</li>
 <table>
 <thead>
 <tr>
-<th align="center">Courses</th>
+<th align="center">courses</th>
 </tr>
 </thead>
 <tbody>
@@ -452,7 +452,7 @@ everytime that it comes up.</li>
 <table>
 <thead>
 <tr>
-<th align="center">Courses</th>
+<th align="center">courses</th>
 </tr>
 </thead>
 <tbody>
@@ -478,7 +478,7 @@ everytime that it comes up.</li>
 <table>
 <thead>
 <tr>
-<th align="center">CourseCodeAndCourseName</th>
+<th align="center">courseCodeAndCourseName</th>
 </tr>
 </thead>
 <tbody>
@@ -499,8 +499,8 @@ everytime that it comes up.</li>
 <table>
 <thead>
 <tr>
-<th align="center">CourseCode</th>
-<th align="center">CourseName</th>
+<th align="center">courseCode</th>
+<th align="center">courseName</th>
 </tr>
 </thead>
 <tbody>
@@ -534,13 +534,13 @@ candidate keys (e.g. a table should contain data about only one type of object).
 <table>
 <thead>
 <tr>
-<th align="center">Title</th>
-<th align="center">Format</th>
-<th align="center">Author</th>
-<th align="center">GenreID</th>
-<th align="center">Genre</th>
-<th align="center">Price</th>
-<th align="center">Publisher</th>
+<th align="center">title</th>
+<th align="center">format</th>
+<th align="center">author</th>
+<th align="center">genreID</th>
+<th align="center">genre</th>
+<th align="center">price</th>
+<th align="center">publisher</th>
 </tr>
 </thead>
 <tbody>
@@ -559,14 +559,14 @@ candidate keys (e.g. a table should contain data about only one type of object).
 separate them into their own relations, and where necessary, create new CKs
 (such as a Surrogate Key) to help uniquely identify the records in each new
 relation:</p>
-<p><em>BOOKS</em></p>
+<p><em>Book</em></p>
 <table>
 <thead>
 <tr>
-<th align="center">Title</th>
-<th align="center">AuthorID</th>
-<th align="center">GenreID</th>
-<th align="center">PublisherID</th>
+<th align="center">title</th>
+<th align="center">authorID</th>
+<th align="center">genreID</th>
+<th align="center">publisherID</th>
 </tr>
 </thead>
 <tbody>
@@ -578,12 +578,12 @@ relation:</p>
 </tr>
 </tbody>
 </table>
-<p><em>PUBLISHERS</em></p>
+<p><em>Publisher</em></p>
 <table>
 <thead>
 <tr>
-<th align="center">PublisherID</th>
-<th align="center">Publisher</th>
+<th align="center">publisherID</th>
+<th align="center">publisher</th>
 </tr>
 </thead>
 <tbody>
@@ -593,12 +593,12 @@ relation:</p>
 </tr>
 </tbody>
 </table>
-<p><em>AUTHORS</em></p>
+<p><em>Author</em></p>
 <table>
 <thead>
 <tr>
-<th align="center">AuthorID</th>
-<th align="center">Author</th>
+<th align="center">authorID</th>
+<th align="center">author</th>
 </tr>
 </thead>
 <tbody>
@@ -608,12 +608,12 @@ relation:</p>
 </tr>
 </tbody>
 </table>
-<p><em>FORMATS</em></p>
+<p><em>Format</em></p>
 <table>
 <thead>
 <tr>
-<th align="center">FormatID</th>
-<th align="center">Format</th>
+<th align="center">formatID</th>
+<th align="center">format</th>
 </tr>
 </thead>
 <tbody>
@@ -627,13 +627,13 @@ relation:</p>
 </tr>
 </tbody>
 </table>
-<p><em>BOOK_FORMATS</em></p>
+<p><em>BookFormat</em></p>
 <table>
 <thead>
 <tr>
-<th align="center">Title</th>
-<th align="center">FormatID</th>
-<th align="center">Price</th>
+<th align="center">title</th>
+<th align="center">formatID</th>
+<th align="center">price</th>
 </tr>
 </thead>
 <tbody>

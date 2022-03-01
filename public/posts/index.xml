@@ -17,20 +17,32 @@
       <pubDate>Mon, 28 Feb 2022 19:30:29 +1030</pubDate>
       
       <guid>https://blissful-mayer-90b8fc.netlify.app/posts/database-conceptual-design/</guid>
-      <description>Table of Contents  What is a Conceptual Design? Entity Relationship (ER) Model  What Is A Conceptual Design When designing a database, we should:
+      <description>Table of Contents  What is a Conceptual Design? Entity-Relationship (ER) Model  What Is A Conceptual Design When designing a database, we should:
  Create a list of all the real-world AND conceptual objects that we need to store data about. To each of those items, list all the attributes required to capture the desired data. Check that each of our objects only captures the relevant information to that object.</description>
     </item>
     
     <item>
       <title>Database - Normalisation</title>
       <link>https://blissful-mayer-90b8fc.netlify.app/posts/database-normalisation/</link>
-      <pubDate>Fri, 25 Feb 2022 01:05:26 +1030</pubDate>
+      <pubDate>Sat, 26 Feb 2022 01:05:26 +1030</pubDate>
       
       <guid>https://blissful-mayer-90b8fc.netlify.app/posts/database-normalisation/</guid>
       <description>Table of Contents  Good and Bad Database Designs Rule of Thumb Normalisation How to Normalise? Rules of the First Three Normal Forms  Image Source: Evil Martians
 Good and Bad Database Designs When designing a database, people tend to do one that captures all or too much of the required information.
 It should be noted that more than one design are plausible.
  One design may be better than another.</description>
+    </item>
+    
+    <item>
+      <title>Database - Identify the Primary Key</title>
+      <link>https://blissful-mayer-90b8fc.netlify.app/posts/database-identify-the-primary-key/</link>
+      <pubDate>Fri, 25 Feb 2022 17:54:53 +1030</pubDate>
+      
+      <guid>https://blissful-mayer-90b8fc.netlify.app/posts/database-identify-the-primary-key/</guid>
+      <description>Image Source: Arvindzeclass
+Picking a good Primary Key from a list of available Candidate Keys might be an unappealing process, but try to stick to these rules to make your life easier.
+Keep The Primary Key As Small As Possible Imagine that the PK will be distributed among other relations.
+ 1000s of copies of that PK value will appear in the database, which will overload the system.  That is, the smaller they are, the fewer bytes the DBMS has to load into RAM to find related records.</description>
     </item>
     
     <item>
