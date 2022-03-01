@@ -17,8 +17,8 @@
       <pubDate>Mon, 28 Feb 2022 19:30:29 +1030</pubDate>
       
       <guid>https://blissful-mayer-90b8fc.netlify.app/posts/database-conceptual-design/</guid>
-      <description>Table of Contents  What is a Conceptual Design? Entity-Relationship (ER) Model  What Is A Conceptual Design When designing a database, we should:
- Create a list of all the real-world AND conceptual objects that we need to store data about. To each of those items, list all the attributes required to capture the desired data. Check that each of our objects only captures the relevant information to that object.</description>
+      <description>Table of Contents  Conceptual Design? Design Process Conceptual Modelling? Entity-Relationship Model Unified Modelling Language Diagram UML Diagram Example Types of Attributes Association Multiplicity Summary of Multiplicity Syntax Association Class Recursive Relationships/Self Associations Aggregation Composition Strong and Weak Entity Type Inheritance Superclass and Subclass  Conceptual Design When designing a database, we should:
+ Create a list of all the real-world AND conceptual objects that we need to store data about.</description>
     </item>
     
     <item>

@@ -4,7 +4,7 @@ title = "Database - Conceptual Design"
 slug = "database-conceptual-design"
 aliases = "/database-conceptual-design/"
 description = "Database - Conceptual Design"
-thumbnail = "images/database-fundamentals/database.png"
+thumbnail = "images/database-conceptual-design/uml-example.png"
 tags = [
     "database",
     "fundamentals",
@@ -18,10 +18,26 @@ draft = true
 
 ### Table of Contents
 
-1. [What is a Conceptual Design?](#what-is-a-conceptual-design)
-1. [Entity-Relationship (ER) Model](#entity-relationship-(er)-model)
+1. [Conceptual Design?](#conceptual-design)
+1. [Design Process](#design-process)
+1. [Conceptual Modelling?](#conceptual-modelling)
+1. [Entity-Relationship Model](#entity-relationship-model)
+1. [Unified Modelling Language Diagram](#unified-modelling-language-diagram)
+1. [UML Diagram Example](#uml-diagram-example)
+1. [Types of Attributes](#types-of-attributes)
+1. [Association](#association)
+1. [Multiplicity](#multiplicity)
+1. [Summary of Multiplicity Syntax](#summary-of-multiplicity-syntax)
+1. [Association Class](#association-class)
+1. [Recursive Relationships/Self
+   Associations](#recursive-relationship-or-self-association)
+1. [Aggregation](#aggregation)
+1. [Composition](#composition)
+1. [Strong and Weak Entity Type](#strong-and-weak-entity-type)
+1. [Inheritance](#inheritance)
+1. [Superclass and Subclass](#superclass-and-subclass)
 
-### What Is A [Conceptual](https://www.oxfordlearnersdictionaries.com/definition/english/conceptual?q=conceptual) Design
+### [Conceptual](https://www.oxfordlearnersdictionaries.com/definition/english/conceptual?q=conceptual) Design
 
 When designing a database, we should:
 
@@ -37,7 +53,46 @@ When designing a database, we should:
 - If so, pick the best one (usually the smallest one) as the *Primary Key*.
 - If not, add an artificial PK - *Surrogate Key*.
 
-### Entity-Relationship (ER) Model
+5. Draw **associations lines** between classes that describe interacting objects.
+
+- E.g. Students interact with (attend) classes.
+- Classes interact with (belong to) courses.
+
+6. Add **multiplicity values** to association lines.
+
+- E.g. How many classes does a student enrol in?
+- How many classes does a course have?
+
+7. Check that each class only records **relative** data and does not contain any
+   repeating value, group and multi-value data.
+
+- If not, separate into new classes and repeat the above steps 1-7 !!
+
+### Design Process
+
+Most database designs will use the Entity-Relationship (ER)
+[model](#entity-relationship-model) or Unified Modelling Language
+[(UML)](#unified-modelling-language-diagram) approach to start off with an
+acceptable design and then use the Normalisation technique to check the design
+for its efficiency and redundancy.
+
+The design process contains five fundamental steps:
+1. **C**lasses
+2. **A**ttributes
+1. **R**elationships
+1. **M**ultiplicity
+1. **A**gain
+
+### Conceptual Modelling
+
+Database requirements are gathered and visualised as a UML diagram.
+
+- Use a higher-level language (4GL) to abstract away the complexities of
+  implementation.
+- A graphical way of conceptualising data meeting the requirements to ensure the
+  required data is gathered by the database design!
+
+### Entity-Relationship Model
 
 1. **Entities**
 
@@ -46,7 +101,7 @@ When designing a database, we should:
     distinguishable.
     - E.g., Book, Car, Staff, etc.
   - A theoretical/conceptual object is one that is intangible/untouchable.
-    - E.g., Class, Course, Sales, etc.
+    - E.g., Class, Course, Sale, etc.
 - Represent what the database keeps track of.
 - Translated into *relations/tables* in the final database.
 - Some entities may be the result of relationships between other entities.
@@ -67,12 +122,226 @@ When designing a database, we should:
   - Every attribute requires a *data type* (int, varchar, etc.)
   - Depending on the situation, it may not be necessary to include the *range of
     values*.
+  - E.g., studentName: varchar(100), favColour: varchar(10) {red, green, blue}.
 
-### UML Data Modelling
+### Unified Modelling Language Diagram
 
-In a UML (Unified Modelling Language) diagram:
-- A **Class** is equivalent to an entity (table or relation) in the proposed
+1. A **Class** is equivalent to an entity (table or relation) in the proposed
   Relational Database.
-- An **Object** is an instance of a class (e.g. a tuple within a relation)
-- An **Association** is a relationship between two classes.
+1. An **Object** is an instance of a class (e.g. a tuple within a relation)
+1. An **Association** is a relationship between two classes.
 
+### UML Diagram Example
+
+![UML Diagram Example](/images/database-conceptual-design/uml-example.png)
+
+### Types of Attributes
+
+There are five types of attribute:
+
+1. **Simple** attributes are atomic values which cannot be divided further. 
+
+- They provide a single piece of useful information and not consist of subparts
+  or multiple values or repeating information.
+- E.g. A person's phone number is an atomic value of 10 digits.
+
+2. **Composite** attributes are made of more than one simple attribute.
+
+- E.g. A person's complete name may have firstName and lastName attributes.
+
+3. **Derived** attributes are those whose values are calculated from the values
+   of other attributes.
+
+| PurchaseOrders |
+| :---:          |
+| quantity       |
+| price          |
+| /total         |
+
+- total = quantity * price
+- Thus, total is a Derived Attribute.
+
+4. **Structured** attributes are those composed of more than one attribute.
+
+| Employees        |
+| :---:            |
+| name:            |
+|     salutation   |
+|     fistName     |
+|     lastName     |
+| address:         |
+|     addressLine1 |
+|     addressLine2 |
+
+- The name attribute consists of salutation + firtName + lastName.
+- Thus, name is a Structured Attribute.
+
+5. **Single-value** attributes are those that simply contain a single value. 
+
+- E.g. taxFileNumber, socialSecurityNumber, etc.
+
+6. **Multi-value** attributes are those that contain more than one values.
+
+- E.g. A person can have more than one phoneNumber, emailAddress, etc.
+- This is a bad type of attribute to avoid.
+- To resolve multi-value attributes, place them in a separate table and use a
+  new association table to store the detail.
+
+For example, instead of:
+
+| studentID | username | courses            |
+| :---:     | :---:    | :---:              |
+| 002       | hmai02   | INFS1025, COMP1046 |
+| 004       | tduc04   | COMP1046           |
+| 006       | ducmai06 | INFT1031           |
+
+Do this:
+
+- People
+
+| studentID | username |
+| :---:     | :---:    |
+| 002       | hmai02   |
+| 004       | tduc04   |
+| 006       | ducmai06 |
+
+- CourseCompleted
+
+| studentID | courseID |
+| :---:     | :---:    |
+| 002       | INFS1025 |
+| 002       | COMP1046 |
+| 004       | COMP1046 |
+| 006       | INFT1031 |
+
+- Course
+
+| courseID | courseName |
+| :---:    | :---:      |
+| INFS1025 | DDWT       |
+| COMP1046 | OOP        |
+| INFT1031 | PSP        |
+
+### Association
+
+An **Association** captures the relationships between objects.
+
+- If a student enrols in a course, we create an association line between the two
+  classes and give it a description (or a role).
+- This indicates that objects in the Student class can interact with objects in
+  the Course class
+
+![Association Example](/images/database-conceptual-design/association.png)
+
+### Multiplicity
+
+The **Multiplicity** attribute of a relationship specifies the number of
+possible occurrences of an entity type that may relate to a single occurrence of
+an associated entity type through a given relationship.
+
+Multiplicities represent business rules established by a user or company
+
+- They do not necessarily modify the database design
+- They are generally implemented at the application level/user interface
+
+![Multiplicity](/images/database-conceptual-design/multiplicity.png)
+
+**Participation** identifies whether all or only some objects participate in a relationship (is it mandatory?)
+
+- A course must have at least 10 students - (every course participates)
+- A student may not enrol in any course (does not participate in “enrols”)
+
+**Cardinality** indicates the maximum number of possible relationship occurrences for an entity participating in a the relationship (how many times did it take place?)
+
+- A course can have many students. 
+- A student maximally enrols in 5 courses.
+
+![Participation &
+Cardinality](/images/database-conceptual-design/participation-cardinality.png)
+
+Rules:
+- No value or a 1 implies `1..1` (1:1 relationship)
+- A single * implies `0..*`
+
+1. **One-to-One** (`1:1`)
+
+- Every object is associated with at most one of the other object.
+
+![One-to-One Multiplicity](/images/database-conceptual-design/one-to-one-1.png)
+![One-to-One Multiplicity](/images/database-conceptual-design/one-to-one-2.png)
+
+2. **One-to-Many** (`1:*`) and Many-to-One (`*:1`)
+
+- Many elements of one object are related to at most one of the other object.
+
+![One-to-Many Multiplicity](/images/database-conceptual-design/one-to-many-1.png)
+![One-to-Many Multiplicity](/images/database-conceptual-design/one-to-many-2.png)
+![One-to-Many Multiplicity](/images/database-conceptual-design/one-to-many-3.png)
+
+3. **Many-to-Many** (`*:*`) or (`0:*`) or (`m:n`)
+
+- No restriction on the relationship
+
+![Many-to-Many
+Multiplicity](/images/database-conceptual-design/many-to-many-1.png)
+![Many-to-Many
+Multiplicity](/images/database-conceptual-design/many-to-many-2.png)
+
+### Summary of Multiplicity Syntax
+
+| Syntax          | Meaning                                                  |
+| ---             | ---                                                      |
+| `0..1`          | Zero or one entity occurence                             |
+| `1..1` (or `1`) | Exactly one entity occurrence                            |
+| `0..*` (or `*`) | Zero or many entity occurrences                          |
+| `1..*`          | One or many entity occurences                            |
+| `5..10`         | Minimum of 5 up to a maximum of 10 entity occurrences    |
+| `0, 3, 6-8`     | Zero or three or six, seven, or eight entity occurrences |
+
+**Note**: No number at the end of a relationship means `1..1` or just `1`.
+
+### Association Class
+
+An **Association Class** allows attributes to be included with the association
+relationship.
+
+For example, consider the below UML diagram:
+
+![Association Class
+Before](/images/database-conceptual-design/association-class-before.png)
+
+In terms of the enrolment, what if we want to record the date commenced and mark
+they received at the end of the course?
+- The association class captures the details of the association.
+
+![Association Class
+After](/images/database-conceptual-design/association-class-after.png)
+
+### Recursive Relationship or Self Association
+
+Similar to the concept of
+[recursion](https://www.merriam-webster.com/dictionary/recursion) in
+programming, a recursive relationship or self association is a class that
+associates itself.
+
+The same entity type can participate more than once in different roles.
+
+- However, role names should be used in a recursive relationship type to
+  distinguish between each of these roles.
+
+![Recursive Relationship](/images/database-conceptual-design/recursive-1.png)
+![Recursive Relationship](/images/database-conceptual-design/recursive-2.png)
+
+### Aggregation
+
+
+### Composition
+
+
+### Strong and Weak Entity Type
+
+
+### Inheritance
+
+
+### Superclass and Subclass
