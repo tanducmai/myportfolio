@@ -8,12 +8,14 @@ thumbnail = "images/database-conceptual-design/uml-example.png"
 tags = [
     "database",
     "fundamentals",
+    "uml diagram",
+    "er model",
     "conceptual design",
 ]
 categories = [
     "database",
 ]
-draft = true
+draft = false
 +++
 
 ### Table of Contents
@@ -34,8 +36,7 @@ draft = true
 1. [Aggregation](#aggregation)
 1. [Composition](#composition)
 1. [Strong and Weak Entity Type](#strong-and-weak-entity-type)
-1. [Inheritance](#inheritance)
-1. [Superclass and Subclass](#superclass-and-subclass)
+1. [Inheritance (Superclass - Subclass)](#inheritance)
 
 ### [Conceptual](https://www.oxfordlearnersdictionaries.com/definition/english/conceptual?q=conceptual) Design
 
@@ -53,7 +54,8 @@ When designing a database, we should:
 - If so, pick the best one (usually the smallest one) as the *Primary Key*.
 - If not, add an artificial PK - *Surrogate Key*.
 
-5. Draw **associations lines** between classes that describe interacting objects.
+5. Draw **associations lines** between classes that describe interacting
+   objects.
 
 - E.g. Students interact with (attend) classes.
 - Classes interact with (belong to) courses.
@@ -139,7 +141,7 @@ Database requirements are gathered and visualised as a UML diagram.
 
 There are five types of attribute:
 
-1. **Simple** attributes are atomic values which cannot be divided further. 
+1. **Simple** attributes are atomic values which cannot be divided further.
 
 - They provide a single piece of useful information and not consist of subparts
   or multiple values or repeating information.
@@ -176,7 +178,7 @@ There are five types of attribute:
 - The name attribute consists of salutation + firtName + lastName.
 - Thus, name is a Structured Attribute.
 
-5. **Single-value** attributes are those that simply contain a single value. 
+5. **Single-value** attributes are those that simply contain a single value.
 
 - E.g. taxFileNumber, socialSecurityNumber, etc.
 
@@ -246,14 +248,17 @@ Multiplicities represent business rules established by a user or company
 
 ![Multiplicity](/images/database-conceptual-design/multiplicity.png)
 
-**Participation** identifies whether all or only some objects participate in a relationship (is it mandatory?)
+**Participation** identifies whether all or only some objects participate in a
+relationship (is it mandatory?)
 
 - A course must have at least 10 students - (every course participates)
-- A student may not enrol in any course (does not participate in “enrols”)
+- A student may not enrol in any course (does not participate in "enrols")
 
-**Cardinality** indicates the maximum number of possible relationship occurrences for an entity participating in a the relationship (how many times did it take place?)
+**Cardinality** indicates the maximum number of possible relationship
+occurrences for an entity participating in a relationship (how many times did it
+take place?)
 
-- A course can have many students. 
+- A course can have many students.
 - A student maximally enrols in 5 courses.
 
 ![Participation &
@@ -274,9 +279,12 @@ Rules:
 
 - Many elements of one object are related to at most one of the other object.
 
-![One-to-Many Multiplicity](/images/database-conceptual-design/one-to-many-1.png)
-![One-to-Many Multiplicity](/images/database-conceptual-design/one-to-many-2.png)
-![One-to-Many Multiplicity](/images/database-conceptual-design/one-to-many-3.png)
+![One-to-Many
+Multiplicity](/images/database-conceptual-design/one-to-many-1.png)
+![One-to-Many
+Multiplicity](/images/database-conceptual-design/one-to-many-2.png)
+![One-to-Many
+Multiplicity](/images/database-conceptual-design/one-to-many-3.png)
 
 3. **Many-to-Many** (`*:*`) or (`0:*`) or (`m:n`)
 
@@ -321,8 +329,8 @@ After](/images/database-conceptual-design/association-class-after.png)
 
 Similar to the concept of
 [recursion](https://www.merriam-webster.com/dictionary/recursion) in
-programming, a recursive relationship or self association is a class that
-associates itself.
+programming, a **recursive relationship** or **self association** is a class
+that associates itself.
 
 The same entity type can participate more than once in different roles.
 
@@ -334,14 +342,128 @@ The same entity type can participate more than once in different roles.
 
 ### Aggregation
 
+**Aggregation** represents a *has-a* or *is-part-of* association between two
+entity types.
+
+It is a conceptual notion that distinguishes a *whole* from its *parts*.
+
+An unfilled diamond at the *whole* end denotes aggregation.
+
+For example, a program is an aggregation of courses.
+
+- A course is part of more than one program.
+- Deleting a program does not delete the courses.
+
+![Aggregation Example](/images/database-conceptual-design/aggregation.png)
 
 ### Composition
 
+**Composition** is a stronger notion, representing the lifetime of the *parts*
+is [bound
+up](https://www.oxfordlearnersdictionaries.com/definition/english/bound_1#bound_idmg_4)
+with the *whole*.
+
+A filled diamond at the *whole* end denotes composition.
+
+For example, a foot is composed of five toes.
+
+- Deleting the foot also takes the toes with it!
+
+![Composition Example](/images/database-conceptual-design/composition.png)
 
 ### Strong and Weak Entity Type
 
+1. **Strong Entity Type** is an entity that *is not* existence-*dependent* on
+   some other entity type(s).
+
+- For example:
+  - Student, Building, Competition
+  - All the previous examples (except [Association Class](#association-class))
+
+2. **Weak Entity Type** is an entity type that *is* existence-*dependent* on
+   some other entity type(s).
+
+- An instance cannot be uniquely identified by its attributes alone.
+- For example:
+  - Week4Lecture (what subject, which semester, which year?)
+  - StudentAssignment (what subject, which semester?)
+  - CompetitionRound, BuildingRoom
+
+![Weak Entity Type
+Example](/images/database-conceptual-design/weak-entity-type.png)
 
 ### Inheritance
 
+1. **Superclass**
 
-### Superclass and Subclass
+- An entity type that includes one or more distinct subgroups of its
+  occurrences.
+- E.g. Person(name)
+
+2. **Subclass**
+
+- A subgroup of occurrences of an entity type
+- E.g. Staff and Student are two subclasses of Person.
+- Sub Classes may or may not have any attributes of their own.
+
+3. This is called an **Inheritance Hierarchy**
+
+- Also called a **Generalisation**/**Specialisation Structure**.
+- For example: Staff, Student, and Contractor are all 'Person' within the
+  university database system.
+  - They share two common attributes:
+    - personID
+    - personName
+
+![Inheritance Example](/images/database-conceptual-design/inheritance-1.png)
+
+4. **Attribute Inheritance**
+
+- Subclasses inherit all the attributes from their superclasses, hence
+  [inheritance](https://www.ldoceonline.com/dictionary/inheritance)
+- Considere the previous example:
+  - A Student has the following attributes:
+    - GPA (defined in the Student class)
+    - personName, personID (inherited from the superclass Person)
+
+5. **Instances of a subclass**
+
+- An instance of a subclass is also an instance of the superclass.
+- E.g. If "John" is an instance of the Student class, and therefore he is also a
+  person.
+
+6. **Specialisation**
+
+- The process of identifying distinguishing characteristics of subclasses of a
+  class.
+- E.g. John as a student is a more specific example of a person.
+
+7. **Generalisation**
+
+- The process of identifying common characteristics of subclasses for a
+  superclass.
+
+![More Inheritance
+Example](/images/database-conceptual-design/inheritance-2.png)
+
+8. **Constraints** on Specialisation / Generalisation
+
+- A subclass member is always a member of the superclass.
+
+- **Optional Participation** (*default if not specified*)
+  - A person may not be any of a staff member, student, or contractor.
+  - A person does not need to be a member of any subclass.
+
+- **Mandatory Participation** (*must specify*)
+  - A person must be a staff member or a student.
+
+- **Disjoint** (OR)
+  - Every person is either *one of* a staff member, student, or contractor.
+
+- **Non-Disjoint** (AND) - overlapping
+  - Every person is represented by *at least two* of the sub-classes.
+  - A person may be a staff member and a student or a student and a contractor,
+    etc.
+
+![Advanced Inheritance
+Example](/images/database-conceptual-design/inheritance-3.png)

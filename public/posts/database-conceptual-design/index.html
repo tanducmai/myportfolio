@@ -132,8 +132,7 @@ Associations</a></li>
 <li><a href="#aggregation">Aggregation</a></li>
 <li><a href="#composition">Composition</a></li>
 <li><a href="#strong-and-weak-entity-type">Strong and Weak Entity Type</a></li>
-<li><a href="#inheritance">Inheritance</a></li>
-<li><a href="#superclass-and-subclass">Superclass and Subclass</a></li>
+<li><a href="#inheritance">Inheritance (Superclass - Subclass)</a></li>
 </ol>
 <h3 id="conceptualhttpswwwoxfordlearnersdictionariescomdefinitionenglishconceptualqconceptual-design"><a href="https://www.oxfordlearnersdictionaries.com/definition/english/conceptual?q=conceptual">Conceptual</a> Design</h3>
 <p>When designing a database, we should:</p>
@@ -152,7 +151,8 @@ that object.</li>
 <li>If not, add an artificial PK - <em>Surrogate Key</em>.</li>
 </ul>
 <ol start="5">
-<li>Draw <strong>associations lines</strong> between classes that describe interacting objects.</li>
+<li>Draw <strong>associations lines</strong> between classes that describe interacting
+objects.</li>
 </ol>
 <ul>
 <li>E.g. Students interact with (attend) classes.</li>
@@ -478,12 +478,15 @@ an associated entity type through a given relationship.</p>
 <li>They are generally implemented at the application level/user interface</li>
 </ul>
 <p><img src="/images/database-conceptual-design/multiplicity.png" alt="Multiplicity"></p>
-<p><strong>Participation</strong> identifies whether all or only some objects participate in a relationship (is it mandatory?)</p>
+<p><strong>Participation</strong> identifies whether all or only some objects participate in a
+relationship (is it mandatory?)</p>
 <ul>
 <li>A course must have at least 10 students - (every course participates)</li>
-<li>A student may not enrol in any course (does not participate in “enrols”)</li>
+<li>A student may not enrol in any course (does not participate in &ldquo;enrols&rdquo;)</li>
 </ul>
-<p><strong>Cardinality</strong> indicates the maximum number of possible relationship occurrences for an entity participating in a the relationship (how many times did it take place?)</p>
+<p><strong>Cardinality</strong> indicates the maximum number of possible relationship
+occurrences for an entity participating in a relationship (how many times did it
+take place?)</p>
 <ul>
 <li>A course can have many students.</li>
 <li>A student maximally enrols in 5 courses.</li>
@@ -508,9 +511,9 @@ an associated entity type through a given relationship.</p>
 <ul>
 <li>Many elements of one object are related to at most one of the other object.</li>
 </ul>
-<p><img src="/images/database-conceptual-design/one-to-many-1.png" alt="One-to-Many Multiplicity">
-<img src="/images/database-conceptual-design/one-to-many-2.png" alt="One-to-Many Multiplicity">
-<img src="/images/database-conceptual-design/one-to-many-3.png" alt="One-to-Many Multiplicity"></p>
+<p><img src="/images/database-conceptual-design/one-to-many-1.png" alt="One-to-ManyMultiplicity">
+<img src="/images/database-conceptual-design/one-to-many-2.png" alt="One-to-ManyMultiplicity">
+<img src="/images/database-conceptual-design/one-to-many-3.png" alt="One-to-ManyMultiplicity"></p>
 <ol start="3">
 <li><strong>Many-to-Many</strong> (<code>*:*</code>) or (<code>0:*</code>) or (<code>m:n</code>)</li>
 </ol>
@@ -569,8 +572,8 @@ they received at the end of the course?</p>
 <h3 id="recursive-relationship-or-self-association">Recursive Relationship or Self Association</h3>
 <p>Similar to the concept of
 <a href="https://www.merriam-webster.com/dictionary/recursion">recursion</a> in
-programming, a recursive relationship or self association is a class that
-associates itself.</p>
+programming, a <strong>recursive relationship</strong> or <strong>self association</strong> is a class
+that associates itself.</p>
 <p>The same entity type can participate more than once in different roles.</p>
 <ul>
 <li>However, role names should be used in a recursive relationship type to
@@ -579,10 +582,167 @@ distinguish between each of these roles.</li>
 <p><img src="/images/database-conceptual-design/recursive-1.png" alt="Recursive Relationship">
 <img src="/images/database-conceptual-design/recursive-2.png" alt="Recursive Relationship"></p>
 <h3 id="aggregation">Aggregation</h3>
+<p><strong>Aggregation</strong> represents a <em>has-a</em> or <em>is-part-of</em> association between two
+entity types.</p>
+<p>It is a conceptual notion that distinguishes a <em>whole</em> from its <em>parts</em>.</p>
+<p>An unfilled diamond at the <em>whole</em> end denotes aggregation.</p>
+<p>For example, a program is an aggregation of courses.</p>
+<ul>
+<li>A course is part of more than one program.</li>
+<li>Deleting a program does not delete the courses.</li>
+</ul>
+<p><img src="/images/database-conceptual-design/aggregation.png" alt="Aggregation Example"></p>
 <h3 id="composition">Composition</h3>
+<p><strong>Composition</strong> is a stronger notion, representing the lifetime of the <em>parts</em>
+is <a href="https://www.oxfordlearnersdictionaries.com/definition/english/bound_1#bound_idmg_4">bound
+up</a>
+with the <em>whole</em>.</p>
+<p>A filled diamond at the <em>whole</em> end denotes composition.</p>
+<p>For example, a foot is composed of five toes.</p>
+<ul>
+<li>Deleting the foot also takes the toes with it!</li>
+</ul>
+<p><img src="/images/database-conceptual-design/composition.png" alt="Composition Example"></p>
 <h3 id="strong-and-weak-entity-type">Strong and Weak Entity Type</h3>
+<ol>
+<li><strong>Strong Entity Type</strong> is an entity that <em>is not</em> existence-<em>dependent</em> on
+some other entity type(s).</li>
+</ol>
+<ul>
+<li>For example:
+<ul>
+<li>Student, Building, Competition</li>
+<li>All the previous examples (except <a href="#association-class">Association Class</a>)</li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li><strong>Weak Entity Type</strong> is an entity type that <em>is</em> existence-<em>dependent</em> on
+some other entity type(s).</li>
+</ol>
+<ul>
+<li>An instance cannot be uniquely identified by its attributes alone.</li>
+<li>For example:
+<ul>
+<li>Week4Lecture (what subject, which semester, which year?)</li>
+<li>StudentAssignment (what subject, which semester?)</li>
+<li>CompetitionRound, BuildingRoom</li>
+</ul>
+</li>
+</ul>
+<p><img src="/images/database-conceptual-design/weak-entity-type.png" alt="Weak Entity TypeExample"></p>
 <h3 id="inheritance">Inheritance</h3>
-<h3 id="superclass-and-subclass">Superclass and Subclass</h3>
+<ol>
+<li><strong>Superclass</strong></li>
+</ol>
+<ul>
+<li>An entity type that includes one or more distinct subgroups of its
+occurrences.</li>
+<li>E.g. Person(name)</li>
+</ul>
+<ol start="2">
+<li><strong>Subclass</strong></li>
+</ol>
+<ul>
+<li>A subgroup of occurrences of an entity type</li>
+<li>E.g. Staff and Student are two subclasses of Person.</li>
+<li>Sub Classes may or may not have any attributes of their own.</li>
+</ul>
+<ol start="3">
+<li>This is called an <strong>Inheritance Hierarchy</strong></li>
+</ol>
+<ul>
+<li>Also called a <strong>Generalisation</strong>/<strong>Specialisation Structure</strong>.</li>
+<li>For example: Staff, Student, and Contractor are all &lsquo;Person&rsquo; within the
+university database system.
+<ul>
+<li>They share two common attributes:
+<ul>
+<li>personID</li>
+<li>personName</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="/images/database-conceptual-design/inheritance-1.png" alt="Inheritance Example"></p>
+<ol start="4">
+<li><strong>Attribute Inheritance</strong></li>
+</ol>
+<ul>
+<li>Subclasses inherit all the attributes from their superclasses, hence
+<a href="https://www.ldoceonline.com/dictionary/inheritance">inheritance</a></li>
+<li>Considere the previous example:
+<ul>
+<li>A Student has the following attributes:
+<ul>
+<li>GPA (defined in the Student class)</li>
+<li>personName, personID (inherited from the superclass Person)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ol start="5">
+<li><strong>Instances of a subclass</strong></li>
+</ol>
+<ul>
+<li>An instance of a subclass is also an instance of the superclass.</li>
+<li>E.g. If &ldquo;John&rdquo; is an instance of the Student class, and therefore he is also a
+person.</li>
+</ul>
+<ol start="6">
+<li><strong>Specialisation</strong></li>
+</ol>
+<ul>
+<li>The process of identifying distinguishing characteristics of subclasses of a
+class.</li>
+<li>E.g. John as a student is a more specific example of a person.</li>
+</ul>
+<ol start="7">
+<li><strong>Generalisation</strong></li>
+</ol>
+<ul>
+<li>The process of identifying common characteristics of subclasses for a
+superclass.</li>
+</ul>
+<p><img src="/images/database-conceptual-design/inheritance-2.png" alt="More InheritanceExample"></p>
+<ol start="8">
+<li><strong>Constraints</strong> on Specialisation / Generalisation</li>
+</ol>
+<ul>
+<li>
+<p>A subclass member is always a member of the superclass.</p>
+</li>
+<li>
+<p><strong>Optional Participation</strong> (<em>default if not specified</em>)</p>
+<ul>
+<li>A person may not be any of a staff member, student, or contractor.</li>
+<li>A person does not need to be a member of any subclass.</li>
+</ul>
+</li>
+<li>
+<p><strong>Mandatory Participation</strong> (<em>must specify</em>)</p>
+<ul>
+<li>A person must be a staff member or a student.</li>
+</ul>
+</li>
+<li>
+<p><strong>Disjoint</strong> (OR)</p>
+<ul>
+<li>Every person is either <em>one of</em> a staff member, student, or contractor.</li>
+</ul>
+</li>
+<li>
+<p><strong>Non-Disjoint</strong> (AND) - overlapping</p>
+<ul>
+<li>Every person is represented by <em>at least two</em> of the sub-classes.</li>
+<li>A person may be a staff member and a student or a student and a contractor,
+etc.</li>
+</ul>
+</li>
+</ul>
+<p><img src="/images/database-conceptual-design/inheritance-3.png" alt="Advanced InheritanceExample"></p>
 
   </article>
 
