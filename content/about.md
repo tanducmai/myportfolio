@@ -20,7 +20,7 @@ degree in Networking and Cybersecurity at the University of South Australia
 ### Highlights
 
 - Proficient: Python (Script, Automation, Data Analysis)
-- Previous Experience: HTML5, CSS3, Pascal, Markdown
+- Previous Experience: HTML5, CSS3, Pascal, Markdown, SQL
 - Languages: English, Japanese, Vietnamese
 - Tools: StackOverFlow, Git, Github/GitLab, Vim, VS Code
 - Linux (Ubuntu, Mint, Kali, CentOS), macOS, Windows, Cisco
@@ -28,7 +28,7 @@ degree in Networking and Cybersecurity at the University of South Australia
 
 ### Contact
 
-| Category | Link                                                                |
-| ---      | ---                                                                 |
-| Email    | tan.duc.work@gmail.com                                              |
-| LinkedIn | [linkedin.com/in/tanducmai](https://www.linkedin.com/in/tanducmai/) |
+| Category | Link                                                               |
+| ---      | ---                                                                |
+| Email    | tan.duc.work@gmail.com                                             |
+| LinkedIn | [linkedin.com/in/tanducmai](https://www.linkedin.com/in/tanducmai) |

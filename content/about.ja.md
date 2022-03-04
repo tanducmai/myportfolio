@@ -18,15 +18,15 @@ description = "This is the introduction page in Japanese"
 ### スキル
 
 - 熟練：Python（スクリプト、自動化、データ分析）
-- 以前の経験：HTML5、CSS3、Pascal、Markdown 
+- 以前の経験：HTML5、CSS3、Pascal、Markdown, SQL
 - 言語：英語、日本語、ベトナム語
 - ツール：StackOverFlow、Git、Github / GitLab、Vim、VS Code
-- Linux（Ubuntu、Mint、Kali、CentOS）、macOS、Windows、Cisco 
+- Linux（Ubuntu、Mint、Kali、CentOS）、macOS、Windows、Cisco
 - Adobe Creative Cloud および Microsoft Office Suite
 
 ### 連絡先
 
-| カテゴリー | リンク                                                              |
-| ---        | ---                                                                 |
-| Eメール    | tan.duc.work@gmail.com                                              |
-| LinkedIn   | [linkedin.com/in/tanducmai](https://www.linkedin.com/in/tanducmai/) |
+| カテゴリー | リンク                                                             |
+| ---        | ---                                                                |
+| Eメール    | tan.duc.work@gmail.com                                             |
+| LinkedIn   | [linkedin.com/in/tanducmai](https://www.linkedin.com/in/tanducmai) |
