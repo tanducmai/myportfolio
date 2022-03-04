@@ -26,7 +26,8 @@ of gold medals at the Olympic Games Tokyo as of 2 August 2021.
 
 ### Leaderboard
 
-![The leaderboard as of 2 August 2021](/images/olympic-medals-turtle-graphics/leaderboard.png)
+![The leaderboard as of 2 August
+2021](/images/olympic-medals-turtle-graphics/leaderboard.png)
 
 *Source*: Adelaide Advertiser 3 August 2021
 

@@ -18,7 +18,7 @@ aliases = "/list-module/"
 1. [Implementation](#implementation)
 1. [Usage](#usage)
 1. [Restrictions](#restrictions)
-1. [Sample Output](https://github.com/tanducmai/list-module/blob/main/sample_output.pdf)
+1. [Sample Output](#sample-output)
 
 ### Introduction to Python Lists
 
@@ -83,7 +83,10 @@ use:
 - List methods such as index(), pop(), count(), insert().
 - String methods such as join(), split(), count(), index().
 
-### Sample Output ( - [PDF Version](https://github.com/tanducmai/list-module/blob/main/sample_output.pdf) - )
+### Sample Output
+
+-> [PDF
+Version](https://raw.githubusercontent.com/tanducmai/list-module/main/sample_output.pdf)
 
 ```text
 -----------------

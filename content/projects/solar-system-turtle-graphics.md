@@ -16,7 +16,8 @@ aliases = "/solar-system-turtle-graphics/"
 1. [Aim](#aim)
 1. [Implementation](#implementation)
 1. [Output](#output)
-1. [Video Production](https://raw.githubusercontent.com/tanducmai/solar-system-turtle-graphics/main/assets/video_production.mp4)
+1. [Video
+   Production](https://raw.githubusercontent.com/tanducmai/solar-system-turtle-graphics/main/assets/video_production.mp4)
 
 ### Aim
 

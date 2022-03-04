@@ -15,7 +15,7 @@ aliases = "/petals-around-the-rose/"
 1. [Aim](#aim)
 1. [Introduction](#introduction)
 1. [Further Research](#further-research)
-1. [Sample Output](https://github.com/tanducmai/petals-around-the-rose/blob/main/sample_output.pdf)
+1. [Sample Output](#sample-output)
 
 ### Aim
 
@@ -44,7 +44,10 @@ become a Potentate of the Rose.
    *[formula](https://en.wikipedia.org/wiki/Petals_Around_the_Rose)* for Petals
    Around the Rose.
 
-### Sample Output ([- PDF Version -](https://github.com/tanducmai/petals-around-the-rose/blob/main/sample_output.pdf))
+### Sample Output
+
+-> [PDF
+Version](https://raw.githubusercontent.com/tanducmai/petals-around-the-rose/main/sample_output.pdf)
 
 ```text
 File:         petals.py

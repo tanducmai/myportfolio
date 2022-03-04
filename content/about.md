@@ -30,6 +30,6 @@ degree in Networking and Cybersecurity at the University of South Australia
 
 Please refer to my [LinkedIn](https://www.linkedin.com/in/tanducmai/) profile or
 my
-[Resume](https://drive.google.com/file/d/18VFeKC3M4Dz2pzOF0dVfbuozrqqNESyX/view?fbclid=IwAR1mlPfASGMom2Dvh-pprOYTGYZbsMewgN5IVcr2yth64im6lcIxDsVVYfw)
+[Resume](https://raw.githubusercontent.com/tanducmai/myresume/master/TanDucMai_Resume_02.2022.pdf)
 for more information in relation to my previous working experience and academic
 history.

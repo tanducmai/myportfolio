@@ -116,7 +116,8 @@
 <ol>
 <li><a href="#aim">Aim</a></li>
 <li><a href="#implementation">Implementation</a></li>
-<li><a href="https://github.com/tanducmai/multi-level-guessing-game/blob/main/sample_output.pdf">Sample Output</a></li>
+<li><a href="#for-loop-or-while-loop">For Loop - While Loop</a></li>
+<li><a href="#sample-output">Sample Output</a></li>
 </ol>
 <h3 id="aim">Aim</h3>
 <p>Create a number guessing game divided into three levels of difficulty.
@@ -134,12 +135,12 @@ Since the user fails after six tries, I assign 6 to the guess_limit variable and
 they will lose one every time a guess is made. The guess is assigned to the
 guess variable. A False Boolean is assigned to the done variable to keep the
 game running until it becomes True, which means that the game is done</p>
-<p>Whenever a guess is made, it is evaluated by the function validate_input(), using
-a while loop to check whether it is valid, which means whether it is in the
-range between 1 and 6. If it is an invalid guess (the function returns False),
-the user has to make a new one until it is valid (the function returns True).
-Provided that the guess is invalid, the user still maintains their number of
-guesses.</p>
+<p>Whenever a guess is made, it is evaluated by the function validate_input(),
+using a while loop to check whether it is valid, which means whether it is in
+the range between 1 and 6. If it is an invalid guess (the function returns
+False), the user has to make a new one until it is valid (the function returns
+True).  Provided that the guess is invalid, the user still maintains their
+number of guesses.</p>
 <p>Now that the guess is valid, one chance will be taken away. Afterwards, a while
 loop is used to evaluate that guess so long as the user still has at least one
 chance, and the game is not done.</p>
@@ -162,7 +163,7 @@ evaluated with the number generated, and only two options are presented:</p>
 <li>If they are still not equal, a &lsquo;Game Over&rsquo; message will be printed.</li>
 </ul>
 <p>In both cases, the game ends and the while loop is displayed.</p>
-<h3 id="for-loop-or-while-loop-to-be-used-">For loop or While loop to be used ?</h3>
+<h3 id="for-loop-or-while-loop">For Loop Or While Loop</h3>
 <table>
 <thead>
 <tr>
@@ -187,7 +188,9 @@ would repeat is unpredictable, given that it depends upon the input from the
 user. Furthermore, this loop only gets finished provided that a certain
 condition – the user input guess is between 1 and 5 – is met. This problem,
 therefore, should be addressed with a while loop instead of a for loop.</p>
-<h3 id="sample-output----pdf-versionhttpsgithubcomtanducmaimulti-level-guessing-gameblobmainsample_outputpdf---">Sample Output ( - <a href="https://github.com/tanducmai/multi-level-guessing-game/blob/main/sample_output.pdf">PDF Version</a> - )</h3>
+<h3 id="sample-output">Sample Output</h3>
+<p>-&gt; <a href="https://raw.githubusercontent.com/tanducmai/multi-level-guessing-game/main/sample_output.pdf">PDF
+Version</a></p>
 <div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">Hello, Welcome to the Number Guessing Game!
 I&#39;m Henry! What&#39;s Your Name? Jack
 Okay, Jack. Let&#39;s Begin The Guessing Game!

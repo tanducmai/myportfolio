@@ -28,5 +28,5 @@ description = "This is the introduction page in Japanese"
 
 私の [LinkedIn](https://www.linkedin.com/in/tanducmai/)
 プロフィールを参照するか、 わたしの
-[履歴書](https://drive.google.com/file/d/18VFeKC3M4Dz2pzOF0dVfbuozrqqNESyX/view?fbclid=IwAR1mlPfASGMom2Dvh-pprOYTGYZbsMewgN5IVcr2yth64im6lcIxDsVVYfw)
+[履歴書](https://raw.githubusercontent.com/tanducmai/myresume/master/TanDucMai_Resume_02.2022.pdf)
 私の以前の実務経験と学業に関連する詳細については 歴史。

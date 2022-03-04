@@ -68,7 +68,7 @@ Implementation There are two algorithms that I constantly use when working with 
     </item>
     
     <item>
-      <title>Three Prime Checker</title>
+      <title>Three Different Prime Checker</title>
       <link>https://blissful-mayer-90b8fc.netlify.app/projects/three-prime-checker/</link>
       <pubDate>Thu, 12 Aug 2021 00:00:00 +0000</pubDate>
       
@@ -103,7 +103,7 @@ Implementation To begin, I import the turtle module, after which I define all of
       <pubDate>Thu, 15 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blissful-mayer-90b8fc.netlify.app/projects/multi-level-guessing-game/</guid>
-      <description>→ GitHub Table of Contents  Aim Implementation Sample Output  Aim Create a number guessing game divided into three levels of difficulty. I divide this project into small functions and place them in separate files to be used as modules.
+      <description>→ GitHub Table of Contents  Aim Implementation For Loop - While Loop Sample Output  Aim Create a number guessing game divided into three levels of difficulty. I divide this project into small functions and place them in separate files to be used as modules.
 Implementation I begin by greeting the user and prompt them to choose which level (easy, medium, or hard) they want to play | welcome.py. With that option, I then start the corresponding function which is stored in options.</description>
     </item>
     

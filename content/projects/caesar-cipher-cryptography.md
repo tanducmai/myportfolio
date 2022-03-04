@@ -19,7 +19,7 @@ aliases = "/caesar-cipher-cryptography/"
 1. [Module *options*](#module-options)
 1. [Encryption Process](#encryption-process)
 1. [Decryption Process](#decryption-process)
-1. [Sample Output](https://github.com/tanducmai/caesar-cipher-cryptography/blob/main/sample_output.pdf)
+1. [Sample Output](#sample-output)
 
 ### Aim
 
@@ -32,8 +32,7 @@ Caesar](http://en.wikipedia.org/wiki/Caesar_cipher), the Roman Emperor. This
 method takes each character in a message and replaces it with one which is a
 certain distance (offset) along the alphabet from it.
 
-For example:
-![Example of the technique](/images/caesar-cipher/example.png)
+For example: ![Example of the technique](/images/caesar-cipher/example.png)
 
 If the offset is 3 then A becomes D, B becomes E, C becomes F etc.
 
@@ -133,7 +132,10 @@ decrypt to ASCII 29. This is less than 32 so wrap back to the end by adding the
 total number of characters (95). This gives character '|' (29+95, ASCII 124).
 You may have to add 95 multiple times until it is within the set. Use a loop.
 
-### Sample Output ( - [PDF Version](https://github.com/tanducmai/caesar-cipher-cryptography/blob/main/sample_output.pdf) - )
+### Sample Output
+
+-> [PDF
+Version](https://raw.githubusercontent.com/tanducmai/caesar-cipher-cryptography/main/sample_output.pdf)
 
 ```text
 -------------------

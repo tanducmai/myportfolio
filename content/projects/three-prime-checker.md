@@ -1,9 +1,9 @@
 +++
 date = "2021-08-12"
-title = "Three Prime Checker"
+title = "Three Different Prime Checker"
 slug = "three-prime-checker"
 thumbnail = "images/three-prime-checker.jpg"
-description = "Three Prime Checker"
+description = "Three Different Prime Checker"
 tags = ['python']
 categories = ['python']
 aliases = "/three-prime-checker/"
@@ -15,7 +15,7 @@ aliases = "/three-prime-checker/"
 
 1. [Introduction](#introduction)
 1. [Algorithms](#algorithm)
-1. [Sample Output](https://github.com/tanducmai/three-prime-checker/blob/main/sample_output.pdf)
+1. [Sample Output](#sample-output)
 
 ### Introduction
 
@@ -42,7 +42,10 @@ n, add 1 to the variable divisible. When the loop is finished, if the variable
 divisible is equal to 2 (means only 1 and n is divisible by n), then n is prime.
 ```
 
-### Sample Output ( - [PDF Version](https://github.com/tanducmai/three-prime-checker/blob/main/sample_output.pdf) - )
+### Sample Output
+
+-> [PDF
+Version](https://raw.githubusercontent.com/tanducmai/three-prime-checker/main/sample_output.pdf)
 
 ```text
 A program to check if a number is prime.

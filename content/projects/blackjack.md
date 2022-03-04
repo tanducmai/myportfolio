@@ -15,7 +15,7 @@ aliases = "/blackjack/"
 
 1. [Introduction](#introduction)
 1. [Algorithm](#algorithm)
-1. [Sample Output](https://github.com/tanducmai/blackjack/blob/master/sample_output.pdf)
+1. [Sample Output](#sample-output)
 
 ### Introduction
 
@@ -81,7 +81,10 @@ My implementation's gameplay is as follows:
    they have a point value of 17 or greater.
 ```
 
-### Sample Output ( - [PDF Version](https://github.com/tanducmai/blackjack/blob/master/sample_output.pdf) - )
+### Sample Output
+
+-> [PDF
+Version](https://raw.githubusercontent.com/tanducmai/blackjack/master/sample_output.pdf)
 
 ```text
 --------- Welcome to Blackjack ---------
