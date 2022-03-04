@@ -5,8 +5,11 @@ thumbnail = "images/tn.png"
 description = "This is the introduction page"
 +++
 
-I have just obtained a Diploma of Information Technology at Eynesbury Institute
-of Business and Technology (EIBT) and am currently taking an Undergraduate
+I have just obtained a
+[Diploma](https://www.eynesbury.navitas.com/programs/two-stage-diploma-of-computing-and-it-studies)
+of Information Technology at Eynesbury Institute of Business and Technology
+(EIBT) and am currently taking an
+[Undergraduate](https://study.unisa.edu.au/degrees/bachelor-of-information-technology-networking-and-cybersecurity)
 degree in Networking and Cybersecurity at the University of South Australia
 (UniSA).
 
@@ -32,3 +35,4 @@ degree in Networking and Cybersecurity at the University of South Australia
 | ---      | ---                                                                |
 | Email    | tan.duc.work@gmail.com                                             |
 | LinkedIn | [linkedin.com/in/tanducmai](https://www.linkedin.com/in/tanducmai) |
+| GitHub   | [github.com/tanducmai](https://github.com/tanducmai)               |

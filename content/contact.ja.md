@@ -9,3 +9,4 @@ description = "contact"
 | ---        | ---                                                                |
 | Eメール    | tan.duc.work@gmail.com                                             |
 | LinkedIn   | [linkedin.com/in/tanducmai](https://www.linkedin.com/in/tanducmai) |
+| GitHub     | [github.com/tanducmai](https://github.com/tanducmai)               |
