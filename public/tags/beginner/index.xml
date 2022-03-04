@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>beginner on Tan Duc Mai</title>
-    <link>https://blissful-mayer-90b8fc.netlify.app/tags/beginner/</link>
+    <link>https://tanducmai.com/tags/beginner/</link>
     <description>Recent content in beginner on Tan Duc Mai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 13 Dec 2021 00:00:00 +1030</lastBuildDate>
     
-	<atom:link href="https://blissful-mayer-90b8fc.netlify.app/tags/beginner/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://tanducmai.com/tags/beginner/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Python - Class Fundamentals</title>
-      <link>https://blissful-mayer-90b8fc.netlify.app/posts/python-class-fundamentals/</link>
+      <link>https://tanducmai.com/posts/python-class-fundamentals/</link>
       <pubDate>Mon, 13 Dec 2021 00:00:00 +1030</pubDate>
       
-      <guid>https://blissful-mayer-90b8fc.netlify.app/posts/python-class-fundamentals/</guid>
+      <guid>https://tanducmai.com/posts/python-class-fundamentals/</guid>
       <description>Objects </description>
     </item>
     
     <item>
       <title>Python - Naming Conventions</title>
-      <link>https://blissful-mayer-90b8fc.netlify.app/posts/python-naming-conventions/</link>
+      <link>https://tanducmai.com/posts/python-naming-conventions/</link>
       <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blissful-mayer-90b8fc.netlify.app/posts/python-naming-conventions/</guid>
+      <guid>https://tanducmai.com/posts/python-naming-conventions/</guid>
       <description>Table of Contents  Rules The Python Keywords Use of Underscores Readability Matters Style of Naming Variables Sample Variable Names Reference Further Research  Rules Although you are allowed to make up your own names for variables, you must follow these rules:
 1. You cannot use one of Python&amp;#39;s keywords as a variable name2. A variable or function name cannot contain spaces.3. The first character must be one of the letters a.</description>
     </item>

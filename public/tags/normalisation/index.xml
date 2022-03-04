@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>normalisation on Tan Duc Mai</title>
-    <link>https://blissful-mayer-90b8fc.netlify.app/tags/normalisation/</link>
+    <link>https://tanducmai.com/tags/normalisation/</link>
     <description>Recent content in normalisation on Tan Duc Mai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 26 Feb 2022 01:05:26 +1030</lastBuildDate>
     
-	<atom:link href="https://blissful-mayer-90b8fc.netlify.app/tags/normalisation/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://tanducmai.com/tags/normalisation/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Database - Normalisation</title>
-      <link>https://blissful-mayer-90b8fc.netlify.app/posts/database-normalisation/</link>
+      <link>https://tanducmai.com/posts/database-normalisation/</link>
       <pubDate>Sat, 26 Feb 2022 01:05:26 +1030</pubDate>
       
-      <guid>https://blissful-mayer-90b8fc.netlify.app/posts/database-normalisation/</guid>
+      <guid>https://tanducmai.com/posts/database-normalisation/</guid>
       <description>Table of Contents  Good and Bad Database Designs Rule of Thumb Normalisation How to Normalise? Rules of the First Three Normal Forms  Image Source: Evil Martians
 Good and Bad Database Designs When designing a database, people tend to do one that captures all or too much of the required information.
 It should be noted that more than one design are plausible.

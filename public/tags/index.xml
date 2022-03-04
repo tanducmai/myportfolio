@@ -2,129 +2,129 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Tan Duc Mai</title>
-    <link>https://blissful-mayer-90b8fc.netlify.app/tags/</link>
+    <link>https://tanducmai.com/tags/</link>
     <description>Recent content in Tags on Tan Duc Mai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 28 Feb 2022 19:30:29 +1030</lastBuildDate>
     
-	<atom:link href="https://blissful-mayer-90b8fc.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://tanducmai.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>conceptual design</title>
-      <link>https://blissful-mayer-90b8fc.netlify.app/tags/conceptual-design/</link>
+      <link>https://tanducmai.com/tags/conceptual-design/</link>
       <pubDate>Mon, 28 Feb 2022 19:30:29 +1030</pubDate>
       
-      <guid>https://blissful-mayer-90b8fc.netlify.app/tags/conceptual-design/</guid>
+      <guid>https://tanducmai.com/tags/conceptual-design/</guid>
       <description></description>
     </item>
     
     <item>
       <title>database</title>
-      <link>https://blissful-mayer-90b8fc.netlify.app/tags/database/</link>
+      <link>https://tanducmai.com/tags/database/</link>
       <pubDate>Mon, 28 Feb 2022 19:30:29 +1030</pubDate>
       
-      <guid>https://blissful-mayer-90b8fc.netlify.app/tags/database/</guid>
+      <guid>https://tanducmai.com/tags/database/</guid>
       <description></description>
     </item>
     
     <item>
       <title>er model</title>
-      <link>https://blissful-mayer-90b8fc.netlify.app/tags/er-model/</link>
+      <link>https://tanducmai.com/tags/er-model/</link>
       <pubDate>Mon, 28 Feb 2022 19:30:29 +1030</pubDate>
       
-      <guid>https://blissful-mayer-90b8fc.netlify.app/tags/er-model/</guid>
+      <guid>https://tanducmai.com/tags/er-model/</guid>
       <description></description>
     </item>
     
     <item>
       <title>fundamentals</title>
-      <link>https://blissful-mayer-90b8fc.netlify.app/tags/fundamentals/</link>
+      <link>https://tanducmai.com/tags/fundamentals/</link>
       <pubDate>Mon, 28 Feb 2022 19:30:29 +1030</pubDate>
       
-      <guid>https://blissful-mayer-90b8fc.netlify.app/tags/fundamentals/</guid>
+      <guid>https://tanducmai.com/tags/fundamentals/</guid>
       <description></description>
     </item>
     
     <item>
       <title>uml diagram</title>
-      <link>https://blissful-mayer-90b8fc.netlify.app/tags/uml-diagram/</link>
+      <link>https://tanducmai.com/tags/uml-diagram/</link>
       <pubDate>Mon, 28 Feb 2022 19:30:29 +1030</pubDate>
       
-      <guid>https://blissful-mayer-90b8fc.netlify.app/tags/uml-diagram/</guid>
+      <guid>https://tanducmai.com/tags/uml-diagram/</guid>
       <description></description>
     </item>
     
     <item>
       <title>normalisation</title>
-      <link>https://blissful-mayer-90b8fc.netlify.app/tags/normalisation/</link>
+      <link>https://tanducmai.com/tags/normalisation/</link>
       <pubDate>Sat, 26 Feb 2022 01:05:26 +1030</pubDate>
       
-      <guid>https://blissful-mayer-90b8fc.netlify.app/tags/normalisation/</guid>
+      <guid>https://tanducmai.com/tags/normalisation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>relational model</title>
-      <link>https://blissful-mayer-90b8fc.netlify.app/tags/relational-model/</link>
+      <link>https://tanducmai.com/tags/relational-model/</link>
       <pubDate>Sat, 26 Feb 2022 01:05:26 +1030</pubDate>
       
-      <guid>https://blissful-mayer-90b8fc.netlify.app/tags/relational-model/</guid>
+      <guid>https://tanducmai.com/tags/relational-model/</guid>
       <description></description>
     </item>
     
     <item>
       <title>primary key</title>
-      <link>https://blissful-mayer-90b8fc.netlify.app/tags/primary-key/</link>
+      <link>https://tanducmai.com/tags/primary-key/</link>
       <pubDate>Fri, 25 Feb 2022 17:54:53 +1030</pubDate>
       
-      <guid>https://blissful-mayer-90b8fc.netlify.app/tags/primary-key/</guid>
+      <guid>https://tanducmai.com/tags/primary-key/</guid>
       <description></description>
     </item>
     
     <item>
       <title>key concepts</title>
-      <link>https://blissful-mayer-90b8fc.netlify.app/tags/key-concepts/</link>
+      <link>https://tanducmai.com/tags/key-concepts/</link>
       <pubDate>Thu, 24 Feb 2022 21:29:52 +1030</pubDate>
       
-      <guid>https://blissful-mayer-90b8fc.netlify.app/tags/key-concepts/</guid>
+      <guid>https://tanducmai.com/tags/key-concepts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>relational concepts</title>
-      <link>https://blissful-mayer-90b8fc.netlify.app/tags/relational-concepts/</link>
+      <link>https://tanducmai.com/tags/relational-concepts/</link>
       <pubDate>Wed, 23 Feb 2022 07:58:02 +1030</pubDate>
       
-      <guid>https://blissful-mayer-90b8fc.netlify.app/tags/relational-concepts/</guid>
+      <guid>https://tanducmai.com/tags/relational-concepts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>python</title>
-      <link>https://blissful-mayer-90b8fc.netlify.app/tags/python/</link>
+      <link>https://tanducmai.com/tags/python/</link>
       <pubDate>Fri, 17 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blissful-mayer-90b8fc.netlify.app/tags/python/</guid>
+      <guid>https://tanducmai.com/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>beginner</title>
-      <link>https://blissful-mayer-90b8fc.netlify.app/tags/beginner/</link>
+      <link>https://tanducmai.com/tags/beginner/</link>
       <pubDate>Mon, 13 Dec 2021 00:00:00 +1030</pubDate>
       
-      <guid>https://blissful-mayer-90b8fc.netlify.app/tags/beginner/</guid>
+      <guid>https://tanducmai.com/tags/beginner/</guid>
       <description></description>
     </item>
     
     <item>
       <title>syntax</title>
-      <link>https://blissful-mayer-90b8fc.netlify.app/tags/syntax/</link>
+      <link>https://tanducmai.com/tags/syntax/</link>
       <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blissful-mayer-90b8fc.netlify.app/tags/syntax/</guid>
+      <guid>https://tanducmai.com/tags/syntax/</guid>
       <description></description>
     </item>
     

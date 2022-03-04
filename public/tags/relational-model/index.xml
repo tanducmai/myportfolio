@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>relational model on Tan Duc Mai</title>
-    <link>https://blissful-mayer-90b8fc.netlify.app/tags/relational-model/</link>
+    <link>https://tanducmai.com/tags/relational-model/</link>
     <description>Recent content in relational model on Tan Duc Mai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 26 Feb 2022 01:05:26 +1030</lastBuildDate>
     
-	<atom:link href="https://blissful-mayer-90b8fc.netlify.app/tags/relational-model/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://tanducmai.com/tags/relational-model/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Database - Normalisation</title>
-      <link>https://blissful-mayer-90b8fc.netlify.app/posts/database-normalisation/</link>
+      <link>https://tanducmai.com/posts/database-normalisation/</link>
       <pubDate>Sat, 26 Feb 2022 01:05:26 +1030</pubDate>
       
-      <guid>https://blissful-mayer-90b8fc.netlify.app/posts/database-normalisation/</guid>
+      <guid>https://tanducmai.com/posts/database-normalisation/</guid>
       <description>Table of Contents  Good and Bad Database Designs Rule of Thumb Normalisation How to Normalise? Rules of the First Three Normal Forms  Image Source: Evil Martians
 Good and Bad Database Designs When designing a database, people tend to do one that captures all or too much of the required information.
 It should be noted that more than one design are plausible.
@@ -25,10 +25,10 @@ It should be noted that more than one design are plausible.
     
     <item>
       <title>Database - Key Concepts</title>
-      <link>https://blissful-mayer-90b8fc.netlify.app/posts/database-key-concepts/</link>
+      <link>https://tanducmai.com/posts/database-key-concepts/</link>
       <pubDate>Thu, 24 Feb 2022 21:29:52 +1030</pubDate>
       
-      <guid>https://blissful-mayer-90b8fc.netlify.app/posts/database-key-concepts/</guid>
+      <guid>https://tanducmai.com/posts/database-key-concepts/</guid>
       <description>Table Of Contents  What is a Key? Super Key Candidate Key Primary Key Unique Key Surrogate Key Natural Key Foreign Key Non-key Attributes  Image Source: Arvindzeclass
 What Is A Key A KEY in the DBMS is a set of one or more attributes whose values can uniquely identify a given tuple within a relation.
 There are generally eight types of keys:
@@ -37,10 +37,10 @@ There are generally eight types of keys:
     
     <item>
       <title>Database - Relational Concepts</title>
-      <link>https://blissful-mayer-90b8fc.netlify.app/posts/database-relational-concepts/</link>
+      <link>https://tanducmai.com/posts/database-relational-concepts/</link>
       <pubDate>Wed, 23 Feb 2022 07:58:02 +1030</pubDate>
       
-      <guid>https://blissful-mayer-90b8fc.netlify.app/posts/database-relational-concepts/</guid>
+      <guid>https://tanducmai.com/posts/database-relational-concepts/</guid>
       <description>Table of Contents  General Terminology Relations Attributes Domains Table Schemas Tuples Put It All Together  General Terminology    Relational Name Common Name Alternative     relation table -   attribute colum field   tuple row record    Within a table, every column name must be UNIQUE.
 Within a Table every row must be UNIQUE (no duplicate data!).
 Every Row must have a unique Primary Key that can identify that data row only!</description>

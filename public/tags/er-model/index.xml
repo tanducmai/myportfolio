@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>er model on Tan Duc Mai</title>
-    <link>https://blissful-mayer-90b8fc.netlify.app/tags/er-model/</link>
+    <link>https://tanducmai.com/tags/er-model/</link>
     <description>Recent content in er model on Tan Duc Mai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 28 Feb 2022 19:30:29 +1030</lastBuildDate>
     
-	<atom:link href="https://blissful-mayer-90b8fc.netlify.app/tags/er-model/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://tanducmai.com/tags/er-model/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Database - Conceptual Design</title>
-      <link>https://blissful-mayer-90b8fc.netlify.app/posts/database-conceptual-design/</link>
+      <link>https://tanducmai.com/posts/database-conceptual-design/</link>
       <pubDate>Mon, 28 Feb 2022 19:30:29 +1030</pubDate>
       
-      <guid>https://blissful-mayer-90b8fc.netlify.app/posts/database-conceptual-design/</guid>
+      <guid>https://tanducmai.com/posts/database-conceptual-design/</guid>
       <description>Table of Contents  Conceptual Design? Design Process Conceptual Modelling? Entity-Relationship Model Unified Modelling Language Diagram UML Diagram Example Types of Attributes Association Multiplicity Summary of Multiplicity Syntax Association Class Recursive Relationships/Self Associations Aggregation Composition Strong and Weak Entity Type Inheritance (Superclass - Subclass)  Conceptual Design When designing a database, we should:
  Create a list of all the real-world AND conceptual objects that we need to store data about.</description>
     </item>
