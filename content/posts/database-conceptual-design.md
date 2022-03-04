@@ -271,6 +271,9 @@ Rules:
 1. **One-to-One** (`1:1`)
 
 - Every object is associated with at most one of the other object.
+- When we see this relationship, we need to put either of the PKs into the
+  other table as a FK.
+  - It does not matter which way it goes.
 
 ![One-to-One Multiplicity](/images/database-conceptual-design/one-to-one-1.png)
 ![One-to-One Multiplicity](/images/database-conceptual-design/one-to-one-2.png)
@@ -278,6 +281,8 @@ Rules:
 2. **One-to-Many** (`1:*`) and Many-to-One (`*:1`)
 
 - Many elements of one object are related to at most one of the other object.
+- When we see this relationship, we need to put the PK of the one-side table to
+  the many-side table as a FK.
 
 ![One-to-Many
 Multiplicity](/images/database-conceptual-design/one-to-many-1.png)
@@ -288,7 +293,12 @@ Multiplicity](/images/database-conceptual-design/one-to-many-3.png)
 
 3. **Many-to-Many** (`*:*`) or (`0:*`) or (`m:n`)
 
-- No restriction on the relationship
+- No restriction on the relationship.
+- When we see this relationship, we need to make an association table.
+  - This table stores the two main tables' PKs as FKs.
+  - Thus, that two tables do not store each other's PK.
+  - The association table's name can simply be a combination of the two main
+    ones.
 
 ![Many-to-Many
 Multiplicity](/images/database-conceptual-design/many-to-many-1.png)

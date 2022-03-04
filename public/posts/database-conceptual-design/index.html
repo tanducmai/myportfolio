@@ -502,6 +502,12 @@ take place?)</p>
 </ol>
 <ul>
 <li>Every object is associated with at most one of the other object.</li>
+<li>When we see this relationship, we need to put either of the PKs into the
+other table as a FK.
+<ul>
+<li>It does not matter which way it goes.</li>
+</ul>
+</li>
 </ul>
 <p><img src="/images/database-conceptual-design/one-to-one-1.png" alt="One-to-One Multiplicity">
 <img src="/images/database-conceptual-design/one-to-one-2.png" alt="One-to-One Multiplicity"></p>
@@ -510,6 +516,8 @@ take place?)</p>
 </ol>
 <ul>
 <li>Many elements of one object are related to at most one of the other object.</li>
+<li>When we see this relationship, we need to put the PK of the one-side table to
+the many-side table as a FK.</li>
 </ul>
 <p><img src="/images/database-conceptual-design/one-to-many-1.png" alt="One-to-ManyMultiplicity">
 <img src="/images/database-conceptual-design/one-to-many-2.png" alt="One-to-ManyMultiplicity">
@@ -518,7 +526,15 @@ take place?)</p>
 <li><strong>Many-to-Many</strong> (<code>*:*</code>) or (<code>0:*</code>) or (<code>m:n</code>)</li>
 </ol>
 <ul>
-<li>No restriction on the relationship</li>
+<li>No restriction on the relationship.</li>
+<li>When we see this relationship, we need to make an association table.
+<ul>
+<li>This table stores the two main tables&rsquo; PKs as FKs.</li>
+<li>Thus, that two tables do not store each other&rsquo;s PK.</li>
+<li>The association table&rsquo;s name can simply be a combination of the two main
+ones.</li>
+</ul>
+</li>
 </ul>
 <p><img src="/images/database-conceptual-design/many-to-many-1.png" alt="Many-to-ManyMultiplicity">
 <img src="/images/database-conceptual-design/many-to-many-2.png" alt="Many-to-ManyMultiplicity"></p>
