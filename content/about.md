@@ -17,7 +17,7 @@ degree in Networking and Cybersecurity at the University of South Australia
 - Actively seek an internship with opportunity growth and a learning potential
   that reinforces my technical knowledge.
 
-### Skills
+### Highlights
 
 - Proficient: Python (Script, Automation, Data Analysis)
 - Previous Experience: HTML5, CSS3, Pascal, Markdown
@@ -26,10 +26,9 @@ degree in Networking and Cybersecurity at the University of South Australia
 - Linux (Ubuntu, Mint, Kali, CentOS), macOS, Windows, Cisco
 - Adobe Creative Cloud and Microsoft Office Suite
 
----
+### Contact
 
-Please refer to my [LinkedIn](https://www.linkedin.com/in/tanducmai/) profile or
-my
-[Resume](https://raw.githubusercontent.com/tanducmai/myresume/master/TanDucMai_Resume_02.2022.pdf)
-for more information in relation to my previous working experience and academic
-history.
+| Category | Link                                                                |
+| ---      | ---                                                                 |
+| Email    | tan.duc.work@gmail.com                                              |
+| LinkedIn | [linkedin.com/in/tanducmai](https://www.linkedin.com/in/tanducmai/) |

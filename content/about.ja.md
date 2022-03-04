@@ -24,9 +24,9 @@ description = "This is the introduction page in Japanese"
 - Linux（Ubuntu、Mint、Kali、CentOS）、macOS、Windows、Cisco 
 - Adobe Creative Cloud および Microsoft Office Suite
 
----
+### 連絡先
 
-私の [LinkedIn](https://www.linkedin.com/in/tanducmai/)
-プロフィールを参照するか、 わたしの
-[履歴書](https://raw.githubusercontent.com/tanducmai/myresume/master/TanDucMai_Resume_02.2022.pdf)
-私の以前の実務経験と学業に関連する詳細については 歴史。
+| カテゴリー | リンク                                                              |
+| ---        | ---                                                                 |
+| Eメール    | tan.duc.work@gmail.com                                              |
+| LinkedIn   | [linkedin.com/in/tanducmai](https://www.linkedin.com/in/tanducmai/) |
