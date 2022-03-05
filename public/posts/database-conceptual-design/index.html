@@ -467,10 +467,10 @@ occurrences.</li>
 <ul>
 <li>A subgroup of occurrences of an entity type</li>
 <li>E.g. Staff and Student are two subclasses of Person.</li>
-<li>Sub Classes may or may not have any attributes of their own.</li>
+<li>Subclasses may or may not have any attribute of their own.</li>
 </ul>
 <ol start="3">
-<li>This is called an <strong>Inheritance Hierarchy</strong></li>
+<li><strong>Inheritance Hierarchy</strong></li>
 </ol>
 <ul>
 <li>Also called a <strong>Generalisation</strong>/<strong>Specialisation Structure</strong>.</li>
@@ -491,9 +491,9 @@ university database system.
 <li><strong>Attribute Inheritance</strong></li>
 </ol>
 <ul>
-<li>Subclasses inherit all the attributes from their superclasses, hence
+<li>Subclasses inherit all the attributes from their superclass, hence
 <a href="https://www.ldoceonline.com/dictionary/inheritance">inheritance</a></li>
-<li>Considere the previous example:
+<li>Consider the previous example:
 <ul>
 <li>A Student has the following attributes:
 <ul>
@@ -505,6 +505,18 @@ university database system.
 </li>
 </ul>
 <ol start="5">
+<li><strong>Primary Key Inheritance</strong></li>
+</ol>
+<ul>
+<li>Subclasses inherit all the Primary Keys from their superclass.
+<ul>
+<li>The PKs of the superclass is pulled down to the subclasses.</li>
+<li>They become the PKs of the subclasses.</li>
+<li>Also, they are FKs that reference themselves in the superclass.</li>
+</ul>
+</li>
+</ul>
+<ol start="6">
 <li><strong>Instances of a subclass</strong></li>
 </ol>
 <ul>
@@ -512,7 +524,7 @@ university database system.
 <li>E.g. If &ldquo;John&rdquo; is an instance of the Student class, and therefore he is also a
 person.</li>
 </ul>
-<ol start="6">
+<ol start="7">
 <li><strong>Specialisation</strong></li>
 </ol>
 <ul>
@@ -520,7 +532,7 @@ person.</li>
 class.</li>
 <li>E.g. John as a student is a more specific example of a person.</li>
 </ul>
-<ol start="7">
+<ol start="8">
 <li><strong>Generalisation</strong></li>
 </ol>
 <ul>
@@ -528,7 +540,7 @@ class.</li>
 superclass.</li>
 </ul>
 <p><img src="/images/database-conceptual-design/inheritance-2.png" alt="More InheritanceExample"></p>
-<ol start="8">
+<ol start="9">
 <li><strong>Constraints</strong> on Specialisation / Generalisation</li>
 </ol>
 <ul>

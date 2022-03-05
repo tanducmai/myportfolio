@@ -333,9 +333,9 @@ Example](/images/database-conceptual-design/weak-entity-type.png)
 
 - A subgroup of occurrences of an entity type
 - E.g. Staff and Student are two subclasses of Person.
-- Sub Classes may or may not have any attributes of their own.
+- Subclasses may or may not have any attribute of their own.
 
-3. This is called an **Inheritance Hierarchy**
+3. **Inheritance Hierarchy**
 
 - Also called a **Generalisation**/**Specialisation Structure**.
 - For example: Staff, Student, and Contractor are all 'Person' within the
@@ -348,26 +348,33 @@ Example](/images/database-conceptual-design/weak-entity-type.png)
 
 4. **Attribute Inheritance**
 
-- Subclasses inherit all the attributes from their superclasses, hence
+- Subclasses inherit all the attributes from their superclass, hence
   [inheritance](https://www.ldoceonline.com/dictionary/inheritance)
-- Considere the previous example:
+- Consider the previous example:
   - A Student has the following attributes:
     - GPA (defined in the Student class)
     - personName, personID (inherited from the superclass Person)
 
-5. **Instances of a subclass**
+5. **Primary Key Inheritance**
+
+- Subclasses inherit all the Primary Keys from their superclass.
+  - The PKs of the superclass is pulled down to the subclasses.
+  - They become the PKs of the subclasses.
+  - Also, they are FKs that reference themselves in the superclass.
+
+6. **Instances of a subclass**
 
 - An instance of a subclass is also an instance of the superclass.
 - E.g. If "John" is an instance of the Student class, and therefore he is also a
   person.
 
-6. **Specialisation**
+7. **Specialisation**
 
 - The process of identifying distinguishing characteristics of subclasses of a
   class.
 - E.g. John as a student is a more specific example of a person.
 
-7. **Generalisation**
+8. **Generalisation**
 
 - The process of identifying common characteristics of subclasses for a
   superclass.
@@ -375,7 +382,7 @@ Example](/images/database-conceptual-design/weak-entity-type.png)
 ![More Inheritance
 Example](/images/database-conceptual-design/inheritance-2.png)
 
-8. **Constraints** on Specialisation / Generalisation
+9. **Constraints** on Specialisation / Generalisation
 
 - A subclass member is always a member of the superclass.
 
