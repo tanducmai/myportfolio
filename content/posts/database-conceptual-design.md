@@ -215,6 +215,7 @@ Multiplicity](/images/database-conceptual-design/one-to-many-3.png)
 - No restriction on the relationship.
 - When we see this relationship, we need to make an association table.
   - This table stores the two main tables' PKs as FKs.
+  - These FKs can also be the PKs of the association table.
   - Thus, that two tables do not store each other's PK.
   - If an appropriate name cannot for the association table cannot be invented,
     then just use a combination of the two main tables.
