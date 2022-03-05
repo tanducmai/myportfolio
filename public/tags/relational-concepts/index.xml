@@ -17,9 +17,8 @@
       <pubDate>Wed, 23 Feb 2022 07:58:02 +1030</pubDate>
       
       <guid>https://tanducmai.com/posts/database-relational-concepts/</guid>
-      <description>Table of Contents  General Terminology Relations Attributes Domains Table Schemas Tuples Put It All Together  General Terminology    Relational Name Common Name Alternative     relation table -   attribute colum field   tuple row record    Within a table, every column name must be UNIQUE.
-Within a Table every row must be UNIQUE (no duplicate data!).
-Every Row must have a unique Primary Key that can identify that data row only!</description>
+      <description>Table of Contents  General Terminology Relations Attributes Types of Attributes Domains Table Schemas Tuples Put It All Together  General Terminology    Relational Name Common Name Alternative     relation table -   attribute colum field   tuple row record    Within a table, every column name must be UNIQUE.
+Within a Table every row must be UNIQUE (no duplicate data!).</description>
     </item>
     
   </channel>

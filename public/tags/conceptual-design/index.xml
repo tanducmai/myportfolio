@@ -17,8 +17,8 @@
       <pubDate>Mon, 28 Feb 2022 19:30:29 +1030</pubDate>
       
       <guid>https://tanducmai.com/posts/database-conceptual-design/</guid>
-      <description>Table of Contents  Conceptual Design? Design Process Conceptual Modelling? Entity-Relationship Model Unified Modelling Language Diagram UML Diagram Example Types of Attributes Association Multiplicity Summary of Multiplicity Syntax Association Class Recursive Relationships/Self Associations Aggregation Composition Strong and Weak Entity Type Inheritance (Superclass - Subclass)  Conceptual Design When designing a database, we should:
- Create a list of all the real-world AND conceptual objects that we need to store data about.</description>
+      <description>Table of Contents  Conceptual Design? Design Process Conceptual Modelling? Entity-Relationship Model Unified Modelling Language Diagram UML Diagram Example Association Multiplicity Summary of Multiplicity Syntax Association Class Recursive Relationships/Self Associations Aggregation Composition Strong and Weak Entity Type Inheritance (Superclass - Subclass)  Conceptual Design When designing a database, we should:
+ Create a list of all the real-world AND conceptual objects that we need to store data about. To each of those items, list all the attributes required to capture the desired data.</description>
     </item>
     
   </channel>

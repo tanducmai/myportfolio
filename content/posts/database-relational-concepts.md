@@ -22,6 +22,7 @@ draft = false
 1. [General Terminology](#terminology)
 1. [Relations](#relations)
 1. [Attributes](#attributes)
+1. [Types of Attributes](#types-of-attributes)
 1. [Domains](#domains)
 1. [Table Schemas](#table-schemas)
 1. [Tuples](#tuples)
@@ -44,13 +45,13 @@ only!
 
 ### Relations
 
-A **RELATION** defines a *real world* or *conceptual* object we collect
+A **RELATION** defines a *real world* or *conceptual object* we collect
 information about.
 
 When a relation is implemented in a Database Management System (DBMS), it is
-often called a Table.
+often called a *table*.
 
-A relational database (model) consists of a serries of relations with distinct
+A relational database (model) consists of a series of relations with distinct
 names.
 
 - It is a convention to name relations using the *PascalCase*.
@@ -59,9 +60,9 @@ For example, a School relation stores lecturerInfo, studentID, courses.
 
 ### Attributes
 
-An **ATTRIBUTE** is a name assigned to column in a relational table.
+An **ATTRIBUTE** is a property that describes a relation.
 
-Each Attribute must have a unique name in a given relational table.
+Each attribute must have a unique name in a given relational table.
 
 - It is a convention to name attributes using the *camelCase*.
 
@@ -70,9 +71,104 @@ the Lecturer’s information, Student ID, and Courses.
 
 Every attribute has a domain.
 
+### Types of Attributes
+
+There are five types of attribute:
+
+1. **Simple** attributes are atomic values which cannot be divided further.
+
+- They provide a single piece of useful information and not consist of subparts
+  or multiple values or repeating information.
+- E.g. A person's phone number is an atomic value of 10 digits.
+
+2. **Composite** attributes are made of more than one simple attribute.
+
+- E.g. A person's complete name may have firstName and lastName attributes.
+
+3. **Derived** attributes are those whose values are calculated from the values
+   of other attributes.
+
+| PurchaseOrders |
+| :---:          |
+| quantity       |
+| price          |
+| /total         |
+
+- total = quantity * price
+- Thus, total is a Derived Attribute.
+
+4. **Structured** attributes are those composed of more than one attribute.
+
+| Employees        |
+| :---:            |
+| name:            |
+|     salutation   |
+|     fistName     |
+|     lastName     |
+| address:         |
+|     addressLine1 |
+|     addressLine2 |
+
+- The name attribute consists of salutation + firtName + lastName.
+- Thus, name is a Structured Attribute.
+
+5. **Single-value** attributes are those that simply contain a single value.
+
+- E.g. taxFileNumber, socialSecurityNumber, etc.
+
+6. **Multi-value** attributes are those that contain more than one values.
+
+- E.g. A person can have more than one phoneNumber, emailAddress, etc.
+- This is a bad type of attribute to avoid.
+- To resolve multi-value attributes, place them in a separate table and use a
+  new association table to store the detail.
+
+For example, instead of:
+
+| studentID | username | courses            |
+| :---:     | :---:    | :---:              |
+| 002       | hmai02   | INFS1025, COMP1046 |
+| 004       | tduc04   | COMP1046           |
+| 006       | ducmai06 | INFT1031           |
+
+Do this:
+
+- People
+
+| studentID | username |
+| :---:     | :---:    |
+| 002       | hmai02   |
+| 004       | tduc04   |
+| 006       | ducmai06 |
+
+- CourseCompleted
+
+| studentID | courseID |
+| :---:     | :---:    |
+| 002       | INFS1025 |
+| 002       | COMP1046 |
+| 004       | COMP1046 |
+| 006       | INFT1031 |
+
+- Course
+
+| courseID | courseName |
+| :---:    | :---:      |
+| INFS1025 | DDWT       |
+| COMP1046 | OOP        |
+| INFT1031 | PSP        |
+
 ### Domains
 
-A **Domain** dictates (determines) the data type and the range of acceptable values of an attribute.
+A **Domain** dictates (determines) the data type and the range of acceptable
+values of an attribute.
+- A domain of possible values must be associated with every attribute (e.g.,
+  integer types, character types, date/time types).
+
+Declaring an attribute to be of a particular domain acts as a constraint on the
+values that it can take. Domain constraints are the most elementary form of
+integrity constraint. They are tested easily by the system whenever a new data
+item is entered into the database.
 
 For a list of common Database data type, please read:
 *[W3Schools](https://www.w3schools.com/sql/sql_datatypes.asp)* or *[Teach
@@ -87,8 +183,11 @@ For example:
 
 ### Table Schemas
 
-A **TABLE SCHEMA** defines the structure of a relational table in a relational
+A **TABLE SCHEMA** is the overall design of a relational table in a relational
 database.
+
+Programming analogy: a database schema corresponds to the variable declarations
+(along with associated type definitions) in a program.
 
 Format: **RelationName(attributeNames)**
 

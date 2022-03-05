@@ -17,8 +17,8 @@
       <pubDate>Mon, 28 Feb 2022 19:30:29 +1030</pubDate>
       
       <guid>https://tanducmai.com/posts/database-conceptual-design/</guid>
-      <description>Table of Contents  Conceptual Design? Design Process Conceptual Modelling? Entity-Relationship Model Unified Modelling Language Diagram UML Diagram Example Types of Attributes Association Multiplicity Summary of Multiplicity Syntax Association Class Recursive Relationships/Self Associations Aggregation Composition Strong and Weak Entity Type Inheritance (Superclass - Subclass)  Conceptual Design When designing a database, we should:
- Create a list of all the real-world AND conceptual objects that we need to store data about.</description>
+      <description>Table of Contents  Conceptual Design? Design Process Conceptual Modelling? Entity-Relationship Model Unified Modelling Language Diagram UML Diagram Example Association Multiplicity Summary of Multiplicity Syntax Association Class Recursive Relationships/Self Associations Aggregation Composition Strong and Weak Entity Type Inheritance (Superclass - Subclass)  Conceptual Design When designing a database, we should:
+ Create a list of all the real-world AND conceptual objects that we need to store data about. To each of those items, list all the attributes required to capture the desired data.</description>
     </item>
     
     <item>
@@ -63,9 +63,8 @@ There are generally eight types of keys:
       <pubDate>Wed, 23 Feb 2022 07:58:02 +1030</pubDate>
       
       <guid>https://tanducmai.com/posts/database-relational-concepts/</guid>
-      <description>Table of Contents  General Terminology Relations Attributes Domains Table Schemas Tuples Put It All Together  General Terminology    Relational Name Common Name Alternative     relation table -   attribute colum field   tuple row record    Within a table, every column name must be UNIQUE.
-Within a Table every row must be UNIQUE (no duplicate data!).
-Every Row must have a unique Primary Key that can identify that data row only!</description>
+      <description>Table of Contents  General Terminology Relations Attributes Types of Attributes Domains Table Schemas Tuples Put It All Together  General Terminology    Relational Name Common Name Alternative     relation table -   attribute colum field   tuple row record    Within a table, every column name must be UNIQUE.
+Within a Table every row must be UNIQUE (no duplicate data!).</description>
     </item>
     
     <item>
@@ -74,7 +73,7 @@ Every Row must have a unique Primary Key that can identify that data row only!</
       <pubDate>Tue, 22 Feb 2022 06:23:37 +1030</pubDate>
       
       <guid>https://tanducmai.com/posts/database-why/</guid>
-      <description>Table of Contents  Traditional &amp;amp; Physical Data Storage Modern &amp;amp; Digital Data Storage  Problems With Traditional And Physical Data Storage  Limited by physical size Limited multi-access - a borrowed book can only be viewed by one person at a time. Limited search methods (title, author, subject) Slow turn-around Multiple indexes that must be rigorously maintained. Complex Query Limitations - vast amounts of time wasted counting the number of books on a subject or by an author.</description>
+      <description>Table of Contents  Traditional - Physical Data Storage Modern - Digital Data Storage Database-System Applications  Traditional And Physical Data Storage  Limited by physical size Limited multi-access - a borrowed book can only be viewed by one person at a time. Limited search methods (title, author, subject) Slow turn-around Multiple indexes that must be rigorously maintained. Complex Query Limitations - vast amounts of time wasted counting the number of books on a subject or by an author.</description>
     </item>
     
     <item>
