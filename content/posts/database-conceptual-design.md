@@ -216,8 +216,8 @@ Multiplicity](/images/database-conceptual-design/one-to-many-3.png)
 - When we see this relationship, we need to make an association table.
   - This table stores the two main tables' PKs as FKs.
   - Thus, that two tables do not store each other's PK.
-  - The association table's name can simply be a combination of the two main
-    ones.
+  - If an appropriate name cannot for the association table cannot be invented,
+    then just use a combination of the two main tables.
 
 ![Many-to-Many
 Multiplicity](/images/database-conceptual-design/many-to-many-1.png)
