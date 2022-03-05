@@ -170,7 +170,7 @@ information retrieval
 
 - In the case that we have several reports, we then need to collect all their
   3NFs and join them together into one, hence
-  *[consolidation](https://www.oxfordlearnersdictionaries.com/definition/english/consolidation):*.
+  *[consolidation](https://www.oxfordlearnersdictionaries.com/definition/english/consolidation)*.
 - Rules: `Join all the relations (and their attributes) that have the same
   PK(s).`
 - For example, up to this stage, we have eight relations whose PKs are
