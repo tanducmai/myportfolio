@@ -6,10 +6,20 @@
     <description>Recent content in uml diagram on Tan Duc Mai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 28 Feb 2022 19:30:29 +1030</lastBuildDate>
+    <lastBuildDate>Mon, 07 Mar 2022 23:19:58 +1030</lastBuildDate>
     
 	<atom:link href="https://tanducmai.com/tags/uml-diagram/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Database - Logical Design</title>
+      <link>https://tanducmai.com/posts/database-logical-design/</link>
+      <pubDate>Mon, 07 Mar 2022 23:19:58 +1030</pubDate>
+      
+      <guid>https://tanducmai.com/posts/database-logical-design/</guid>
+      <description>Table Of Contents  Logical Modelling?  Logical Modelling After the conceptual design, the next phase is to create functional relational schemas based on the conceptual design.
+ A written description of how the relational database will be implemented. This includes deciding which CK(s) will become the PK.  </description>
+    </item>
     
     <item>
       <title>Database - Conceptual Design</title>
@@ -17,8 +27,8 @@
       <pubDate>Mon, 28 Feb 2022 19:30:29 +1030</pubDate>
       
       <guid>https://tanducmai.com/posts/database-conceptual-design/</guid>
-      <description>Table of Contents  Conceptual Design? Design Process Conceptual Modelling? Entity-Relationship Model Unified Modelling Language Diagram UML Diagram Example Association Multiplicity Summary of Multiplicity Syntax Association Class Recursive Relationships/Self Associations Aggregation Composition Strong and Weak Entity Type Inheritance (Superclass - Subclass)  Conceptual Design When designing a database, we should:
- Create a list of all the real-world AND conceptual objects that we need to store data about. To each of those items, list all the attributes required to capture the desired data.</description>
+      <description>Table of Contents  Conceptual Modelling? Conceptual Design? Design Process Conceptual Modelling? Entity-Relationship Model Unified Modelling Language Diagram UML Diagram Example Association Multiplicity Summary of Multiplicity Syntax Association Class Recursive Relationships/Self Associations Aggregation Composition Strong and Weak Entity Type Inheritance (Superclass - Subclass)  Conceptual Modelling Overall, Database requirements are collected and visualised as a UML diagram.
+ Uses a higher-level language (4GL) to abstract away the complexities of implementation. A graphical way of conceptualising data capture requirements to ensure the required data is collected by the database design!</description>
     </item>
     
   </channel>
