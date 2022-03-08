@@ -20,6 +20,7 @@ draft = false
 
 ### Table of Contents
 
+1. [Conceptual Modelling?](#conceptual-modelling)
 1. [Conceptual Design?](#conceptual-design)
 1. [Design Process](#design-process)
 1. [Conceptual Modelling?](#conceptual-modelling)
@@ -37,7 +38,19 @@ draft = false
 1. [Strong and Weak Entity Type](#strong-and-weak-entity-type)
 1. [Inheritance (Superclass - Subclass)](#inheritance)
 
-### [Conceptual](https://www.oxfordlearnersdictionaries.com/definition/english/conceptual?q=conceptual) Design
+### [Conceptual](https://www.oxfordlearnersdictionaries.com/definition/english/conceptual?q=conceptual) Modelling
+
+Overall, Database requirements are collected and visualised as a UML diagram.
+- Uses a higher-level language (4GL) to abstract away the complexities of
+  implementation.
+- A graphical way of conceptualising data capture requirements to ensure the
+  required data is collected by the database design!
+
+For example:
+
+![UML Diagram Example](/images/database-conceptual-design/uml-example.png)
+
+### Conceptual Design
 
 When designing a database, we should:
 
@@ -106,7 +119,7 @@ Database requirements are gathered and visualised as a UML diagram.
 - Represent what the database keeps track of.
 - Translated into *relations/tables* in the final database.
 - Some entities may be the result of relationships between other entities.
-  - E.g., StudentClasses, StudentCourses, CourseBooks, etc.
+   - E.g., StudentClasses, StudentCourses, CourseBooks, etc.
 - To simplify, an entity corresponds to a class in Object-Oriented Programming
   (OOP).
   - A tuple within a relation corresponds to an instance of a class (an entity).
