@@ -18,7 +18,7 @@
       
       <guid>https://tanducmai.com/posts/database-physical-design/</guid>
       <description>Table Of Contents  Physical Modelling?  Physical Modelling After the conceptual design and the physical design, the next phase is to take the relational schemas and implement them using a DBMS.
- Structured Query Language (SQL) is used to create the relational database and manage data within the database.  For example:
+ Structured Query Language (SQL) is a higher-level language (4GL) used to create the relational database and manage data within the database.  For example:
 CREATE TABLE Project( ProjectName varchar(200), Budget decimal(6,2), Manager varchar(200), CONSTRAINT projectPk PRIMARY KEY (ProjectName), CONSTRAINT managerFk FOREIGN KEY (Manager) REFERENCES Manager(Name) ); </description>
     </item>
     
@@ -151,7 +151,7 @@ A collection of potentially useful data that models real-world or conceptual obj
       
       <guid>https://tanducmai.com/posts/python-naming-conventions/</guid>
       <description>Table of Contents  Rules The Python Keywords Use of Underscores Readability Matters Style of Naming Variables Sample Variable Names Reference Further Research  Rules Although you are allowed to make up your own names for variables, you must follow these rules:
-1. You cannot use one of Python&amp;#39;s keywords as a variable name2. A variable or function name cannot contain spaces.3. The first character must be one of the letters a.</description>
+1. You cannot use one of Python&amp;#39;s keywords as a variable name2. A variable or function name cannot contain spaces, underscore characters &amp;#39;_&amp;#39;can be used instead.3.</description>
     </item>
     
     <item>

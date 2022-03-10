@@ -18,7 +18,7 @@
       
       <guid>https://tanducmai.com/posts/database-physical-design/</guid>
       <description>Table Of Contents  Physical Modelling?  Physical Modelling After the conceptual design and the physical design, the next phase is to take the relational schemas and implement them using a DBMS.
- Structured Query Language (SQL) is used to create the relational database and manage data within the database.  For example:
+ Structured Query Language (SQL) is a higher-level language (4GL) used to create the relational database and manage data within the database.  For example:
 CREATE TABLE Project( ProjectName varchar(200), Budget decimal(6,2), Manager varchar(200), CONSTRAINT projectPk PRIMARY KEY (ProjectName), CONSTRAINT managerFk FOREIGN KEY (Manager) REFERENCES Manager(Name) ); </description>
     </item>
     

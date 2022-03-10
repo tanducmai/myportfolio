@@ -130,13 +130,13 @@
 follow these rules:</p>
 <div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">1. You cannot use one of Python&#39;s keywords as a variable name
 
-2. A variable or function name cannot contain spaces.
+2. A variable or function name cannot contain spaces, underscore characters &#39;_&#39;
+   can be used instead.
 
-3. The first character must be one of the letters a..z, A..Z, or an underscore
-   character &#39;_&#39;.
+3. The first character must be one of the letters a..z, A..Z, or &#39;_&#39;.
 
 4. After the first character, you may use the letters a..z, A..Z, the digits
-   0..0, or underscore characters.
+   0..0, or &#39;_&#39;.
 
 5. Uppercase and lowercase characters are distinct. This means that the variable
    named &#39;ItemsOrdered&#39; is not akin to the one named &#39;itemsordered&#39;.
@@ -207,18 +207,20 @@ again improvements to Python introduce or eliminate one or two):</p>
 </tbody>
 </table>
 <h3 id="use-of-underscores">Use of Underscores</h3>
-<p>With regards to naming conventions, names with leading underscores are intended
-to be private to a class, and names starting with double underscores may have
-special meaning, such as <code>__init__</code> or <code>__add__</code>.</p>
-<p>Therefore, avoid using names that start with double underscores.</p>
+<p>With regards to naming variables, names with leading underscores are intended
+to have special meaning in Object-Oriented Programming (OOP).</p>
+<ul>
+<li>The use of &lsquo;_&rsquo; implies <strong>protected</strong> attributes (e.g. <code>_init_</code>).</li>
+<li>The use of &lsquo;__&rsquo; implies <strong>private</strong> attributes (e.g. <code>__init__</code>).</li>
+</ul>
 <h3 id="readability-matters">Readability Matters</h3>
 <p>Because a variable&rsquo;s name should reflect the variable’s purpose, programmers
 often find themselves creating names that are made of multiple words. For
 example, consider the following variable names:</p>
 <ul>
-<li>grosspay</li>
-<li>payrate</li>
-<li>hotdogssoldtoday</li>
+<li>coursecode</li>
+<li>studentfullname</li>
+<li>addressline1</li>
 </ul>
 <p>Unfortunately, these names are not easily read by the human eye because the
 words aren’t separated. Because we can’t have spaces in variable names, we need
@@ -233,23 +235,35 @@ shown:</p>
 <li>hot_dogs_sold_today</li>
 </ul>
 <h3 id="style-of-naming-variables">Style of Naming Variables</h3>
-<p>In terms of the above section, using underscore characters to separate words in
-a variable name is a popular style among Python programmers. Nonetheless, there
-are other popular styles, such as the camelCase naming convention (which is
-quite popular among Java programmers). camelCase names are written in the
-following manner:</p>
+<p>The <a href="#rules">rules above</a> are called <em>snake_case</em> style which is used to name
+almost every variable in Python (including functions, lists, dictionaries,
+etc.).</p>
+<p>On the other hand, there are other styles in Python used for certain variables
+namely <em>PascalCase</em> and <em>camelCase</em>.</p>
+<p><em>PascalCase</em> is used to name classes and is written in the following manner:</p>
+<ol>
+<li>The first character of every word is written in uppercase.</li>
+<li>There is not a space character.</li>
+</ol>
+<p>For example:</p>
+<ul>
+<li>ItemInOrder</li>
+<li>CourseDetail</li>
+</ul>
+<p><em>camelCase</em> is used to name methods (functions belong to a class) and is written
+in the following manner:</p>
 <ol>
 <li>The variable name begins with lowercase letters.</li>
 <li>The first character of the second and subsequent words is written in
 uppercase.</li>
+<li>There is not a space character.</li>
 </ol>
-<p>For example, the following variable names are written in camelCase:</p>
+<p>For example:</p>
 <ul>
-<li>grossPay</li>
+<li>firstName</li>
 <li>payRate</li>
-<li>hotDogsSoldToday</li>
 </ul>
-<p><em>NOTE</em>: This style of naming is called
+<p>NOTE: This style of naming is called
 <em><a href="https://upload.wikimedia.org/wikipedia/commons/e/ef/CamelCase.svg">camelCase</a></em>
 because the uppercase characters that appear in a name may suggest a camel’s
 humps.</p>

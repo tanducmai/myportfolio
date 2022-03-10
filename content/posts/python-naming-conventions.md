@@ -34,13 +34,13 @@ follow these rules:
 ```text
 1. You cannot use one of Python's keywords as a variable name
 
-2. A variable or function name cannot contain spaces.
+2. A variable or function name cannot contain spaces, underscore characters '_'
+   can be used instead.
 
-3. The first character must be one of the letters a..z, A..Z, or an underscore
-   character '_'.
+3. The first character must be one of the letters a..z, A..Z, or '_'.
 
 4. After the first character, you may use the letters a..z, A..Z, the digits
-   0..0, or underscore characters.
+   0..0, or '_'.
 
 5. Uppercase and lowercase characters are distinct. This means that the variable
    named 'ItemsOrdered' is not akin to the one named 'itemsordered'.
@@ -64,11 +64,10 @@ class  | False    | in      | pass     | yield
 
 ### Use of Underscores
 
-With regards to naming conventions, names with leading underscores are intended
-to be private to a class, and names starting with double underscores may have
-special meaning, such as `__init__` or `__add__`.
-
-Therefore, avoid using names that start with double underscores.
+With regards to naming variables, names with leading underscores are intended
+to have special meaning in Object-Oriented Programming (OOP).
+- The use of '_' implies **protected** attributes (e.g. `_init_`).
+- The use of '__' implies **private** attributes (e.g. `__init__`).
 
 ### Readability Matters
 
@@ -76,9 +75,9 @@ Because a variable's name should reflect the variable’s purpose, programmers
 often find themselves creating names that are made of multiple words. For
 example, consider the following variable names:
 
-- grosspay
-- payrate
-- hotdogssoldtoday
+- coursecode
+- studentfullname
+- addressline1
 
 Unfortunately, these names are not easily read by the human eye because the
 words aren’t separated. Because we can’t have spaces in variable names, we need
@@ -95,23 +94,39 @@ shown:
 
 ### Style of Naming Variables
 
-In terms of the above section, using underscore characters to separate words in
-a variable name is a popular style among Python programmers. Nonetheless, there
-are other popular styles, such as the camelCase naming convention (which is
-quite popular among Java programmers). camelCase names are written in the
-following manner:
+The [rules above](#rules) are called *snake_case* style which is used to name
+almost every variable in Python (including functions, lists, dictionaries,
+etc.).
+
+On the other hand, there are other styles in Python used for certain variables
+namely *PascalCase* and *camelCase*.
+
+
+*PascalCase* is used to name classes and is written in the following manner:
+
+1. The first character of every word is written in uppercase.
+1. There is not a space character.
+
+For example:
+
+- ItemInOrder
+- CourseDetail
+
+
+*camelCase* is used to name methods (functions belong to a class) and is written
+in the following manner:
 
 1. The variable name begins with lowercase letters.
 1. The first character of the second and subsequent words is written in
   uppercase.
+1. There is not a space character.
 
-For example, the following variable names are written in camelCase:
+For example:
 
-- grossPay
+- firstName
 - payRate
-- hotDogsSoldToday
 
-*NOTE*: This style of naming is called
+NOTE: This style of naming is called
 *[camelCase](https://upload.wikimedia.org/wikipedia/commons/e/ef/CamelCase.svg)*
 because the uppercase characters that appear in a name may suggest a camel’s
 humps.
