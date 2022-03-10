@@ -28,8 +28,8 @@ After the [conceptual
 design](https://tanducmai.com/posts/database-conceptual-design) and the
 [physical design](https://tanducmai.com/posts/database-physical-design), the
 next phase is to take the relational schemas and implement them using a DBMS.
-- Structured Query Language (SQL) is used to create the relational database and
-  manage data within the database.
+- Structured Query Language (SQL) is a higher-level language (4GL) used to
+  create the relational database and manage data within the database.
 
 For example:
 
