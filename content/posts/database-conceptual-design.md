@@ -31,7 +31,7 @@ draft = false
 1. [Multiplicity](#multiplicity)
 1. [Summary of Multiplicity Syntax](#summary-of-multiplicity-syntax)
 1. [Association Class](#association-class)
-1. [Recursive Relationships/Self
+1. [Recursive Relationships / Self
    Associations](#recursive-relationship-or-self-association)
 1. [Aggregation](#aggregation)
 1. [Composition](#composition)
@@ -203,9 +203,11 @@ Rules:
 1. **One-to-One** (`1:1`)
 
 - Every object is associated with at most one of the other object.
-- When we see this relationship, we need to put either of the PKs into the
+- When we see this relationship, we need to put either of the PK into the
   other table as a FK.
   - It does not matter which way it goes.
+  - Nevertheless, in the case where there is one side that has the 0 occurence,
+  then that side will store the FK referencing the other side's PK.
 
 ![One-to-One Multiplicity](/images/database-conceptual-design/one-to-one-1.png)
 ![One-to-One Multiplicity](/images/database-conceptual-design/one-to-one-2.png)
