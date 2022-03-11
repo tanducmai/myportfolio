@@ -54,7 +54,7 @@ There are generally eight types of keys:
 The **SUPER KEY** is the set of *all* the keys that, taken collectively, help to
 *uniquely identify* a tuple within a relation.
 
-- Due to this feature, even a key that contains every attribute in a tupe is
+- Due to this feature, even a key that contains every attribute in a tuple is
 still considered a Super Key.
 
 From this huge collection of keys, extract those containing the minimum number of
