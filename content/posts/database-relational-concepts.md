@@ -33,7 +33,7 @@ draft = false
 | Relational Name | Common Name | Alternative |
 | :---:           | :---:       | :---:       |
 | relation        | table       | -           |
-| attribute       | colum       | field       |
+| attribute       | column      | field       |
 | tuple           | row         | record      |
 
 Within a table, every **column name** must be UNIQUE.
@@ -88,35 +88,35 @@ There are five types of attribute:
 3. **Derived** attributes are those whose values are calculated from the values
    of other attributes.
 
-| PurchaseOrders |
-| :---:          |
-| quantity       |
-| price          |
-| /total         |
+| PurchaseOrder |
+| :---:         |
+| quantity      |
+| price         |
+| /total        |
 
 - total = quantity * price
 - Thus, total is a Derived Attribute.
 
 4. **Structured** attributes are those composed of more than one attribute.
 
-| Employees        |
-| :---:            |
-| name:            |
-|     salutation   |
-|     fistName     |
-|     lastName     |
-| address:         |
-|     addressLine1 |
-|     addressLine2 |
+| Employee     |
+| :---:        |
+| name         |
+| salutation   |
+| firstName    |
+| lastName     |
+| address:     |
+| addressLine1 |
+| addressLine2 |
 
-- The name attribute consists of salutation + firtName + lastName.
-- Thus, name is a Structured Attribute.
+- The name attribute consists of salutation + firstName + lastName.
+- Thus name is a Structured Attribute.
 
-5. **Single-value** attributes are those that simply contain a single value.
+5. **Single-valued** attributes are those which simply contain a single value.
 
 - E.g. taxFileNumber, socialSecurityNumber, etc.
 
-6. **Multi-value** attributes are those that contain more than one values.
+6. **Multivalued** attributes are those which contain more than one values.
 
 - E.g. A person can have more than one phoneNumber, emailAddress, etc.
 - This is a bad type of attribute to avoid.
