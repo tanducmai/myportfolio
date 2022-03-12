@@ -1,8 +1,8 @@
 +++
-title = "Contact"
+title = "接触"
 slug = "contact"
 thumbnail = "images/tn.png"
-description = "contact"
+description = "My contact information in Japanese"
 +++
 
 | カテゴリー | リンク                                                             |

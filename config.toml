@@ -93,8 +93,13 @@ disqusShortname = "tan-duc-mai" # Enable or disable Disqus.
 
         [[languages.en.menu.main]]
         name = "Portfolio"
-        weight = 2.0
+        weight = 3.0
         url = "projects"
+
+        [[languages.en.menu.main]]
+        name = "Contact"
+        weight = 4.0
+        url = "contact"
 
 
     [languages.ja]
@@ -121,5 +126,10 @@ disqusShortname = "tan-duc-mai" # Enable or disable Disqus.
 
             # [[languages.ja.menu.main]]
             # name = "プロジェクト"
-            # weight = 2.0
+            # weight = 3.0
             # url = "ja/projects"
+
+            [[languages.ja.menu.main]]
+            name = "接触"
+            weight = 4.0
+            url = "ja/contact"

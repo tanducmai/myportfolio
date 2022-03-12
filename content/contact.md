@@ -1,8 +1,8 @@
 +++
-title = "Contact"
+title = "Contact Me"
 slug = "contact"
 thumbnail = "images/tn.png"
-description = "contact"
+description = "My contact information"
 +++
 
 | Category | Link                                                               |
