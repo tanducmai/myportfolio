@@ -1,5 +1,5 @@
 +++
-date = 2022-02-28T19:30:29+10:30
+date = 2022-03-07T19:30:29+10:30
 title = "Database - Conceptual Design"
 slug = "database-conceptual-design"
 aliases = "/database-conceptual-design/"
@@ -85,7 +85,7 @@ When designing a database, we should:
 ### Design Process
 
 Most database designs will use the Entity-Relationship (ER)
-[model](#entity-relationship-model) or Unified Modelling Language
+[ model](#entity-relationship-model) or Unified Modelling Language
 [(UML)](#unified-modelling-language-diagram) approach to start off with an
 acceptable design and then use the Normalisation technique to check the design
 for its efficiency and redundancy.
