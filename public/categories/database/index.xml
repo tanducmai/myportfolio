@@ -6,10 +6,22 @@
     <description>Recent content in database on Tan Duc Mai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 09 Mar 2022 23:40:53 +1030</lastBuildDate>
+    <lastBuildDate>Thu, 10 Mar 2022 23:40:53 +1030</lastBuildDate>
     
 	<atom:link href="https://tanducmai.com/categories/database/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Database - SQL Table Constraints</title>
+      <link>https://tanducmai.com/posts/database-sql-table-constraints/</link>
+      <pubDate>Thu, 10 Mar 2022 23:40:53 +1030</pubDate>
+      
+      <guid>https://tanducmai.com/posts/database-sql-table-constraints/</guid>
+      <description>Table Of Contents  Definition Hypotheses Syntax Categorisation Intra-relational Constraints Inter-relational Constraints  Definition Constraints are clauses that need to be satisfied by data in the database.
+Constraints are like contracts to guard against bad data.
+Data that does not meet the rules of a given constraint will not be saved to the database.
+ The whole tuple (new record) gets rejected and the DBMS throws an SQL Error. For example:  PRIMARY KEY Violation FOREIGN KEY Violation CHECK CONSTRAINT Violation    Hypotheses Consider this example:</description>
+    </item>
     
     <item>
       <title>Database - Physical Design</title>
@@ -17,9 +29,9 @@
       <pubDate>Wed, 09 Mar 2022 23:40:53 +1030</pubDate>
       
       <guid>https://tanducmai.com/posts/database-physical-design/</guid>
-      <description>Table Of Contents  Physical Modelling?  Physical Modelling After the conceptual design and the physical design, the next phase is to take the relational schemas and implement them using a DBMS.
+      <description>Table Of Contents  Physical Modelling? SQL Overview Table Creation and Manipulation Table Definition Table Modification  Physical Modelling After the conceptual design and the physical design, the next phase is to take the relational schemas and implement them using a DBMS.
  Structured Query Language (SQL) is a higher-level language (4GL) used to create the relational database and manage data within the database.  For example:
-CREATE TABLE Project( ProjectName varchar(200), Budget decimal(6,2), Manager varchar(200), CONSTRAINT projectPk PRIMARY KEY (ProjectName), CONSTRAINT managerFk FOREIGN KEY (Manager) REFERENCES Manager(Name) ); </description>
+CREATE TABLE Project( projectName varchar(200), budget decimal(6,2), manager varchar(200), CONSTRAINT ProjectPK PRIMARY KEY (projectName), CONSTRAINT ManagerFK FOREIGN KEY (manager) REFERENCES Manager(name) ); SQL Overview Categorisation SQL commands can be categorised into:</description>
     </item>
     
     <item>
