@@ -17,20 +17,6 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/ja/contact/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tanducmai.com/contact/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://tanducmai.com/ja/contact/"
-                />
-  </url>
-  
-  <url>
     <loc>https://tanducmai.com/ja/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -69,6 +55,20 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://tanducmai.com/ja/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/ja/contact/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tanducmai.com/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://tanducmai.com/ja/contact/"
                 />
   </url>
   

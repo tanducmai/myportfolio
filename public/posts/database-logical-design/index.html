@@ -70,6 +70,10 @@
               <a class="navigation-link" href="https://tanducmai.com/projects">Portfolio</a>
             </li>
           
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/contact">Contact</a>
+            </li>
+          
         
         
           
@@ -109,7 +113,7 @@
   <article>
     <header>
       <h1 class="title">Database - Logical Design</h1>
-      <h2 class="date">March 7, 2022</h2>
+      <h2 class="date">March 8, 2022</h2>
 
       
     </header>
@@ -117,6 +121,13 @@
     <h3 id="table-of-contents">Table Of Contents</h3>
 <ol>
 <li><a href="#logical-modelling">Logical Modelling?</a></li>
+<li><a href="#logical-design">Logical Design</a></li>
+<li><a href="#classes">Classes</a></li>
+<li><a href="#associations---multiplicities">Associations - Multiplicities</a></li>
+<li><a href="#recursive-relationship-or-self-association">Recursive Relationships / Self
+Associations</a></li>
+<li><a href="#multivalued-attributes">Multivalued Attributes</a></li>
+<li><a href="#inheritance">Inheritance</a></li>
 </ol>
 <h3 id="logicalhttpswwwoxfordlearnersdictionariescomdefinitionenglishlogical_1qlogical-modelling"><a href="https://www.oxfordlearnersdictionaries.com/definition/english/logical_1?q=logical">Logical</a> Modelling</h3>
 <p>After the <a href="https://tanducmai.com/posts/database-conceptual-design">conceptual
@@ -127,7 +138,140 @@ is to create functional relational schemas based on the conceptual design.</p>
 <li>This includes deciding which CK(s) will become the
 <a href="https://tanducmai.com/posts/database-identify-the-primary-key">PK</a>.</li>
 </ul>
+<h3 id="logical-design">Logical Design</h3>
+<p>The logical design of the database is the UML translation process.</p>
+<p>UML can often be translated automatically into relational schemas, using:</p>
+<ul>
+<li>MS-SQL Diagrams feature</li>
+<li>Lucid chart</li>
+<li>DBDesigner Fork</li>
+<li>ArgoUML</li>
+</ul>
+<p>In this post, we will explore how to translate UML into relational schemas
+manually following some basic rules.</p>
+<h3 id="classes">Classes</h3>
+<p>Every UML Class becomes its own relation of the same name.</p>
+<p>The Primary Key (PK) becomes the relations PK.</p>
+<p>For example:</p>
+<p><img src="/images/database-conceptual-design/association.png" alt="Example"></p>
+<p>Relational Schema 1:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">Student(studentID, emailID, studentName)
+PK(studentID)
+CK(emailID)
+</code></pre></div><p>Relational Schema 2:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">Course(courseID, courseName)
+PK(courseID)
+CK(courseName)
+</code></pre></div><h3 id="associations---multiplicities">Associations - Multiplicities</h3>
+<p>There are three different types of associations (One-to-One, One-to-Many,
+Many-to-Many) which follow the rules as discussed in
+<a href="https://tanducmai.com/posts/database-conceptual-design/#multiplicity">here</a>.</p>
+<ol>
+<li><strong>One-to-One</strong> (<code>1:1</code>)</li>
+</ol>
+<p>For example:</p>
+<p><img src="/images/database-conceptual-design/one-to-one-2.png" alt="One-to-One"></p>
+<p>Relational Schema 1:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">Person(personID, personName, dateOfBirth)
+PK(personID)
+</code></pre></div><p>Relational Schema 2:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">AustralianPassport(passportNo, dateIssued, dateExpired, personID)
+PK(passportNo)
+FK(personID) ~&gt; Person(personID)
+</code></pre></div><ol start="2">
+<li><strong>One-to-Many</strong> (<code>1:*</code>) and Many-to-One (<code>*:1</code>)</li>
+</ol>
+<p>For example:</p>
+<p><img src="/images/database-conceptual-design/one-to-many-2.png" alt="One-to-Many"></p>
+<p>Relational Schema 1:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">Course(courseID, courseName)
+PK(courseID)
+</code></pre></div><p>Relational Schema 2:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">Tutorial(classNo, location, courseID)
+PK(classNo)
+FK(courseID) ~&gt; Course(courseID)
+</code></pre></div><ol start="3">
+<li><strong>Many-to-Many</strong> (<code>*:*</code>) or (<code>0:*</code>) or (<code>m:n</code>)</li>
+</ol>
+<p>For example:</p>
+<p><img src="/images/database-conceptual-design/association-class-after.png" alt="Many-to-Many"></p>
+<p>Relational Schema 1:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">Student(studentID, emailID, studentName)
+PK(studentID)
+CK(emailID)
+</code></pre></div><p>Relational Schema 2:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">Course(courseID, courseName)
+PK(courseID)
+</code></pre></div><p>Relational Schema 3:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">Enrolment(StudentID, CourseID, dateCommenced, mark)
+PK(StudentID, CourseID)
+FK(StudentID) ~&gt; Student(StudentID)
+FK(CourseID) ~&gt; Course(CourseID)
+</code></pre></div><h3 id="recursive-relationship-or-self-association">Recursive Relationship or Self Association</h3>
+<p>For example:</p>
+<p><img src="/images/database-conceptual-design/recursive-1.png" alt="Recursive Relationship"></p>
+<p>Relational Schema 1:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">Employee(ID, name)
+PK(ID)
+</code></pre></div><p>Relational Schema 2:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">Supervision(supervisorID, superviseeID)
+PK(supervisorID, superviseeID)
+FK(supervisorID) ~&gt; Employee(ID)
+FK(superviseeID) ~&gt; Employee(ID)
+</code></pre></div><h3 id="multivalued-attributes">Multivalued Attributes</h3>
+<p>For example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">Student(studentID, emailID, studentName, address)
+</code></pre></div><p><img src="/images/database-relational-concepts/multivalued.png" alt="Multivalued attribute"></p>
+<p>The address attribute is a multivalued one that consists of three
+sub-components.</p>
+<p>To resolve this issue, separate the multivalued attribute from the table
+and place it in a new one. Then create a Surrogate Key (act as a FK) in
+the original table and the new table to link them together.</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">Student(studentID, emailID, studentName, addressID)
+PK(studentID)
+CK(emailID)
+FK(addressID) ~&gt; Address(addressID)
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">Address(addressID, street, suburb, postcode)
+PK(addressID)
+</code></pre></div><h3 id="inheritance">Inheritance</h3>
+<p>For example:</p>
+<p><img src="/images/database-conceptual-design/inheritance-1.png" alt="Inheritance Example"></p>
+<h5 id="vertical-inheritance">Vertical Inheritance</h5>
+<ul>
+<li>A superclass is constructed.</li>
+<li>FK is used.</li>
+<li>Each subclass is translated into its own relation with the PK(s)
+inherited from the superclass.</li>
+</ul>
+<p>Relational Schema 1: <strong>Superclass</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">Person(personID, personName)
+PK(personID)
+</code></pre></div><p>Relational Schema 2: <strong>Subclasses</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">Staff(personID, position)
+PK(personID)
+FK(personID) ~&gt; Person(personID)
 
+Student(personID, gpa)
+PK(personID)
+FK(personID) ~&gt; Person(personID)
+
+Contractor(personID)
+PK(personID)
+FK(personID) ~&gt; Person(personID)
+</code></pre></div><h5 id="horizontal-inheritance">Horizontal Inheritance</h5>
+<ul>
+<li>No superclass is constructed.</li>
+<li>No FK is used.</li>
+<li>Each subclass is translated into its own relation with all the
+attribute(s) inherited from the &lsquo;superclass&rsquo;.</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">Staff(personID, personName, position)
+PK(personID)
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">Student(personID, personName, gpa)
+PK(personID)
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">Contractor(personID, personName)
+PK(personID)
+</code></pre></div>
   </article>
 
   <br/>

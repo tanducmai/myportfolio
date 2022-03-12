@@ -6,7 +6,7 @@
     <description>Recent content in SQL on Tan Duc Mai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 08 Mar 2022 23:40:53 +1030</lastBuildDate>
+    <lastBuildDate>Wed, 09 Mar 2022 23:40:53 +1030</lastBuildDate>
     
 	<atom:link href="https://tanducmai.com/tags/sql/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Database - Physical Design</title>
       <link>https://tanducmai.com/posts/database-physical-design/</link>
-      <pubDate>Tue, 08 Mar 2022 23:40:53 +1030</pubDate>
+      <pubDate>Wed, 09 Mar 2022 23:40:53 +1030</pubDate>
       
       <guid>https://tanducmai.com/posts/database-physical-design/</guid>
       <description>Table Of Contents  Physical Modelling?  Physical Modelling After the conceptual design and the physical design, the next phase is to take the relational schemas and implement them using a DBMS.

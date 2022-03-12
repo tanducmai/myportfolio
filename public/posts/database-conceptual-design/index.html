@@ -70,6 +70,10 @@
               <a class="navigation-link" href="https://tanducmai.com/projects">Portfolio</a>
             </li>
           
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/contact">Contact</a>
+            </li>
+          
         
         
           
@@ -109,7 +113,7 @@
   <article>
     <header>
       <h1 class="title">Database - Conceptual Design</h1>
-      <h2 class="date">February 28, 2022</h2>
+      <h2 class="date">March 7, 2022</h2>
 
       
     </header>
@@ -127,7 +131,7 @@
 <li><a href="#multiplicity">Multiplicity</a></li>
 <li><a href="#summary-of-multiplicity-syntax">Summary of Multiplicity Syntax</a></li>
 <li><a href="#association-class">Association Class</a></li>
-<li><a href="#recursive-relationship-or-self-association">Recursive Relationships/Self
+<li><a href="#recursive-relationship-or-self-association">Recursive Relationships / Self
 Associations</a></li>
 <li><a href="#aggregation">Aggregation</a></li>
 <li><a href="#composition">Composition</a></li>
@@ -184,7 +188,7 @@ repeating value, group and multi-value data.</li>
 </ul>
 <h3 id="design-process">Design Process</h3>
 <p>Most database designs will use the Entity-Relationship (ER)
-<a href="#entity-relationship-model">model</a> or Unified Modelling Language
+<a href="#entity-relationship-model"> model</a> or Unified Modelling Language
 <a href="#unified-modelling-language-diagram">(UML)</a> approach to start off with an
 acceptable design and then use the Normalisation technique to check the design
 for its efficiency and redundancy.</p>
@@ -318,10 +322,12 @@ take place?)</p>
 </ol>
 <ul>
 <li>Every object is associated with at most one of the other object.</li>
-<li>When we see this relationship, we need to put either of the PKs into the
+<li>When we see this relationship, we need to put either of the PK into the
 other table as a FK.
 <ul>
 <li>It does not matter which way it goes.</li>
+<li>Nevertheless, in the case where there is one side that has the 0 occurence,
+then that side will store the FK referencing the other side&rsquo;s PK.</li>
 </ul>
 </li>
 </ul>

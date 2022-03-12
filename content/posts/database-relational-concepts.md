@@ -119,44 +119,13 @@ There are five types of attribute:
 6. **Multivalued** attributes are those which contain more than one values.
 
 - E.g. A person can have more than one phoneNumber, emailAddress, etc.
-- This is a bad type of attribute to avoid.
-- To resolve multi-value attributes, place them in a separate table and use a
-  new association table to store the detail.
+- It violates basic relational theory (single-valued attributes).
+- To resolve a multivalued attribute, place it in a separate table and associate
+  it with the original table.
 
-For example, instead of:
+For example:
 
-| studentID | username | courses            |
-| :---:     | :---:    | :---:              |
-| 002       | hmai02   | INFS1025, COMP1046 |
-| 004       | tduc04   | COMP1046           |
-| 006       | ducmai06 | INFT1031           |
-
-Do this:
-
-- People
-
-| studentID | username |
-| :---:     | :---:    |
-| 002       | hmai02   |
-| 004       | tduc04   |
-| 006       | ducmai06 |
-
-- CourseCompleted
-
-| studentID | courseID |
-| :---:     | :---:    |
-| 002       | INFS1025 |
-| 002       | COMP1046 |
-| 004       | COMP1046 |
-| 006       | INFT1031 |
-
-- Course
-
-| courseID | courseName |
-| :---:    | :---:      |
-| INFS1025 | DDWT       |
-| COMP1046 | OOP        |
-| INFT1031 | PSP        |
+![Multivalued attribute](/images/database-relational-concepts/multivalued.png)
 
 ### Domains
 

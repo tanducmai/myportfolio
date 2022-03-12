@@ -6,7 +6,7 @@
     <description>Recent content in fundamentals on Tan Duc Mai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 08 Mar 2022 23:40:53 +1030</lastBuildDate>
+    <lastBuildDate>Wed, 09 Mar 2022 23:40:53 +1030</lastBuildDate>
     
 	<atom:link href="https://tanducmai.com/tags/fundamentals/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Database - Physical Design</title>
       <link>https://tanducmai.com/posts/database-physical-design/</link>
-      <pubDate>Tue, 08 Mar 2022 23:40:53 +1030</pubDate>
+      <pubDate>Wed, 09 Mar 2022 23:40:53 +1030</pubDate>
       
       <guid>https://tanducmai.com/posts/database-physical-design/</guid>
       <description>Table Of Contents  Physical Modelling?  Physical Modelling After the conceptual design and the physical design, the next phase is to take the relational schemas and implement them using a DBMS.
@@ -25,21 +25,21 @@ CREATE TABLE Project( ProjectName varchar(200), Budget decimal(6,2), Manager var
     <item>
       <title>Database - Logical Design</title>
       <link>https://tanducmai.com/posts/database-logical-design/</link>
-      <pubDate>Mon, 07 Mar 2022 23:19:58 +1030</pubDate>
+      <pubDate>Tue, 08 Mar 2022 23:19:58 +1030</pubDate>
       
       <guid>https://tanducmai.com/posts/database-logical-design/</guid>
-      <description>Table Of Contents  Logical Modelling?  Logical Modelling After the conceptual design, the next phase is to create functional relational schemas based on the conceptual design.
- A written description of how the relational database will be implemented. This includes deciding which CK(s) will become the PK.  </description>
+      <description>Table Of Contents  Logical Modelling? Logical Design Classes Associations - Multiplicities Recursive Relationships / Self Associations Multivalued Attributes Inheritance  Logical Modelling After the conceptual design, the next phase is to create functional relational schemas based on the conceptual design.
+ A written description of how the relational database will be implemented. This includes deciding which CK(s) will become the PK.  Logical Design The logical design of the database is the UML translation process.</description>
     </item>
     
     <item>
       <title>Database - Conceptual Design</title>
       <link>https://tanducmai.com/posts/database-conceptual-design/</link>
-      <pubDate>Mon, 28 Feb 2022 19:30:29 +1030</pubDate>
+      <pubDate>Mon, 07 Mar 2022 19:30:29 +1030</pubDate>
       
       <guid>https://tanducmai.com/posts/database-conceptual-design/</guid>
-      <description>Table of Contents  Conceptual Modelling? Conceptual Design? Design Process Conceptual Modelling? Entity-Relationship Model Unified Modelling Language Diagram UML Diagram Example Association Multiplicity Summary of Multiplicity Syntax Association Class Recursive Relationships/Self Associations Aggregation Composition Strong and Weak Entity Type Inheritance (Superclass - Subclass)  Conceptual Modelling Overall, Database requirements are collected and visualised as a UML diagram.
- Uses a higher-level language (4GL) to abstract away the complexities of implementation. A graphical way of conceptualising data capture requirements to ensure the required data is collected by the database design!</description>
+      <description>Table of Contents  Conceptual Modelling? Conceptual Design? Design Process Conceptual Modelling? Entity-Relationship Model Unified Modelling Language Diagram UML Diagram Example Association Multiplicity Summary of Multiplicity Syntax Association Class Recursive Relationships / Self Associations Aggregation Composition Strong and Weak Entity Type Inheritance (Superclass - Subclass)  Conceptual Modelling Overall, Database requirements are collected and visualised as a UML diagram.
+ Uses a higher-level language (4GL) to abstract away the complexities of implementation.</description>
     </item>
     
     <item>
@@ -84,7 +84,7 @@ There are generally eight types of keys:
       <pubDate>Wed, 23 Feb 2022 07:58:02 +1030</pubDate>
       
       <guid>https://tanducmai.com/posts/database-relational-concepts/</guid>
-      <description>Table of Contents  General Terminology Relations Attributes Types of Attributes Domains Table Schemas Tuples Put It All Together  General Terminology    Relational Name Common Name Alternative     relation table -   attribute colum field   tuple row record    Within a table, every column name must be UNIQUE.
+      <description>Table of Contents  General Terminology Relations Attributes Types of Attributes Domains Table Schemas Tuples Put It All Together  General Terminology    Relational Name Common Name Alternative     relation table -   attribute column field   tuple row record    Within a table, every column name must be UNIQUE.
 Within a Table every row must be UNIQUE (no duplicate data!).</description>
     </item>
     
