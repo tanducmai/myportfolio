@@ -15,7 +15,7 @@ tags = [
 categories = [
     "database",
 ]
-draft = true
+draft = false
 +++
 
 ### Table Of Contents
@@ -26,6 +26,8 @@ draft = true
 1. [Associations - Multiplicities](#associations---multiplicities)
 1. [Recursive Relationships / Self
    Associations](#recursive-relationship-or-self-association)
+1. [Multivalued Attributes](#multivalued-attributes)
+1. [Inheritance](#inheritance)
 
 ### [Logical](https://www.oxfordlearnersdictionaries.com/definition/english/logical_1?q=logical) Modelling
 
@@ -78,7 +80,7 @@ CK(courseName)
 ### Associations - Multiplicities
 
 There are three different types of associations (One-to-One, One-to-Many,
-Many-to-Many) which follow the rules as disscussed in
+Many-to-Many) which follow the rules as discussed in
 [here](https://tanducmai.com/posts/database-conceptual-design/#multiplicity).
 
 1. **One-to-One** (`1:1`)
@@ -153,7 +155,7 @@ FK(StudentID) ~> Student(StudentID)
 FK(CourseID) ~> Course(CourseID)
 ```
 
-### Recursive Relationship / Self Association
+### Recursive Relationship or Self Association
 
 For example:
 
@@ -173,4 +175,91 @@ Supervision(supervisorID, superviseeID)
 PK(supervisorID, superviseeID)
 FK(supervisorID) ~> Employee(ID)
 FK(superviseeID) ~> Employee(ID)
+```
+
+### Multivalued Attributes
+
+For example:
+
+```text
+Student(studentID, emailID, studentName, address)
+```
+
+![Multivalued attribute](/images/database-relational-concepts/multivalued.png)
+
+The address attribute is a multivalued one that consists of three
+sub-components.
+
+To resolve this issue, separate the multivalued attribute from the table
+and place it in a new one. Then create a Surrogate Key (act as a FK) in
+the original table and the new table to link them together.
+
+```text
+Student(studentID, emailID, studentName, addressID)
+PK(studentID)
+CK(emailID)
+FK(addressID) ~> Address(addressID)
+```
+
+```text
+Address(addressID, street, suburb, postcode)
+PK(addressID)
+```
+
+### Inheritance
+
+For example:
+
+![Inheritance Example](/images/database-conceptual-design/inheritance-1.png)
+
+##### Vertical Inheritance
+
+- A superclass is constructed.
+- FK is used.
+- Each subclass is translated into its own relation with the PK(s)
+  inherited from the superclass.
+
+Relational Schema 1: **Superclass**
+
+```text
+Person(personID, personName)
+PK(personID)
+```
+
+Relational Schema 2: **Subclasses**
+
+```text
+Staff(personID, position)
+PK(personID)
+FK(personID) ~> Person(personID)
+
+Student(personID, gpa)
+PK(personID)
+FK(personID) ~> Person(personID)
+
+Contractor(personID)
+PK(personID)
+FK(personID) ~> Person(personID)
+```
+
+##### Horizontal Inheritance
+
+- No superclass is constructed.
+- No FK is used.
+- Each subclass is translated into its own relation with all the
+  attribute(s) inherited from the 'superclass'.
+
+```text
+Staff(personID, personName, position)
+PK(personID)
+```
+
+```text
+Student(personID, personName, gpa)
+PK(personID)
+```
+
+```text
+Contractor(personID, personName)
+PK(personID)
 ```
