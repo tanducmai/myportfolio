@@ -139,9 +139,17 @@ values that it can take. Domain constraints are the most elementary form of
 integrity constraint. They are tested easily by the system whenever a new data
 item is entered into the database.
 
-For a list of common Database data type, please read:
-*[W3Schools](https://www.w3schools.com/sql/sql_datatypes.asp)* or *[Teach
-Computer Science](https://teachcomputerscience.com/database-data-types/)*
+Common Database data type include:
+
+| Data Type     | Description                                                              |
+| ---           | ---                                                                      |
+| char(n)       | Stores a fixed-length **n**-character string (text)                      |
+| varchar(n)    | Variable length character string (text) of maximum size **n** characters |
+| int           | An integer number (whole number)                                         |
+| decimal(m, n) | A decimal number of **m** total digits and **n** decimal places          |
+| date          | A date value (day/month/year) – if using British standard                |
+| datetime      | A date time value (day/month/year hr:min:sec AM/PM)                      |
+| bit           | A Boolean value ('True' and 'False' or 1 and 0)                          |
 
 For example:
 
