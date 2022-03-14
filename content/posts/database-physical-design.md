@@ -38,12 +38,12 @@ next phase is to take the relational schemas and implement them using a DBMS.
 For example:
 
 ```sql
-CREATE TABLE Project(
+CREATE TABLE Project (
     projectName varchar(200),
     budget decimal(6,2),
     manager varchar(200),
-    CONSTRAINT ProjectPK PRIMARY KEY (projectName),
-    CONSTRAINT ManagerFK FOREIGN KEY (manager) REFERENCES Manager(name)
+    CONSTRAINT PK_Project PRIMARY KEY (projectName),
+    CONSTRAINT FK_Project_Manager FOREIGN KEY (manager) REFERENCES Manager (name)
 );
 ```
 
@@ -60,7 +60,7 @@ SQL commands can be categorised into:
 CREATE TABLE Employee (
     name varchar(200),
     birthDate date,
-    CONSTRAINT EmployeePK PRIMARY KEY (name)
+    CONSTRAINT PK_Employee PRIMARY KEY (name)
 );
 ```
 

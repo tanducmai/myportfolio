@@ -64,9 +64,9 @@ CREATE TABLE Enrolment (
     student int,
     course int,
     mark decimal(3, 2),
-    CONSTRAINT EnrolmentPk PRIMARY KEY (course, student),
-    CONSTRAINT StudentFk FOREIGN KEY (student) REFERENCES Student (studentID),
-    CONSTRAINT CourseFk FOREIGN KEY (course) REFERENCES Course (courseID),
+    CONSTRAINT PK_Enrolment PRIMARY KEY (course, student),
+    CONSTRAINT FK_Enrolment_Student FOREIGN KEY (student) REFERENCES Student (studentID),
+    CONSTRAINT FK_Enrolment_Student FOREIGN KEY (course) REFERENCES Course (courseID),
     CONSTRAINT checkMark CHECK (mark >= 0 AND mark <= 100)
 );
 ```
@@ -125,7 +125,7 @@ CREATE TABLE ColumnLevelConstraints (
     startDate date NOT NULL,
     endDate date NOT NULL,
     dateChecked date NOT NULL,
-    CONSTRAINT TablePK PRIMARY KEY (id),
+    CONSTRAINT PK_TableName PRIMARY KEY (id),
     CONSTRAINT dateCheck CHECK (dateChecked > '01/Aug/2015')
 );
 ```
@@ -151,9 +151,9 @@ CREATE TABLE Enrolment (
     student int,
     course int,
     mark int,
-    CONSTRAINT EnrolmentPK PRIMARY KEY (student, course),
-    CONSTRAINT StudentFK FOREIGN KEY (student) REFERENCES Students (studentID),
-    CONSTRAINT CourseFK FOREIGN KEY (course) REFERENCES Courses (courseID)
+    CONSTRAINT PK_Enrolment PRIMARY KEY (student, course),
+    CONSTRAINT FK_Enrolment_Student FOREIGN KEY (student) REFERENCES Student (studentID),
+    CONSTRAINT FK_Enrolment_Course FOREIGN KEY (course) REFERENCES Course (courseID)
 );
 ```
 
@@ -192,7 +192,7 @@ CREATE TABLE Enrolment (
         ON UPDATE CASCADE
         ON DELETE CASCADE,
     mark int,
-    CONSTRAINT EnrolmentPK PRIMARY KEY (student, course)
+    CONSTRAINT PK_Enrolment PRIMARY KEY (student, course)
     CONSTRAINT validMark CHECK (mark >= 0 AND mark <= 100),
 );
 ```
@@ -208,12 +208,12 @@ CREATE TABLE Enrolment (
     student int,
     course int,
     mark int,
-    CONSTRAINT EnrolmentPK PRIMARY KEY (student,course),
+    CONSTRAINT PK_Enrolment PRIMARY KEY (student,course),
     CONSTRAINT validMark CHECK (mark >= 0 AND mark <= 100),
-    CONSTRAINT StudentFK FOREIGN KEY (student) REFERENCES Student (studentID)
+    CONSTRAINT FK_Enrolment_Student FOREIGN KEY (student) REFERENCES Student (studentID)
         ON UPDATE CASCADE
         ON DELETE CASCADE,
-    CONSTRAINT CourseFK FOREIGN KEY (course) REFERENCES Course (courseID)
+    CONSTRAINT FK_Enrolment_Course FOREIGN KEY (course) REFERENCES Course (courseID)
         ON UPDATE CASCADE
         ON DELETE CASCADE
 );
