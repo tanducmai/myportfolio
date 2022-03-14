@@ -157,9 +157,9 @@ corresponding student?</li>
     <span class="n">student</span> <span class="nb">int</span><span class="p">,</span>
     <span class="n">course</span> <span class="nb">int</span><span class="p">,</span>
     <span class="n">mark</span> <span class="nb">decimal</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span>
-    <span class="k">CONSTRAINT</span> <span class="n">EnrolmentPk</span> <span class="k">PRIMARY</span> <span class="k">KEY</span> <span class="p">(</span><span class="n">course</span><span class="p">,</span> <span class="n">student</span><span class="p">),</span>
-    <span class="k">CONSTRAINT</span> <span class="n">StudentFk</span> <span class="k">FOREIGN</span> <span class="k">KEY</span> <span class="p">(</span><span class="n">student</span><span class="p">)</span> <span class="k">REFERENCES</span> <span class="n">Student</span> <span class="p">(</span><span class="n">studentID</span><span class="p">),</span>
-    <span class="k">CONSTRAINT</span> <span class="n">CourseFk</span> <span class="k">FOREIGN</span> <span class="k">KEY</span> <span class="p">(</span><span class="n">course</span><span class="p">)</span> <span class="k">REFERENCES</span> <span class="n">Course</span> <span class="p">(</span><span class="n">courseID</span><span class="p">),</span>
+    <span class="k">CONSTRAINT</span> <span class="n">PK_Enrolment</span> <span class="k">PRIMARY</span> <span class="k">KEY</span> <span class="p">(</span><span class="n">course</span><span class="p">,</span> <span class="n">student</span><span class="p">),</span>
+    <span class="k">CONSTRAINT</span> <span class="n">FK_Enrolment_Student</span> <span class="k">FOREIGN</span> <span class="k">KEY</span> <span class="p">(</span><span class="n">student</span><span class="p">)</span> <span class="k">REFERENCES</span> <span class="n">Student</span> <span class="p">(</span><span class="n">studentID</span><span class="p">),</span>
+    <span class="k">CONSTRAINT</span> <span class="n">FK_Enrolment_Student</span> <span class="k">FOREIGN</span> <span class="k">KEY</span> <span class="p">(</span><span class="n">course</span><span class="p">)</span> <span class="k">REFERENCES</span> <span class="n">Course</span> <span class="p">(</span><span class="n">courseID</span><span class="p">),</span>
     <span class="k">CONSTRAINT</span> <span class="n">checkMark</span> <span class="k">CHECK</span> <span class="p">(</span><span class="n">mark</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="k">AND</span> <span class="n">mark</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">)</span>
 <span class="p">);</span>
 </code></pre></div><h3 id="categorisation">Categorisation</h3>
@@ -230,7 +230,7 @@ unique).</li>
     <span class="n">startDate</span> <span class="nb">date</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
     <span class="n">endDate</span> <span class="nb">date</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
     <span class="n">dateChecked</span> <span class="nb">date</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
-    <span class="k">CONSTRAINT</span> <span class="n">TablePK</span> <span class="k">PRIMARY</span> <span class="k">KEY</span> <span class="p">(</span><span class="n">id</span><span class="p">),</span>
+    <span class="k">CONSTRAINT</span> <span class="n">PK_TableName</span> <span class="k">PRIMARY</span> <span class="k">KEY</span> <span class="p">(</span><span class="n">id</span><span class="p">),</span>
     <span class="k">CONSTRAINT</span> <span class="n">dateCheck</span> <span class="k">CHECK</span> <span class="p">(</span><span class="n">dateChecked</span> <span class="o">&gt;</span> <span class="s1">&#39;01/Aug/2015&#39;</span><span class="p">)</span>
 <span class="p">);</span>
 </code></pre></div><h3 id="inter-relational-constraints">Inter-Relational Constraints</h3>
@@ -256,9 +256,9 @@ no orphan records).</li>
     <span class="n">student</span> <span class="nb">int</span><span class="p">,</span>
     <span class="n">course</span> <span class="nb">int</span><span class="p">,</span>
     <span class="n">mark</span> <span class="nb">int</span><span class="p">,</span>
-    <span class="k">CONSTRAINT</span> <span class="n">EnrolmentPK</span> <span class="k">PRIMARY</span> <span class="k">KEY</span> <span class="p">(</span><span class="n">student</span><span class="p">,</span> <span class="n">course</span><span class="p">),</span>
-    <span class="k">CONSTRAINT</span> <span class="n">StudentFK</span> <span class="k">FOREIGN</span> <span class="k">KEY</span> <span class="p">(</span><span class="n">student</span><span class="p">)</span> <span class="k">REFERENCES</span> <span class="n">Students</span> <span class="p">(</span><span class="n">studentID</span><span class="p">),</span>
-    <span class="k">CONSTRAINT</span> <span class="n">CourseFK</span> <span class="k">FOREIGN</span> <span class="k">KEY</span> <span class="p">(</span><span class="n">course</span><span class="p">)</span> <span class="k">REFERENCES</span> <span class="n">Courses</span> <span class="p">(</span><span class="n">courseID</span><span class="p">)</span>
+    <span class="k">CONSTRAINT</span> <span class="n">PK_Enrolment</span> <span class="k">PRIMARY</span> <span class="k">KEY</span> <span class="p">(</span><span class="n">student</span><span class="p">,</span> <span class="n">course</span><span class="p">),</span>
+    <span class="k">CONSTRAINT</span> <span class="n">FK_Enrolment_Student</span> <span class="k">FOREIGN</span> <span class="k">KEY</span> <span class="p">(</span><span class="n">student</span><span class="p">)</span> <span class="k">REFERENCES</span> <span class="n">Student</span> <span class="p">(</span><span class="n">studentID</span><span class="p">),</span>
+    <span class="k">CONSTRAINT</span> <span class="n">FK_Enrolment_Course</span> <span class="k">FOREIGN</span> <span class="k">KEY</span> <span class="p">(</span><span class="n">course</span><span class="p">)</span> <span class="k">REFERENCES</span> <span class="n">Course</span> <span class="p">(</span><span class="n">courseID</span><span class="p">)</span>
 <span class="p">);</span>
 </code></pre></div><p>FK constraints can have reaction policies in response to violations of
 referential integrity.</p>
@@ -302,7 +302,7 @@ default values when the parent data is deleted or updated.</li>
         <span class="k">ON</span> <span class="k">UPDATE</span> <span class="k">CASCADE</span>
         <span class="k">ON</span> <span class="k">DELETE</span> <span class="k">CASCADE</span><span class="p">,</span>
     <span class="n">mark</span> <span class="nb">int</span><span class="p">,</span>
-    <span class="k">CONSTRAINT</span> <span class="n">EnrolmentPK</span> <span class="k">PRIMARY</span> <span class="k">KEY</span> <span class="p">(</span><span class="n">student</span><span class="p">,</span> <span class="n">course</span><span class="p">)</span>
+    <span class="k">CONSTRAINT</span> <span class="n">PK_Enrolment</span> <span class="k">PRIMARY</span> <span class="k">KEY</span> <span class="p">(</span><span class="n">student</span><span class="p">,</span> <span class="n">course</span><span class="p">)</span>
     <span class="k">CONSTRAINT</span> <span class="n">validMark</span> <span class="k">CHECK</span> <span class="p">(</span><span class="n">mark</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="k">AND</span> <span class="n">mark</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">),</span>
 <span class="p">);</span>
 </code></pre></div><p>Same Enrolment table but with constraint names.</p>
@@ -319,12 +319,12 @@ lost.</li>
     <span class="n">student</span> <span class="nb">int</span><span class="p">,</span>
     <span class="n">course</span> <span class="nb">int</span><span class="p">,</span>
     <span class="n">mark</span> <span class="nb">int</span><span class="p">,</span>
-    <span class="k">CONSTRAINT</span> <span class="n">EnrolmentPK</span> <span class="k">PRIMARY</span> <span class="k">KEY</span> <span class="p">(</span><span class="n">student</span><span class="p">,</span><span class="n">course</span><span class="p">),</span>
+    <span class="k">CONSTRAINT</span> <span class="n">PK_Enrolment</span> <span class="k">PRIMARY</span> <span class="k">KEY</span> <span class="p">(</span><span class="n">student</span><span class="p">,</span><span class="n">course</span><span class="p">),</span>
     <span class="k">CONSTRAINT</span> <span class="n">validMark</span> <span class="k">CHECK</span> <span class="p">(</span><span class="n">mark</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="k">AND</span> <span class="n">mark</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">),</span>
-    <span class="k">CONSTRAINT</span> <span class="n">StudentFK</span> <span class="k">FOREIGN</span> <span class="k">KEY</span> <span class="p">(</span><span class="n">student</span><span class="p">)</span> <span class="k">REFERENCES</span> <span class="n">Student</span> <span class="p">(</span><span class="n">studentID</span><span class="p">)</span>
+    <span class="k">CONSTRAINT</span> <span class="n">FK_Enrolment_Student</span> <span class="k">FOREIGN</span> <span class="k">KEY</span> <span class="p">(</span><span class="n">student</span><span class="p">)</span> <span class="k">REFERENCES</span> <span class="n">Student</span> <span class="p">(</span><span class="n">studentID</span><span class="p">)</span>
         <span class="k">ON</span> <span class="k">UPDATE</span> <span class="k">CASCADE</span>
         <span class="k">ON</span> <span class="k">DELETE</span> <span class="k">CASCADE</span><span class="p">,</span>
-    <span class="k">CONSTRAINT</span> <span class="n">CourseFK</span> <span class="k">FOREIGN</span> <span class="k">KEY</span> <span class="p">(</span><span class="n">course</span><span class="p">)</span> <span class="k">REFERENCES</span> <span class="n">Course</span> <span class="p">(</span><span class="n">courseID</span><span class="p">)</span>
+    <span class="k">CONSTRAINT</span> <span class="n">FK_Enrolment_Course</span> <span class="k">FOREIGN</span> <span class="k">KEY</span> <span class="p">(</span><span class="n">course</span><span class="p">)</span> <span class="k">REFERENCES</span> <span class="n">Course</span> <span class="p">(</span><span class="n">courseID</span><span class="p">)</span>
         <span class="k">ON</span> <span class="k">UPDATE</span> <span class="k">CASCADE</span>
         <span class="k">ON</span> <span class="k">DELETE</span> <span class="k">CASCADE</span>
 <span class="p">);</span>
