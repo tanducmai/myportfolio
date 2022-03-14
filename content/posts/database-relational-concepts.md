@@ -179,10 +179,10 @@ To simplify, a Tuple is a row of data.
 
 A relation consists of one or more unordered tuples.
 
-Within a relation, every tuple has a fixed number of values, hence the name
+Within  a relation, every tuple has a fixed number of values, hence the name
 'tuple'.
 
 ### Put It All Together
 
-![Terms and 
+![Terms and
 Notations](/images/database-relational-concepts/terms-and-notations.png)
