@@ -159,7 +159,7 @@ For example, all employees will get a double raise:
 ```sql
 UPDATE Employee
 SET Salary = Salary * 2;
-``
+```
 
 2. If the WHERE clause presents, each tuple is compared to it and if TRUE
 is returned, that tuple is updated.
