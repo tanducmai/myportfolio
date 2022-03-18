@@ -121,9 +121,9 @@ The following rules are used in this blog post:
 
 Key Table Manipulation SQL commands:
 
-1. CREATE - Creates a new table in the relational database.
-1. ALTER - Modifies an existing table in a relational database.
-1. DROP - Permanently removes a table in a relational database.
+1. **CREATE** - Creates a new table in the relational database.
+1. **ALTER** - Modifies an existing table in a relational database.
+1. **DROP** - Permanently removes a table in a relational database.
 
 ### Table Definition
 
