@@ -6,24 +6,24 @@
     <description>Recent content in Tags on Tan Duc Mai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 10 Mar 2022 23:40:53 +1030</lastBuildDate>
+    <lastBuildDate>Fri, 11 Mar 2022 11:53:55 +1030</lastBuildDate>
     
 	<atom:link href="https://tanducmai.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>constraints</title>
-      <link>https://tanducmai.com/tags/constraints/</link>
-      <pubDate>Thu, 10 Mar 2022 23:40:53 +1030</pubDate>
+      <title>data manipulation</title>
+      <link>https://tanducmai.com/tags/data-manipulation/</link>
+      <pubDate>Fri, 11 Mar 2022 11:53:55 +1030</pubDate>
       
-      <guid>https://tanducmai.com/tags/constraints/</guid>
+      <guid>https://tanducmai.com/tags/data-manipulation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>database</title>
       <link>https://tanducmai.com/tags/database/</link>
-      <pubDate>Thu, 10 Mar 2022 23:40:53 +1030</pubDate>
+      <pubDate>Fri, 11 Mar 2022 11:53:55 +1030</pubDate>
       
       <guid>https://tanducmai.com/tags/database/</guid>
       <description></description>
@@ -32,7 +32,7 @@
     <item>
       <title>DBMS</title>
       <link>https://tanducmai.com/tags/dbms/</link>
-      <pubDate>Thu, 10 Mar 2022 23:40:53 +1030</pubDate>
+      <pubDate>Fri, 11 Mar 2022 11:53:55 +1030</pubDate>
       
       <guid>https://tanducmai.com/tags/dbms/</guid>
       <description></description>
@@ -41,7 +41,7 @@
     <item>
       <title>fundamentals</title>
       <link>https://tanducmai.com/tags/fundamentals/</link>
-      <pubDate>Thu, 10 Mar 2022 23:40:53 +1030</pubDate>
+      <pubDate>Fri, 11 Mar 2022 11:53:55 +1030</pubDate>
       
       <guid>https://tanducmai.com/tags/fundamentals/</guid>
       <description></description>
@@ -50,7 +50,7 @@
     <item>
       <title>physical design</title>
       <link>https://tanducmai.com/tags/physical-design/</link>
-      <pubDate>Thu, 10 Mar 2022 23:40:53 +1030</pubDate>
+      <pubDate>Fri, 11 Mar 2022 11:53:55 +1030</pubDate>
       
       <guid>https://tanducmai.com/tags/physical-design/</guid>
       <description></description>
@@ -59,9 +59,18 @@
     <item>
       <title>SQL</title>
       <link>https://tanducmai.com/tags/sql/</link>
-      <pubDate>Thu, 10 Mar 2022 23:40:53 +1030</pubDate>
+      <pubDate>Fri, 11 Mar 2022 11:53:55 +1030</pubDate>
       
       <guid>https://tanducmai.com/tags/sql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>constraints</title>
+      <link>https://tanducmai.com/tags/constraints/</link>
+      <pubDate>Thu, 10 Mar 2022 23:40:53 +1030</pubDate>
+      
+      <guid>https://tanducmai.com/tags/constraints/</guid>
       <description></description>
     </item>
     
