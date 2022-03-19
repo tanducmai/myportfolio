@@ -4,7 +4,7 @@ title = "Database - SQL - Query Writing"
 slug = "database-sql-query-writing"
 aliases = "/database-sql-query-writing"
 description = "Database - SQL - Query Writing"
-thumbnail = "images/sql-meme.png"
+thumbnail = "images/database-sql-query-writing/cheatsheet.png"
 tags = [
     "database",
     "fundamentals",
