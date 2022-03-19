@@ -11,9 +11,9 @@
 
     <meta property="og:site_name" content="Tan Duc Mai">
     <meta property="og:title" content="
-  Database - SQL Data Manipulation - Tan Duc Mai
+  Database - SQL - Data Manipulation - Tan Duc Mai
 ">
-    <meta property="og:description" content="Database - SQL Data Manipulation">
+    <meta property="og:description" content="Database - SQL - Data Manipulation">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tanducmai.com/posts/database-sql-data-manipulation/">
     <meta property="og:image" content="https://tanducmai.comimages/sql-meme.png">
@@ -23,7 +23,7 @@
 
     <base href="https://tanducmai.com/posts/database-sql-data-manipulation/">
     <title>
-  Database - SQL Data Manipulation - Tan Duc Mai
+  Database - SQL - Data Manipulation - Tan Duc Mai
 </title>
 
     <link rel="canonical" href="https://tanducmai.com/posts/database-sql-data-manipulation/">
@@ -112,7 +112,7 @@
   <section class="container post">
   <article>
     <header>
-      <h1 class="title">Database - SQL Data Manipulation</h1>
+      <h1 class="title">Database - SQL - Data Manipulation</h1>
       <h2 class="date">March 11, 2022</h2>
 
       
@@ -160,7 +160,7 @@ and keywords.</p>
 </code></pre></div><ol start="2">
 <li>Insert the values in a different order to the default order of the attributes when the table was created.</li>
 </ol>
-<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">TableName</span> <span class="p">(</span><span class="n">att3</span><span class="p">,</span> <span class="n">att2</span><span class="p">,</span> <span class="n">att1</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="n">z</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">x</span><span class="p">);</span>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">TableName</span> <span class="p">(</span><span class="n">attr3</span><span class="p">,</span> <span class="n">attr2</span><span class="p">,</span> <span class="n">attr1</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="n">z</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">x</span><span class="p">);</span>
 <span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">Student</span> <span class="p">(</span><span class="n">studentName</span><span class="p">,</span> <span class="n">studentID</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="s1">&#39;Stacy&#39;</span><span class="p">,</span> <span class="s1">&#39;50022&#39;</span><span class="p">);</span>
 </code></pre></div><p>Note the different order of studentName and studentID. If the order is
 not specified, you must insert the values in the order of the table
@@ -169,7 +169,7 @@ attribute when they are defined (left -&gt; right).</p>
 <p>Insert values from another table into the given table as a new tuple.</p>
 <p>Syntax:</p>
 <div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">GivenTable</span>
-    <span class="k">SELECT</span> <span class="n">att1</span><span class="p">,</span> <span class="n">att2</span><span class="p">,</span> <span class="n">att3</span>
+    <span class="k">SELECT</span> <span class="n">attr1</span><span class="p">,</span> <span class="n">attr2</span><span class="p">,</span> <span class="n">attr3</span>
     <span class="k">FROM</span> <span class="n">AnotherTable</span>
     <span class="k">WHERE</span> <span class="o">&lt;</span><span class="n">condition</span><span class="o">&gt;</span><span class="p">;</span>
 </code></pre></div><p>Example:</p>
@@ -243,15 +243,12 @@ updated.</li>
 <p>For example, all employees will get a double raise:</p>
 <div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">UPDATE</span> <span class="n">Employee</span>
 <span class="k">SET</span> <span class="n">Salary</span> <span class="o">=</span> <span class="n">Salary</span> <span class="o">*</span> <span class="mi">2</span><span class="p">;</span>
-<span class="o">``</span>
-
-<span class="mi">2</span><span class="p">.</span> <span class="k">If</span> <span class="n">the</span> <span class="k">WHERE</span> <span class="n">clause</span> <span class="n">presents</span><span class="p">,</span> <span class="k">each</span> <span class="n">tuple</span> <span class="k">is</span> <span class="n">compared</span> <span class="k">to</span> <span class="n">it</span> <span class="k">and</span> <span class="k">if</span> <span class="k">TRUE</span>
-<span class="k">is</span> <span class="n">returned</span><span class="p">,</span> <span class="n">that</span> <span class="n">tuple</span> <span class="k">is</span> <span class="n">updated</span><span class="p">.</span>
-
-<span class="k">For</span> <span class="n">example</span><span class="p">,</span> <span class="k">only</span> <span class="o">*</span><span class="n">senior</span><span class="o">*</span> <span class="n">employees</span> <span class="n">will</span> <span class="k">get</span> <span class="n">a</span> <span class="n">double</span> <span class="n">raise</span><span class="p">:</span>
-
-<span class="o">```</span><span class="k">sql</span>
-<span class="k">UPDATE</span> <span class="n">Employee</span>
+</code></pre></div><ol start="2">
+<li>If the WHERE clause presents, each tuple is compared to it and if TRUE
+is returned, that tuple is updated.</li>
+</ol>
+<p>For example, only <em>senior</em> employees will get a double raise:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">UPDATE</span> <span class="n">Employee</span>
 <span class="k">SET</span> <span class="n">Salary</span> <span class="o">=</span> <span class="n">Salary</span> <span class="o">*</span> <span class="mi">2</span><span class="p">.</span><span class="mi">0</span>
 <span class="k">WHERE</span> <span class="n">rank</span> <span class="o">=</span> <span class="n">senior</span><span class="p">;</span>
 </code></pre></div>

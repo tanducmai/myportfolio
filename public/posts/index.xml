@@ -6,13 +6,25 @@
     <description>Recent content in Posts on Tan Duc Mai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 11 Mar 2022 11:53:55 +1030</lastBuildDate>
+    <lastBuildDate>Fri, 18 Mar 2022 22:16:08 +1030</lastBuildDate>
     
 	<atom:link href="https://tanducmai.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Database - SQL Data Manipulation</title>
+      <title>Database - SQL - Query Writing</title>
+      <link>https://tanducmai.com/posts/database-sql-query-writing/</link>
+      <pubDate>Fri, 18 Mar 2022 22:16:08 +1030</pubDate>
+      
+      <guid>https://tanducmai.com/posts/database-sql-query-writing/</guid>
+      <description>Table of Contents  Why Query? SELECT Statement WHERE Condition DISTINCT Keyword AS Keyword ORDER BY Keyword TOP Keyword Summary  Why Query Now that we have got our tables storing data (records), let&amp;rsquo;s start asking questions (queries) about those data.
+SELECT statement This statement is used to retrieve data from the database.
+Syntax:
+SELECT &amp;lt;attributes&amp;gt; FROM &amp;lt;tableName&amp;gt; WHERE &amp;lt;conditions&amp;gt;;  The SELECT clause defines the target list of attributes/values to be returned.</description>
+    </item>
+    
+    <item>
+      <title>Database - SQL - Data Manipulation</title>
       <link>https://tanducmai.com/posts/database-sql-data-manipulation/</link>
       <pubDate>Fri, 11 Mar 2022 11:53:55 +1030</pubDate>
       
@@ -23,7 +35,7 @@
     </item>
     
     <item>
-      <title>Database - SQL Table Constraints</title>
+      <title>Database - SQL - Table Constraints</title>
       <link>https://tanducmai.com/posts/database-sql-table-constraints/</link>
       <pubDate>Thu, 10 Mar 2022 23:40:53 +1030</pubDate>
       
