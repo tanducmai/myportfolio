@@ -1,5 +1,5 @@
 +++
-date = 2022-03-18T22:16:08+10:30
+date = 2022-03-14T22:16:08+10:30
 title = "Database - SQL - Query Writing"
 slug = "database-sql-query-writing"
 aliases = "/database-sql-query-writing"
