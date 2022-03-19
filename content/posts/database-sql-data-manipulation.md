@@ -67,7 +67,7 @@ INSERT INTO Student VALUES ('50011', 'Barry');
 2. Insert the values in a different order to the default order of the attributes when the table was created.
 
 ```sql
-INSERT INTO TableName (att3, att2, att1) VALUES (z, y, x);
+INSERT INTO TableName (attr3, attr2, attr1) VALUES (z, y, x);
 INSERT INTO Student (studentName, studentID) VALUES ('Stacy', '50022');
 ```
 
@@ -83,7 +83,7 @@ Syntax:
 
 ```sql
 INSERT INTO GivenTable
-    SELECT att1, att2, att3
+    SELECT attr1, attr2, attr3
     FROM AnotherTable
     WHERE <condition>;
 ```
