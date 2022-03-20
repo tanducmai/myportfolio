@@ -16,10 +16,10 @@
     <meta property="og:description" content="Database - SQL - Query Writing">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tanducmai.com/posts/database-sql-query-writing/">
-    <meta property="og:image" content="https://tanducmai.comimages/sql-meme.png">
+    <meta property="og:image" content="https://tanducmai.comimages/database-sql-query-writing/cheatsheet.png">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="https://tanducmai.com/posts/database-sql-query-writing/">
-    <meta name="twitter:image" content="https://tanducmai.comimages/sql-meme.png">
+    <meta name="twitter:image" content="https://tanducmai.comimages/database-sql-query-writing/cheatsheet.png">
 
     <base href="https://tanducmai.com/posts/database-sql-query-writing/">
     <title>
@@ -113,7 +113,7 @@
   <article>
     <header>
       <h1 class="title">Database - SQL - Query Writing</h1>
-      <h2 class="date">March 18, 2022</h2>
+      <h2 class="date">March 14, 2022</h2>
 
       
     </header>
@@ -138,7 +138,7 @@
 <h3 id="select-statement"><code>SELECT</code> statement</h3>
 <p>This statement is used to retrieve data from the database.</p>
 <p>Syntax:</p>
-<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="o">&lt;</span><span class="n">attributes</span><span class="o">&gt;</span> <span class="k">FROM</span> <span class="o">&lt;</span><span class="n">tableName</span><span class="o">&gt;</span> <span class="k">WHERE</span> <span class="o">&lt;</span><span class="n">conditions</span><span class="o">&gt;</span><span class="p">;</span>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="o">&lt;</span><span class="n">selectList</span><span class="o">&gt;</span> <span class="k">FROM</span> <span class="o">&lt;</span><span class="n">tableName</span><span class="o">&gt;</span> <span class="k">WHERE</span> <span class="o">&lt;</span><span class="n">conditions</span><span class="o">&gt;</span><span class="p">;</span>
 </code></pre></div><ol>
 <li>The <code>SELECT</code> clause defines the target list of attributes/values to
 be returned.</li>
@@ -287,7 +287,7 @@ ascending or descending order.</p>
 <p>The result is set in ascending order by default, unless the <code>DESC</code>
 keyword is used.</p>
 <p>Syntax:</p>
-<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="n">attribute</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">|</span> <span class="o">*</span>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="o">&lt;</span><span class="n">selectList</span><span class="o">&gt;</span>
 <span class="k">FROM</span> <span class="n">TableName</span>
 <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">attributeName</span> <span class="p">[</span><span class="k">DESC</span><span class="p">];</span>
 </code></pre></div><p>For example: list the contents of the Automobile table in descending
