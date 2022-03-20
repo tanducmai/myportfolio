@@ -39,7 +39,8 @@ used in the query.
 Syntax:
 
 ```sql
-SELECT * FROM TableA JOIN TableB ON TableA.attributeName = TableB.attributeName;
+SELECT <selectList> FROM TableA JOIN TableB
+ON TableA.key = TableB.key;
 ```
 
 For example:

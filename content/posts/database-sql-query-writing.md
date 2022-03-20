@@ -46,7 +46,7 @@ This statement is used to retrieve data from the database.
 Syntax:
 
 ```sql
-SELECT <attributes> FROM <tableName> WHERE <conditions>;
+SELECT <selectList> FROM <tableName> WHERE <conditions>;
 ```
 
 1. The `SELECT` clause defines the target list of attributes/values to
@@ -168,7 +168,7 @@ keyword is used.
 Syntax:
 
 ```sql
-SELECT attribute(s) | *
+SELECT <selectList>
 FROM TableName
 ORDER BY attributeName [DESC];
 ```
