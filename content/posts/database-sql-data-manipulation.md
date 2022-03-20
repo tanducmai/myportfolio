@@ -33,6 +33,7 @@ Statements](#delete-from-and-drop-table-statements)
 ### Data Manipulation
 
 So we have created a set of tables. However:
+
 - How do we actually put data in our database?
 - How do we modify data that is already in our database?
 - How do we answer questions (queries) using our database data?
@@ -47,6 +48,7 @@ Key Data Manipulation SQL commands:
 ### `INSERT INTO` Statement
 
 This statement is used to populate with data - your newly created database.
+
 - String data (text) must be wrapped in single 'quotations'.
 - Same applies to date strings: '01/03/2014'
 
@@ -101,6 +103,7 @@ INSERT INTO Student (StudentID, StudentName)
 
 This statement is used to remove ALL the tuple(s) that satisfy the condition from a
 given table.
+
 - The removal may result in deletions from other tables if a FK
   constraint with `CASCADE ON DELETE` has been used.
 

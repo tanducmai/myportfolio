@@ -55,6 +55,7 @@ be returned.
 attribute values.
 1. The `WHERE` clause is included to determine which tuples should be
 retrieved.
+
 - It specifies the conditions that each tuple must match in order to be
   included in the final result.
 
@@ -84,6 +85,7 @@ the JOIN conditions of FROM clauses, and other constructs where a
 Boolean value is required.
 
 Logical conditions are used:
+
 - Multiple conditions can be chained using **AND**/**OR**.
 
 | Condition     | Description                                   |
@@ -100,6 +102,7 @@ Logical conditions are used:
 | `IS NOT NULL` | Test an attribute has a value (e.g. NOT NULL) |
 
 Note: LIKE condition
+
 - E.g. s LIKE 'p'
 - p must be surrounded by quotes.
 - p may contain two special symbols:

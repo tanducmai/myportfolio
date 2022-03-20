@@ -160,6 +160,7 @@ SELECT * FROM Department INNER JOIN Employee ON Employee.dept = Department.deptN
 Using the same relational database as above, for each employee with
 lastName Brown, list their firstName, the city where they live and the
 city in which they work.
+
 - Use the table's name to distinguish duplicate column names.
 
 Incorrect query (ambiguous column name):
