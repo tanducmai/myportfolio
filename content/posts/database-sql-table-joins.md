@@ -4,7 +4,7 @@ title = "Database - SQL - Table Joins"
 slug = "database-sql-table-joins"
 aliases = "/database-sql-table-joins"
 description = "Database - SQL - Table Joins"
-thumbnail = "images/database-physical-design/foreign-key.png"
+thumbnail = "images/database-sql-table-joins/summary.png) "
 tags = [
     "database",
     "fundamentals",
@@ -16,7 +16,7 @@ tags = [
 categories = [
     "database",
 ]
-draft = true
+draft = false
 +++
 
 ### Table Of Contents
@@ -28,6 +28,12 @@ draft = true
 1. [Multiple Attributes in a Join
 Condition](#multiple-attributes-in-a-join-condition)
 1. [OUTER JOIN Keyword](#outer-join-keyword)
+1. [LEFT [OUTER] JOIN Keyword](#left-outer-join-keyword)
+1. [RIGHT [OUTER] JOIN Keyword](#right-outer-join-keyword)
+1. [FULL [OUTER] JOIN Keyword](#right-outer-join-keyword)
+1. [Summary of JOIN](#summary-of-join)
+
+![Summary JOIN](/images/database-sql-table-joins/summary.png)
 
 ### `JOIN` keyword
 
@@ -97,7 +103,7 @@ queries by renaming your relations with an alias.
 It is useful where the relation is used more than once to distinguish
 between different instances of the relation.
 
-For example: given the following relational database:
+For example, given the following relational database:
 
 ```text
 Department(deptName, address, city)
@@ -148,7 +154,7 @@ If an employee's tuple does not match any department's tuple in a join,
 the employee's tuple is said to be *dangling* and thus dropped from the
 output.
 
-The following sql statements have the same meaning:
+The following sql statements have the same semantic and output:
 
 ```sql
 SELECT * FROM Department, Employee WHERE Employee.dept = Department.deptName
@@ -185,7 +191,7 @@ qualified with the table from which it comes from.
 
 ### Multiple attributes in a join condition
 
-![Multiple attributes](/images/database-sql-table-joins.png)
+![INNER JOIN keyword](/images/database-sql-table-joins/multi-attributes.png)
 
 ### `OUTER JOIN` keyword
 
@@ -193,6 +199,50 @@ This keyword is a variant of the JOIN keyword that keeps the *dangling*
 tuples in the result.
 
 It is achieved by
-[padding](https://www.oxfordlearnersdictionaries.com/definition/english/pad_2) missing values with NULL where the tuples do
-not match in both relations.
+[padding](https://www.oxfordlearnersdictionaries.com/definition/english/pad_2)
+missing values with NULL where the tuples is *dangling* (do not match in
+both relations).
 
+##### `JOIN` | `INNER JOIN` keyword
+
+In comparison, the JOIN or INNER JOIN keyword only returns matching
+tuples between relations.
+
+![INNER JOIN keyword](/images/database-sql-table-joins/inner-join.png)
+
+There are three variants of the OUTER JOIN keyword:
+
+### `LEFT OUTER JOIN` keyword
+
+Only dangling tuples of the **left** of the JOIN keyword are padded with
+NULL values.
+
+- `LEFT JOIN ` | `LEFT OUTER JOIN`
+
+![LEFT JOIN keyword](/images/database-sql-table-joins/left-join.png)
+
+### `RIGHT OUTER JOIN` keyword
+
+Only dangling tuples of the **right** of the JOIN keyword are padded
+with NULL values.
+
+- `RIGHT JOIN ` | `RIGHT OUTER JOIN`
+
+![RIGHT JOIN keyword](/images/database-sql-table-joins/right-join.png)
+
+### `FULL OUTER JOIN` keyword
+
+Dangling tuples of **both sides** of the JOIN keyword are padded with
+NULL values.
+
+- `FULL JOIN ` | `FULL OUTER JOIN` keyword
+
+![FULL JOIN keyword](/images/database-sql-table-joins/full-join.png)
+
+### Summary of JOIN
+
+All of the JOIN keyword variants can be summarised as:
+
+![Summary JOIN](/images/database-sql-table-joins/summary.png)
+
+Credit: C.L. Moffatt (2008)
