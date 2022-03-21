@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Tan Duc Mai">
+    <meta name="description" content="https://tanducmai.com">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta property="og:site_name" content="Tan Duc Mai">
+    <meta property="og:title" content="
+  Database - SQL - Nested Queries - Tan Duc Mai
+">
+    <meta property="og:description" content="Database - SQL - Nested Queries">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tanducmai.com/posts/database-sql-nested-queries/">
+    <meta property="og:image" content="https://tanducmai.comimages/sql-meme-2.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://tanducmai.com/posts/database-sql-nested-queries/">
+    <meta name="twitter:image" content="https://tanducmai.comimages/sql-meme-2.png">
+
+    <base href="https://tanducmai.com/posts/database-sql-nested-queries/">
+    <title>
+  Database - SQL - Nested Queries - Tan Duc Mai
+</title>
+
+    <link rel="canonical" href="https://tanducmai.com/posts/database-sql-nested-queries/">
+    
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="/css/normalize.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    
+      <link rel="alternate" href="https://tanducmai.com/index.xml" type="application/rss+xml" title="Tan Duc Mai">
+      <link href="https://tanducmai.com/index.xml" rel="feed" type="application/rss+xml" title="Tan Duc Mai" />
+    
+
+    <meta name="generator" content="Hugo 0.68.3" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">Tan Duc Mai</a>
+    <input type="checkbox" id="menu-control"/>
+    <label class="menu-mobile  float-right " for="menu-control">
+      <span class="btn-mobile  float-right ">&#9776;</span>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/about">About</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/posts">Blog</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/projects">Portfolio</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/contact">Contact</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            <li class= " mobile-menu-lang-separator-centered ">
+              <hr />
+            </li>
+          
+          
+            
+          
+            
+              
+                
+                  <li class="multilingual-separator">
+                    <p>|</p>
+                  </li>
+                
+                
+              
+              <li class="navigation-item  align-center ">
+                <a href="https://tanducmai.com/ja/">Japanese</a>
+              </li>
+            
+          
+        
+      </ul>
+    </label>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+  <article>
+    <header>
+      <h1 class="title">Database - SQL - Nested Queries</h1>
+      <h2 class="date">March 16, 2022</h2>
+
+      
+    </header>
+
+    <h3 id="table-of-contents">Table of Contents</h3>
+<ol>
+<li><a href="#aliases">Aliases</a></li>
+<li><a href="#nested-queries">Nested Queries?</a></li>
+<li><a href="#rules">Nested Query Rules</a></li>
+<li><a href="#qualifying-attribute-names">Qualifying Attribute Names</a></li>
+<li><a href="#operators">Operators</a></li>
+<li><a href="#compare-with-the-join-keyword">Compare with the JOIN Keyword</a></li>
+<li><a href="#nested-queries-using-negation-not-in-operator">Nested Queries using Negation NOT
+IN Operator</a></li>
+<li><a href="#nested-queries-using-all-operator">Nested Queries using ALL
+Operator</a></li>
+<li><a href="#exists-and-in-operators">EXISTS and IN Operators</a></li>
+<li><a href="#nested-queries-using-exists-operator">Nested Queries using EXISTS
+Operator</a></li>
+<li><a href="#nested-queries-using-not-exists-operator">Nested Queries using NOT EXISTS
+Operator</a></li>
+<li><a href="#nested-queries-in-select-clause">Nested Queries in SELECT Clause</a></li>
+<li><a href="#nested-queries-in-from-clause">Nested Queries in FROM Clause</a></li>
+<li><a href="#comments-on-nested-queries">Comments on Nested Queries</a></li>
+</ol>
+<p><img src="/images/sql-meme-2.png" alt="SQL Meme"></p>
+<h3 id="aliases">Aliases</h3>
+<p>A Nested query is also called a Subquery or an Inner query.</p>
+<h3 id="nested-queries">Nested Queries</h3>
+<p>A Nested query is a query within another SQL query and embedded within
+the <code>WHERE</code> clause.</p>
+<p>A Nested query is used to return a list of values that can be tested or
+used in the main query as a condition to further restrict the data to be
+retrieved.</p>
+<h3 id="nested-query-rules">Nested query Rules</h3>
+<p>There are a few rules that every nested query must follow −</p>
+<ul>
+<li>Nested queries must be enclosed within parentheses.</li>
+<li>A nested query can have only one column in the SELECT clause, unless
+multiple columns are in the main query for the nested query to compare its
+selected columns.</li>
+<li>An ORDER BY command cannot be used in a nested query, although the main
+query can use an ORDER BY. The GROUP BY command can be used to perform
+the same function as the ORDER BY in a nested query.</li>
+<li>Nested queries that return more than one row can only be used with
+multiple value operators such as the IN operator.</li>
+<li>The SELECT list cannot include any references to values that evaluate
+to a BLOB, ARRAY, CLOB, or NCLOB.</li>
+<li>A nested query cannot be immediately enclosed in a set function.</li>
+<li>The BETWEEN operator cannot be used with a nested query. However, the
+BETWEEN operator can be used within the nested query.</li>
+</ul>
+<p>Adapted from:
+<em><a href="https://www.tutorialspoint.com/sql/sql-sub-queries.htm">TutorialsPoint</a></em>.</p>
+<p>A nested query is subject to the following restrictions -</p>
+<ul>
+<li>The select list of a nested query introduced with a comparison
+operator can include only one expression or column name (except that
+<code>EXISTS</code> and <code>IN</code> operate on <code>SELECT *</code> or a list, respectively).</li>
+<li>If the <code>WHERE</code> clause of an outer query includes a column name, it
+must be join-compatible with the column in the nested query select
+list.</li>
+<li>The <em>ntext</em>, <em>text</em>, and <em>image</em> data types cannot be used in the
+select list of nested queries.</li>
+<li>Because they must return a single value, nested queries introduced by
+an unmodified comparison operator (one not followed by the keyword
+<code>ANY</code> or <code>ALL</code>) cannot include <code>GROUP BY</code> and <code>HAVING</code> clauses.</li>
+<li>The <code>DISTINCT</code> keyword cannot be used with nested queries that include
+<code>GROUP BY</code>.</li>
+<li>The <code>COMPUTE</code> and <code>INTO</code> clauses cannot be specified.</li>
+<li><code>ORDER BY</code> can only be specified when TOP is also specified.</li>
+<li>A view created by using a nested query cannot be updated.</li>
+<li>The select list of a nested query introduced with <code>EXISTS</code>, by
+convention, has an asterisk <code>*</code> instead of a single column name. The
+rules for a nested query introduced with <code>EXISTS</code> are the same as
+those for a standard select list, because a nested query introduced
+with <code>EXISTS</code> creates an existence test and returns TRUE or FALSE,
+instead of data.</li>
+</ul>
+<p>Adapted from:
+<em><a href="https://docs.microsoft.com/en-us/sql/relational-databases/performance/subqueries?view=sql-server-ver15">Microsoft</a></em>.</p>
+<h3 id="qualifying-attribute-names">Qualifying Attribute Names</h3>
+<p>When it comes to nested queries, we usually prefix every attribute&rsquo;s
+name with its relation&rsquo;s name (and a <strong>.</strong>) in order that there is no
+confusion in case of duplicate attributes&rsquo; names among different
+relations.</p>
+<h3 id="operators">Operators</h3>
+<p>Nested queries can be used with the SELECT, INSERT, UPDATE, and DELETE
+statements along with the operators like =, &lt;, &gt;, &gt;=, &lt;=, IN, BETWEEN,
+etc. within the WHERE clause.</p>
+<p>Thus, WHERE clause conditions can:</p>
+<ol>
+<li>Compare an attribute expression with the result of another SQL query.</li>
+</ol>
+<ul>
+<li><strong>IN</strong> - True if the attribute value exists in the results returned by
+the sub query.</li>
+<li><strong>NOT IN</strong> - True if the attribute value being compared does NOT exist
+in the results returned by the sub query.</li>
+</ul>
+<ol start="2">
+<li>ScalarValue Operator &lt; ANY | ALL &gt; SelectSQL.</li>
+</ol>
+<ul>
+<li><strong>ANY</strong> - True if at least one row returned by SelectSQL satisfies the
+comparison.
+<ul>
+<li>This is set by default if not specified.</li>
+</ul>
+</li>
+<li><strong>ALL</strong> - True if all rows returned by SelectSQL satisfy the
+comparison.</li>
+</ul>
+<ol start="3">
+<li>Use the existential quantifier on an SQL query.</li>
+</ol>
+<ul>
+<li><strong>EXISTS</strong> - True if sub query returns a result.</li>
+<li><strong>NOT EXISTS</strong></li>
+</ul>
+<h3 id="compare-with-the-join-keyword">Compare with the <code>JOIN</code> keyword</h3>
+<p>For information on this keyword, refer to this
+<em><a href="https://tanducmai.com/posts/database-sql-table-joins/">page</a></em>.</p>
+<p>Given the following relational schemas:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">Department(deptName, address, city)
+PK(deptName)
+
+Employee(firstName, lastName, dept, office, salary, city)
+PK(firstName, lastName)
+FK(dept) -&gt; Department(deptName)
+</code></pre></div><h5 id="example-1">Example 1</h5>
+<p>Task - find all employees (and their information) who do not work in
+departments in London.</p>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="n">E</span><span class="p">.</span><span class="o">*</span>
+<span class="k">FROM</span> <span class="n">Employee</span> <span class="k">AS</span> <span class="n">E</span>
+<span class="k">WHERE</span> <span class="n">E</span><span class="p">.</span><span class="n">dept</span> <span class="k">IN</span> <span class="p">(</span>
+    <span class="k">SELECT</span> <span class="n">D</span><span class="p">.</span><span class="n">deptName</span>
+    <span class="k">FROM</span> <span class="n">Department</span> <span class="k">AS</span> <span class="n">D</span>
+    <span class="k">WHERE</span> <span class="n">city</span> <span class="o">&lt;&gt;</span> <span class="s1">&#39;London&#39;</span>
+<span class="p">);</span>
+</code></pre></div><p>Is equivalent to:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="n">E</span><span class="p">.</span><span class="o">*</span>
+<span class="k">FROM</span> <span class="n">Employee</span> <span class="k">AS</span> <span class="n">E</span> <span class="k">JOIN</span> <span class="n">Department</span> <span class="k">AS</span> <span class="n">D</span>
+<span class="k">ON</span> <span class="n">E</span><span class="p">.</span><span class="n">dept</span> <span class="o">=</span> <span class="n">D</span><span class="p">.</span><span class="n">deptName</span>
+<span class="k">WHERE</span> <span class="n">D</span><span class="p">.</span><span class="n">city</span> <span class="o">&lt;&gt;</span> <span class="s1">&#39;London&#39;</span><span class="p">;</span>
+</code></pre></div><h5 id="example-2">Example 2</h5>
+<p>Task - find the name of employees who work in departments that are
+located in London city.</p>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="n">E</span><span class="p">.</span><span class="n">firstName</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">E</span><span class="p">.</span><span class="n">lastName</span> <span class="k">AS</span> <span class="n">employeeName</span>
+<span class="k">FROM</span> <span class="n">Employee</span> <span class="k">AS</span> <span class="n">E</span>
+<span class="k">WHERE</span> <span class="n">E</span><span class="p">.</span><span class="n">dept</span> <span class="k">IN</span> <span class="p">(</span>
+    <span class="k">SELECT</span> <span class="n">D</span><span class="p">.</span><span class="n">deptName</span>
+    <span class="k">FROM</span> <span class="n">Department</span> <span class="k">AS</span> <span class="n">D</span>
+    <span class="k">WHERE</span> <span class="n">D</span><span class="p">.</span><span class="n">city</span> <span class="o">=</span> <span class="s1">&#39;London’
+</span><span class="s1">);
+</span></code></pre></div><p>Is equivalent to:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="n">E</span><span class="p">.</span><span class="n">firstName</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">E</span><span class="p">.</span><span class="n">lastName</span> <span class="k">AS</span> <span class="n">employeeName</span>
+<span class="k">FROM</span> <span class="n">Employee</span> <span class="k">AS</span> <span class="n">E</span> <span class="k">INNER</span> <span class="k">JOIN</span> <span class="n">Department</span> <span class="k">AS</span> <span class="n">D</span>
+<span class="k">ON</span> <span class="n">E</span><span class="p">.</span><span class="n">dept</span> <span class="o">=</span> <span class="n">D</span><span class="p">.</span><span class="n">deptName</span>
+<span class="k">WHERE</span> <span class="n">D</span><span class="p">.</span><span class="n">city</span> <span class="o">=</span> <span class="s1">&#39;London&#39;</span><span class="p">;</span>
+</code></pre></div><h5 id="example-3">Example 3</h5>
+<p>Task - find the employees in the Planning department who have the same
+first name as someone in the Production department.</p>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="n">firstName</span><span class="p">,</span> <span class="n">lastName</span>
+<span class="k">FROM</span> <span class="n">Employee</span>
+<span class="k">WHERE</span> <span class="n">dept</span> <span class="o">=</span> <span class="s1">&#39;Planning&#39;</span>
+<span class="k">AND</span> <span class="n">firstName</span> <span class="k">IN</span> <span class="p">(</span>
+    <span class="k">SELECT</span> <span class="n">firstName</span>
+    <span class="k">FROM</span> <span class="n">Employee</span>
+    <span class="k">WHERE</span> <span class="n">dept</span> <span class="o">=</span> <span class="s1">&#39;Production&#39;</span>
+<span class="p">);</span>
+</code></pre></div><p>Is equivalent to:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="n">E1</span><span class="p">.</span><span class="n">firstName</span><span class="p">,</span> <span class="n">E1</span><span class="p">.</span><span class="n">lastName</span>
+<span class="k">FROM</span> <span class="n">Employee</span> <span class="k">AS</span> <span class="n">E1</span> <span class="k">INNER</span> <span class="k">JOIN</span> <span class="n">Employee</span> <span class="k">AS</span> <span class="n">E2</span>
+<span class="k">ON</span> <span class="n">E1</span><span class="p">.</span><span class="n">firstName</span> <span class="o">=</span> <span class="n">E2</span><span class="p">.</span><span class="n">firstName</span>
+<span class="k">WHERE</span> <span class="n">E1</span><span class="p">.</span><span class="n">dept</span> <span class="o">=</span> <span class="s1">&#39;Planning&#39;</span>
+<span class="k">AND</span> <span class="n">E2</span><span class="p">.</span><span class="n">dept</span> <span class="o">=</span> <span class="s1">&#39;Production’;
+</span></code></pre></div><h3 id="nested-queries-using-negation-not-in-operator">Nested queries using negation <code>NOT IN</code> Operator</h3>
+<p>Given the above relational schemas.</p>
+<p>Task - find the departments in which there is no one named Brown.</p>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="n">D</span><span class="p">.</span><span class="n">deptName</span>
+<span class="k">FROM</span> <span class="n">Department</span> <span class="k">AS</span> <span class="n">D</span>
+<span class="k">WHERE</span> <span class="n">D</span><span class="p">.</span><span class="n">deptName</span> <span class="k">NOT</span> <span class="k">IN</span> <span class="p">(</span>
+    <span class="k">SELECT</span> <span class="n">E</span><span class="p">.</span><span class="n">dept</span>
+    <span class="k">FROM</span> <span class="n">Employee</span> <span class="k">AS</span> <span class="n">E</span>
+    <span class="k">WHERE</span> <span class="n">E</span><span class="p">.</span><span class="n">firstName</span> <span class="o">=</span> <span class="s1">&#39;Brown&#39;</span>
+<span class="p">);</span>
+</code></pre></div><h3 id="nested-queries-using-all-operator">Nested queries using <code>ALL</code> Operator</h3>
+<p>Given the above relational schemas.</p>
+<p>Task - find the department of the employee who earns the highest salary.</p>
+<h5 id="using-all">Using ALL</h5>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="n">E1</span><span class="p">.</span><span class="n">dept</span>
+<span class="k">FROM</span> <span class="n">Employee</span> <span class="k">AS</span> <span class="n">E1</span>
+<span class="k">WHERE</span> <span class="n">E1</span><span class="p">.</span><span class="n">salary</span> <span class="o">&gt;=</span> <span class="k">ALL</span> <span class="p">(</span>
+    <span class="k">SELECT</span> <span class="n">E2</span><span class="p">.</span><span class="n">salary</span>
+    <span class="k">FROM</span> <span class="n">Employee</span> <span class="k">AS</span> <span class="n">E2</span>
+<span class="p">);</span>
+</code></pre></div><h5 id="not-using-all-but-max--min-aggregate-operators">Not using ALL, but MAX / MIN (aggregate operators)</h5>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="n">E1</span><span class="p">.</span><span class="n">dept</span>
+<span class="k">FROM</span> <span class="n">Employee</span> <span class="k">AS</span> <span class="n">E1</span>
+<span class="k">WHERE</span> <span class="n">E1</span><span class="p">.</span><span class="n">salary</span> <span class="k">IN</span> <span class="p">(</span>
+    <span class="k">SELECT</span> <span class="k">MAX</span><span class="p">(</span><span class="n">E2</span><span class="p">.</span><span class="n">salary</span><span class="p">)</span>
+    <span class="k">FROM</span> <span class="n">Employee</span> <span class="k">AS</span> <span class="n">E2</span>
+<span class="p">);</span>
+</code></pre></div><h3 id="nested-queries-using-exists-operator">Nested queries using <code>EXISTS</code> Operator</h3>
+<p>The EXISTS operator is used to test for the existence of any record in a
+nested query.</p>
+<p>The nested query is evaluated for each tuple of the main
+(external/outer) query.</p>
+<ul>
+<li>Akin to the concept of nested loops in programming.</li>
+</ul>
+<p>If the EXISTS operator is used, then for every tuple of the main query:</p>
+<ul>
+<li>The nested query is evaluated.</li>
+<li>TRUE is returned if the nested query returns one or more records.
+<ul>
+<li>If TRUE is returned, then the current tuple of the main query is executed.</li>
+<li>Otherwise, then it is the turn of the next tuple of the main query.</li>
+</ul>
+</li>
+</ul>
+<p>For example, given the following relational schema:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">Student(studentID, firstName, lastName, email, phoneNumber)
+PK(studentID)
+</code></pre></div><p>Task - find students with the same name as another student.</p>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="n">S1</span><span class="p">.</span><span class="n">firstName</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">S2</span><span class="p">.</span><span class="n">lastName</span> <span class="k">AS</span> <span class="p">[</span><span class="n">Student</span> <span class="n">Name</span><span class="p">]</span>
+<span class="k">FROM</span> <span class="n">Student</span> <span class="k">AS</span> <span class="n">S1</span>
+<span class="k">WHERE</span> <span class="k">EXISTS</span> <span class="p">(</span>
+    <span class="k">SELECT</span> <span class="n">S2</span><span class="p">.</span><span class="o">*</span>
+    <span class="k">FROM</span> <span class="n">Student</span> <span class="k">AS</span> <span class="n">S2</span>
+    <span class="k">WHERE</span> <span class="n">S1</span><span class="p">.</span><span class="n">lastName</span> <span class="o">=</span> <span class="n">S2</span><span class="p">.</span><span class="n">lastName</span>
+    <span class="k">AND</span> <span class="n">S1</span><span class="p">.</span><span class="n">studentID</span> <span class="o">&lt;&gt;</span> <span class="n">S2</span><span class="p">.</span><span class="n">studentID</span>
+<span class="p">);</span>
+</code></pre></div><p>Explanation:</p>
+<ul>
+<li>First, we evaluate the first tuple of the main query, and when we see
+the EXISTS operator within the WHERE clause, we know that we
+need to evaluate the nested query for a Boolean value.
+<ul>
+<li>The main query&rsquo;s current tuple is only executed when the nested
+query returns True.</li>
+</ul>
+</li>
+<li>Inside the nested query, it does not matter what the SELECT clause
+selects (so we simply puts a <code>*</code>).</li>
+<li>We then looks at the condition after the WHERE clause, evaluate it to
+see if there is at least one tuple returned, then we can determine that
+the True is returned.</li>
+</ul>
+<h3 id="exists-and-in-operators"><code>EXISTS</code> and <code>IN</code> operators</h3>
+<p>The main difference between EXISTS and IN is that IN does a direct match
+between the attribute(s) specified before the IN keyword and the values
+returned by the nested query. This means that if a nested query returns
+NULL, the entire IN query becomes NULL – which requires &ldquo;IS NULL | IS
+NOT NULL&rdquo; operators in order for it to work efficiently.</p>
+<p>By contrast, EXISTS does not check for an attribute by attribute match
+between tuples, it just tests if a tuple was returned from the nested
+query. This means EXISTS will return either True or False, resulting in
+a more efficient comparison (no NULL values are returned).</p>
+<h3 id="nested-queries-using-not-exists-operator">Nested queries using <code>NOT EXISTS</code> Operator</h3>
+<p>The EXISTS operators tests if results are returned by a nested query
+rather than if a particular value exists in the nested query.</p>
+<ol>
+<li>EXISTS = the nested query is not empty</li>
+<li>NOT EXISTS = the nested query is empty</li>
+</ol>
+<p>For example, find the names of all courses with no students enrolled:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="k">C</span><span class="p">.</span><span class="n">courseName</span>
+<span class="k">FROM</span> <span class="n">Course</span> <span class="k">AS</span> <span class="k">C</span>
+<span class="k">WHERE</span> <span class="k">NOT</span> <span class="k">EXISTS</span> <span class="p">(</span>
+    <span class="k">SELECT</span> <span class="n">E</span><span class="p">.</span><span class="o">*</span>
+    <span class="k">FROM</span> <span class="n">Enrolment</span> <span class="k">AS</span> <span class="n">E</span>
+    <span class="k">WHERE</span> <span class="k">C</span><span class="p">.</span><span class="n">courseID</span> <span class="o">=</span> <span class="n">E</span><span class="p">.</span><span class="n">courseID</span>
+<span class="p">);</span>
+</code></pre></div><h3 id="nested-queries-in-select-clause">Nested queries in SELECT clause</h3>
+<p>A Nested SELECT query returns a value to be used as a result in the
+main query.</p>
+<ul>
+<li>This is different from the previous examples where the nested query is
+used to help generate/condition the results of the main query.</li>
+</ul>
+<p>Note: because the SELECT query is part of another SELECT clause, it must
+only return ONE result – because it is being used to fill in a single
+result.</p>
+<p>For example, the following SQL statements raises an error since the
+nested SELECT query returns a list of tuples.</p>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span>
+    <span class="n">E1</span><span class="p">.</span><span class="o">*</span><span class="p">,</span>
+    <span class="k">CONVERT</span><span class="p">(</span><span class="nb">Decimal</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span>
+    <span class="n">E1</span><span class="p">.</span><span class="n">Salary</span> <span class="o">*</span> <span class="mi">100</span> <span class="o">/</span> <span class="p">(</span>
+        <span class="k">SELECT</span> <span class="n">E2</span><span class="p">.</span><span class="n">salary</span>
+        <span class="k">FROM</span> <span class="n">Employee</span> <span class="n">E2</span>
+        <span class="k">WHERE</span> <span class="n">E2</span><span class="p">.</span><span class="n">dept</span> <span class="o">=</span> <span class="n">E1</span><span class="p">.</span><span class="n">dept</span>
+    <span class="p">)</span> <span class="k">AS</span> <span class="n">percentMax</span>
+<span class="k">FROM</span> <span class="n">Employee</span> <span class="n">E1</span><span class="p">;</span>
+</code></pre></div><h3 id="nested-queries-in-from-clause">Nested queries in FROM clause</h3>
+<p>A Nested FROM query returns a relation that can be used to help generate
+the results in the main query.</p>
+<p>For example, given the relational schema from
+<em><a href="#compare-with-the-join-keyword">here</a></em>.</p>
+<p>Task - find all employees that live in the same capital city:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="n">E1</span><span class="p">.</span><span class="o">*</span>
+<span class="k">FROM</span> <span class="n">Employee</span> <span class="k">AS</span> <span class="n">E1</span>
+<span class="k">JOIN</span> <span class="p">(</span><span class="k">SELECT</span> <span class="n">E2</span><span class="p">.</span><span class="o">*</span> <span class="k">FROM</span> <span class="n">Employee</span> <span class="k">AS</span> <span class="n">E2</span><span class="p">)</span> <span class="k">AS</span> <span class="n">MySubQuery</span>
+<span class="k">ON</span> <span class="n">E1</span><span class="p">.</span><span class="n">dept</span> <span class="o">=</span> <span class="n">MySubQuery</span><span class="p">.</span><span class="n">dept</span>
+<span class="k">WHERE</span> <span class="n">E1</span><span class="p">.</span><span class="n">firstName</span> <span class="o">&lt;&gt;</span> <span class="n">MySubQuery</span><span class="p">.</span><span class="n">firstName</span>
+    <span class="k">AND</span> <span class="n">E1</span><span class="p">.</span><span class="n">lastName</span> <span class="o">&lt;&gt;</span> <span class="n">MySubQuery</span><span class="p">.</span><span class="n">lastName</span>
+    <span class="k">AND</span> <span class="n">E1</span><span class="p">.</span><span class="n">city</span> <span class="o">=</span> <span class="n">MySubQuery</span><span class="p">.</span><span class="n">city</span><span class="p">;</span>
+</code></pre></div><p>Is equivalent to:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="n">MySubQuery</span><span class="p">.</span><span class="o">*</span> <span class="k">FROM</span> <span class="p">(</span>
+    <span class="k">SELECT</span> <span class="n">E1</span><span class="p">.</span><span class="o">*</span>
+    <span class="k">FROM</span> <span class="n">Employee</span> <span class="k">AS</span> <span class="n">E1</span> <span class="k">JOIN</span> <span class="n">Employee</span> <span class="k">AS</span> <span class="n">E2</span>
+    <span class="k">ON</span> <span class="n">E1</span><span class="p">.</span><span class="n">dept</span> <span class="o">=</span> <span class="n">E2</span><span class="p">.</span><span class="n">dept</span>
+    <span class="k">WHERE</span> <span class="n">E1</span><span class="p">.</span><span class="n">firstName</span> <span class="o">&lt;&gt;</span> <span class="n">E2</span><span class="p">.</span> <span class="n">firstName</span>
+        <span class="k">AND</span> <span class="n">E1</span><span class="p">.</span><span class="n">lastName</span> <span class="o">&lt;&gt;</span> <span class="n">E2</span><span class="p">.</span> <span class="n">lastName</span>
+        <span class="k">AND</span> <span class="n">E1</span><span class="p">.</span><span class="n">city</span> <span class="o">=</span> <span class="n">E2</span><span class="p">.</span><span class="n">city</span>
+<span class="p">)</span> <span class="k">AS</span> <span class="n">MySubQuery</span><span class="p">;</span>
+</code></pre></div><p>Sample result:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>firstName</th>
+<th>lastName</th>
+<th>dept</th>
+<th>office</th>
+<th>salary</th>
+<th>city</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Henry</td>
+<td>Mai</td>
+<td>Production</td>
+<td>69</td>
+<td>50</td>
+<td>Adelaide</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Katherine</td>
+<td>Phan</td>
+<td>Production</td>
+<td>35</td>
+<td>46</td>
+<td>Adelaide</td>
+</tr>
+</tbody>
+</table>
+<h3 id="comments-on-nested-queries">Comments on nested queries</h3>
+<p>The use of nested queries may produce &lsquo;less declarative&rsquo; queries, but
+they can be more readable.</p>
+<p>Complex queries can become very difficult to understand.</p>
+<p>The use of variables must respect visibility rules.</p>
+<ul>
+<li>A variable can only be used within the query where it is defined, or
+within a query that is nested in the query where it is defined.</li>
+</ul>
+
+  </article>
+
+  <br/>
+
+  
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "tan-duc-mai" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
+  
+</section>
+
+      </div>
+      
+    </main>
+
+    
+
+  <script src="/js/app.js"></script>
+  
+  </body>
+</html>

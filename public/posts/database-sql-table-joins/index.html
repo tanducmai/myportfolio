@@ -127,9 +127,9 @@
 <li><a href="#multiple-attributes-in-a-join-condition">Multiple Attributes in a Join
 Condition</a></li>
 <li><a href="#outer-join-keyword">OUTER JOIN Keyword</a></li>
-<li><a href="#left-outer-join-keyword">LEFT [OUTER] JOIN Keyword</a></li>
-<li><a href="#right-outer-join-keyword">RIGHT [OUTER] JOIN Keyword</a></li>
-<li><a href="#right-outer-join-keyword">FULL [OUTER] JOIN Keyword</a></li>
+<li><a href="#left-join-keyword">LEFT [OUTER] JOIN Keyword</a></li>
+<li><a href="#right-join-keyword">RIGHT [OUTER] JOIN Keyword</a></li>
+<li><a href="#full-join-keyword">FULL [OUTER] JOIN Keyword</a></li>
 <li><a href="#summary-of-join">Summary of JOIN</a></li>
 </ol>
 <p><img src="/images/database-sql-table-joins/summary.png" alt="Summary JOIN"></p>
@@ -226,7 +226,7 @@ called the <strong>joined attributes</strong>.</p>
 queries by renaming your relations with an alias.</p>
 <p>It is useful where the relation is used more than once to distinguish
 between different instances of the relation.</p>
-<p>For example, given the following relational database:</p>
+<p>For example, given the following relational schemas:</p>
 <div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">Department(deptName, address, city)
 PK(deptName)
 
@@ -246,6 +246,9 @@ FK(dept) -&gt; Department(deptName)
 </code></pre></div><h3 id="inner-join-keyword">INNER JOIN keyword</h3>
 <p>The type of joining two relations we have been discussing so far is the
 same as using the INNER JOIN keyword.</p>
+<ul>
+<li>Only returns connected, matching tuples from both relations.</li>
+</ul>
 <p>For an explanation of why it is called an INNER JOIN, refer to the
 following algorithm:</p>
 <div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">for</span> <span class="k">each</span> <span class="n">employee</span> <span class="n">x</span> <span class="k">in</span> <span class="n">Employee</span>
@@ -288,30 +291,34 @@ tuples in the result.</p>
 <a href="https://www.oxfordlearnersdictionaries.com/definition/english/pad_2">padding</a>
 missing values with NULL where the tuples is <em>dangling</em> (do not match in
 both relations).</p>
-<h5 id="join--inner-join-keyword"><code>JOIN</code> | <code>INNER JOIN</code> keyword</h5>
-<p>In comparison, the JOIN or INNER JOIN keyword only returns matching
-tuples between relations.</p>
+<h5 id="join--inner-join"><code>JOIN</code> | <code>INNER JOIN</code></h5>
 <p><img src="/images/database-sql-table-joins/inner-join.png" alt="INNER JOIN keyword"></p>
 <p>There are three variants of the OUTER JOIN keyword:</p>
-<h3 id="left-outer-join-keyword"><code>LEFT OUTER JOIN</code> keyword</h3>
+<h3 id="left-join-keyword"><code>LEFT JOIN</code> keyword</h3>
 <p>Only dangling tuples of the <strong>left</strong> of the JOIN keyword are padded with
 NULL values.</p>
 <ul>
 <li><code>LEFT JOIN </code> | <code>LEFT OUTER JOIN</code></li>
+<li>Returns all connected and unconnected tuples from the left relation
+(NULLs in right).</li>
 </ul>
 <p><img src="/images/database-sql-table-joins/left-join.png" alt="LEFT JOIN keyword"></p>
-<h3 id="right-outer-join-keyword"><code>RIGHT OUTER JOIN</code> keyword</h3>
+<h3 id="right-join-keyword"><code>RIGHT JOIN</code> keyword</h3>
 <p>Only dangling tuples of the <strong>right</strong> of the JOIN keyword are padded
 with NULL values.</p>
 <ul>
 <li><code>RIGHT JOIN </code> | <code>RIGHT OUTER JOIN</code></li>
+<li>Returns all connected and unconnected tuples from the right relation
+(NULLs in left).</li>
 </ul>
 <p><img src="/images/database-sql-table-joins/right-join.png" alt="RIGHT JOIN keyword"></p>
-<h3 id="full-outer-join-keyword"><code>FULL OUTER JOIN</code> keyword</h3>
+<h3 id="full-join-keyword"><code>FULL JOIN</code> keyword</h3>
 <p>Dangling tuples of <strong>both sides</strong> of the JOIN keyword are padded with
 NULL values.</p>
 <ul>
-<li><code>FULL JOIN </code> | <code>FULL OUTER JOIN</code> keyword</li>
+<li><code>FULL JOIN </code> | <code>FULL OUTER JOIN</code></li>
+<li>Returns all connected and unconnected tuples from the both left and
+right relation.</li>
 </ul>
 <p><img src="/images/database-sql-table-joins/full-join.png" alt="FULL JOIN keyword"></p>
 <h3 id="summary-of-join">Summary of JOIN</h3>
