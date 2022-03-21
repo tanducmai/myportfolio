@@ -28,9 +28,9 @@ draft = false
 1. [Multiple Attributes in a Join
 Condition](#multiple-attributes-in-a-join-condition)
 1. [OUTER JOIN Keyword](#outer-join-keyword)
-1. [LEFT [OUTER] JOIN Keyword](#left-outer-join-keyword)
-1. [RIGHT [OUTER] JOIN Keyword](#right-outer-join-keyword)
-1. [FULL [OUTER] JOIN Keyword](#right-outer-join-keyword)
+1. [LEFT [OUTER] JOIN Keyword](#left-join-keyword)
+1. [RIGHT [OUTER] JOIN Keyword](#right-join-keyword)
+1. [FULL [OUTER] JOIN Keyword](#full-join-keyword)
 1. [Summary of JOIN](#summary-of-join)
 
 ![Summary JOIN](/images/database-sql-table-joins/summary.png)
@@ -103,7 +103,7 @@ queries by renaming your relations with an alias.
 It is useful where the relation is used more than once to distinguish
 between different instances of the relation.
 
-For example, given the following relational database:
+For example, given the following relational schemas:
 
 ```text
 Department(deptName, address, city)
@@ -136,6 +136,8 @@ WHERE lastName = 'Brown';
 
 The type of joining two relations we have been discussing so far is the
 same as using the INNER JOIN keyword.
+
+- Only returns connected, matching tuples from both relations.
 
 For an explanation of why it is called an INNER JOIN, refer to the
 following algorithm:
@@ -203,39 +205,43 @@ It is achieved by
 missing values with NULL where the tuples is *dangling* (do not match in
 both relations).
 
-##### `JOIN` | `INNER JOIN` keyword
-
-In comparison, the JOIN or INNER JOIN keyword only returns matching
-tuples between relations.
+##### `JOIN` | `INNER JOIN`
 
 ![INNER JOIN keyword](/images/database-sql-table-joins/inner-join.png)
 
 There are three variants of the OUTER JOIN keyword:
 
-### `LEFT OUTER JOIN` keyword
+### `LEFT JOIN` keyword
 
 Only dangling tuples of the **left** of the JOIN keyword are padded with
 NULL values.
 
 - `LEFT JOIN ` | `LEFT OUTER JOIN`
+- Returns all connected and unconnected tuples from the left relation
+(NULLs in right).
+
 
 ![LEFT JOIN keyword](/images/database-sql-table-joins/left-join.png)
 
-### `RIGHT OUTER JOIN` keyword
+### `RIGHT JOIN` keyword
 
 Only dangling tuples of the **right** of the JOIN keyword are padded
 with NULL values.
 
 - `RIGHT JOIN ` | `RIGHT OUTER JOIN`
+- Returns all connected and unconnected tuples from the right relation
+(NULLs in left).
 
 ![RIGHT JOIN keyword](/images/database-sql-table-joins/right-join.png)
 
-### `FULL OUTER JOIN` keyword
+### `FULL JOIN` keyword
 
 Dangling tuples of **both sides** of the JOIN keyword are padded with
 NULL values.
 
-- `FULL JOIN ` | `FULL OUTER JOIN` keyword
+- `FULL JOIN ` | `FULL OUTER JOIN`
+- Returns all connected and unconnected tuples from the both left and
+right relation.
 
 ![FULL JOIN keyword](/images/database-sql-table-joins/full-join.png)
 
