@@ -220,7 +220,6 @@ NULL values.
 - Returns all connected and unconnected tuples from the left relation
 (NULLs in right).
 
-
 ![LEFT JOIN keyword](/images/database-sql-table-joins/left-join.png)
 
 ### `RIGHT JOIN` keyword
