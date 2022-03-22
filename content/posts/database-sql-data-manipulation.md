@@ -7,11 +7,9 @@ description = "Database - SQL - Data Manipulation"
 thumbnail = "images/sql-meme.png"
 tags = [
     "database",
-    "fundamentals",
+    "intermediate",
     "SQL",
     "DBMS",
-    "physical design",
-    "data manipulation",
 ]
 categories = [
     "database",

@@ -7,11 +7,9 @@ description = "Database - SQL - Table Joins"
 thumbnail = "images/database-sql-table-joins/summary.png) "
 tags = [
     "database",
-    "fundamentals",
+    "intermediate",
     "SQL",
     "DBMS",
-    "physical design",
-    "table joins",
 ]
 categories = [
     "database",

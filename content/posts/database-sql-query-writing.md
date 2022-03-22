@@ -7,11 +7,9 @@ description = "Database - SQL - Query Writing"
 thumbnail = "images/database-sql-query-writing/cheatsheet.png"
 tags = [
     "database",
-    "fundamentals",
+    "intermediate",
     "SQL",
     "DBMS",
-    "physical design",
-    "query writing",
 ]
 categories = [
     "database",

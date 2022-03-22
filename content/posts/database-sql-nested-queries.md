@@ -7,11 +7,9 @@ description = "Database - SQL - Nested Queries"
 thumbnail = "images/sql-meme-2.png"
 tags = [
     "database",
-    "fundamentals",
+    "intermediate",
     "SQL",
     "DBMS",
-    "physical design",
-    "nested queries",
 ]
 categories = [
     "database",
