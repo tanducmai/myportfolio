@@ -357,7 +357,7 @@ WHERE NOT EXISTS (
 );
 ```
 
-### Nested queries in SELECT clause
+### Nested queries in `SELECT` clause
 
 A Nested SELECT query returns a value to be used as a result in the
 main query.
@@ -384,7 +384,7 @@ SELECT
 FROM Employee E1;
 ```
 
-### Nested queries in FROM clause
+### Nested queries in `FROM` clause
 
 A Nested FROM query returns a relation that can be used to help generate
 the results in the main query.
