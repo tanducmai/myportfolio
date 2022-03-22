@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>DBMS on Tan Duc Mai</title>
-    <link>https://tanducmai.com/tags/dbms/</link>
-    <description>Recent content in DBMS on Tan Duc Mai</description>
+    <title>intermediate on Tan Duc Mai</title>
+    <link>https://tanducmai.com/tags/intermediate/</link>
+    <description>Recent content in intermediate on Tan Duc Mai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 21 Mar 2022 10:34:07 +1030</lastBuildDate>
     
-	<atom:link href="https://tanducmai.com/tags/dbms/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://tanducmai.com/tags/intermediate/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -63,29 +63,6 @@ SELECT &amp;lt;selectList&amp;gt; FROM &amp;lt;tableName&amp;gt; WHERE &amp;lt;c
       <description>Table of Contents  Data Manipulation INSERT INTO Statement DELETE FROM Statement DELETE FROM and DROP TABLE Statements UPDATE Statement  Data Manipulation So we have created a set of tables. However:
  How do we actually put data in our database? How do we modify data that is already in our database? How do we answer questions (queries) using our database data?  Key Data Manipulation SQL commands:
  INSERT INTO - Creates new tuple(s) in a table.</description>
-    </item>
-    
-    <item>
-      <title>Database - SQL - Table Constraints</title>
-      <link>https://tanducmai.com/posts/database-sql-table-constraints/</link>
-      <pubDate>Thu, 10 Mar 2022 23:40:53 +1030</pubDate>
-      
-      <guid>https://tanducmai.com/posts/database-sql-table-constraints/</guid>
-      <description>Table Of Contents  Definition Hypotheses Syntax Categorisation Intra-relational Constraints Inter-relational Constraints  Definition Constraints are clauses that need to be satisfied by data in the database.
-Constraints are like contracts to guard against bad data.
-Data that does not meet the rules of a given constraint will not be saved to the database.
- The whole tuple (new record) gets rejected and the DBMS throws an SQL Error. For example:  PRIMARY KEY Violation FOREIGN KEY Violation CHECK CONSTRAINT Violation    Hypotheses Consider this example:</description>
-    </item>
-    
-    <item>
-      <title>Database - Physical Design</title>
-      <link>https://tanducmai.com/posts/database-physical-design/</link>
-      <pubDate>Wed, 09 Mar 2022 23:40:53 +1030</pubDate>
-      
-      <guid>https://tanducmai.com/posts/database-physical-design/</guid>
-      <description>Table Of Contents  Physical Modelling? SQL Overview Table Creation and Manipulation Table Definition Table Modification  Physical Modelling After the conceptual design and the physical design, the next phase is to take the relational schemas and implement them using a DBMS.
- Structured Query Language (SQL) is a higher-level language (4GL) used to create the relational database and manage data within the database.  For example:
-CREATE TABLE Project ( projectName varchar(200), budget decimal(6,2), manager varchar(200), CONSTRAINT PK_Project PRIMARY KEY (projectName), CONSTRAINT FK_Project_Manager FOREIGN KEY (manager) REFERENCES Manager (name) ); SQL Overview Categorisation SQL commands can be categorised into:</description>
     </item>
     
   </channel>

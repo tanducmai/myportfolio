@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Tan Duc Mai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 16 Mar 2022 16:15:06 +1030</lastBuildDate>
+    <lastBuildDate>Mon, 21 Mar 2022 10:34:07 +1030</lastBuildDate>
     
 	<atom:link href="https://tanducmai.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>database</title>
       <link>https://tanducmai.com/tags/database/</link>
-      <pubDate>Wed, 16 Mar 2022 16:15:06 +1030</pubDate>
+      <pubDate>Mon, 21 Mar 2022 10:34:07 +1030</pubDate>
       
       <guid>https://tanducmai.com/tags/database/</guid>
       <description></description>
@@ -23,72 +23,27 @@
     <item>
       <title>DBMS</title>
       <link>https://tanducmai.com/tags/dbms/</link>
-      <pubDate>Wed, 16 Mar 2022 16:15:06 +1030</pubDate>
+      <pubDate>Mon, 21 Mar 2022 10:34:07 +1030</pubDate>
       
       <guid>https://tanducmai.com/tags/dbms/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>fundamentals</title>
-      <link>https://tanducmai.com/tags/fundamentals/</link>
-      <pubDate>Wed, 16 Mar 2022 16:15:06 +1030</pubDate>
+      <title>intermediate</title>
+      <link>https://tanducmai.com/tags/intermediate/</link>
+      <pubDate>Mon, 21 Mar 2022 10:34:07 +1030</pubDate>
       
-      <guid>https://tanducmai.com/tags/fundamentals/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>nested queries</title>
-      <link>https://tanducmai.com/tags/nested-queries/</link>
-      <pubDate>Wed, 16 Mar 2022 16:15:06 +1030</pubDate>
-      
-      <guid>https://tanducmai.com/tags/nested-queries/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>physical design</title>
-      <link>https://tanducmai.com/tags/physical-design/</link>
-      <pubDate>Wed, 16 Mar 2022 16:15:06 +1030</pubDate>
-      
-      <guid>https://tanducmai.com/tags/physical-design/</guid>
+      <guid>https://tanducmai.com/tags/intermediate/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SQL</title>
       <link>https://tanducmai.com/tags/sql/</link>
-      <pubDate>Wed, 16 Mar 2022 16:15:06 +1030</pubDate>
+      <pubDate>Mon, 21 Mar 2022 10:34:07 +1030</pubDate>
       
       <guid>https://tanducmai.com/tags/sql/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>table joins</title>
-      <link>https://tanducmai.com/tags/table-joins/</link>
-      <pubDate>Tue, 15 Mar 2022 15:38:40 +1030</pubDate>
-      
-      <guid>https://tanducmai.com/tags/table-joins/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>query writing</title>
-      <link>https://tanducmai.com/tags/query-writing/</link>
-      <pubDate>Mon, 14 Mar 2022 22:16:08 +1030</pubDate>
-      
-      <guid>https://tanducmai.com/tags/query-writing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>data manipulation</title>
-      <link>https://tanducmai.com/tags/data-manipulation/</link>
-      <pubDate>Fri, 11 Mar 2022 11:53:55 +1030</pubDate>
-      
-      <guid>https://tanducmai.com/tags/data-manipulation/</guid>
       <description></description>
     </item>
     
@@ -98,6 +53,24 @@
       <pubDate>Thu, 10 Mar 2022 23:40:53 +1030</pubDate>
       
       <guid>https://tanducmai.com/tags/constraints/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fundamentals</title>
+      <link>https://tanducmai.com/tags/fundamentals/</link>
+      <pubDate>Thu, 10 Mar 2022 23:40:53 +1030</pubDate>
+      
+      <guid>https://tanducmai.com/tags/fundamentals/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>physical design</title>
+      <link>https://tanducmai.com/tags/physical-design/</link>
+      <pubDate>Thu, 10 Mar 2022 23:40:53 +1030</pubDate>
+      
+      <guid>https://tanducmai.com/tags/physical-design/</guid>
       <description></description>
     </item>
     

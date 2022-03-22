@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://tanducmai.com/categories/</loc>
-    <lastmod>2022-03-16T16:15:06+10:30</lastmod>
+    <lastmod>2022-03-21T10:34:07+10:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -19,52 +19,42 @@
   
   <url>
     <loc>https://tanducmai.com/tags/database/</loc>
-    <lastmod>2022-03-16T16:15:06+10:30</lastmod>
+    <lastmod>2022-03-21T10:34:07+10:30</lastmod>
   </url>
   
   <url>
     <loc>https://tanducmai.com/categories/database/</loc>
-    <lastmod>2022-03-16T16:15:06+10:30</lastmod>
+    <lastmod>2022-03-21T10:34:07+10:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database-sql-nested-queries/</loc>
-    <lastmod>2022-03-16T16:15:06+10:30</lastmod>
+    <loc>https://tanducmai.com/posts/database-sql-set-operators/</loc>
+    <lastmod>2022-03-21T10:34:07+10:30</lastmod>
   </url>
   
   <url>
     <loc>https://tanducmai.com/tags/dbms/</loc>
-    <lastmod>2022-03-16T16:15:06+10:30</lastmod>
+    <lastmod>2022-03-21T10:34:07+10:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/tags/fundamentals/</loc>
-    <lastmod>2022-03-16T16:15:06+10:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/tags/nested-queries/</loc>
-    <lastmod>2022-03-16T16:15:06+10:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/tags/physical-design/</loc>
-    <lastmod>2022-03-16T16:15:06+10:30</lastmod>
+    <loc>https://tanducmai.com/tags/intermediate/</loc>
+    <lastmod>2022-03-21T10:34:07+10:30</lastmod>
   </url>
   
   <url>
     <loc>https://tanducmai.com/posts/</loc>
-    <lastmod>2022-03-16T16:15:06+10:30</lastmod>
+    <lastmod>2022-03-21T10:34:07+10:30</lastmod>
   </url>
   
   <url>
     <loc>https://tanducmai.com/tags/sql/</loc>
-    <lastmod>2022-03-16T16:15:06+10:30</lastmod>
+    <lastmod>2022-03-21T10:34:07+10:30</lastmod>
   </url>
   
   <url>
     <loc>https://tanducmai.com/tags/</loc>
-    <lastmod>2022-03-16T16:15:06+10:30</lastmod>
+    <lastmod>2022-03-21T10:34:07+10:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -79,7 +69,7 @@
   
   <url>
     <loc>https://tanducmai.com/</loc>
-    <lastmod>2022-03-16T16:15:06+10:30</lastmod>
+    <lastmod>2022-03-21T10:34:07+10:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -93,28 +83,18 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database-sql-table-joins/</loc>
-    <lastmod>2022-03-15T15:38:40+10:30</lastmod>
+    <loc>https://tanducmai.com/posts/database-sql-nested-queries/</loc>
+    <lastmod>2022-03-16T16:15:06+10:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/tags/table-joins/</loc>
+    <loc>https://tanducmai.com/posts/database-sql-table-joins/</loc>
     <lastmod>2022-03-15T15:38:40+10:30</lastmod>
   </url>
   
   <url>
     <loc>https://tanducmai.com/posts/database-sql-query-writing/</loc>
     <lastmod>2022-03-14T22:16:08+10:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/tags/query-writing/</loc>
-    <lastmod>2022-03-14T22:16:08+10:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/tags/data-manipulation/</loc>
-    <lastmod>2022-03-11T11:53:55+10:30</lastmod>
   </url>
   
   <url>
@@ -129,6 +109,16 @@
   
   <url>
     <loc>https://tanducmai.com/posts/database-sql-table-constraints/</loc>
+    <lastmod>2022-03-10T23:40:53+10:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/tags/fundamentals/</loc>
+    <lastmod>2022-03-10T23:40:53+10:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/tags/physical-design/</loc>
     <lastmod>2022-03-10T23:40:53+10:30</lastmod>
   </url>
   

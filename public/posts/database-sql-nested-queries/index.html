@@ -389,7 +389,7 @@ rather than if a particular value exists in the nested query.</p>
     <span class="k">FROM</span> <span class="n">Enrolment</span> <span class="k">AS</span> <span class="n">E</span>
     <span class="k">WHERE</span> <span class="k">C</span><span class="p">.</span><span class="n">courseID</span> <span class="o">=</span> <span class="n">E</span><span class="p">.</span><span class="n">courseID</span>
 <span class="p">);</span>
-</code></pre></div><h3 id="nested-queries-in-select-clause">Nested queries in SELECT clause</h3>
+</code></pre></div><h3 id="nested-queries-in-select-clause">Nested queries in <code>SELECT</code> clause</h3>
 <p>A Nested SELECT query returns a value to be used as a result in the
 main query.</p>
 <ul>
@@ -410,7 +410,7 @@ nested SELECT query returns a list of tuples.</p>
         <span class="k">WHERE</span> <span class="n">E2</span><span class="p">.</span><span class="n">dept</span> <span class="o">=</span> <span class="n">E1</span><span class="p">.</span><span class="n">dept</span>
     <span class="p">)</span> <span class="k">AS</span> <span class="n">percentMax</span>
 <span class="k">FROM</span> <span class="n">Employee</span> <span class="n">E1</span><span class="p">;</span>
-</code></pre></div><h3 id="nested-queries-in-from-clause">Nested queries in FROM clause</h3>
+</code></pre></div><h3 id="nested-queries-in-from-clause">Nested queries in <code>FROM</code> clause</h3>
 <p>A Nested FROM query returns a relation that can be used to help generate
 the results in the main query.</p>
 <p>For example, given the relational schema from
