@@ -43,7 +43,7 @@ Now that we have got our
 
 This statement is used to retrieve data from the database.
 
-Syntax:
+SELECT syntax:
 
 ```sql
 SELECT <selectList> FROM <tableName> WHERE <conditions>;
@@ -133,7 +133,7 @@ This keyword is used to rename an attribute or a table with an alias.
 
 Such an alias only exists for the duration of the query.
 
-Syntax:
+AS syntax:
 
 ```sql
 SELECT attr1 + attr2 + ... AS aliasName, ...
@@ -165,7 +165,7 @@ ascending or descending order.
 The result is set in ascending order by default, unless the `DESC`
 keyword is used.
 
-Syntax:
+ORDER BY syntax:
 
 ```sql
 SELECT <selectList>
@@ -186,7 +186,7 @@ based on the sort order.
 
 It is mainly used with ordered records.
 
-Syntax:
+TOP syntax:
 
 ```sql
 SELECT TOP number [PERCENT] attribute(s) | *

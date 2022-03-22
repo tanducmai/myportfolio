@@ -42,7 +42,7 @@ Tables (relations) can be combined to form a new relation using the JOIN keyword
 This relation can have a combination of the attributes from the tables
 used in the query.
 
-Syntax:
+JOIN syntax:
 
 ```sql
 SELECT <selectList> FROM TableA JOIN TableB
