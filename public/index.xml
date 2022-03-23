@@ -6,10 +6,30 @@
     <description>Recent content on Tan Duc Mai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 21 Mar 2022 10:34:07 +1030</lastBuildDate>
+    <lastBuildDate>Wed, 23 Mar 2022 09:51:54 +1030</lastBuildDate>
     
 	<atom:link href="https://tanducmai.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python - OOP - Class Variables</title>
+      <link>https://tanducmai.com/posts/python-oop-class-variables/</link>
+      <pubDate>Wed, 23 Mar 2022 09:51:54 +1030</pubDate>
+      
+      <guid>https://tanducmai.com/posts/python-oop-class-variables/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Database - SQL - Aggregate Functions</title>
+      <link>https://tanducmai.com/posts/database-sql-aggregate-functions/</link>
+      <pubDate>Tue, 22 Mar 2022 17:34:33 +1030</pubDate>
+      
+      <guid>https://tanducmai.com/posts/database-sql-aggregate-functions/</guid>
+      <description>Table of Contents  Aggregate Queries? COUNT() SUM() AVG() MAX() &amp;amp; MIN() Maths in SELECT Clause A Common Error  Aggregate Queries Aggregate queries or aggregation is a method of performing computations over sets of numerical values in multiple tuples of a relation and returning a single value.
+SQL provides users with many aggregate functions for aggregate queries, including AVG, COUNT, SUM, MIN, MAX, etc.
+Aggregate functions can be used within three clauses, namely SELECT, HAVING, and ORDER BY.</description>
+    </item>
     
     <item>
       <title>Database - SQL - Set Operators</title>
@@ -17,7 +37,7 @@
       <pubDate>Mon, 21 Mar 2022 10:34:07 +1030</pubDate>
       
       <guid>https://tanducmai.com/posts/database-sql-set-operators/</guid>
-      <description>Table of Contents  Sample Database SET Operators UNION Operator UNION ALL Operator INTERSECT Operator INTERSECT ALL Operator INTERSECT and INNER JOIN EXCEPT Operator  Sample Database The below two relations will be used as examples for this post.
+      <description>Table of Contents  Example Database SET Operators UNION Operator UNION ALL Operator INTERSECT Operator INTERSECT ALL Operator INTERSECT and INNER JOIN EXCEPT Operator  Example Database The below two relations will be used as examples for this post.
 SET Operators Set operators are used to combine tuples of query results.
 Standard SQL syntax with set operators:
  Inside a SelectSQL statement, a WHERE clause and some keywords (e.g. ORDER BY) can be included.</description>
@@ -30,6 +50,15 @@ Standard SQL syntax with set operators:
       
       <guid>https://tanducmai.com/posts/database-sql-nested-queries/</guid>
       <description>Table of Contents  Aliases Nested Queries? Nested Query Rules Qualifying Attribute Names Operators Compare with the JOIN Keyword Nested Queries using Negation NOT IN Operator Nested Queries using ALL Operator EXISTS and IN Operators Nested Queries using EXISTS Operator Nested Queries using NOT EXISTS Operator Nested Queries in SELECT Clause Nested Queries in FROM Clause Comments on Nested Queries  Aliases A Nested query is also called a Subquery or an Inner query.</description>
+    </item>
+    
+    <item>
+      <title>Python - OOP - Inheritance</title>
+      <link>https://tanducmai.com/posts/python-oop-inheritance/</link>
+      <pubDate>Wed, 16 Mar 2022 10:23:54 +1030</pubDate>
+      
+      <guid>https://tanducmai.com/posts/python-oop-inheritance/</guid>
+      <description> </description>
     </item>
     
     <item>
@@ -184,11 +213,11 @@ A collection of potentially useful data that models real-world or conceptual obj
     </item>
     
     <item>
-      <title>Python - Class Fundamentals</title>
-      <link>https://tanducmai.com/posts/python-class-fundamentals/</link>
+      <title>Python - OOP - Class Fundamentals</title>
+      <link>https://tanducmai.com/posts/python-oop-class-fundamentals/</link>
       <pubDate>Mon, 13 Dec 2021 00:00:00 +1030</pubDate>
       
-      <guid>https://tanducmai.com/posts/python-class-fundamentals/</guid>
+      <guid>https://tanducmai.com/posts/python-oop-class-fundamentals/</guid>
       <description>Objects </description>
     </item>
     
@@ -199,6 +228,15 @@ A collection of potentially useful data that models real-world or conceptual obj
       
       <guid>https://tanducmai.com/projects/blackjack/</guid>
       <description>→ GitHub Table of Contents  Introduction Algorithm Sample Output  Introduction In a standard game of 2-player Blackjack the player and the dealer are dealt 2 cards. The player shows both cards face-up. The dealer shows one of their cards face-up and one face-down. The player decides to draw cards by saying, &amp;ldquo;hit&amp;rdquo;, or stop drawing cards by saying, &amp;ldquo;stand&amp;rdquo;. They will draw cards trying to get their total hand value as close to 21 as possible without going over.</description>
+    </item>
+    
+    <item>
+      <title>Git - Branch</title>
+      <link>https://tanducmai.com/posts/git-branch/</link>
+      <pubDate>Mon, 22 Nov 2021 17:13:05 +1030</pubDate>
+      
+      <guid>https://tanducmai.com/posts/git-branch/</guid>
+      <description></description>
     </item>
     
     <item>

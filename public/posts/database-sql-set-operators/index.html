@@ -120,7 +120,7 @@
 
     <h3 id="table-of-contents">Table of Contents</h3>
 <ol>
-<li><a href="#sample-database">Sample Database</a></li>
+<li><a href="#example-database">Example Database</a></li>
 <li><a href="#set-operators">SET Operators</a></li>
 <li><a href="#union-operator">UNION Operator</a></li>
 <li><a href="#union-all-operator">UNION ALL Operator</a></li>
@@ -129,10 +129,10 @@
 <li><a href="#intersect-and-inner-join">INTERSECT and INNER JOIN</a></li>
 <li><a href="#except-operator">EXCEPT Operator</a></li>
 </ol>
-<h3 id="sample-database">Sample Database</h3>
+<h3 id="example-database">Example Database</h3>
 <p>The below two relations will be used as examples for this post.</p>
-<p><img src="/images/database-sql-set-operators/sample-employee.png" alt="Sample Database -Employee"></p>
-<p><img src="/images/database-sql-set-operators/sample-department.png" alt="Sample Database -Department"></p>
+<p><img src="/images/database-sql-set-operators/sample-employee.png" alt="Example Database -Employee"></p>
+<p><img src="/images/database-sql-set-operators/sample-department.png" alt="Example Database -Department"></p>
 <h3 id="set-operators">SET Operators</h3>
 <p>Set operators are used to combine tuples of query results.</p>
 <p>Standard SQL syntax with set operators:</p>
@@ -167,7 +167,7 @@ combination of the tuples from both sets, hence the word
 <div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="n">SelectSQL</span>
 <span class="k">UNION</span>
 <span class="n">SelectSQL</span>
-</code></pre></div><p>For example, given the above <a href="#sample-database">sample database</a>:</p>
+</code></pre></div><p>For example, given the above <a href="#example-database">example database</a>:</p>
 <p>Task - list the first names and last names of employees.</p>
 <div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="n">E1</span><span class="p">.</span><span class="n">firstName</span> <span class="k">AS</span> <span class="n">name</span>
 <span class="k">FROM</span> <span class="n">Employee</span> <span class="k">AS</span> <span class="n">E1</span>
@@ -195,7 +195,7 @@ returning only the tuples that appear in both sets, hence the word
 <div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="n">SelectSQL</span>
 <span class="k">INTERSECT</span>
 <span class="n">SelectSQL</span>
-</code></pre></div><p>For example, given the above <a href="#sample-database">sample database</a>:</p>
+</code></pre></div><p>For example, given the above <a href="#example-database">example database</a>:</p>
 <p>Task - find the first names of employees that are also last names.</p>
 <div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="n">E1</span><span class="p">.</span><span class="n">firstName</span> <span class="k">AS</span> <span class="n">name</span>
 <span class="k">FROM</span> <span class="n">Employee</span> <span class="k">AS</span> <span class="n">E1</span>
@@ -271,7 +271,7 @@ word
 <div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="n">SelectSQL</span>
 <span class="k">EXCEPT</span>
 <span class="n">SelectSQL</span>
-</code></pre></div><p>For example, given the above <a href="#sample-database">sample database</a>:</p>
+</code></pre></div><p>For example, given the above <a href="#example-database">example database</a>:</p>
 <p>Task - find the first names of employees that are not last names.</p>
 <div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="n">E1</span><span class="p">.</span><span class="n">firstName</span> <span class="k">AS</span> <span class="n">name</span>
 <span class="k">FROM</span> <span class="n">Employee</span> <span class="k">AS</span> <span class="n">E1</span>

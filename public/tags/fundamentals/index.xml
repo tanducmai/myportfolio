@@ -111,14 +111,5 @@ What Is A Database A collection of tables containing data that are used to retri
 A collection of potentially useful data that models real-world or conceptual objects and their relationships.</description>
     </item>
     
-    <item>
-      <title>Python - Class Fundamentals</title>
-      <link>https://tanducmai.com/posts/python-class-fundamentals/</link>
-      <pubDate>Mon, 13 Dec 2021 00:00:00 +1030</pubDate>
-      
-      <guid>https://tanducmai.com/posts/python-class-fundamentals/</guid>
-      <description>Objects </description>
-    </item>
-    
   </channel>
 </rss>

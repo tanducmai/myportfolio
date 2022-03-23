@@ -6,19 +6,10 @@
     <description>Recent content in beginner on Tan Duc Mai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 13 Dec 2021 00:00:00 +1030</lastBuildDate>
+    <lastBuildDate>Mon, 11 Oct 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://tanducmai.com/tags/beginner/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Python - Class Fundamentals</title>
-      <link>https://tanducmai.com/posts/python-class-fundamentals/</link>
-      <pubDate>Mon, 13 Dec 2021 00:00:00 +1030</pubDate>
-      
-      <guid>https://tanducmai.com/posts/python-class-fundamentals/</guid>
-      <description>Objects </description>
-    </item>
     
     <item>
       <title>Python - Naming Conventions</title>
