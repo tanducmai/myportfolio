@@ -33,10 +33,10 @@ draft = false
 The below two relations will be used as examples for this post.
 
 ![Example Database -
-Employee](/images/database-sql-set-operators/example-employee.png)
+Employee](/images/database-sql-set-operators/sample-employee.png)
 
 ![Example Database -
-Department](/images/database-sql-set-operators/example-department.png)
+Department](/images/database-sql-set-operators/sample-department.png)
 
 ### SET Operators
 
