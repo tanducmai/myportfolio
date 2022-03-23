@@ -19,7 +19,7 @@ draft = false
 
 ### Table of Contents
 
-1. [Sample Database](#sample-database)
+1. [Example Database](#example-database)
 1. [SET Operators](#set-operators)
 1. [UNION Operator](#union-operator)
 1. [UNION ALL Operator](#union-all-operator)
@@ -28,15 +28,15 @@ draft = false
 1. [INTERSECT and INNER JOIN](#intersect-and-inner-join)
 1. [EXCEPT Operator](#except-operator)
 
-### Sample Database
+### Example Database
 
 The below two relations will be used as examples for this post.
 
-![Sample Database -
-Employee](/images/database-sql-set-operators/sample-employee.png)
+![Example Database -
+Employee](/images/database-sql-set-operators/example-employee.png)
 
-![Sample Database -
-Department](/images/database-sql-set-operators/sample-department.png)
+![Example Database -
+Department](/images/database-sql-set-operators/example-department.png)
 
 ### SET Operators
 
@@ -80,7 +80,7 @@ UNION
 SelectSQL
 ```
 
-For example, given the above [sample database](#sample-database):
+For example, given the above [example database](#example-database):
 
 Task - list the first names and last names of employees.
 
@@ -125,7 +125,7 @@ INTERSECT
 SelectSQL
 ```
 
-For example, given the above [sample database](#sample-database):
+For example, given the above [example database](#example-database):
 
 Task - find the first names of employees that are also last names.
 
@@ -216,7 +216,7 @@ EXCEPT
 SelectSQL
 ```
 
-For example, given the above [sample database](#sample-database):
+For example, given the above [example database](#example-database):
 
 Task - find the first names of employees that are not last names.
 
