@@ -4,8 +4,12 @@ title = "Multi-level Guessing Game"
 slug = "multi-level-guessing-game"
 thumbnail = "images/multi-level-guessing-game.png"
 description = "Multi-level Guessing Game"
-tags = ['python']
-categories = ['python']
+tags = [
+    "python",
+]
+categories = [
+    "python",
+]
 aliases = "/multi-level-guessing-game/"
 +++
 

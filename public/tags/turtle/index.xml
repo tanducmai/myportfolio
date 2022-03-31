@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>turtle on Tan Duc Mai</title>
+    <link>https://tanducmai.com/tags/turtle/</link>
+    <description>Recent content in turtle on Tan Duc Mai</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 06 Oct 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://tanducmai.com/tags/turtle/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Petals Around The Rose</title>
+      <link>https://tanducmai.com/projects/petals-around-the-rose/</link>
+      <pubDate>Wed, 06 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://tanducmai.com/projects/petals-around-the-rose/</guid>
+      <description>→ GitHub Table of Contents  Aim Introduction Further Research Sample Output  Aim Write a Pytram that allows a user to play a game called Petals Around the Rose. The program allows the user to repeatedly guess the answer to the puzzle until the user chooses to stop guessing/playing. Once the user chooses to stop guessing, the program will report the user’s and game play statistics to the screen.</description>
+    </item>
+    
+    <item>
+      <title>Solar System Turtle Graphics</title>
+      <link>https://tanducmai.com/projects/solar-system-turtle-graphics/</link>
+      <pubDate>Wed, 25 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://tanducmai.com/projects/solar-system-turtle-graphics/</guid>
+      <description>→ GitHub Table of Contents  Aim Implementation Output Video Production  Aim Use Turtle graphics to draw an illustration of the Solar System, with appropriate scaling.
+Implementation There are two algorithms that I constantly use when working with a Python Turtle project, which is making a turtle and moving it. Accordingly, I define the two functions to eliminate repetitive code and put them into a new Python file. This is to make it possible to break up such a large program into manageable sized parts, and to keep related parts together.</description>
+    </item>
+    
+    <item>
+      <title>Olympic Medals Turtle Graphics</title>
+      <link>https://tanducmai.com/projects/olympic-medals-turtle-graphics/</link>
+      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://tanducmai.com/projects/olympic-medals-turtle-graphics/</guid>
+      <description>→ GitHub Table of Contents  Aim Leaderboard Implementation Output Video Production  Aim Use Turtle graphics (turtle module) to draw a pie chart representing the share of gold medals at the Olympic Games Tokyo as of 2 August 2021.
+Leaderboard Source: Adelaide Advertiser 3 August 2021
+Implementation To begin, I convert the numbers of gold medals into percentages in order to draw the pie chart’s segments. The corresponding percentage is converted by dividing the number of gold medals by 360%.</description>
+    </item>
+    
+    <item>
+      <title>City Life Turtle Graphics</title>
+      <link>https://tanducmai.com/projects/city-life-turtle-graphics/</link>
+      <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://tanducmai.com/projects/city-life-turtle-graphics/</guid>
+      <description>→ GitHub Table of Contents  Aim Implementation Output Video Production  Aim Use Turtle graphics (turtle module) to draw an illustration of the city life, with house, car, animal, and so on.
+Implementation To begin, I import the turtle module, after which I define all of the functions I am going to use in the code. I then set the window for the project by setting the height and width.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,10 +6,24 @@
     <description>Recent content in Posts on Tan Duc Mai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 23 Mar 2022 09:51:54 +1030</lastBuildDate>
+    <lastBuildDate>Mon, 28 Mar 2022 17:37:46 +1030</lastBuildDate>
     
 	<atom:link href="https://tanducmai.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Database Sql Common Functions</title>
+      <link>https://tanducmai.com/posts/database-sql-common-functions/</link>
+      <pubDate>Mon, 28 Mar 2022 17:37:46 +1030</pubDate>
+      
+      <guid>https://tanducmai.com/posts/database-sql-common-functions/</guid>
+      <description>Table of Contents   What is a Function?
+  Common Functions
+  Date-related Functions
+  What is a Function Functions are calculations performed by the Database Management System (DBMS).
+Common functions Common functions include:
+   Function Example Output     LEFT(string, length) LEFT(&amp;lsquo;Sam&amp;rsquo;, 2) Sam -&amp;gt; Sa   RIGHT(string, length) RIGHT(&amp;lsquo;Sam&amp;rsquo;, 2) Sam -&amp;gt; am   CHARINDEX(str1, str2) CHARINDEX(&amp;lsquo;Fun&amp;rsquo;, DBFundamentals&amp;rsquo;) 3   SUBSTRING(col, start, len) SUBSTRING(Name, 1, 1) Returns char(s) at start position    CHARINDEX starts from 0 and counts to the length.</description>
+    </item>
     
     <item>
       <title>Python - OOP - Class Variables</title>

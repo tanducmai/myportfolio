@@ -4,8 +4,12 @@ title = "Caesar Cipher Cryptography"
 slug = "caesar-cipher-cryptography"
 thumbnail = "images/caesar-cipher/printable-ascii.png"
 description = "Caesar Cipher Cryptography"
-tags = ['python']
-categories = ['python']
+tags = [
+    "python",
+]
+categories = [
+    "python",
+]
 aliases = "/caesar-cipher-cryptography/"
 +++
 

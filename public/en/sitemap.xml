@@ -3,6 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://tanducmai.com/posts/database-sql-common-functions/</loc>
+    <lastmod>2022-03-28T17:37:46+10:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/posts/</loc>
+    <lastmod>2022-03-28T17:37:46+10:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/</loc>
+    <lastmod>2022-03-28T17:37:46+10:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://tanducmai.com/ja/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tanducmai.com/"
+                />
+  </url>
+  
+  <url>
     <loc>https://tanducmai.com/categories/</loc>
     <lastmod>2022-03-23T09:51:54+10:30</lastmod>
     <xhtml:link
@@ -19,11 +44,6 @@
   
   <url>
     <loc>https://tanducmai.com/tags/oop/</loc>
-    <lastmod>2022-03-23T09:51:54+10:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/posts/</loc>
     <lastmod>2022-03-23T09:51:54+10:30</lastmod>
   </url>
   
@@ -54,21 +74,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://tanducmai.com/tags/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/</loc>
-    <lastmod>2022-03-23T09:51:54+10:30</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://tanducmai.com/ja/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tanducmai.com/"
                 />
   </url>
   
@@ -309,6 +314,16 @@
   
   <url>
     <loc>https://tanducmai.com/projects/petals-around-the-rose/</loc>
+    <lastmod>2021-10-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/tags/turtle/</loc>
+    <lastmod>2021-10-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/categories/turtle/</loc>
     <lastmod>2021-10-06T00:00:00+00:00</lastmod>
   </url>
   

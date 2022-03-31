@@ -4,8 +4,12 @@ title = "Three Different Prime Checker"
 slug = "three-prime-checker"
 thumbnail = "images/three-prime-checker.jpg"
 description = "Three Different Prime Checker"
-tags = ['python']
-categories = ['python']
+tags = [
+    "python",
+]
+categories = [
+    "python",
+]
 aliases = "/three-prime-checker/"
 +++
 

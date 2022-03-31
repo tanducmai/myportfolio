@@ -3,8 +3,14 @@ date = "2021-10-06"
 title = "Petals Around The Rose"
 slug = "petals-around-the-rose"
 description = "Credit Card Validator"
-tags = ['python']
-categories = ['python']
+tags = [
+    "python",
+    "turtle",
+]
+categories = [
+    "python",
+    "turtle",
+]
 aliases = "/petals-around-the-rose/"
 +++
 
@@ -106,7 +112,7 @@ Do you want to keep playing [y|n]? y
 Please enter your guess for the roll: 3
 No sorry, it's 0 not 3. The score is always even.
 
-Hint: The name of the game is important... Petals Around the Rose. 
+Hint: The name of the game is important... Petals Around the Rose.
 
 Do you give up [y|n]? y
 

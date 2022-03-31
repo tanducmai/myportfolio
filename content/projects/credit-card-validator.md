@@ -4,8 +4,12 @@ title = "Credit Card Validator"
 slug = "credit-card-validator"
 thumbnail = "images/credit-card-valid.png"
 description = "Credit Card Validator"
-tags = ['python']
-categories = ['python']
+tags = [
+    "python",
+]
+categories = [
+    "python",
+]
 aliases = "/credit-card-validator/"
 +++
 

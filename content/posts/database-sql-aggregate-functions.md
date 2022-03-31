@@ -14,7 +14,7 @@ tags = [
 categories = [
     "database",
 ]
-draft = false
+draft = true
 +++
 
 ### Table of Contents
@@ -26,7 +26,6 @@ draft = false
 1. [MAX() & MIN()](#max-and-min-functions)
 1. [Maths in SELECT Clause](#maths-in-select-clause)
 1. [A Common Error](#a-common-error)
-
 
 ### Aggregate Queries
 
