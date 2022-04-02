@@ -17,9 +17,8 @@
       <pubDate>Tue, 22 Mar 2022 17:34:33 +1030</pubDate>
       
       <guid>https://tanducmai.com/posts/database-sql-aggregate-functions/</guid>
-      <description>Table of Contents  Aggregate Queries? COUNT() SUM() AVG() MAX() &amp;amp; MIN() Maths in SELECT Clause A Common Error  Aggregate Queries Aggregate queries or aggregation is a method of performing computations over sets of numerical values in multiple tuples of a relation and returning a single value.
-SQL provides users with many aggregate functions for aggregate queries, including AVG, COUNT, SUM, MIN, MAX, etc.
-Aggregate functions can be used within three clauses, namely SELECT, HAVING, and ORDER BY.</description>
+      <description>Table of Contents  Aggregate Queries? COUNT() SUM() AVG() MAX() &amp;amp; MIN() Maths in SELECT Clause Multiple Aggregate Queries GROUP BY Clause Aggregate queries with JOINS HAVING Clause HAVING and WHERE Clauses  Aggregate Queries Aggregate queries or aggregation is a method of performing computations over sets of numerical values in multiple tuples of a relation and returning a single value.
+SQL provides users with many aggregate functions for aggregate queries, including AVG, COUNT, SUM, MIN, MAX, etc.</description>
     </item>
     
     <item>

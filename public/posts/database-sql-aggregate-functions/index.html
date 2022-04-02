@@ -126,8 +126,13 @@
 <li><a href="#avg-function">AVG()</a></li>
 <li><a href="#max-and-min-functions">MAX() &amp; MIN()</a></li>
 <li><a href="#maths-in-select-clause">Maths in SELECT Clause</a></li>
-<li><a href="#a-common-error">A Common Error</a></li>
+<li><a href="#multiple-aggregate-queries">Multiple Aggregate Queries</a></li>
+<li><a href="#group-by-clause">GROUP BY Clause</a></li>
+<li><a href="#aggregate-queries-with-joins">Aggregate queries with JOINS</a></li>
+<li><a href="#having-clause">HAVING Clause</a></li>
+<li><a href="#having-and-where-clauses">HAVING and WHERE Clauses</a></li>
 </ol>
+<p><img src="/images/sql-query-complete-syntax.png" alt="SQL Query Syntax"></p>
 <h3 id="aggregate-queries">Aggregate Queries</h3>
 <p>Aggregate queries or aggregation is a method of performing computations over
 sets of numerical values in multiple tuples of a relation and returning a single
@@ -369,23 +374,228 @@ order goes from the smallest letter (a) to the largest letter (w).</p>
 <p>📝 For expressions that are &lsquo;date&rsquo; (dateOfBirth, orderDate), such as
 a list of dates between 2002-07-03 and 2022-03-22).</p>
 <div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="k">MIN</span> <span class="p">(</span><span class="k">C</span><span class="p">.</span><span class="nb">date</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">Customer</span> <span class="k">AS</span> <span class="k">C</span><span class="p">;</span>
-<span class="c1">-- will return 2002-07-03.
+<span class="c1">-- will return 2002-07-03
 </span><span class="c1"></span><span class="k">SELECT</span> <span class="k">MAX</span> <span class="p">(</span><span class="k">C</span><span class="p">.</span><span class="nb">date</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">Customer</span> <span class="k">AS</span> <span class="k">C</span><span class="p">;</span>
-<span class="c1">-- will return 2022-03-22.
+<span class="c1">-- will return 2022-03-22
 </span></code></pre></div><h3 id="maths-in-select-clause">Maths in <code>SELECT</code> clause</h3>
-<h3 id="a-common-error">A common error</h3>
-<p>When conducting aggregate queries, there is an error that beginners are
-likely to encounter.</p>
-<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="n">E</span><span class="p">.</span><span class="n">firstName</span><span class="p">,</span> <span class="n">E</span><span class="p">.</span><span class="n">lastName</span><span class="p">,</span> <span class="k">MAX</span> <span class="p">(</span><span class="n">salary</span><span class="p">)</span> <span class="k">AS</span> <span class="p">[</span><span class="n">Top</span> <span class="n">Salary</span><span class="p">]</span>
+<h3 id="multiple-aggregate-queries">Multiple aggregate queries</h3>
+<p>Multiple aggregate queries can be combined into a singe query within
+the SELECT clause.</p>
+<p>However, it is only acceptable when each aggregate queries in the
+combination only returns a single value.</p>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="p">(</span>
+    <span class="k">MAX</span> <span class="p">(</span><span class="n">E</span><span class="p">.</span><span class="n">Salary</span><span class="p">)</span> <span class="k">AS</span> <span class="p">[</span><span class="k">Max</span> <span class="n">Salary</span><span class="p">],</span>
+    <span class="k">MIN</span> <span class="p">(</span><span class="n">E</span><span class="p">.</span><span class="n">Salary</span><span class="p">)</span> <span class="k">AS</span> <span class="p">[</span><span class="k">Min</span> <span class="n">Salary</span><span class="p">]</span>
 <span class="k">FROM</span> <span class="n">Employee</span> <span class="k">AS</span> <span class="n">E</span>
+</code></pre></div><p>Result:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Max Salary</th>
+<th align="center">Min Salary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">80</td>
+<td align="center">40</td>
+</tr>
+</tbody>
+</table>
+<h3 id="group-by-clause"><code>GROUP BY</code> clause</h3>
+<p>Given the following <a href="https://tanducmai.com/posts/database-sql-set-operators/#sample-database">example
+database</a>.</p>
+<p>📝 Find the highest salary paid in each department.</p>
+<p>When conducting aggregate queries, there is an error that is often
+encountered.</p>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="n">E</span><span class="p">.</span><span class="n">dept</span><span class="p">,</span> <span class="k">MAX</span> <span class="p">(</span><span class="n">E</span><span class="p">.</span><span class="n">salary</span><span class="p">)</span> <span class="k">AS</span> <span class="p">[</span><span class="n">Highest</span> <span class="n">Salary</span> <span class="k">in</span> <span class="n">this</span> <span class="n">Department</span><span class="p">]</span>
+<span class="k">FROM</span> <span class="n">Employee</span> <span class="k">AS</span> <span class="n">E</span><span class="p">;</span>
 </code></pre></div><p>Our query completed with an error, displaying:</p>
 <div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">Msg 8120, Level 16, State 1, Line 1
 Column &#39;Employee.firstName&#39; is invalid in the select list because it is
 not contained in either an aggregate function or the GROUP BY clause.
 </code></pre></div><p>Rationale: in the SELECT clause, especially <!-- raw HTML omitted -->, we have an
 aggregate function (MAX), together with a regular, non-aggregate
-attribute name.</p>
-<p>Solution: use a GROUP BY clause, as instructed in the error message.</p>
+attribute.</p>
+<ul>
+<li>All non-aggregate attributes in the SELECT clause must appear in the
+GROUP BY clause.</li>
+<li>The GROUP BY clause collects data across multiple records and then
+groups the results by one or more attributes.</li>
+<li>The GROUP BY clause may have more attributes than those non-aggregate
+attributes in the SELECT clause.</li>
+</ul>
+<p>Solution: use a GROUP BY clause followed by the non-aggregate
+attribute(s), as instructed in the error message.</p>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="n">E</span><span class="p">.</span><span class="n">dept</span><span class="p">,</span> <span class="k">MAX</span> <span class="p">(</span><span class="n">E</span><span class="p">.</span><span class="n">salary</span><span class="p">)</span> <span class="k">AS</span> <span class="p">[</span><span class="n">Highest</span> <span class="n">Salary</span> <span class="k">in</span> <span class="n">this</span> <span class="n">Department</span><span class="p">]</span>
+<span class="k">FROM</span> <span class="n">Employee</span> <span class="k">AS</span> <span class="n">E</span>
+<span class="k">GROUP</span> <span class="k">BY</span> <span class="n">E</span><span class="p">.</span><span class="n">delp</span><span class="p">;</span>
+</code></pre></div><p>Result:</p>
+<table>
+<thead>
+<tr>
+<th>dept</th>
+<th>Highest Salary in this Department</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Administration</td>
+<td>45</td>
+</tr>
+<tr>
+<td>Distribution</td>
+<td>80</td>
+</tr>
+<tr>
+<td>Planning</td>
+<td>80</td>
+</tr>
+<tr>
+<td>Production</td>
+<td>50</td>
+</tr>
+</tbody>
+</table>
+<h5 id="use-with-other-keywords">Use with other Keywords</h5>
+<p>The GROUP BY clause can be implemented with many other clauses, such as
+AS, TOP, ORDER BY, DISTINCT, etc.</p>
+<p>For example:</p>
+<ul>
+<li>This will display the same result as above but with Department names
+being placed in the reversed order.</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="n">E</span><span class="p">.</span><span class="n">dept</span><span class="p">,</span> <span class="k">MAX</span> <span class="p">(</span><span class="n">E</span><span class="p">.</span><span class="n">salary</span><span class="p">)</span> <span class="k">AS</span> <span class="p">[</span><span class="n">Highest</span> <span class="n">Salary</span> <span class="k">in</span> <span class="n">this</span> <span class="n">Department</span><span class="p">]</span>
+<span class="k">FROM</span> <span class="n">Employee</span> <span class="k">AS</span> <span class="n">E</span>
+<span class="k">GROUP</span> <span class="k">BY</span> <span class="n">E</span><span class="p">.</span><span class="n">dept</span>
+<span class="k">ORDER</span> <span class="k">BY</span> <span class="n">E</span><span class="p">.</span><span class="n">dept</span> <span class="k">DESC</span><span class="p">;</span>
+</code></pre></div><ul>
+<li>This will display only the first result.</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="n">TOP</span> <span class="mi">1</span> <span class="n">E</span><span class="p">.</span><span class="n">dept</span><span class="p">,</span> <span class="k">MAX</span> <span class="p">(</span><span class="n">E</span><span class="p">.</span><span class="n">salary</span><span class="p">)</span> <span class="k">AS</span> <span class="p">[</span><span class="n">Highest</span> <span class="n">Salary</span> <span class="k">in</span> <span class="n">this</span> <span class="n">Department</span><span class="p">]</span>
+<span class="k">FROM</span> <span class="n">Employee</span> <span class="k">AS</span> <span class="n">E</span>
+<span class="k">GROUP</span> <span class="k">BY</span> <span class="n">E</span><span class="p">.</span><span class="n">dept</span>
+</code></pre></div><h5 id="multiple-non-aggregate-attributes">Multiple non-aggregate attributes</h5>
+<p>When there are multiple regular, non-aggregate attributes in the
+<!-- raw HTML omitted -->, we need to indicate all of them within the GROUP BY
+clause.</p>
+<h6 id="two-non-aggregate-attributes">Two non-aggregate attributes</h6>
+<p>📝 Find the highest salary paid in each office in each department.</p>
+<p>There are two ways of listing them. The result will be sorted based on
+the second column in the GROUP BY clause.</p>
+<ol>
+<li>Listing in the original order.</li>
+</ol>
+<ul>
+<li>The result will <code>ORDER BY</code> E.office</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="n">E</span><span class="p">.</span><span class="n">dept</span><span class="p">,</span> <span class="n">E</span><span class="p">.</span><span class="n">office</span><span class="p">,</span> <span class="k">MAX</span> <span class="p">(</span><span class="n">E</span><span class="p">.</span><span class="n">salary</span><span class="p">)</span>
+<span class="k">FROM</span> <span class="n">Employee</span> <span class="k">AS</span> <span class="n">E</span>
+<span class="k">GROUP</span> <span class="k">BY</span> <span class="n">E</span><span class="p">.</span><span class="n">firstName</span><span class="p">,</span> <span class="n">E</span><span class="p">.</span><span class="n">office</span><span class="p">;</span>
+</code></pre></div><ol start="2">
+<li>Listing in the reversed order.</li>
+</ol>
+<ul>
+<li>The result will <code>ORDER BY</code> E.firstName</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="n">E</span><span class="p">.</span><span class="n">dept</span><span class="p">,</span> <span class="n">E</span><span class="p">.</span><span class="n">office</span><span class="p">,</span> <span class="k">MAX</span> <span class="p">(</span><span class="n">E</span><span class="p">.</span><span class="n">salary</span><span class="p">)</span>
+<span class="k">FROM</span> <span class="n">Employee</span> <span class="k">AS</span> <span class="n">E</span>
+<span class="k">GROUP</span> <span class="k">BY</span> <span class="n">E</span><span class="p">.</span><span class="n">office</span><span class="p">,</span> <span class="n">E</span><span class="p">.</span><span class="n">firstName</span><span class="p">;</span>
+</code></pre></div><h6 id="more-than-two-non-aggregate-columns">More than two non-aggregate columns</h6>
+<p>📝 Find the highest salary paid in each office in each department in
+each city.</p>
+<p>There are many ways of listing them. The result will be sorted based on
+the first column in the GROUP BY clause.</p>
+<p>In the below example, the result will <code>ORDER BY</code> E.city</p>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="n">E</span><span class="p">.</span><span class="n">dept</span><span class="p">,</span> <span class="n">E</span><span class="p">.</span><span class="n">office</span><span class="p">,</span> <span class="n">E</span><span class="p">.</span><span class="n">city</span><span class="p">,</span> <span class="k">MAX</span> <span class="p">(</span><span class="n">E</span><span class="p">.</span><span class="n">salary</span><span class="p">)</span>
+<span class="k">FROM</span> <span class="n">Employee</span> <span class="k">AS</span> <span class="n">E</span>
+<span class="k">GROUP</span> <span class="k">BY</span> <span class="n">E</span><span class="p">.</span><span class="n">city</span><span class="p">,</span> <span class="n">E</span><span class="p">.</span><span class="n">office</span><span class="p">,</span> <span class="n">E</span><span class="p">.</span><span class="n">dept</span><span class="p">;</span>
+</code></pre></div><h3 id="aggregate-queries-with-joins">Aggregate queries with <code>JOINS</code></h3>
+<p>Given the following <a href="https://tanducmai.com/posts/database-sql-set-operators/#sample-database">example
+database</a>.</p>
+<p>📝 Find the maximum salary among the employees who work in a
+department based in London.</p>
+<ol>
+<li>Join Employee with Department to take into account what city they
+work in (not live in!) – filter on London.</li>
+</ol>
+<ul>
+<li>This returns many tuples.</li>
+</ul>
+<ol start="2">
+<li>Find the maximum salary from the filtered result – MAX(Salary).</li>
+</ol>
+<ul>
+<li>This returns the single value.</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="k">MAX</span> <span class="p">(</span><span class="n">E</span><span class="p">.</span> <span class="n">salary</span><span class="p">)</span> <span class="k">AS</span> <span class="n">MaxLondonSal</span>
+<span class="k">FROM</span> <span class="n">Employee</span> <span class="k">AS</span> <span class="n">E</span> <span class="k">INNER</span> <span class="k">JOIN</span> <span class="n">Department</span> <span class="k">AS</span> <span class="n">D</span>
+<span class="k">ON</span> <span class="n">E</span><span class="p">.</span><span class="n">dept</span> <span class="o">=</span> <span class="n">D</span><span class="p">.</span><span class="n">deptName</span>
+<span class="k">WHERE</span> <span class="n">d</span><span class="p">.</span><span class="n">city</span> <span class="o">=</span> <span class="s1">&#39;London&#39;</span><span class="p">;</span>
+</code></pre></div><h3 id="having-clause"><code>HAVING</code> clause</h3>
+<p>The HAVING clause is used to place conditions on the result of an
+aggregate operator.</p>
+<p>This clause is only used in the presence of aggregation.</p>
+<p>For example, given the following <a href="https://tanducmai.com/posts/database-sql-set-operators/#sample-database">example
+database</a>.</p>
+<p>📝 Find which departments spend more than 150 on salaries.</p>
+<p>Correct query:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="n">E</span><span class="p">.</span><span class="n">dept</span><span class="p">,</span> <span class="k">SUM</span> <span class="p">(</span><span class="n">E</span><span class="p">.</span><span class="n">salary</span><span class="p">)</span> <span class="k">AS</span> <span class="n">theSalary</span>
+<span class="k">FROM</span> <span class="n">Employee</span> <span class="k">AS</span> <span class="n">E</span>
+<span class="k">GROUP</span> <span class="k">BY</span> <span class="n">E</span><span class="p">.</span><span class="n">dept</span>
+<span class="k">HAVING</span> <span class="k">SUM</span> <span class="p">(</span><span class="n">E</span><span class="p">.</span><span class="n">salary</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">150</span><span class="p">;</span>
+</code></pre></div><p>Incorrect query:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="n">E</span><span class="p">.</span><span class="n">dept</span><span class="p">,</span> <span class="k">SUM</span> <span class="p">(</span><span class="n">E</span><span class="p">.</span><span class="n">salary</span><span class="p">)</span> <span class="k">AS</span> <span class="n">theSalary</span>
+<span class="k">FROM</span> <span class="n">Employee</span> <span class="k">AS</span> <span class="n">E</span>
+<span class="k">GROUP</span> <span class="k">BY</span> <span class="n">E</span><span class="p">.</span><span class="n">dept</span>
+<span class="k">HAVING</span> <span class="n">theSalary</span> <span class="o">&gt;</span> <span class="mi">150</span><span class="p">;</span>
+</code></pre></div><p>Result:</p>
+<table>
+<thead>
+<tr>
+<th align="center">dept</th>
+<th align="center">theSalary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Planning</td>
+<td align="center">153</td>
+</tr>
+</tbody>
+</table>
+<h3 id="having-and-where-clauses">HAVING and WHERE clauses</h3>
+<p>The <code>HAVING</code> clause allows us to apply conditions to the whole result of
+aggregate functions and to check conditions that apply to the
+whole group.</p>
+<ul>
+<li>Conditions involving <strong>aggregate</strong> operators must appear in a HAVING
+clause.</li>
+</ul>
+<p>Whereas the <code>WHERE</code> clause applies conditions to 1 tuple at a time.</p>
+<ul>
+<li>Conditions involving <strong>non-aggregate</strong> operators must appear in the
+WHERE clause.</li>
+</ul>
+<p>For example, given the following <a href="https://tanducmai.com/posts/database-sql-set-operators/#sample-database">example
+database</a>.</p>
+<p>📝 Find the departments in which the average salary of employees
+working in office 20 is higher than 25.</p>
+<p>This will require a combination of a normal condition (WHERE clause) and
+a aggregate condition (HAVING clause).</p>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="n">E</span><span class="p">.</span><span class="n">dept</span><span class="p">,</span> <span class="k">AVG</span> <span class="p">(</span><span class="n">E</span><span class="p">.</span><span class="n">salary</span><span class="p">)</span>
+<span class="k">FROM</span> <span class="n">Employee</span> <span class="k">AS</span> <span class="n">E</span>
+<span class="k">WHERE</span> <span class="n">E</span><span class="p">.</span><span class="n">office</span> <span class="o">=</span> <span class="s1">&#39;20&#39;</span>
+<span class="k">GROUP</span> <span class="k">BY</span> <span class="n">E</span><span class="p">.</span><span class="n">dept</span>
+<span class="k">HAVING</span> <span class="k">AVG</span> <span class="p">(</span><span class="n">E</span><span class="p">.</span><span class="n">salary</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">25</span><span class="p">;</span>
+</code></pre></div><h3 id="complete-syntax-of-an-sql-query">Complete syntax of an SQL query</h3>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="o">&lt;</span><span class="n">selectList</span><span class="o">&gt;</span>
+<span class="k">FROM</span> <span class="o">&lt;</span><span class="n">tableList</span><span class="o">&gt;</span>
+<span class="k">WHERE</span> <span class="o">&lt;</span><span class="n">condition</span><span class="o">&gt;</span>
+<span class="k">GROUP</span> <span class="k">BY</span> <span class="o">&lt;</span><span class="n">groupingAttributeList</span><span class="o">&gt;</span>
+<span class="k">HAVING</span> <span class="o">&lt;</span><span class="n">aggregateCondition</span><span class="o">&gt;</span>
+<span class="k">ORDER</span> <span class="k">BY</span> <span class="o">&lt;</span><span class="n">orderingAttributeList</span><span class="o">&gt;</span>
+</code></pre></div><p><img src="/images/sql-query-complete-syntax.png" alt="SQL Query Syntax"></p>
 
   </article>
 

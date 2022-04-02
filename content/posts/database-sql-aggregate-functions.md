@@ -14,7 +14,7 @@ tags = [
 categories = [
     "database",
 ]
-draft = true
+draft = false
 +++
 
 ### Table of Contents
@@ -25,7 +25,13 @@ draft = true
 1. [AVG()](#avg-function)
 1. [MAX() & MIN()](#max-and-min-functions)
 1. [Maths in SELECT Clause](#maths-in-select-clause)
-1. [A Common Error](#a-common-error)
+1. [Multiple Aggregate Queries](#multiple-aggregate-queries)
+1. [GROUP BY Clause](#group-by-clause)
+1. [Aggregate queries with JOINS](#aggregate-queries-with-joins)
+1. [HAVING Clause](#having-clause)
+1. [HAVING and WHERE Clauses](#having-and-where-clauses)
+
+![SQL Query Syntax](/images/sql-query-complete-syntax.png)
 
 ### Aggregate Queries
 
@@ -220,23 +226,47 @@ a list of dates between 2002-07-03 and 2022-03-22).
 
 ```sql
 SELECT MIN (C.date) FROM Customer AS C;
--- will return 2002-07-03.
+-- will return 2002-07-03
 SELECT MAX (C.date) FROM Customer AS C;
--- will return 2022-03-22.
+-- will return 2022-03-22
 ```
 
 ### Maths in `SELECT` clause
 
+### Multiple aggregate queries
 
+Multiple aggregate queries can be combined into a singe query within
+the SELECT clause.
 
-### A common error
-
-When conducting aggregate queries, there is an error that beginners are
-likely to encounter.
+However, it is only acceptable when each aggregate queries in the
+combination only returns a single value.
 
 ```sql
-SELECT E.firstName, E.lastName, MAX (salary) AS [Top Salary]
+SELECT (
+    MAX (E.Salary) AS [Max Salary],
+    MIN (E.Salary) AS [Min Salary]
 FROM Employee AS E
+```
+
+Result:
+
+| Max Salary | Min Salary |
+| :---:      | :---:      |
+| 80         | 40         |
+
+### `GROUP BY` clause
+
+Given the following [example
+database](https://tanducmai.com/posts/database-sql-set-operators/#sample-database).
+
+:memo: Find the highest salary paid in each department.
+
+When conducting aggregate queries, there is an error that is often
+encountered.
+
+```sql
+SELECT E.dept, MAX (E.salary) AS [Highest Salary in this Department]
+FROM Employee AS E;
 ```
 
 Our query completed with an error, displaying:
@@ -249,6 +279,204 @@ not contained in either an aggregate function or the GROUP BY clause.
 
 Rationale: in the SELECT clause, especially <selectList>, we have an
 aggregate function (MAX), together with a regular, non-aggregate
-attribute name.
+attribute.
 
-Solution: use a GROUP BY clause, as instructed in the error message.
+- All non-aggregate attributes in the SELECT clause must appear in the
+  GROUP BY clause.
+- The GROUP BY clause collects data across multiple records and then
+  groups the results by one or more attributes.
+- The GROUP BY clause may have more attributes than those non-aggregate
+  attributes in the SELECT clause.
+
+Solution: use a GROUP BY clause followed by the non-aggregate
+attribute(s), as instructed in the error message.
+
+```sql
+SELECT E.dept, MAX (E.salary) AS [Highest Salary in this Department]
+FROM Employee AS E
+GROUP BY E.delp;
+```
+
+Result:
+
+| dept           | Highest Salary in this Department |
+| ---            | ---                               |
+| Administration | 45                                |
+| Distribution   | 80                                |
+| Planning       | 80                                |
+| Production     | 50                                |
+
+##### Use with other Keywords
+
+The GROUP BY clause can be implemented with many other clauses, such as
+AS, TOP, ORDER BY, DISTINCT, etc.
+
+For example:
+
+- This will display the same result as above but with Department names
+  being placed in the reversed order.
+
+```sql
+SELECT E.dept, MAX (E.salary) AS [Highest Salary in this Department]
+FROM Employee AS E
+GROUP BY E.dept
+ORDER BY E.dept DESC;
+```
+
+- This will display only the first result.
+
+```sql
+SELECT TOP 1 E.dept, MAX (E.salary) AS [Highest Salary in this Department]
+FROM Employee AS E
+GROUP BY E.dept
+```
+
+##### Multiple non-aggregate attributes
+
+When there are multiple regular, non-aggregate attributes in the
+<selectList>, we need to indicate all of them within the GROUP BY
+clause.
+
+###### Two non-aggregate attributes
+
+:memo: Find the highest salary paid in each office in each department.
+
+There are two ways of listing them. The result will be sorted based on
+the second column in the GROUP BY clause.
+
+1. Listing in the original order.
+
+- The result will `ORDER BY` E.office
+
+```sql
+SELECT E.dept, E.office, MAX (E.salary)
+FROM Employee AS E
+GROUP BY E.firstName, E.office;
+```
+
+2. Listing in the reversed order.
+
+- The result will `ORDER BY` E.firstName
+
+```sql
+SELECT E.dept, E.office, MAX (E.salary)
+FROM Employee AS E
+GROUP BY E.office, E.firstName;
+```
+
+###### More than two non-aggregate columns
+
+:memo: Find the highest salary paid in each office in each department in
+each city.
+
+There are many ways of listing them. The result will be sorted based on
+the first column in the GROUP BY clause.
+
+In the below example, the result will `ORDER BY` E.city
+
+```sql
+SELECT E.dept, E.office, E.city, MAX (E.salary)
+FROM Employee AS E
+GROUP BY E.city, E.office, E.dept;
+```
+
+### Aggregate queries with `JOINS`
+
+Given the following [example
+database](https://tanducmai.com/posts/database-sql-set-operators/#sample-database).
+
+:memo: Find the maximum salary among the employees who work in a
+department based in London.
+
+1. Join Employee with Department to take into account what city they
+work in (not live in!) – filter on London.
+- This returns many tuples.
+2. Find the maximum salary from the filtered result – MAX(Salary).
+- This returns the single value.
+
+```sql
+SELECT MAX (E. salary) AS MaxLondonSal
+FROM Employee AS E INNER JOIN Department AS D
+ON E.dept = D.deptName
+WHERE d.city = 'London';
+```
+
+### `HAVING` clause
+
+The HAVING clause is used to place conditions on the result of an
+aggregate operator.
+
+This clause is only used in the presence of aggregation.
+
+For example, given the following [example
+database](https://tanducmai.com/posts/database-sql-set-operators/#sample-database).
+
+:memo: Find which departments spend more than 150 on salaries.
+
+Correct query:
+
+```sql
+SELECT E.dept, SUM (E.salary) AS theSalary
+FROM Employee AS E
+GROUP BY E.dept
+HAVING SUM (E.salary) > 150;
+```
+
+Incorrect query:
+
+```sql
+SELECT E.dept, SUM (E.salary) AS theSalary
+FROM Employee AS E
+GROUP BY E.dept
+HAVING theSalary > 150;
+```
+
+Result:
+
+| dept     | theSalary |
+| :---:    | :---:     |
+| Planning | 153       |
+
+### HAVING and WHERE clauses
+
+The `HAVING` clause allows us to apply conditions to the whole result of
+aggregate functions and to check conditions that apply to the
+whole group.
+
+- Conditions involving **aggregate** operators must appear in a HAVING
+  clause.
+
+Whereas the `WHERE` clause applies conditions to 1 tuple at a time.
+
+- Conditions involving **non-aggregate** operators must appear in the
+  WHERE clause.
+
+For example, given the following [example
+database](https://tanducmai.com/posts/database-sql-set-operators/#sample-database).
+
+:memo: Find the departments in which the average salary of employees
+working in office 20 is higher than 25.
+
+This will require a combination of a normal condition (WHERE clause) and
+a aggregate condition (HAVING clause).
+
+```sql
+SELECT E.dept, AVG (E.salary)
+FROM Employee AS E
+WHERE E.office = '20'
+GROUP BY E.dept
+HAVING AVG (E.salary) > 25;
+```
+
+### Complete syntax of an SQL query
+
+```sql
+SELECT <selectList>
+FROM <tableList>
+WHERE <condition>
+GROUP BY <groupingAttributeList>
+HAVING <aggregateCondition>
+ORDER BY <orderingAttributeList>
+```
+
+![SQL Query Syntax](/images/sql-query-complete-syntax.png)
