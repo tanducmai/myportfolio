@@ -25,6 +25,7 @@ draft = false
 1. [Example of Working with String](#example-of-working-with-string)
 1. [Working with Date](#working-with-date)
 1. [CAST Function](#cast-function)
+1. [ISNULL Function](#isnull-function)
 
 ![SQL Query Syntax](/images/sql-query-complete-syntax.png)
 
@@ -183,10 +184,10 @@ Today is Monday, 28 March, 2022.
 | Function                        | Example                  | Output     |
 | ---                             | ---                      | ---        |
 | GETDATE()                       |                          | 2022-03-28 |
-| DATEPART(datePart,inputDate)    | DATEPART(d, GetDate())   | 28         |
-| DATENAME(datePart,inputDate)    | DATENAME(dw, GetDate())  | Monday     |
-|                                 | DATENAME(m, GetDate())   | March      |
-| DATEADD(datePart, number, date) | DATEADD(d, 6, GetDate()) | 2022-04-03 |
+| DATEPART(datePart,inputDate)    | DATEPART(d, GETDATE())   | 28         |
+| DATENAME(datePart,inputDate)    | DATENAME(dw, GETDATE())  | Monday     |
+|                                 | DATENAME(m, GETDATE())   | March      |
+| DATEADD(datePart, number, date) | DATEADD(d, 6, GETDATE()) | 2022-04-03 |
 
 ##### Arguments
 
@@ -199,7 +200,7 @@ Today is Monday, 28 March, 2022.
 
 - A part of the date that you want to return.
 - The table below lists all valid date part values.
-- Note: either uppercase or lowercase letters are acceptable.
+- Note: either upper-case or lower-case letters are acceptable.
 
 | datePart    | abbreviation |
 | :---:       | :---:        |
@@ -291,3 +292,52 @@ SELECT
     '$' + CAST (MAX (E.salary) AS varchar(40)) AS example3
 FROM Employee AS E;
 ```
+
+### `ISNULL` function
+
+##### Syntax
+
+```sql
+ISNULL (expression_or_attribute, replacement_value)
+```
+
+- Returns a specified value if the expression is NULL.
+- If the expression is NOT NULL, then returns the expression.
+
+##### Examples
+
+```sql
+SELECT ISNULL ('Hello', 'tanducmai.com') AS example1;
+```
+
+Result
+
+| example1 |
+| :---:    |
+| Hello    |
+
+```sql
+SELECT ISNULL (NULL, 'tanducmai.com') AS example2;
+```
+
+Result
+
+| example2      |
+| :---:         |
+| tanducmai.com |
+
+:memo: Find ALL Simpsons characters and their first aired episode; otherwise,
+display 'TBA'.
+
+```sql
+SELECT
+    CharacterName,
+    ISNULL (EpisodeName, 'TBA') AS FirstEpisode
+FROM Character AS C LEFT OUTER JOIN Episode AS E
+ON C.EpisodeID = E.EpisodeID
+```
+
+Sample result:
+
+![ISNULL function
+example](/images/database-sql-control-statements/isnull-function-example.png)
