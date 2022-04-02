@@ -6,10 +6,21 @@
     <description>Recent content in intermediate on Tan Duc Mai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 28 Mar 2022 17:37:46 +1030</lastBuildDate>
+    <lastBuildDate>Tue, 29 Mar 2022 17:37:46 +1030</lastBuildDate>
     
 	<atom:link href="https://tanducmai.com/tags/intermediate/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Database - SQL - Control Statements</title>
+      <link>https://tanducmai.com/posts/database-sql-control-statements/</link>
+      <pubDate>Tue, 29 Mar 2022 17:37:46 +1030</pubDate>
+      
+      <guid>https://tanducmai.com/posts/database-sql-control-statements/</guid>
+      <description>Table of Contents  Why Control Statements? IF - ELSE Statements CASE Statement  Image Source: Tech Recipes
+Why control statement Control statements allow actions to happen depending on a condition.
+ The action may involve setting a value. The action may involve running a different query.  IF - ELSE statements Syntax IF boolean_expression { sql_statement | statement_block } [ ELSE { sql_statement | statement_block } ] Arguments  boolean_expression   Is an expression that returns TRUE or FALSE.</description>
+    </item>
     
     <item>
       <title>Database - SQL - Common Functions</title>
@@ -17,7 +28,7 @@
       <pubDate>Mon, 28 Mar 2022 17:37:46 +1030</pubDate>
       
       <guid>https://tanducmai.com/posts/database-sql-common-functions/</guid>
-      <description>Table of Contents  What is a Function? Working with String SUBSTRING Function CHARINDEX Function Example of Working with String Working with Date CAST Function  What is a Function Functions are calculations performed by the Database Management System (DBMS).
+      <description>Table of Contents  What is a Function? Working with String SUBSTRING Function CHARINDEX Function Example of Working with String Working with Date CAST Function ISNULL Function  What is a Function Functions are calculations performed by the Database Management System (DBMS).
 Working with String Common functions include:
    Function Example Output     UPPER(col) UPPER(&amp;lsquo;Sam&amp;rsquo;) Sam -&amp;gt; SAM   LOWER(col) LOWER(&amp;lsquo;Sam&amp;rsquo;) Sam -&amp;gt; sam   RTRIM(col) RTRIM(&amp;lsquo;Sam &amp;lsquo;) [ Sam M ] -&amp;gt; [ Sam M]   LTRIM(col) LTRIM(&amp;rsquo; Sam&amp;rsquo;) [ M Sam ] -&amp;gt; [M Sam ]   LEN(col) LEN(&amp;lsquo;Sam&amp;rsquo;) 3   REVERSE(col) REVERSE(&amp;lsquo;Sam&amp;rsquo;) Sam -&amp;gt; maS   LEFT(string, length) LEFT(&amp;lsquo;Sam&amp;rsquo;, 2) Sam -&amp;gt; Sa   RIGHT(string, length) RIGHT(&amp;lsquo;Sam&amp;rsquo;, 2) Sam -&amp;gt; am    Example: SELECT UPPER (&amp;#39;Eynesbury&amp;#39;) AS [School Name] Result:</description>
     </item>

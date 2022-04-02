@@ -127,6 +127,7 @@
 <li><a href="#example-of-working-with-string">Example of Working with String</a></li>
 <li><a href="#working-with-date">Working with Date</a></li>
 <li><a href="#cast-function">CAST Function</a></li>
+<li><a href="#isnull-function">ISNULL Function</a></li>
 </ol>
 <p><img src="/images/sql-query-complete-syntax.png" alt="SQL Query Syntax"></p>
 <h3 id="what-is-a-function">What is a Function</h3>
@@ -350,22 +351,22 @@ search starts at the beginning of expressionToSearch.</li>
 </tr>
 <tr>
 <td>DATEPART(datePart,inputDate)</td>
-<td>DATEPART(d, GetDate())</td>
+<td>DATEPART(d, GETDATE())</td>
 <td>28</td>
 </tr>
 <tr>
 <td>DATENAME(datePart,inputDate)</td>
-<td>DATENAME(dw, GetDate())</td>
+<td>DATENAME(dw, GETDATE())</td>
 <td>Monday</td>
 </tr>
 <tr>
 <td></td>
-<td>DATENAME(m, GetDate())</td>
+<td>DATENAME(m, GETDATE())</td>
 <td>March</td>
 </tr>
 <tr>
 <td>DATEADD(datePart, number, date)</td>
-<td>DATEADD(d, 6, GetDate())</td>
+<td>DATEADD(d, 6, GETDATE())</td>
 <td>2022-04-03</td>
 </tr>
 </tbody>
@@ -384,7 +385,7 @@ SMALLDATETIME, DATETIME, DATETIME2, or DATETIMEOFFSET value.</li>
 <ul>
 <li>A part of the date that you want to return.</li>
 <li>The table below lists all valid date part values.</li>
-<li>Note: either uppercase or lowercase letters are acceptable.</li>
+<li>Note: either upper-case or lower-case letters are acceptable.</li>
 </ul>
 <table>
 <thead>
@@ -520,7 +521,52 @@ Tutorial</a></em></p>
 <div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span>
     <span class="s1">&#39;$&#39;</span> <span class="o">+</span> <span class="k">CAST</span> <span class="p">(</span><span class="k">MAX</span> <span class="p">(</span><span class="n">E</span><span class="p">.</span><span class="n">salary</span><span class="p">)</span> <span class="k">AS</span> <span class="nb">varchar</span><span class="p">(</span><span class="mi">40</span><span class="p">))</span> <span class="k">AS</span> <span class="n">example3</span>
 <span class="k">FROM</span> <span class="n">Employee</span> <span class="k">AS</span> <span class="n">E</span><span class="p">;</span>
-</code></pre></div>
+</code></pre></div><h3 id="isnull-function"><code>ISNULL</code> function</h3>
+<h5 id="syntax-3">Syntax</h5>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">ISNULL</span> <span class="p">(</span><span class="n">expression_or_attribute</span><span class="p">,</span> <span class="n">replacement_value</span><span class="p">)</span>
+</code></pre></div><ul>
+<li>Returns a specified value if the expression is NULL.</li>
+<li>If the expression is NOT NULL, then returns the expression.</li>
+</ul>
+<h5 id="examples-1">Examples</h5>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="k">ISNULL</span> <span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">,</span> <span class="s1">&#39;tanducmai.com&#39;</span><span class="p">)</span> <span class="k">AS</span> <span class="n">example1</span><span class="p">;</span>
+</code></pre></div><p>Result</p>
+<table>
+<thead>
+<tr>
+<th align="center">example1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Hello</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="k">ISNULL</span> <span class="p">(</span><span class="k">NULL</span><span class="p">,</span> <span class="s1">&#39;tanducmai.com&#39;</span><span class="p">)</span> <span class="k">AS</span> <span class="n">example2</span><span class="p">;</span>
+</code></pre></div><p>Result</p>
+<table>
+<thead>
+<tr>
+<th align="center">example2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">tanducmai.com</td>
+</tr>
+</tbody>
+</table>
+<p>📝 Find ALL Simpsons characters and their first aired episode; otherwise,
+display &lsquo;TBA&rsquo;.</p>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span>
+    <span class="n">CharacterName</span><span class="p">,</span>
+    <span class="k">ISNULL</span> <span class="p">(</span><span class="n">EpisodeName</span><span class="p">,</span> <span class="s1">&#39;TBA&#39;</span><span class="p">)</span> <span class="k">AS</span> <span class="n">FirstEpisode</span>
+<span class="k">FROM</span> <span class="nb">Character</span> <span class="k">AS</span> <span class="k">C</span> <span class="k">LEFT</span> <span class="k">OUTER</span> <span class="k">JOIN</span> <span class="n">Episode</span> <span class="k">AS</span> <span class="n">E</span>
+<span class="k">ON</span> <span class="k">C</span><span class="p">.</span><span class="n">EpisodeID</span> <span class="o">=</span> <span class="n">E</span><span class="p">.</span><span class="n">EpisodeID</span>
+</code></pre></div><p>Sample result:</p>
+<p><img src="/images/database-sql-control-statements/isnull-function-example.png" alt="ISNULL functionexample"></p>
+
   </article>
 
   <br/>

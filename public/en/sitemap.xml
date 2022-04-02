@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://tanducmai.com/categories/</loc>
-    <lastmod>2022-03-28T17:37:46+10:30</lastmod>
+    <lastmod>2022-03-29T17:37:46+10:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -19,37 +19,37 @@
   
   <url>
     <loc>https://tanducmai.com/tags/database/</loc>
-    <lastmod>2022-03-28T17:37:46+10:30</lastmod>
+    <lastmod>2022-03-29T17:37:46+10:30</lastmod>
   </url>
   
   <url>
     <loc>https://tanducmai.com/categories/database/</loc>
-    <lastmod>2022-03-28T17:37:46+10:30</lastmod>
+    <lastmod>2022-03-29T17:37:46+10:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database-sql-common-functions/</loc>
-    <lastmod>2022-03-28T17:37:46+10:30</lastmod>
+    <loc>https://tanducmai.com/posts/database-sql-control-statements/</loc>
+    <lastmod>2022-03-29T17:37:46+10:30</lastmod>
   </url>
   
   <url>
     <loc>https://tanducmai.com/tags/intermediate/</loc>
-    <lastmod>2022-03-28T17:37:46+10:30</lastmod>
+    <lastmod>2022-03-29T17:37:46+10:30</lastmod>
   </url>
   
   <url>
     <loc>https://tanducmai.com/posts/</loc>
-    <lastmod>2022-03-28T17:37:46+10:30</lastmod>
+    <lastmod>2022-03-29T17:37:46+10:30</lastmod>
   </url>
   
   <url>
     <loc>https://tanducmai.com/tags/sql/</loc>
-    <lastmod>2022-03-28T17:37:46+10:30</lastmod>
+    <lastmod>2022-03-29T17:37:46+10:30</lastmod>
   </url>
   
   <url>
     <loc>https://tanducmai.com/tags/</loc>
-    <lastmod>2022-03-28T17:37:46+10:30</lastmod>
+    <lastmod>2022-03-29T17:37:46+10:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -64,7 +64,7 @@
   
   <url>
     <loc>https://tanducmai.com/</loc>
-    <lastmod>2022-03-28T17:37:46+10:30</lastmod>
+    <lastmod>2022-03-29T17:37:46+10:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -75,6 +75,11 @@
                 hreflang="en"
                 href="https://tanducmai.com/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/posts/database-sql-common-functions/</loc>
+    <lastmod>2022-03-28T17:37:46+10:30</lastmod>
   </url>
   
   <url>
