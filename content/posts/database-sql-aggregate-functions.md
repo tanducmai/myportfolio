@@ -4,7 +4,7 @@ title = "Database - SQL - Aggregate Functions"
 slug = "database-sql-aggregate-functions"
 aliases = "/database-sql-aggregate-functions"
 description = "Database - SQL - Aggregate Functions"
-thumbnail = "images/tn.png"
+thumbnail = "/images/sql-query-complete-syntax.png"
 tags = [
     "database",
     "intermediate",
