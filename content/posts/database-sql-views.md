@@ -4,7 +4,7 @@ title = "Database - SQL - Views"
 slug = "database-sql-views"
 aliases = "/database-sql-views"
 description = "Database - SQL - Views"
-thumbnail = "/images/sql-query-complete-syntax.png"
+thumbnail = "/images/database-sql-views.png"
 tags = [
     "database",
     "intermediate",
