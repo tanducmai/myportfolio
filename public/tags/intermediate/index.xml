@@ -6,10 +6,21 @@
     <description>Recent content in intermediate on Tan Duc Mai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 29 Mar 2022 17:37:46 +1030</lastBuildDate>
+    <lastBuildDate>Mon, 04 Apr 2022 17:33:58 +0930</lastBuildDate>
     
 	<atom:link href="https://tanducmai.com/tags/intermediate/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Database - SQL - Views</title>
+      <link>https://tanducmai.com/posts/database-sql-views/</link>
+      <pubDate>Mon, 04 Apr 2022 17:33:58 +0930</pubDate>
+      
+      <guid>https://tanducmai.com/posts/database-sql-views/</guid>
+      <description>Table of Contents  Database views VIEW Syntax Examples Complex query Aggregate on Aggregate Vertical inheritance Horizontal inheritance Rename columns Important Notes Updatable Views Notes on updatable views  Image Source: C# Corner
+Database views Views are very useful for complex queries Queries with lots of joins Queries with complex conditions (e.g. aggregates) Especially if the queries are used frequently
+Views are necessary to express certain queries queries that combine and nest aggregate operators queries that make sophisticated use on the UNION operator</description>
+    </item>
     
     <item>
       <title>Database - SQL - Control Statements</title>

@@ -414,7 +414,7 @@ encountered.</p>
 <div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">Msg 8120, Level 16, State 1, Line 1
 Column &#39;Employee.firstName&#39; is invalid in the select list because it is
 not contained in either an aggregate function or the GROUP BY clause.
-</code></pre></div><p>Rationale: in the SELECT clause, especially <!-- raw HTML omitted -->, we have an
+</code></pre></div><p>Rationale: in the SELECT clause, especially <selectList>, we have an
 aggregate function (MAX), together with a regular, non-aggregate
 attribute.</p>
 <ul>
@@ -477,7 +477,7 @@ being placed in the reversed order.</li>
 <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">E</span><span class="p">.</span><span class="n">dept</span>
 </code></pre></div><h5 id="multiple-non-aggregate-attributes">Multiple non-aggregate attributes</h5>
 <p>When there are multiple regular, non-aggregate attributes in the
-<!-- raw HTML omitted -->, we need to indicate all of them within the GROUP BY
+<selectList>, we need to indicate all of them within the GROUP BY
 clause.</p>
 <h6 id="two-non-aggregate-attributes">Two non-aggregate attributes</h6>
 <p>📝 Find the highest salary paid in each office in each department.</p>
