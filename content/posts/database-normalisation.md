@@ -115,7 +115,7 @@ information retrieval
     - The parent PK may or may not be the child's PK, or it can just be part of
       the child's PK.
   - We now have a *proper schema*.
-- Identify the *partial dependency*
+- Identify the *partial dependency*.
   - Non-key attribute(s) partially depends on the PK.
   - Meaning that the PK should be a Composite Key, and the Non-key attribute(s)
     now can depend on part of it.
@@ -189,7 +189,7 @@ information retrieval
     - 1 & 4 & 8
       - Unit(*unitNo*, unitName, unitDescrip, unitValue)
     - 2 & 6
-      - LectureR(*lecturerNo*, lecturerName. lecturerOfficeNo, lecturerPhoneNo)
+      - Lecturer(*lecturerNo*, lecturerName. lecturerOfficeNo, lecturerPhoneNo)
     - 3
       - UnitAdvisor(*lecturerNo, unitNo*)
     - 5
