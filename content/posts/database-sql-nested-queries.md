@@ -38,7 +38,7 @@ Operator](#nested-queries-using-not-exists-operator)
 1. [Nested Queries in FROM Clause](#nested-queries-in-from-clause)
 1. [Comments on Nested Queries](#comments-on-nested-queries)
 
- ![SQL Meme](/images/sql-meme-2.png)
+![SQL Meme](/images/sql-meme-2.png)
 
 ### Aliases
 
