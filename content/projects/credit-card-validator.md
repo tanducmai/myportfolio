@@ -2,7 +2,7 @@
 date = "2021-12-17"
 title = "Credit Card Validator"
 slug = "credit-card-validator"
-thumbnail = "images/credit-card-valid.png"
+thumbnail = "images/python/projects/credit-card-valid.png"
 description = "Credit Card Validator"
 tags = [
     "python",
@@ -27,7 +27,8 @@ card number is valid.
 
 ### Sample Output and Pseudocode
 
-{{% portfolio image="/images/credit-card-validator.png" alt="Project Demo" %}}
+{{% portfolio image="/images/python/projects/credit-card-validator.png"
+alt="Project Demo" %}}
 
 According to Luhn’s algorithm, it can be determined if a credit card number is
 (syntactically) valid:

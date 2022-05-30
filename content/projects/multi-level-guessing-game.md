@@ -2,7 +2,7 @@
 date = "2021-07-15"
 title = "Multi-level Guessing Game"
 slug = "multi-level-guessing-game"
-thumbnail = "images/multi-level-guessing-game.png"
+thumbnail = "images/python/projects/multi-level-guessing-game.png"
 description = "Multi-level Guessing Game"
 tags = [
     "python",

@@ -2,7 +2,7 @@
 date = "2021-10-13"
 title = "List Module"
 slug = "list-module"
-thumbnail = "images/list-module.png"
+thumbnail = "images/python/projects/list-module.png"
 description = "List Module"
 tags = [
     "python",
@@ -33,7 +33,7 @@ them. Indexing, slicing, and various methods can be used to work with lists in a
 program.
 
 For example: Iterating over the list [1, 2, 3, 4]
-![An exampe of iterating over a list](/images/list-module.png)
+![An exampe of iterating over a list](/images/python/projects/list-module.png)
 Credit: Gaddis, T 2021, *Starting Out With Python*, 5th edn, Pearson Education,
 Inc.
 

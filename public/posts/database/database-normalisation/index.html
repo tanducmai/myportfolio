@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Tan Duc Mai">
+    <meta name="description" content="https://tanducmai.com">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta property="og:site_name" content="Tan Duc Mai">
+    <meta property="og:title" content="
+  Database - Normalisation - Tan Duc Mai
+">
+    <meta property="og:description" content="Database - Normalisation">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tanducmai.com/posts/database/database-normalisation/">
+    <meta property="og:image" content="https://tanducmai.comimages/database/posts/normalisation.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://tanducmai.com/posts/database/database-normalisation/">
+    <meta name="twitter:image" content="https://tanducmai.comimages/database/posts/normalisation.png">
+
+    <base href="https://tanducmai.com/posts/database/database-normalisation/">
+    <title>
+  Database - Normalisation - Tan Duc Mai
+</title>
+
+    <link rel="canonical" href="https://tanducmai.com/posts/database/database-normalisation/">
+    
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="/css/normalize.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    
+      <link rel="alternate" href="https://tanducmai.com/index.xml" type="application/rss+xml" title="Tan Duc Mai">
+      <link href="https://tanducmai.com/index.xml" rel="feed" type="application/rss+xml" title="Tan Duc Mai" />
+    
+
+    <meta name="generator" content="Hugo 0.68.3" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">Tan Duc Mai</a>
+    <input type="checkbox" id="menu-control"/>
+    <label class="menu-mobile  float-right " for="menu-control">
+      <span class="btn-mobile  float-right ">&#9776;</span>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/about">About</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/posts">Blog</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/projects">Portfolio</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/contact">Contact</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            <li class= " mobile-menu-lang-separator-centered ">
+              <hr />
+            </li>
+          
+          
+            
+          
+            
+              
+                
+                  <li class="multilingual-separator">
+                    <p>|</p>
+                  </li>
+                
+                
+              
+              <li class="navigation-item  align-center ">
+                <a href="https://tanducmai.com/ja/">Japanese</a>
+              </li>
+            
+          
+        
+      </ul>
+    </label>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+  <article>
+    <header>
+      <h1 class="title">Database - Normalisation</h1>
+      <h2 class="date">February 26, 2022</h2>
+
+      
+    </header>
+
+    <h3 id="table-of-contents">Table of Contents</h3>
+<ol>
+<li><a href="#good-and-bad-database-designs">Good and Bad Database Designs</a></li>
+<li><a href="#rule-of-thumb">Rule of Thumb</a></li>
+<li><a href="#normalisation">Normalisation</a></li>
+<li><a href="#how-to-normalise">How to Normalise?</a></li>
+<li><a href="#rules-of-the-first-three-normal-forms">Rules of the First Three Normal Forms</a></li>
+</ol>
+<p><img src="/images/database/posts/normalisation.png" alt="Normalisation Illustration">
+Image Source: <em><a href="https://evilmartians.com/chronicles/normalization-consistency-and-clowne">Evil
+Martians</a></em></p>
+<h3 id="good-and-bad-database-designs">Good and Bad Database Designs</h3>
+<p>When designing a database, people tend to do one that captures all or
+too much of the required information.</p>
+<p>It should be noted that more than one design are plausible.</p>
+<ul>
+<li>One design may be better than another.</li>
+<li>A good design in one situation may perform poorly in another.</li>
+</ul>
+<p>A good design should take into account how the data will be used:</p>
+<ul>
+<li>Frequent user searches</li>
+<li>Auditing purposes</li>
+<li>Predictions or data mining</li>
+</ul>
+<p>In contrast, a bad design can create data quality issues (anomalies):</p>
+<ol>
+<li><strong>Redundancy</strong></li>
+</ol>
+<ul>
+<li>Information is recorded unnecessarily in multiple tuples.</li>
+</ul>
+<ol start="2">
+<li><strong>Update Anomaly</strong></li>
+</ol>
+<ul>
+<li>Information can be changed in one tuple leaving old information in another.</li>
+</ul>
+<ol start="3">
+<li><strong>Insertion Anomaly</strong></li>
+</ol>
+<ul>
+<li>A bad design that forces unrelated information to be recorded as well and this
+information may be wrong.</li>
+</ul>
+<ol start="4">
+<li><strong>Deletion Anomaly</strong></li>
+</ol>
+<ul>
+<li>Deletion of a record results in complete loss of other information.</li>
+</ul>
+<p>Taking a poorly designed database as an example:</p>
+<table>
+<thead>
+<tr>
+<th>student</th>
+<th>course</th>
+<th>room</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Henry</td>
+<td>INFS1025</td>
+<td>C2-04</td>
+</tr>
+<tr>
+<td>Mai</td>
+<td>INFS1025</td>
+<td>C2-04</td>
+</tr>
+<tr>
+<td>Duc</td>
+<td>INFS1025</td>
+<td>C2-04</td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>If every course is in only one room, contains <strong>redundant</strong> information!</li>
+<li>If we update the room number for just one tuple (Update anomaly).</li>
+<li>Suppose everyone drops the course suddenly, we lose information about where
+the course is (Delete Anomaly).</li>
+<li>We may not be able to create a room reservation without students. We need to
+know every detail (Insert anomaly).</li>
+</ol>
+<h3 id="rule-of-thumb">Rule Of Thumb</h3>
+<p>Ensure a relation only captures <strong>one type</strong> of information about an <strong>entity</strong>
+or <strong>object</strong>.</p>
+<p>In order to design a database where each relation only captures one type of
+information, we need normalisation.</p>
+<h3 id="normalisation">Normalisation</h3>
+<p><strong>Normalisation</strong> is the process of <em>decomposing</em> large relational schemas into
+smaller, more efficient ones.</p>
+<ul>
+<li>Smaller schemas that contain only one copy of any given record.
+<ul>
+<li>Avoids issues that result from having multiple copies of the same record
+(typo erros, etc.)</li>
+</ul>
+</li>
+<li>Smaller schemas contain only relevant data.</li>
+<li>Smaller schemas are more easily searched.</li>
+</ul>
+<p>Normalisation prevents update anomalies and data inconsistencies.</p>
+<p>It works well where data is updated frequently, but at the expense of
+information retrieval</p>
+<h3 id="how-to-normalise">How To Normalise</h3>
+<p><strong>I. Data Initialisation</strong>:</p>
+<ul>
+<li>Identify the <em>Unnormalised form</em> (UNF).
+<ul>
+<li>The unstructured data / information received from the client.</li>
+</ul>
+</li>
+<li>Find out the <em>repeating group</em> or <em>multi-value attributes</em>.
+<ul>
+<li>Refer to this <em><a href="#rules-of-the-first-three-normal-forms">section</a></em>.</li>
+</ul>
+</li>
+</ul>
+<p><strong>II. First Normal Form (1NF)</strong>:</p>
+<ul>
+<li>Identify the <em>Primary Key</em> (PK).</li>
+<li>Remove the <em>repeating group</em> which will become a new <em>child relation</em>.</li>
+<li>Bring the parent relation&rsquo;s PK to the <em>child relation</em>.
+<ul>
+<li>Next, identify the PK of the child relation.
+<ul>
+<li>The parent PK may or may not be the child&rsquo;s PK, or it can just be part of
+the child&rsquo;s PK.</li>
+</ul>
+</li>
+<li>We now have a <em>proper schema</em>.</li>
+</ul>
+</li>
+<li>Identify the <em>partial dependency</em>.
+<ul>
+<li>Non-key attribute(s) partially depends on the PK.</li>
+<li>Meaning that the PK should be a Composite Key, and the Non-key attribute(s)
+now can depend on part of it.</li>
+<li>For example:
+<ul>
+<li>PK - Attribute1, Attribute2</li>
+<li>Non-key attribute depends on {Attribute1} or {Attribute1} -&gt; Non-key
+attribute.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>III. Second Normal Form (2NF)</strong>:</p>
+<ul>
+<li>Remove the <em>partial dependency</em> which will become a new <em>child relation</em>.
+<ul>
+<li>The relation whose elements have just been removed now becomes another
+parent relation.</li>
+<li>Next, identify the PK of the new child relation.
+<ul>
+<li>If the partial dependency or part of it is part of the new parent PK, it
+(or part of it) needs to stay in the parent relation and references itself
+in the new child relation.</li>
+<li>Leave the child PK to the parent relation (resulting in a FK in the parent
+relation).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Identify the <em>transitive dependency</em>.
+<ul>
+<li>A non-key attribute(s) depends on another non-key attribute(s).</li>
+<li>Meaning that the relation should have at least two non-key attributes in
+order to check for the transitive dependency.</li>
+<li>For example:
+<ul>
+<li>Book(bookName, authorName, authorAge)</li>
+<li>{bookName} -&gt; {authorName}</li>
+<li>{authorName} -&gt; {authorAge}</li>
+<li>Thus, {bookName} -&gt; {authorAge}</li>
+</ul>
+</li>
+<li>For this reason, a transitive dependency can only occur in a relation of
+three of more attributes.</li>
+</ul>
+</li>
+</ul>
+<p><strong>IV. Third Normal Form (3NF)</strong>:</p>
+<ul>
+<li>Remove the <em>transitive dependency</em> which will become a new <em>child relation</em>.
+<ul>
+<li>The relation whose elements have just been removed now becomes another
+parent relation.</li>
+<li>Next, identify the PK of the new child relation.
+<ul>
+<li>This is as clear as day: just look back at the previously identified
+transitive dependency.</li>
+<li>Leave the child PK to the parent relation (resulting in a FK in the parent
+relation).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Identify the <em>full dependency</em>.
+<ul>
+<li>Ensure that there is no partial and transitive dependency.</li>
+<li>The PK now determines the rest of the attributes.</li>
+<li>For example:
+<ul>
+<li>Having removed the partial and transitive dependency, our schema is now:</li>
+<li>Course(courseNumber, courseName, courseDescription, courseValue)</li>
+<li>PK - courseNumber</li>
+<li>courseNumber -&gt; courseName, courseDescription, courseValue</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>V. Consolidation</strong>:</p>
+<ul>
+<li>
+<p>In the case that we have several reports, we then need to collect all their
+3NFs and join them together into one, hence
+<em><a href="https://www.oxfordlearnersdictionaries.com/definition/english/consolidation">consolidation</a></em>.</p>
+</li>
+<li>
+<p>Rules: <code>Join all the relations (and their attributes) that have the same PK(s).</code></p>
+</li>
+<li>
+<p>For example, up to this stage, we have eight relations whose PKs are
+italicised:</p>
+<ol>
+<li>Unit(<em>unitNo</em>, unitName, unitDescrip, unitValue)</li>
+<li>Lecturer(<em>lecturerNo</em>, lecturerName. lecturerOfficeNo, lecturerPhoneNo)</li>
+<li>UnitAdvisor(<em>lecturerNo, unitNo</em>)</li>
+<li>Unit(<em>unitNo</em>, unitName)</li>
+<li>Student(<em>stuNo</em>, stuName, stuAddr, modeOfStudy, mentorNo)</li>
+<li>Mentor(<em>mentorNo</em>, mentorName)</li>
+<li>AcademicRecord(<em>stuNo, unitNo, yearSemester</em>, grade)</li>
+<li>Unit(<em>unitNo</em>, unitName)</li>
+</ol>
+<ul>
+<li>The combination should be:
+<ul>
+<li>1 &amp; 4 &amp; 8
+<ul>
+<li>Unit(<em>unitNo</em>, unitName, unitDescrip, unitValue)</li>
+</ul>
+</li>
+<li>2 &amp; 6
+<ul>
+<li>Lecturer(<em>lecturerNo</em>, lecturerName. lecturerOfficeNo, lecturerPhoneNo)</li>
+</ul>
+</li>
+<li>3
+<ul>
+<li>UnitAdvisor(<em>lecturerNo, unitNo</em>)</li>
+</ul>
+</li>
+<li>5
+<ul>
+<li>Student(<em>stuNo</em>, stuName, stuAddr, modeOfStudy, mentorNo)</li>
+</ul>
+</li>
+<li>7
+<ul>
+<li>AcademicRecord(<em>stuNo, unitNo, yearSemester</em>, grade)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="rules-of-the-first-three-normal-forms">Rules Of The First Three Normal Forms</h3>
+<ol>
+<li><strong>No repeating groups or multi-value attributes.</strong></li>
+</ol>
+<ul>
+<li>Repeating group: Once a student enrols a course, their name is repeated
+everytime that it comes up.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">student</th>
+<th align="center">age</th>
+<th align="center">course</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Henry</td>
+<td align="center">20</td>
+<td align="center">OOP</td>
+</tr>
+<tr>
+<td align="center">Henry</td>
+<td align="center">20</td>
+<td align="center">SRUX</td>
+</tr>
+<tr>
+<td align="center">Mai</td>
+<td align="center">18</td>
+<td align="center">OOP</td>
+</tr>
+<tr>
+<td align="center">&hellip;</td>
+<td align="center">&hellip;</td>
+<td align="center">&hellip;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Multi-value attributes: Multiple values presented in a single attribute.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">courses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">DDWT, SRUX, OOP</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>The correct way:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">courses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">DDWT</td>
+</tr>
+<tr>
+<td align="center">SRUX</td>
+</tr>
+<tr>
+<td align="center">OOP</td>
+</tr>
+</tbody>
+</table>
+<ol start="2">
+<li><strong>Data must be atomic (single values with meaning).</strong></li>
+</ol>
+<ul>
+<li><strong>Atomic data</strong> means there is only one piece of data per column</li>
+<li>Taking a COURSES relation as an example.</li>
+<li>Not atomic:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">courseCodeAndCourseName</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">INFS 1025 DDWT</td>
+</tr>
+<tr>
+<td align="center">INFS1025 SRUX</td>
+</tr>
+<tr>
+<td align="center">COMP1046 OOP</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Atomic:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">courseCode</th>
+<th align="center">courseName</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">INFS 1025</td>
+<td align="center">DDWT</td>
+</tr>
+<tr>
+<td align="center">INFS1025</td>
+<td align="center">SRUX</td>
+</tr>
+<tr>
+<td align="center">COMP1046</td>
+<td align="center">OOP</td>
+</tr>
+</tbody>
+</table>
+<ol start="3">
+<li><strong>Candidate Keys must be found.</strong></li>
+</ol>
+<p>A Candidate Key is the minimum number of attributes in a table required to
+uniquely identify each tuple. A given table may have more than one CK, but only
+one can be selected as the Primary Key. All other CKs can be
+implemented as Unique Keys.</p>
+<ol start="4">
+<li><strong>Each table contains relevant data to the candidate keys.</strong></li>
+</ol>
+<p>All data in a table should relate back to the
+candidate keys (e.g. a table should contain data about only one type of object).</p>
+<p>For example:</p>
+<table>
+<thead>
+<tr>
+<th align="center">title</th>
+<th align="center">format</th>
+<th align="center">author</th>
+<th align="center">genreID</th>
+<th align="center">genre</th>
+<th align="center">price</th>
+<th align="center">publisher</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">SQL for Dummies</td>
+<td align="center">E-book</td>
+<td align="center">Taylor A</td>
+<td align="center">1</td>
+<td align="center">SQL</td>
+<td align="center">49.99</td>
+<td align="center">Wiley</td>
+</tr>
+</tbody>
+</table>
+<p>So, in the given example, we can identify many different objects. Thus, we can
+separate them into their own relations, and where necessary, create new CKs
+(such as a Surrogate Key) to help uniquely identify the records in each new
+relation:</p>
+<p><em>Book</em></p>
+<table>
+<thead>
+<tr>
+<th align="center">title</th>
+<th align="center">authorID</th>
+<th align="center">genreID</th>
+<th align="center">publisherID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">SQL for Dummies</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p><em>Publisher</em></p>
+<table>
+<thead>
+<tr>
+<th align="center">publisherID</th>
+<th align="center">publisher</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">Wiley</td>
+</tr>
+</tbody>
+</table>
+<p><em>Author</em></p>
+<table>
+<thead>
+<tr>
+<th align="center">authorID</th>
+<th align="center">author</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">Taylor A</td>
+</tr>
+</tbody>
+</table>
+<p><em>Format</em></p>
+<table>
+<thead>
+<tr>
+<th align="center">formatID</th>
+<th align="center">format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">E-book</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">Paperback</td>
+</tr>
+</tbody>
+</table>
+<p><em>BookFormat</em></p>
+<table>
+<thead>
+<tr>
+<th align="center">title</th>
+<th align="center">formatID</th>
+<th align="center">price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">SQL for Dummies</td>
+<td align="center">1</td>
+<td align="center">32.99</td>
+</tr>
+<tr>
+<td align="center">SQL for Dummies</td>
+<td align="center">2</td>
+<td align="center">49.95</td>
+</tr>
+</tbody>
+</table>
+
+  </article>
+
+  <br/>
+
+  
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "tan-duc-mai" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
+  
+</section>
+
+      </div>
+      
+    </main>
+
+    
+
+  <script src="/js/app.js"></script>
+  
+  </body>
+</html>

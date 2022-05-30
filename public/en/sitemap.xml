@@ -3,13 +3,68 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://tanducmai.com/posts/database-sql-stored-procedures/</loc>
+    <loc>https://tanducmai.com/categories/</loc>
+    <lastmod>2022-04-05T17:34:07+09:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://tanducmai.com/ja/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tanducmai.com/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/tags/database/</loc>
+    <lastmod>2022-04-05T17:34:07+09:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/categories/database/</loc>
+    <lastmod>2022-04-05T17:34:07+09:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/posts/database/sql/database-sql-stored-procedures/</loc>
+    <lastmod>2022-04-05T17:34:07+09:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/tags/dbms/</loc>
+    <lastmod>2022-04-05T17:34:07+09:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/tags/intermediate/</loc>
     <lastmod>2022-04-05T17:34:07+09:30</lastmod>
   </url>
   
   <url>
     <loc>https://tanducmai.com/posts/</loc>
     <lastmod>2022-04-05T17:34:07+09:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/tags/sql/</loc>
+    <lastmod>2022-04-05T17:34:07+09:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/tags/</loc>
+    <lastmod>2022-04-05T17:34:07+09:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://tanducmai.com/ja/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tanducmai.com/tags/"
+                />
   </url>
   
   <url>
@@ -28,72 +83,17 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/categories/</loc>
-    <lastmod>2022-04-04T17:33:58+09:30</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://tanducmai.com/ja/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tanducmai.com/categories/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/tags/database/</loc>
+    <loc>https://tanducmai.com/posts/database/sql/database-sql-views/</loc>
     <lastmod>2022-04-04T17:33:58+09:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/categories/database/</loc>
-    <lastmod>2022-04-04T17:33:58+09:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/posts/database-sql-views/</loc>
-    <lastmod>2022-04-04T17:33:58+09:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/tags/dbms/</loc>
-    <lastmod>2022-04-04T17:33:58+09:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/tags/intermediate/</loc>
-    <lastmod>2022-04-04T17:33:58+09:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/tags/sql/</loc>
-    <lastmod>2022-04-04T17:33:58+09:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/tags/</loc>
-    <lastmod>2022-04-04T17:33:58+09:30</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://tanducmai.com/ja/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tanducmai.com/tags/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/posts/database-sql-control-statements/</loc>
+    <loc>https://tanducmai.com/posts/database/sql/database-sql-control-statements/</loc>
     <lastmod>2022-03-29T17:37:46+10:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database-sql-common-functions/</loc>
+    <loc>https://tanducmai.com/posts/database/sql/database-sql-common-functions/</loc>
     <lastmod>2022-03-28T17:37:46+10:30</lastmod>
   </url>
   
@@ -113,42 +113,42 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/python-oop-class-variables/</loc>
+    <loc>https://tanducmai.com/posts/python/oop/python-oop-class-variables/</loc>
     <lastmod>2022-03-23T09:51:54+10:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database-sql-aggregate-functions/</loc>
+    <loc>https://tanducmai.com/posts/database/sql/database-sql-aggregate-functions/</loc>
     <lastmod>2022-03-22T17:34:33+10:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database-sql-set-operators/</loc>
+    <loc>https://tanducmai.com/posts/database/sql/database-sql-set-operators/</loc>
     <lastmod>2022-03-21T10:34:07+10:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database-sql-nested-queries/</loc>
+    <loc>https://tanducmai.com/posts/database/sql/database-sql-nested-queries/</loc>
     <lastmod>2022-03-16T16:15:06+10:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/python-oop-inheritance/</loc>
+    <loc>https://tanducmai.com/posts/python/oop/python-oop-inheritance/</loc>
     <lastmod>2022-03-16T10:23:54+10:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database-sql-table-joins/</loc>
+    <loc>https://tanducmai.com/posts/database/sql/database-sql-table-joins/</loc>
     <lastmod>2022-03-15T15:38:40+10:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database-sql-query-writing/</loc>
+    <loc>https://tanducmai.com/posts/database/sql/database-sql-query-writing/</loc>
     <lastmod>2022-03-14T22:16:08+10:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database-sql-data-manipulation/</loc>
+    <loc>https://tanducmai.com/posts/database/sql/database-sql-data-manipulation/</loc>
     <lastmod>2022-03-11T11:53:55+10:30</lastmod>
   </url>
   
@@ -158,7 +158,7 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database-sql-table-constraints/</loc>
+    <loc>https://tanducmai.com/posts/database/sql/database-sql-table-constraints/</loc>
     <lastmod>2022-03-10T23:40:53+10:30</lastmod>
   </url>
   
@@ -173,12 +173,12 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database-physical-design/</loc>
+    <loc>https://tanducmai.com/posts/database/database-physical-design/</loc>
     <lastmod>2022-03-09T23:40:53+10:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database-logical-design/</loc>
+    <loc>https://tanducmai.com/posts/database/database-logical-design/</loc>
     <lastmod>2022-03-08T23:19:58+10:30</lastmod>
   </url>
   
@@ -203,7 +203,7 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database-conceptual-design/</loc>
+    <loc>https://tanducmai.com/posts/database/database-conceptual-design/</loc>
     <lastmod>2022-03-07T19:30:29+10:30</lastmod>
   </url>
   
@@ -213,7 +213,7 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database-normalisation/</loc>
+    <loc>https://tanducmai.com/posts/database/database-normalisation/</loc>
     <lastmod>2022-02-26T01:05:26+10:30</lastmod>
   </url>
   
@@ -228,7 +228,7 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database-identify-the-primary-key/</loc>
+    <loc>https://tanducmai.com/posts/database/database-identify-the-primary-key/</loc>
     <lastmod>2022-02-25T17:54:53+10:30</lastmod>
   </url>
   
@@ -238,7 +238,7 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database-key-concepts/</loc>
+    <loc>https://tanducmai.com/posts/database/database-key-concepts/</loc>
     <lastmod>2022-02-24T21:29:52+10:30</lastmod>
   </url>
   
@@ -248,7 +248,7 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database-relational-concepts/</loc>
+    <loc>https://tanducmai.com/posts/database/database-relational-concepts/</loc>
     <lastmod>2022-02-23T07:58:02+10:30</lastmod>
   </url>
   
@@ -258,12 +258,12 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database-why/</loc>
+    <loc>https://tanducmai.com/posts/database/database-why/</loc>
     <lastmod>2022-02-22T06:23:37+10:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database-fundamentals/</loc>
+    <loc>https://tanducmai.com/posts/database/database-fundamentals/</loc>
     <lastmod>2022-02-21T05:11:42+10:30</lastmod>
   </url>
   
@@ -278,7 +278,7 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/python-oop-class-fundamentals/</loc>
+    <loc>https://tanducmai.com/posts/python/oop/python-oop-class-fundamentals/</loc>
     <lastmod>2021-12-13T00:00:00+10:30</lastmod>
   </url>
   
@@ -288,7 +288,7 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/git-branch/</loc>
+    <loc>https://tanducmai.com/posts/git/branch/</loc>
     <lastmod>2021-11-22T17:13:05+10:30</lastmod>
   </url>
   
@@ -308,7 +308,7 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/python-naming-conventions/</loc>
+    <loc>https://tanducmai.com/posts/python/python-naming-conventions/</loc>
     <lastmod>2021-10-11T00:00:00+00:00</lastmod>
   </url>
   
@@ -343,7 +343,7 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/projects/solar-system-turtle-graphics/</loc>
+    <loc>https://tanducmai.com/projects/turtle-graphics/solar-system-turtle-graphics/</loc>
     <lastmod>2021-08-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -353,12 +353,12 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/projects/olympic-medals-turtle-graphics/</loc>
+    <loc>https://tanducmai.com/projects/turtle-graphics/olympic-medals-turtle-graphics/</loc>
     <lastmod>2021-08-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/projects/city-life-turtle-graphics/</loc>
+    <loc>https://tanducmai.com/projects/turtle-graphics/city-life-turtle-graphics/</loc>
     <lastmod>2021-07-22T00:00:00+00:00</lastmod>
   </url>
   

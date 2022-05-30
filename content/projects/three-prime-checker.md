@@ -2,7 +2,7 @@
 date = "2021-08-12"
 title = "Three Different Prime Checker"
 slug = "three-prime-checker"
-thumbnail = "images/three-prime-checker.jpg"
+thumbnail = "images/python/projects/three-prime-checker.jpg"
 description = "Three Different Prime Checker"
 tags = [
     "python",

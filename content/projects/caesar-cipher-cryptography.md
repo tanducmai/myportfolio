@@ -2,7 +2,7 @@
 date = "2021-10-10"
 title = "Caesar Cipher Cryptography"
 slug = "caesar-cipher-cryptography"
-thumbnail = "images/caesar-cipher/printable-ascii.png"
+thumbnail = "images/python/projects/caesar-cipher/printable-ascii.png"
 description = "Caesar Cipher Cryptography"
 tags = [
     "python",
@@ -36,7 +36,8 @@ Caesar](http://en.wikipedia.org/wiki/Caesar_cipher), the Roman Emperor. This
 method takes each character in a message and replaces it with one which is a
 certain distance (offset) along the alphabet from it.
 
-For example: ![Example of the technique](/images/caesar-cipher/example.png)
+For example: ![Example of the
+technique](/images/python/projects/caesar-cipher/example.png)
 
 If the offset is 3 then A becomes D, B becomes E, C becomes F etc.
 
@@ -103,7 +104,8 @@ enterered, after the encryption, the result should be 'bcH'. Now that it is
 working, use the *randint()* function from the *random* module to make the
 offset a random number between 32 and 126.
 
-![Printable ASCII character set](/images/caesar-cipher/printable-ascii.png)
+![Printable ASCII character
+set](/images/python/projects/caesar-cipher/printable-ascii.png)
 
 The program only work with the printable ASCII character set. That is, all the
 characters from ASCII 32 (Space) to ASCII 126 (~). When the ASCII value of the

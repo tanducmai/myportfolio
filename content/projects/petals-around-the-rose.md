@@ -2,6 +2,7 @@
 date = "2021-10-06"
 title = "Petals Around The Rose"
 slug = "petals-around-the-rose"
+thumbnail = "images/python/projects/petals/thumbnail.png"
 description = "Credit Card Validator"
 tags = [
     "python",
@@ -75,28 +76,28 @@ Potentate of the Rose.
 Would you like to play Petals Around the Rose [y|n]? y
 ```
 
-![First roll](/images/petals/1.png)
+![First roll](/images/python/projects/petals/1.png)
 
 ```text
 Please enter your guess for the roll: 8
 Well done! You guessed it!
 ```
 
-![Second roll](/images/petals/2.png)
+![Second roll](/images/python/projects/petals/2.png)
 
 ```text
 Please enter your guess for the roll: 8
 Well done! You guessed it!
 ```
 
-![Third roll](/images/petals/3.png)
+![Third roll](/images/python/projects/petals/3.png)
 
 ```text
 Please enter your guess for the roll: 2
 Well done! You guessed it!
 ```
 
-![Fourth roll](/images/petals/4.png)
+![Fourth roll](/images/python/projects/petals/4.png)
 
 ```text
 Please enter your guess for the roll: 8
@@ -106,7 +107,7 @@ Make sure you don't tell anyone!
 Do you want to keep playing [y|n]? y
 ```
 
-![Fifth roll](/images/petals/5.png)
+![Fifth roll](/images/python/projects/petals/5.png)
 
 ```text
 Please enter your guess for the roll: 3

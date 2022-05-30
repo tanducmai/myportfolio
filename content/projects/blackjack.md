@@ -2,7 +2,7 @@
 date = "2021-12-10"
 title = "Blackjack"
 slug = "blackjack"
-thumbnail = "images/blackjack.png"
+thumbnail = "images/python/projects/blackjack.png"
 description = "Blackjack"
 tags = [
     "python",
@@ -51,7 +51,7 @@ average wins will be added to a text file.  If their win percentage is higher
 than all other scores in the file, the game will display, "New High Score!", and
 display a table containing all players and their recorded scores.
 
-![Example](/images/blackjack.png)
+![Example](/images/python/projects/blackjack.png)
 
 ### Algorithm
 

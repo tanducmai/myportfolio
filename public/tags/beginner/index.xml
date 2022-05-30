@@ -1,25 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>beginner on Tan Duc Mai</title>
-    <link>https://tanducmai.com/tags/beginner/</link>
-    <description>Recent content in beginner on Tan Duc Mai</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 11 Oct 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://tanducmai.com/tags/beginner/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Python - Naming Conventions</title>
-      <link>https://tanducmai.com/posts/python-naming-conventions/</link>
-      <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://tanducmai.com/posts/python-naming-conventions/</guid>
-      <description>Table of Contents  Rules The Python Keywords Use of Underscores Readability Matters Style of Naming Variables Sample Variable Names Reference Further Research  Rules Although you are allowed to make up your own names for variables, you must follow these rules:
-1. You cannot use one of Python&amp;#39;s keywords as a variable name2. A variable or function name cannot contain spaces, underscore characters &amp;#39;_&amp;#39;can be used instead.3.</description>
-    </item>
-    
-  </channel>
-</rss>
