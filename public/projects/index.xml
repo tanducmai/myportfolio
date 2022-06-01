@@ -6,10 +6,22 @@
     <description>Recent content in Projects on Tan Duc Mai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 17 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jun 2022 00:09:35 +0930</lastBuildDate>
     
 	<atom:link href="https://tanducmai.com/projects/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Computer Shop Management</title>
+      <link>https://tanducmai.com/projects/computer-shop-management/</link>
+      <pubDate>Thu, 02 Jun 2022 00:09:35 +0930</pubDate>
+      
+      <guid>https://tanducmai.com/projects/computer-shop-management/</guid>
+      <description>→ GitHub Table of Contents  Aim Libraries File user_management.py File test_driver.py Project Organisation  Aim Management of a computer shop, with various stocks stored in the database which allows users to create a Wishlist.
+Libraries Note: run pip install -r requirements.txt to get all the required libraries.
+Throughout the project, I will use five Python modules, two of which are of the package.
+Standard Library Imports  abc &amp;lt;- Implement abstract classes for ComputerPart.</description>
+    </item>
     
     <item>
       <title>Credit Card Validator</title>

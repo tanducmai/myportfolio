@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://tanducmai.com/categories/</loc>
-    <lastmod>2022-04-05T17:34:07+09:30</lastmod>
+    <lastmod>2022-06-02T00:09:35+09:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -14,6 +14,56 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://tanducmai.com/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/projects/computer-shop-management/</loc>
+    <lastmod>2022-06-02T00:09:35+09:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/projects/</loc>
+    <lastmod>2022-06-02T00:09:35+09:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/tags/python/</loc>
+    <lastmod>2022-06-02T00:09:35+09:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/categories/python/</loc>
+    <lastmod>2022-06-02T00:09:35+09:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/tags/</loc>
+    <lastmod>2022-06-02T00:09:35+09:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://tanducmai.com/ja/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tanducmai.com/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/</loc>
+    <lastmod>2022-06-02T00:09:35+09:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://tanducmai.com/ja/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tanducmai.com/"
                 />
   </url>
   
@@ -53,36 +103,6 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/tags/</loc>
-    <lastmod>2022-04-05T17:34:07+09:30</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://tanducmai.com/ja/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tanducmai.com/tags/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/</loc>
-    <lastmod>2022-04-05T17:34:07+09:30</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://tanducmai.com/ja/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tanducmai.com/"
-                />
-  </url>
-  
-  <url>
     <loc>https://tanducmai.com/posts/database/sql/database-sql-views/</loc>
     <lastmod>2022-04-04T17:33:58+09:30</lastmod>
   </url>
@@ -99,16 +119,6 @@
   
   <url>
     <loc>https://tanducmai.com/tags/oop/</loc>
-    <lastmod>2022-03-23T09:51:54+10:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/tags/python/</loc>
-    <lastmod>2022-03-23T09:51:54+10:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/categories/python/</loc>
     <lastmod>2022-03-23T09:51:54+10:30</lastmod>
   </url>
   
@@ -269,11 +279,6 @@
   
   <url>
     <loc>https://tanducmai.com/projects/credit-card-validator/</loc>
-    <lastmod>2021-12-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/projects/</loc>
     <lastmod>2021-12-17T00:00:00+00:00</lastmod>
   </url>
   
