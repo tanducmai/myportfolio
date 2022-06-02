@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Tan Duc Mai">
+    <meta name="description" content="https://tanducmai.com">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta property="og:site_name" content="Tan Duc Mai">
+    <meta property="og:title" content="
+  Network - Components - Tan Duc Mai
+">
+    <meta property="og:description" content="Network - Components">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tanducmai.com/posts/network/introduction-to-networks/explore-the-network/network-components/">
+    <meta property="og:image" content="https://tanducmai.comimages/tn.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://tanducmai.com/posts/network/introduction-to-networks/explore-the-network/network-components/">
+    <meta name="twitter:image" content="https://tanducmai.comimages/tn.png">
+
+    <base href="https://tanducmai.com/posts/network/introduction-to-networks/explore-the-network/network-components/">
+    <title>
+  Network - Components - Tan Duc Mai
+</title>
+
+    <link rel="canonical" href="https://tanducmai.com/posts/network/introduction-to-networks/explore-the-network/network-components/">
+    
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="/css/normalize.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    
+      <link rel="alternate" href="https://tanducmai.com/index.xml" type="application/rss+xml" title="Tan Duc Mai">
+      <link href="https://tanducmai.com/index.xml" rel="feed" type="application/rss+xml" title="Tan Duc Mai" />
+    
+
+    <meta name="generator" content="Hugo 0.68.3" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">Tan Duc Mai</a>
+    <input type="checkbox" id="menu-control"/>
+    <label class="menu-mobile  float-right " for="menu-control">
+      <span class="btn-mobile  float-right ">&#9776;</span>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/about">About</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/posts">Blog</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/projects">Portfolio</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/contact">Contact</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            <li class= " mobile-menu-lang-separator-centered ">
+              <hr />
+            </li>
+          
+          
+            
+          
+            
+              
+                
+                  <li class="multilingual-separator">
+                    <p>|</p>
+                  </li>
+                
+                
+              
+              <li class="navigation-item  align-center ">
+                <a href="https://tanducmai.com/ja/">Japanese</a>
+              </li>
+            
+          
+        
+      </ul>
+    </label>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+  <article>
+    <header>
+      <h1 class="title">Network - Components</h1>
+      <h2 class="date">October 12, 2021</h2>
+
+      
+    </header>
+
+    <h3 id="table-of-contents">Table of Contents</h3>
+<ol>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#end-devices">End Devices</a>
+<ol>
+<li><a href="#examples">Examples</a></li>
+</ol>
+</li>
+<li><a href="#intermediary-network-devices">Intermediary Network Devices</a>
+<ol>
+<li><a href="#examples-1">Examples</a></li>
+<li><a href="#functions">Functions</a></li>
+</ol>
+</li>
+<li><a href="#network-media">Network Media</a></li>
+<li><a href="#other-terminologies">Other Terminologies</a></li>
+<li><a href="#topology-diagrams">Topology Diagrams</a></li>
+</ol>
+<h3 id="overview">Overview</h3>
+<p>The path that a message takes from source to destination can be as simple as a
+single cable connecting one computer to another, or as complex as a collection
+of networks that literally spans the globe. This network infrastructure provides
+the stable and reliable channel over which these communications occur.</p>
+<p>The network infrastructure contains three categories of network components:</p>
+<ol>
+<li>Devices</li>
+<li>Media</li>
+<li>Services</li>
+</ol>
+<p><strong>Devices</strong> and <strong>media</strong> are the physical elements, or hardware, of the
+network. Hardware is often the visible components of the network platform such
+as a laptop, PC, switch, router, wireless access point, or the cabling used to
+connect the devices.</p>
+<p><strong>Services</strong> include many of the common network applications people use every
+day, like email hosting services and web hosting services. Processes provide the
+functionality that directs and moves the messages through the network. Processes
+are less obvious to us but are critical to the operation of networks.</p>
+<h3 id="end-devices">End Devices</h3>
+<pre><code>Data originates with an end device, flows through the network, and arrives
+at another end device.
+</code></pre>
+<p>The network devices that people are most familiar with are called end devices
+(since they are the end of the network).</p>
+<p>In general, they allow us to interface with the network.</p>
+<p>An end device is either the source or destination of a message transmitted over
+the network.</p>
+<p>To distinguish one end device from another, each end device on a
+network is identified by an address - <em>IP address</em>.</p>
+<p>When an end device initiates communication, it uses the address of the
+destination end device to specify where the message should be sent.</p>
+<h5 id="examples">Examples</h5>
+<ul>
+<li>Computers (work stations, laptops, file servers, web servers)</li>
+<li>Network printers</li>
+<li>VoIP phones</li>
+<li>Telepresence endpoint</li>
+<li>Security cameras</li>
+<li>Mobile handheld devices (such as smart phones, tablets, PDAs, and wireless
+debit / credit card readers and barcode scanners)</li>
+</ul>
+<h3 id="intermediary-network-devices">Intermediary Network Devices</h3>
+<pre><code>connect the individual end devices to the network and can connect multiple
+individual networks to form an internetwork.
+</code></pre>
+<p>These intermediary devices provide connectivity and ensure that data flows
+across the network.</p>
+<p>Intermediary devices use the destination end device address, in conjunction with
+information about the network interconnections, to determine the path that
+messages should take through the network.</p>
+<p>Intermediary devices are not all the same. Some work inside the LAN performing
+switching functions, whilst others help route messages between networks.</p>
+<h5 id="examples-1">Examples</h5>
+<table>
+<thead>
+<tr>
+<th>Device Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Network access devices</td>
+<td>Connect end users to their network.<br />Examples are hubs, switches, and wireless access points.</td>
+</tr>
+<tr>
+<td>Internetwork devices</td>
+<td>Connect one network to one or more other networks.<br />Routers are the main example.</td>
+</tr>
+<tr>
+<td>Communication servers</td>
+<td>Route services such as IPTV and wireless broadband. Modems</td>
+</tr>
+<tr>
+<td>Security devices</td>
+<td>Secure the network with devices such as firewalls that analyse traffic exiting and entering networks.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="functions">Functions</h5>
+<p>Intermediary network devices perform some or all of these functions:</p>
+<ul>
+<li>Regenerate and retransmit data signals</li>
+<li>Maintain information about what pathways exist through the network and
+internetwork</li>
+<li>Notify other devices of errors and communication failures</li>
+<li>Direct data along alternate pathways when there is a link failure</li>
+<li>Classify and direct messages according to Quality of Service (QoS) priorities</li>
+<li>Permit or deny the flow of data, based on security settings</li>
+</ul>
+<h3 id="network-media">Network Media</h3>
+<p>Communication across a network is carried on a <strong>medium</strong> which provides the
+channel over which the message travels from source to destination.</p>
+<p>Modern networks primarily use three types of media to interconnect devices and
+to provide the pathway over which data can be transmitted. These media are:</p>
+<ol>
+<li>
+<p><strong>Metallic wires within cables</strong> - data is encoded into <em>electrical impulses</em>
+and therefore can be affected by outside interference.</p>
+<ul>
+<li>cheap and common for short distances</li>
+<li>e.g., twisted-pair cable usually used as LAN media</li>
+</ul>
+</li>
+<li>
+<p><strong>Glass or plastic fibers (fiber optic cable)</strong> - data is encoded as <em>pulses
+of light</em> and therefore not affected by outside interference.</p>
+<ul>
+<li>transmit data at extremely fast speeds</li>
+<li>good for long distances</li>
+<li>e.g., glass or plastic fibers in a vinyl coating usually used for long
+runs in a LAN and as a trunk</li>
+</ul>
+</li>
+<li>
+<p><strong>Wireless transmission</strong> - data is encoded using <em>wavelengths</em> from the
+<em>electromagnetic spectrum</em>.</p>
+<ul>
+<li>connects local users through the air</li>
+<li>wireless networks have decreased throughput compared with wired networks</li>
+</ul>
+</li>
+</ol>
+<p>Different types of network media have different features and benefits. Not all
+network media have the same characteristics, nor are they all appropriate for
+the same purpose.</p>
+<h3 id="other-terminologies">Other Terminologies</h3>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Network Interface Card</td>
+<td>A NIC, or LAN adapter, provides the physical connection to the network at the PC or other end device.<br />The media that are connecting the PC to the networking device, plug directly into the NIC.</td>
+</tr>
+<tr>
+<td>Physical Port</td>
+<td>A connector or outlet on a networking device where the media is connected to an end device or another networking device.</td>
+</tr>
+<tr>
+<td>Interface</td>
+<td>Specialised ports on a networking device that connect to individual networks.<br />Because routers are used to interconnect networks, the ports on a router are referred to as network interfaces.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="topology-diagrams">Topology Diagrams</h3>
+<pre><code>provide a visual map of how the network is connected.
+</code></pre>
+<p>There are two types of topology diagrams:</p>
+<ol>
+<li>
+<p><strong>Physical topology diagrams</strong> - identify the physical location of
+intermediary devices and cable installation.</p>
+</li>
+<li>
+<p><strong>Logical topology diagrams</strong> - identify devices, ports, and addressing
+scheme.</p>
+</li>
+</ol>
+
+  </article>
+
+  <br/>
+
+  
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "tan-duc-mai" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
+  
+</section>
+
+      </div>
+      
+    </main>
+
+    
+
+  <script src="/js/app.js"></script>
+  
+  </body>
+</html>

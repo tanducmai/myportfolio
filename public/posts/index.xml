@@ -264,6 +264,34 @@ A collection of potentially useful data that models real-world or conceptual obj
     </item>
     
     <item>
+      <title>LANs and WANs</title>
+      <link>https://tanducmai.com/posts/network/introduction-to-networks/explore-the-network/lans-and-wans/</link>
+      <pubDate>Wed, 13 Oct 2021 01:06:11 +0930</pubDate>
+      
+      <guid>https://tanducmai.com/posts/network/introduction-to-networks/explore-the-network/lans-and-wans/</guid>
+      <description>Table of Contents Types of Networks Local Area Networks Wide Area Networks </description>
+    </item>
+    
+    <item>
+      <title>Network - Components</title>
+      <link>https://tanducmai.com/posts/network/introduction-to-networks/explore-the-network/network-components/</link>
+      <pubDate>Tue, 12 Oct 2021 23:07:50 +0930</pubDate>
+      
+      <guid>https://tanducmai.com/posts/network/introduction-to-networks/explore-the-network/network-components/</guid>
+      <description>Table of Contents  Overview End Devices  Examples   Intermediary Network Devices  Examples Functions   Network Media Other Terminologies Topology Diagrams  Overview The path that a message takes from source to destination can be as simple as a single cable connecting one computer to another, or as complex as a collection of networks that literally spans the globe. This network infrastructure provides the stable and reliable channel over which these communications occur.</description>
+    </item>
+    
+    <item>
+      <title>Network - Provide Resources</title>
+      <link>https://tanducmai.com/posts/network/introduction-to-networks/explore-the-network/provide-resources-in-a-network/</link>
+      <pubDate>Mon, 11 Oct 2021 20:54:40 +0930</pubDate>
+      
+      <guid>https://tanducmai.com/posts/network/introduction-to-networks/explore-the-network/provide-resources-in-a-network/</guid>
+      <description>Table of Contents  Network of Many Sizes  Small Home Networks Small Office/Home Office (SOHO) Networks Medium to Large Networks World Wide Networks   Clients and Servers  Host Roles Servers Clients Examples   Peer-to-Peer (P2P) Networking  Network of Many Sizes Networks come in all sizes, ranging from simple networks consisting of two computers to complex ones connecting millions of devices.
+Small Home Networks connect a few computers to one another and to the internet.</description>
+    </item>
+    
+    <item>
       <title>Python - Naming Conventions</title>
       <link>https://tanducmai.com/posts/python/python-naming-conventions/</link>
       <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
