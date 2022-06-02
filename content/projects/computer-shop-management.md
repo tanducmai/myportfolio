@@ -4,7 +4,7 @@ title = "Computer Shop Management"
 slug = "computer-shop-management"
 aliases = "/computer-shop-management/"
 description = "Computer Shop Management"
-thumbnail = "images/python/projects/computer-shop-management"
+thumbnail = "/images/python/projects/computer-shop-management.jpg"
 tags = [
     "python",
 ]
@@ -19,15 +19,21 @@ draft = false
 ### Table of Contents
 
 1. [Aim](#aim)
+1. [UML Design](#uml-design)
 1. [Libraries](#libraries)
-1. [File user_management.py](#file-user_managementpy)
-1. [File test_driver.py](#file-test_driverpy)
+1. [Implementation](#implementation)
+1. [User Management File](#user-management-file)
+1. [Test Driver](#test-driver)
 1. [Project Organisation](#project-organisation)
 
 ### Aim
 
 Management of a computer shop, with various stocks stored in the database which
 allows users to create a Wishlist.
+
+### UML Design
+
+![UML Design](/images/python/projects/computer-shop-management.jpg)
 
 ### Libraries
 
@@ -67,7 +73,7 @@ CommandPrompt is the user interface which interacts with the user, asking user
 questions (derived from the Question class).
 
 
-### File user_management.py
+### User Management File
 
 Store user records (name, email, password) so that each user is distinguished
 and manageable.
@@ -78,19 +84,29 @@ details which will be compared with those stored in the user database.
 Appropriate errors will be raised and handled to allow only authenticated user
 to use the system and control their Wishlist.
 
-### File test_driver.py
+### Test Driver
 
 Use pytest to test various methods of the Partlist class.
 
 ### Project Organisation
 
     ├── README.md
-    ├── UML_diagram.png     <- The diagram showing relationships between classes.
+    ├── UML_design.png      <- The diagram showing relationships between classes.
     ├── database
     │.. ├── database.csv    <- All the parts stored in the system.
     │   ├── receipts        <- All the receipts of customers buying parts from the store.
     │   │   └── henry.csv
     │.. └── users.csv       <- All the users (customers) coming to the store.
+    ├── exceptions          <- All exceptions raised by during the authentication process.
+    │   ├── __init__.py
+    │   ├── auth_exception.py
+    │   ├── email_already_exists.py
+    │   ├── inappropriate_email.py
+    │   ├── invalid_email.py
+    │   ├── invalid_password.py
+    │   ├── invalid_username.py
+    │   ├── password_too_short.py
+    │   └── username_already_exists.py
     ├── main.py             <- The main code of the system.
     ├── requirements.txt    <- The requirements file for reproducing the analysis environment.
     ├── test_driver.py      <- Test methods of the Partlist class.

@@ -119,14 +119,18 @@
 <h3 id="table-of-contents">Table of Contents</h3>
 <ol>
 <li><a href="#aim">Aim</a></li>
+<li><a href="#uml-design">UML Design</a></li>
 <li><a href="#libraries">Libraries</a></li>
-<li><a href="#file-user_managementpy">File user_management.py</a></li>
-<li><a href="#file-test_driverpy">File test_driver.py</a></li>
+<li><a href="#implementation">Implementation</a></li>
+<li><a href="#user-management-file">User Management File</a></li>
+<li><a href="#test-driver">Test Driver</a></li>
 <li><a href="#project-organisation">Project Organisation</a></li>
 </ol>
 <h3 id="aim">Aim</h3>
 <p>Management of a computer shop, with various stocks stored in the database which
 allows users to create a Wishlist.</p>
+<h3 id="uml-design">UML Design</h3>
+<p><img src="UML_design.png" alt="UML Design"></p>
 <h3 id="libraries">Libraries</h3>
 <p>Note: run pip install -r requirements.txt to get all the required libraries.</p>
 <p>Throughout the project, I will use five Python modules, two of which are of the
@@ -156,23 +160,33 @@ namely CPU, Graphics Card, Memory, and Storage.</p>
 additional attribute to store the username.</p>
 <p>CommandPrompt is the user interface which interacts with the user, asking user
 questions (derived from the Question class).</p>
-<h3 id="file-user_managementpy">File user_management.py</h3>
+<h3 id="user-management-file">User Management File</h3>
 <p>Store user records (name, email, password) so that each user is distinguished
 and manageable.</p>
 <p>Every time a user creates a Wishlist, they will be asked to provide login
 details which will be compared with those stored in the user database.</p>
 <p>Appropriate errors will be raised and handled to allow only authenticated user
 to use the system and control their Wishlist.</p>
-<h3 id="file-test_driverpy">File test_driver.py</h3>
+<h3 id="test-driver">Test Driver</h3>
 <p>Use pytest to test various methods of the Partlist class.</p>
 <h3 id="project-organisation">Project Organisation</h3>
 <pre><code>├── README.md
-├── UML_diagram.png     &lt;- The diagram showing relationships between classes.
+├── UML_design.png      &lt;- The diagram showing relationships between classes.
 ├── database
 │.. ├── database.csv    &lt;- All the parts stored in the system.
 │   ├── receipts        &lt;- All the receipts of customers buying parts from the store.
 │   │   └── henry.csv
 │.. └── users.csv       &lt;- All the users (customers) coming to the store.
+├── exceptions          &lt;- All exceptions raised by during the authentication process.
+│   ├── __init__.py
+│   ├── auth_exception.py
+│   ├── email_already_exists.py
+│   ├── inappropriate_email.py
+│   ├── invalid_email.py
+│   ├── invalid_password.py
+│   ├── invalid_username.py
+│   ├── password_too_short.py
+│   └── username_already_exists.py
 ├── main.py             &lt;- The main code of the system.
 ├── requirements.txt    &lt;- The requirements file for reproducing the analysis environment.
 ├── test_driver.py      &lt;- Test methods of the Partlist class.
