@@ -123,17 +123,15 @@ Modern networks primarily use three types of media to interconnect devices and
 to provide the pathway over which data can be transmitted. These media are:
 
 1. **Metallic wires within cables** - data is encoded into *electrical impulses*
-and therefore can be affected by outside interference.
+   and therefore can be affected by outside interference.
     - cheap and common for short distances
     - e.g., twisted-pair cable usually used as LAN media
-
 1. **Glass or plastic fibers (fiber optic cable)** - data is encoded as *pulses
 of light* and therefore not affected by outside interference.
     - transmit data at extremely fast speeds
     - good for long distances
     - e.g., glass or plastic fibers in a vinyl coating usually used for long
       runs in a LAN and as a trunk
-
 1. **Wireless transmission** - data is encoded using *wavelengths* from the
 *electromagnetic spectrum*.
     - connects local users through the air
@@ -158,7 +156,6 @@ the same purpose.
 There are two types of topology diagrams:
 
 1. **Physical topology diagrams** - identify the physical location of
-intermediary devices and cable installation.
-
+   intermediary devices and cable installation.
 1. **Logical topology diagrams** - identify devices, ports, and addressing
-scheme.
+   scheme.
