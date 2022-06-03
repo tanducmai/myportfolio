@@ -22,7 +22,7 @@ draft = false
 1. [UML Design](#uml-design)
 1. [Libraries](#libraries)
 1. [Implementation](#implementation)
-1. [User Management File](#user-management-file)
+1. [Authenticator](#authenticator)
 1. [Test Driver](#test-driver)
 1. [Project Organisation](#project-organisation)
 
@@ -72,8 +72,7 @@ additional attribute to store the username.
 CommandPrompt is the user interface which interacts with the user, asking user
 questions (derived from the Question class).
 
-
-### User Management File
+### Authenticator
 
 Store user records (name, email, password) so that each user is distinguished
 and manageable.
@@ -92,6 +91,7 @@ Use pytest to test various methods of the Partlist class.
 
     ├── README.md
     ├── UML_design.png      <- The diagram showing relationships between classes.
+    ├── authenticator.py  <- Manage user records and perform authentication.
     ├── database
     │.. ├── database.csv    <- All the parts stored in the system.
     │   ├── receipts        <- All the receipts of customers buying parts from the store.
@@ -109,5 +109,4 @@ Use pytest to test various methods of the Partlist class.
     │   └── username_already_exists.py
     ├── main.py             <- The main code of the system.
     ├── requirements.txt    <- The requirements file for reproducing the analysis environment.
-    ├── test_driver.py      <- Test methods of the Partlist class.
-    └── user_management.py  <- Manage user records and perform authentication.
+    └── test_driver.py      <- Test methods of the Partlist class.
