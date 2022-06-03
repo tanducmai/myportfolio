@@ -122,7 +122,7 @@
 <li><a href="#uml-design">UML Design</a></li>
 <li><a href="#libraries">Libraries</a></li>
 <li><a href="#implementation">Implementation</a></li>
-<li><a href="#user-management-file">User Management File</a></li>
+<li><a href="#authenticator">Authenticator</a></li>
 <li><a href="#test-driver">Test Driver</a></li>
 <li><a href="#project-organisation">Project Organisation</a></li>
 </ol>
@@ -133,23 +133,24 @@ allows users to create a Wishlist.</p>
 <p><img src="/images/python/projects/computer-shop-management.jpg" alt="UML Design"></p>
 <h3 id="libraries">Libraries</h3>
 <p>Note: run pip install -r requirements.txt to get all the required libraries.</p>
-<p>Throughout the project, I will use five Python modules, two of which are of the
-package.</p>
+<p>Throughout the project, I will use sever standard modules, three third party
+ones which require installation via pip.</p>
 <h5 id="standard-library-imports">Standard Library Imports</h5>
 <ol>
 <li>abc                     &lt;- Implement abstract classes for ComputerPart.</li>
 <li>collections             &lt;- Call a factory function to supply missing values.</li>
+<li>csv                     &lt;- Read, write, and append to csv files.</li>
 <li>getpass                 &lt;- Hidden password as user types.</li>
 <li>hashlib                 &lt;- Encode user&rsquo;s password stored in the database.</li>
 <li>random                  &lt;- Randomly pick out an item from a list/tuple.</li>
-<li>re                      &lt;- Perfom regular expression to validate emails.</li>
+<li>re                      &lt;- Perform regular expression to validate emails.</li>
 </ol>
 <h5 id="related-third-party-imports">Related Third Party Imports</h5>
-<ol start="7">
+<ol start="8">
 <li>icontract               &lt;- Implement design-by-contract.</li>
 <li>rich.print              &lt;- Override print() built-in method to colourise
 whatever is printed.</li>
-<li>rich.console.Console    &lt;- Called using Console().print instead of print to
+<li>rich.console.Console   &lt;- Called using Console().print instead of print to
 give special types for printed text</li>
 </ol>
 <h3 id="implementation">Implementation</h3>
@@ -160,7 +161,7 @@ namely CPU, Graphics Card, Memory, and Storage.</p>
 additional attribute to store the username.</p>
 <p>CommandPrompt is the user interface which interacts with the user, asking user
 questions (derived from the Question class).</p>
-<h3 id="user-management-file">User Management File</h3>
+<h3 id="authenticator">Authenticator</h3>
 <p>Store user records (name, email, password) so that each user is distinguished
 and manageable.</p>
 <p>Every time a user creates a Wishlist, they will be asked to provide login
@@ -172,6 +173,7 @@ to use the system and control their Wishlist.</p>
 <h3 id="project-organisation">Project Organisation</h3>
 <pre><code>├── README.md
 ├── UML_design.png      &lt;- The diagram showing relationships between classes.
+├── authenticator.py  &lt;- Manage user records and perform authentication.
 ├── database
 │.. ├── database.csv    &lt;- All the parts stored in the system.
 │   ├── receipts        &lt;- All the receipts of customers buying parts from the store.
@@ -189,8 +191,7 @@ to use the system and control their Wishlist.</p>
 │   └── username_already_exists.py
 ├── main.py             &lt;- The main code of the system.
 ├── requirements.txt    &lt;- The requirements file for reproducing the analysis environment.
-├── test_driver.py      &lt;- Test methods of the Partlist class.
-└── user_management.py  &lt;- Manage user records and perform authentication.
+└── test_driver.py      &lt;- Test methods of the Partlist class.
 </code></pre>
 
   </article>
