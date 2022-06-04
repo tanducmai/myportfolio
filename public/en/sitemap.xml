@@ -18,12 +18,12 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/projects/computer-shop-management/</loc>
+    <loc>https://tanducmai.com/project/computer-shop-management/</loc>
     <lastmod>2022-04-13T00:09:35+09:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/projects/</loc>
+    <loc>https://tanducmai.com/project/</loc>
     <lastmod>2022-04-13T00:09:35+09:30</lastmod>
   </url>
   
@@ -68,6 +68,11 @@
   </url>
   
   <url>
+    <loc>https://tanducmai.com/blog/</loc>
+    <lastmod>2022-04-05T17:34:07+09:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://tanducmai.com/tags/database/</loc>
     <lastmod>2022-04-05T17:34:07+09:30</lastmod>
   </url>
@@ -78,7 +83,7 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database/sql/database-sql-stored-procedures/</loc>
+    <loc>https://tanducmai.com/blog/database/sql/database-sql-stored-procedures/</loc>
     <lastmod>2022-04-05T17:34:07+09:30</lastmod>
   </url>
   
@@ -93,27 +98,22 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/</loc>
-    <lastmod>2022-04-05T17:34:07+09:30</lastmod>
-  </url>
-  
-  <url>
     <loc>https://tanducmai.com/tags/sql/</loc>
     <lastmod>2022-04-05T17:34:07+09:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database/sql/database-sql-views/</loc>
+    <loc>https://tanducmai.com/blog/database/sql/database-sql-views/</loc>
     <lastmod>2022-04-04T17:33:58+09:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database/sql/database-sql-control-statements/</loc>
+    <loc>https://tanducmai.com/blog/database/sql/database-sql-control-statements/</loc>
     <lastmod>2022-03-29T17:37:46+10:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database/sql/database-sql-common-functions/</loc>
+    <loc>https://tanducmai.com/blog/database/sql/database-sql-common-functions/</loc>
     <lastmod>2022-03-28T17:37:46+10:30</lastmod>
   </url>
   
@@ -123,42 +123,42 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/python/oop/python-oop-class-variables/</loc>
+    <loc>https://tanducmai.com/blog/python/oop/python-oop-class-variables/</loc>
     <lastmod>2022-03-23T09:51:54+10:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database/sql/database-sql-aggregate-functions/</loc>
+    <loc>https://tanducmai.com/blog/database/sql/database-sql-aggregate-functions/</loc>
     <lastmod>2022-03-22T17:34:33+10:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database/sql/database-sql-set-operators/</loc>
+    <loc>https://tanducmai.com/blog/database/sql/database-sql-set-operators/</loc>
     <lastmod>2022-03-21T10:34:07+10:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database/sql/database-sql-nested-queries/</loc>
+    <loc>https://tanducmai.com/blog/database/sql/database-sql-nested-queries/</loc>
     <lastmod>2022-03-16T16:15:06+10:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/python/oop/python-oop-inheritance/</loc>
+    <loc>https://tanducmai.com/blog/python/oop/python-oop-inheritance/</loc>
     <lastmod>2022-03-16T10:23:54+10:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database/sql/database-sql-table-joins/</loc>
+    <loc>https://tanducmai.com/blog/database/sql/database-sql-table-joins/</loc>
     <lastmod>2022-03-15T15:38:40+10:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database/sql/database-sql-query-writing/</loc>
+    <loc>https://tanducmai.com/blog/database/sql/database-sql-query-writing/</loc>
     <lastmod>2022-03-14T22:16:08+10:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database/sql/database-sql-data-manipulation/</loc>
+    <loc>https://tanducmai.com/blog/database/sql/database-sql-data-manipulation/</loc>
     <lastmod>2022-03-11T11:53:55+10:30</lastmod>
   </url>
   
@@ -168,7 +168,7 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database/sql/database-sql-table-constraints/</loc>
+    <loc>https://tanducmai.com/blog/database/sql/database-sql-table-constraints/</loc>
     <lastmod>2022-03-10T23:40:53+10:30</lastmod>
   </url>
   
@@ -183,12 +183,12 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database/database-physical-design/</loc>
+    <loc>https://tanducmai.com/blog/database/database-physical-design/</loc>
     <lastmod>2022-03-09T23:40:53+10:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database/database-logical-design/</loc>
+    <loc>https://tanducmai.com/blog/database/database-logical-design/</loc>
     <lastmod>2022-03-08T23:19:58+10:30</lastmod>
   </url>
   
@@ -213,7 +213,7 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database/database-conceptual-design/</loc>
+    <loc>https://tanducmai.com/blog/database/database-conceptual-design/</loc>
     <lastmod>2022-03-07T19:30:29+10:30</lastmod>
   </url>
   
@@ -223,7 +223,7 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database/database-normalisation/</loc>
+    <loc>https://tanducmai.com/blog/database/database-normalisation/</loc>
     <lastmod>2022-02-26T01:05:26+10:30</lastmod>
   </url>
   
@@ -238,7 +238,7 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database/database-identify-the-primary-key/</loc>
+    <loc>https://tanducmai.com/blog/database/database-identify-the-primary-key/</loc>
     <lastmod>2022-02-25T17:54:53+10:30</lastmod>
   </url>
   
@@ -248,7 +248,7 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database/database-key-concepts/</loc>
+    <loc>https://tanducmai.com/blog/database/database-key-concepts/</loc>
     <lastmod>2022-02-24T21:29:52+10:30</lastmod>
   </url>
   
@@ -258,7 +258,7 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database/database-relational-concepts/</loc>
+    <loc>https://tanducmai.com/blog/database/database-relational-concepts/</loc>
     <lastmod>2022-02-23T07:58:02+10:30</lastmod>
   </url>
   
@@ -268,62 +268,67 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database/database-why/</loc>
+    <loc>https://tanducmai.com/blog/database/database-why/</loc>
     <lastmod>2022-02-22T06:23:37+10:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/database/database-fundamentals/</loc>
+    <loc>https://tanducmai.com/blog/database/database-fundamentals/</loc>
     <lastmod>2022-02-21T05:11:42+10:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/projects/credit-card-validator/</loc>
+    <loc>https://tanducmai.com/project/credit-card-validator/</loc>
     <lastmod>2021-12-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/python/oop/python-oop-class-fundamentals/</loc>
+    <loc>https://tanducmai.com/blog/python/oop/python-oop-class-fundamentals/</loc>
     <lastmod>2021-12-13T00:00:00+10:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/projects/blackjack/</loc>
+    <loc>https://tanducmai.com/project/blackjack/</loc>
     <lastmod>2021-12-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/git/branch/</loc>
+    <loc>https://tanducmai.com/blog/git/branch/</loc>
     <lastmod>2021-11-22T17:13:05+10:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/projects/list-module/</loc>
-    <lastmod>2021-10-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://tanducmai.com/tags/network/</loc>
-    <lastmod>2021-10-13T01:06:11+09:30</lastmod>
+    <lastmod>2021-10-14T15:28:52+09:30</lastmod>
   </url>
   
   <url>
     <loc>https://tanducmai.com/categories/network/</loc>
+    <lastmod>2021-10-14T15:28:52+09:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/blog/network/introduction-to-networks/explore-the-network/reliable-network/</loc>
+    <lastmod>2021-10-14T15:28:52+09:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/project/list-module/</loc>
+    <lastmod>2021-10-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/blog/network/introduction-to-networks/explore-the-network/network-lans-wans-internet/</loc>
     <lastmod>2021-10-13T01:06:11+09:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/network/introduction-to-networks/explore-the-network/network-lans-wans-internet/</loc>
-    <lastmod>2021-10-13T01:06:11+09:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/posts/network/introduction-to-networks/explore-the-network/network-components/</loc>
+    <loc>https://tanducmai.com/blog/network/introduction-to-networks/explore-the-network/network-components/</loc>
     <lastmod>2021-10-12T23:07:50+09:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/network/introduction-to-networks/explore-the-network/provide-resources-in-a-network/</loc>
+    <loc>https://tanducmai.com/blog/network/introduction-to-networks/explore-the-network/provide-resources-in-a-network/</loc>
     <lastmod>2021-10-11T20:54:40+09:30</lastmod>
   </url>
   
@@ -338,7 +343,7 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/posts/python/python-naming-conventions/</loc>
+    <loc>https://tanducmai.com/blog/python/python-naming-conventions/</loc>
     <lastmod>2021-10-11T00:00:00+00:00</lastmod>
   </url>
   
@@ -353,12 +358,12 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/projects/caesar-cipher-cryptography/</loc>
+    <loc>https://tanducmai.com/project/caesar-cipher-cryptography/</loc>
     <lastmod>2021-10-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/projects/petals-around-the-rose/</loc>
+    <loc>https://tanducmai.com/project/petals-around-the-rose/</loc>
     <lastmod>2021-10-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -373,27 +378,27 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/projects/turtle-graphics/solar-system-turtle-graphics/</loc>
+    <loc>https://tanducmai.com/project/turtle-graphics/solar-system-turtle-graphics/</loc>
     <lastmod>2021-08-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/projects/three-prime-checker/</loc>
+    <loc>https://tanducmai.com/project/three-prime-checker/</loc>
     <lastmod>2021-08-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/projects/turtle-graphics/olympic-medals-turtle-graphics/</loc>
+    <loc>https://tanducmai.com/project/turtle-graphics/olympic-medals-turtle-graphics/</loc>
     <lastmod>2021-08-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/projects/turtle-graphics/city-life-turtle-graphics/</loc>
+    <loc>https://tanducmai.com/project/turtle-graphics/city-life-turtle-graphics/</loc>
     <lastmod>2021-07-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/projects/multi-level-guessing-game/</loc>
+    <loc>https://tanducmai.com/project/multi-level-guessing-game/</loc>
     <lastmod>2021-07-15T00:00:00+00:00</lastmod>
   </url>
   

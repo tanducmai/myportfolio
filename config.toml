@@ -71,9 +71,6 @@ disqusShortname = "tan-duc-mai" # Enable or disable Disqus.
 #     weight = 3
 #     url = "https://www.linkedin.com/in/tanducmai/"
 
-[param]
-    langseparator = "|" # separates menus from language selectors.
-
 [languages]
     [languages.en]
         languagename = "English" # The language name to be displayed in the selector.
@@ -96,47 +93,56 @@ disqusShortname = "tan-duc-mai" # Enable or disable Disqus.
         [[languages.en.menu.main]]
         name = "Blog"
         weight = 2.0
-        url = "posts"
+        url = "blog"
 
         [[languages.en.menu.main]]
         name = "Portfolio"
         weight = 3.0
-        url = "projects"
+        url = "project"
+
+        [[languages.en.menu.main]]
+        name = "Glossary"
+        weight = 4.0
+        url = "glossary"
 
         [[languages.en.menu.main]]
         name = "Contact"
-        weight = 4.0
+        weight = 5.0
         url = "contact"
-
 
     [languages.ja]
         languagename = "Japanese"
         title = "ヘンリ マイ"
 
         [languages.ja.params]
-            author = "ヘンリ マイ"
-            description = "石見 優丞のサイト"
-            keywords = "blog,developer, ブログ, エンジニア"
-            info = "PYTHON エンジニア"
+        author = "ヘンリ マイ"
+        description = "石見 優丞のサイト"
+        keywords = "blog,developer, ブログ, エンジニア"
+        info = "PYTHON エンジニア"
 
         [languages.ja.menu]
 
-            [[languages.ja.menu.main]]
-            name = "わたし"
-            weight = 1.0
-            url = "ja/about"
+        [[languages.ja.menu.main]]
+        name = "わたし"
+        weight = 1.0
+        url = "ja/about"
 
-            # [[languages.ja.menu.main]]
-            # name = "ブログ"
-            # weight = 2.0
-            # url = "ja/posts"
+        # [[languages.ja.menu.main]]
+        # name = "ブログ"
+        # weight = 2.0
+        # url = "ja/blog"
 
-            # [[languages.ja.menu.main]]
-            # name = "プロジェクト"
-            # weight = 3.0
-            # url = "ja/projects"
+        # [[languages.ja.menu.main]]
+        # name = "プロジェクト"
+        # weight = 3.0
+        # url = "ja/project"
 
-            [[languages.ja.menu.main]]
-            name = "接触"
-            weight = 4.0
-            url = "ja/contact"
+        # [[languages.en.menu.main]]
+        # name = "グロッサリー"
+        # weight = 4.0
+        # url = "ja/glossary"
+
+        [[languages.ja.menu.main]]
+        name = "接触"
+        weight = 5.0
+        url = "ja/contact"

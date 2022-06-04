@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Tan Duc Mai">
+    <meta name="description" content="https://tanducmai.com">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta property="og:site_name" content="Tan Duc Mai">
+    <meta property="og:title" content="
+  Three Different Prime Checker - Tan Duc Mai
+">
+    <meta property="og:description" content="Three Different Prime Checker">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tanducmai.com/project/three-prime-checker/">
+    <meta property="og:image" content="https://tanducmai.comimages/python/portfolio/three-prime-checker.jpg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://tanducmai.com/project/three-prime-checker/">
+    <meta name="twitter:image" content="https://tanducmai.comimages/python/portfolio/three-prime-checker.jpg">
+
+    <base href="https://tanducmai.com/project/three-prime-checker/">
+    <title>
+  Three Different Prime Checker - Tan Duc Mai
+</title>
+
+    <link rel="canonical" href="https://tanducmai.com/project/three-prime-checker/">
+    
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="/css/normalize.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    
+      <link rel="alternate" href="https://tanducmai.com/index.xml" type="application/rss+xml" title="Tan Duc Mai">
+      <link href="https://tanducmai.com/index.xml" rel="feed" type="application/rss+xml" title="Tan Duc Mai" />
+    
+
+    <meta name="generator" content="Hugo 0.68.3" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">Tan Duc Mai</a>
+    <input type="checkbox" id="menu-control"/>
+    <label class="menu-mobile  float-right " for="menu-control">
+      <span class="btn-mobile  float-right ">&#9776;</span>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/about">About</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/blog">Blog</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/project">Portfolio</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/glossary">Glossary</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/contact">Contact</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            <li class= " mobile-menu-lang-separator-centered ">
+              <hr />
+            </li>
+          
+          
+            
+          
+            
+              
+                
+                  <li class="multilingual-separator">
+                    <p>|</p>
+                  </li>
+                
+                
+              
+              <li class="navigation-item  align-center ">
+                <a href="https://tanducmai.com/ja/">Japanese</a>
+              </li>
+            
+          
+        
+      </ul>
+    </label>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Three Different Prime Checker</h1>
+    </header>
+
+    <h3 id="-githubhttpsgithubcomtanducmaithree-prime-checker">→ <a href="https://github.com/tanducmai/three-prime-checker">GitHub</a></h3>
+<h3 id="table-of-contents">Table of Contents</h3>
+<ol>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#algorithm">Algorithms</a></li>
+<li><a href="#sample-output">Sample Output</a></li>
+</ol>
+<h3 id="introduction">Introduction</h3>
+<p>I came up with three different algorithms for determining whether a number is
+prime. After running the three, I use a special procedure to time the efficiency
+of each algorithm to find out which is better than another. The core of this
+project is to adopt different perspectives on a problem, with each way of
+handling a problem will have pros or cons over another.</p>
+<h3 id="algorithms">Algorithms</h3>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">1. Exclude n if n&lt;2. Now, find its square root, then use a for loop in the range
+   between 2 and the square root + 1. If there is no number in the loop that is
+   divisible by n, then n is prime.
+2. Exclude n if it is less than or equal to 1.
+      -   If it is equal to 2, it is prime.
+      -   If n is greater than 2, use a for loop in the range between 2 and n,
+          if there is not any number in the loop that is divisible by n, then n
+          is prime.
+3. Firstly, set an initial variable divisible equating to 0. Secondly, use a for
+loop in the range between 1 and n+1; if any number in that loop is divisible by
+n, add 1 to the variable divisible. When the loop is finished, if the variable
+divisible is equal to 2 (means only 1 and n is divisible by n), then n is prime.
+</code></pre></div><h3 id="sample-output">Sample Output</h3>
+<p>-&gt; <a href="https://raw.githubusercontent.com/tanducmai/three-prime-checker/main/sample_output.pdf">PDF
+Version</a></p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">A program to check if a number is prime.
+Return True if it is, False otherwise.
+Also compares which function is the fastest.
+
+Enter a number for evaluation: 9999999
+-----------------------------------------------------------------------
+9,999,999 is False
+In a list of all prime numbers less than 10,000:
+The first ten are: [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+The last ten are: [9887, 9901, 9907, 9923, 9929, 9931, 9941, 9949, 9967, 9973]
+Function A: time taken = 0.028 seconds.
+-----------------------------------------------------------------------
+9,999,999 is False
+In a list of all prime numbers less than 10,000:
+The first ten are: [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+The last ten are: [9887, 9901, 9907, 9923, 9929, 9931, 9941, 9949, 9967, 9973]
+Function B: time taken = 0.6074 seconds.
+-----------------------------------------------------------------------
+9,999,999 is False
+In a list of all prime numbers less than 10,000:
+The first ten are: [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+The last ten are: [9887, 9901, 9907, 9923, 9929, 9931, 9941, 9949, 9967, 9973]
+Function C: time taken = 7.2864 seconds.
+</code></pre></div>
+  </article>
+</section>
+
+
+      </div>
+      
+    </main>
+
+    
+
+  <script src="/js/app.js"></script>
+  
+  </body>
+</html>
