@@ -16,7 +16,7 @@ draft = false
 
 ### Table of Contents
 
-1. [Types of Networks](#types-of-networks)
+1. [Network Infrastructure](#network-infrastructure)
     1. [Common Types](#common-types)
     1. [Other Types](#other-types)
 1. [Local Area Networks](#local-area-networks)
@@ -27,7 +27,7 @@ draft = false
 1. [Home and Small Office Internet Connections](#home-and-small-office-internet-connections)
 1. [Businesses Internet Connections](#businesses-internet-connections)
 
-### Types of Networks
+### Network Infrastructure
 
 Network infrastructures can vary greatly in terms of:
 
