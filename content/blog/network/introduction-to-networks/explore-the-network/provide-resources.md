@@ -141,7 +141,7 @@ this requires a network device, such as a hub, to interconnect the computers.
 
 | Advantages                                                                   | Disadvantages                                                                    |
 | --                                                                           | --                                                                               |
-| Easy to set up                                                               | No centralized administration
+| Easy to set up                                                               | No centralised administration
 | Less complexity                                                              | Not as secure
 | Lower cost since network devices and dedicated servers may not be required   | Not scalable
 | Can be used for simple tasks such as transferring files and sharing printers | All devices may act as both clients and servers which can slow their performance
