@@ -264,12 +264,12 @@ A collection of potentially useful data that models real-world or conceptual obj
     </item>
     
     <item>
-      <title>Network - Reliability</title>
-      <link>https://tanducmai.com/blog/network/introduction-to-networks/explore-the-network/reliable-network/</link>
+      <title>Network - Architecture</title>
+      <link>https://tanducmai.com/blog/network/introduction-to-networks/explore-the-network/network-architecture/</link>
       <pubDate>Thu, 14 Oct 2021 15:28:52 +0930</pubDate>
       
-      <guid>https://tanducmai.com/blog/network/introduction-to-networks/explore-the-network/reliable-network/</guid>
-      <description>Table of Contents Network Architecture the technologies that support the infrastructure and the programmed services and rules, or protocols, that move data across the network.  Networks must support a wide range of applications and services, as well as operate over many different types of cables and devices, which make up the physical infrastructure.
+      <guid>https://tanducmai.com/blog/network/introduction-to-networks/explore-the-network/network-architecture/</guid>
+      <description>Table of Contents  Network Architecture Fault Tolerance Scalability Quality of Service Security Network Architecture Requirements  Network Architecture the technologies that support the infrastructure and the programmed services and rules, or protocols, that move data across the network.  Networks must support a wide range of applications and services, as well as operate over many different types of cables and devices, which make up the physical infrastructure.
 There are four basic characteristics that the underlying architectures need to address in order to meet user expectations:</description>
     </item>
     

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Tan Duc Mai">
+    <meta name="description" content="https://tanducmai.com">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta property="og:site_name" content="Tan Duc Mai">
+    <meta property="og:title" content="
+  Network - Architecture - Tan Duc Mai
+">
+    <meta property="og:description" content="Network Architecture">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tanducmai.com/blog/network/introduction-to-networks/explore-the-network/network-architecture/">
+    <meta property="og:image" content="https://tanducmai.comimages/tn.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://tanducmai.com/blog/network/introduction-to-networks/explore-the-network/network-architecture/">
+    <meta name="twitter:image" content="https://tanducmai.comimages/tn.png">
+
+    <base href="https://tanducmai.com/blog/network/introduction-to-networks/explore-the-network/network-architecture/">
+    <title>
+  Network - Architecture - Tan Duc Mai
+</title>
+
+    <link rel="canonical" href="https://tanducmai.com/blog/network/introduction-to-networks/explore-the-network/network-architecture/">
+    
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="/css/normalize.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    
+      <link rel="alternate" href="https://tanducmai.com/index.xml" type="application/rss+xml" title="Tan Duc Mai">
+      <link href="https://tanducmai.com/index.xml" rel="feed" type="application/rss+xml" title="Tan Duc Mai" />
+    
+
+    <meta name="generator" content="Hugo 0.68.3" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">Tan Duc Mai</a>
+    <input type="checkbox" id="menu-control"/>
+    <label class="menu-mobile  float-right " for="menu-control">
+      <span class="btn-mobile  float-right ">&#9776;</span>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/about">About</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/blog">Blog</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/project">Portfolio</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/glossary">Glossary</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/contact">Contact</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            <li class= " mobile-menu-lang-separator-centered ">
+              <hr />
+            </li>
+          
+          
+            
+          
+            
+              
+                
+                  <li class="multilingual-separator">
+                    <p>|</p>
+                  </li>
+                
+                
+              
+              <li class="navigation-item  align-center ">
+                <a href="https://tanducmai.com/ja/">Japanese</a>
+              </li>
+            
+          
+        
+      </ul>
+    </label>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Network - Architecture</h1>
+    </header>
+
+    <h3 id="table-of-contents">Table of Contents</h3>
+<ol>
+<li><a href="#network-architecture">Network Architecture</a></li>
+<li><a href="#fault-tolerance">Fault Tolerance</a></li>
+<li><a href="#scalability">Scalability</a></li>
+<li><a href="#quality-of-service">Quality of Service</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#network-architecture-requirements">Network Architecture Requirements</a></li>
+</ol>
+<h3 id="network-architecture">Network Architecture</h3>
+<pre><code>the technologies that support the infrastructure and the programmed services
+and rules, or protocols, that move data across the network.
+</code></pre>
+<p>Networks must support a wide range of applications and services, as well as
+operate over many different types of cables and devices, which make up the
+physical infrastructure.</p>
+<p>There are four basic characteristics that the underlying architectures need to
+address in order to meet user expectations:</p>
+<ol>
+<li>Fault Tolerance</li>
+<li>Scalability</li>
+<li>Quality of Service (QoS)</li>
+<li>Security</li>
+</ol>
+<h3 id="fault-tolerance">Fault Tolerance</h3>
+<pre><code>limits the impact of a failure, so that the fewest number of devices are
+affected.
+</code></pre>
+<p>The expectation is that the Internet is always available to the millions of
+users who rely on it. This requires a network architecture that is built to be
+fault tolerant. It is also built in a way that allows quick recovery when such a
+failure occurs. These networks depend on multiple paths between the source and
+destination of a message. If one path fails, the messages can be instantly sent
+over a different link. Having multiple paths to a destination is known as
+<strong>redundancy</strong>.</p>
+<p>One way reliable networks provide redundancy is by implementing a
+<strong>packet-switched network</strong>. Packet switching splits traffic into packets that
+are routed over a shared network. A single message, such as an email or a video
+stream, is broken into multiple message blocks, called <strong>packets</strong>. Each packet
+has the necessary addressing information of the source and destination of the
+message. The routers within the network switch the packets based on the
+condition of the network at that moment. This means that all the packets in a
+single message could take very different paths to the destination.</p>
+<p>Reasons for packet-switched technology to be chosen for the development of the
+Internet:</p>
+<ol>
+<li>Network devices dynamically decide on the best available path to forward each
+packet.</li>
+<li>It can rapidly adapt to the failure of network devices and communication
+links.</li>
+<li>Data packets can travel though the network using multiple different paths.</li>
+</ol>
+<p>This is not the case in circuit-switched networks traditionally used for voice
+communications. A <strong>circuit-switched network</strong> is one that establishes a
+dedicated circuit between the source and destination before the users may
+communicate. If the call is unexpectedly terminated, the users must initiate a
+new connection.</p>
+<h3 id="scalability">Scalability</h3>
+<pre><code>ability to expand quickly to support new users and applications without
+degrading the performance of the service being delivered to existing users.
+</code></pre>
+<p>Networks are scalable because the designers follow accepted standards and
+protocols. This allows software and hardware vendors to focus on improving
+products and services without worrying about designing a new set of rules for
+operating within the network.</p>
+<h3 id="quality-of-service">Quality of Service</h3>
+<pre><code>managed by the router, ensures that priorities are matched with the type of
+communication and its importance to the organisation.
+</code></pre>
+<p>New applications available to users over internetworks, such as voice and live
+video transmissions, create higher expectations for the quality of the delivered
+services. As data, voice, and video content continue to converge onto the same
+network, QoS becomes a primary mechanism for managing congestion and ensuring
+reliable delivery of content to all users.</p>
+<p>Congestion occurs when the demand for bandwidth exceeds the amount available.
+<strong>Network bandwidth</strong> is measured in the number of bits that can be transmitted
+in a single second, or bits per second (bps). When simultaneous communications
+are attempted across the network, the demand for network bandwidth can exceed
+its availability, creating network congestion.</p>
+<p>When the volume of traffic is greater than what can be transported across the
+network, devices queue, or hold, the packets in memory until resources become
+available to transmit them.</p>
+<p>For example, one user is requesting a web page and another is on a phone call.
+With a QoS policy in place, the router can manage the flow of data and voice
+traffic, giving priority to voice communications if the network experiences
+congestion.</p>
+<p>Examples of priority decisions for an organisation might include:</p>
+<ol>
+<li><strong>Time-sensitive communication</strong> - increase priority for services like
+telephony or video distribution.</li>
+<li><strong>Non time-sensitive communication</strong> - decrease priority for web page
+retrieval or email.</li>
+<li><strong>High importance to organisation</strong> - increase priority for production
+control or business transaction data.</li>
+<li><strong>Undesirable communication</strong> - decrease priority or block unwanted activity,
+like peer-to-peer file sharing or live entertainment.</li>
+</ol>
+<h3 id="security">Security</h3>
+<p>The network infrastructure, services, and the data contained on network-attached
+devices are crucial personal and business assets. There are two types of network
+security concerns that must be addressed: network infrastructure security and
+information security.</p>
+<p><strong>Network infrastructure security</strong> refers to the physical securing of devices
+that provide network connectivity, and preventing unauthorised access to the
+management software that resides on them.</p>
+<p><strong>Information security</strong> refers to protecting the information contained within
+the packets being transmitted over the network and the information stored on
+network attached devices. In order to achieve the goals of network security,
+there are three primary requirements for data:</p>
+<ol>
+<li>Confidentiality - only the intended and authorised recipients can access and
+read data.</li>
+<li>Integrity - having the assurance that the information has not been altered in
+transmission, from origin to destination.</li>
+<li>Availability - having the assurance of timely and reliable access to data
+services for authorised users.</li>
+</ol>
+<h3 id="network-architecture-requirements">Network Architecture Requirements</h3>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Requirement</th>
+      <th scope="col">Fault Tolerence</th>
+      <th scope="col">Scalability</th>
+      <th scope="col">Quality of Service</th>
+      <th scope="col">Security</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Networks should always be available.</td>
+      <td style="text-align: center; vertical-align: middle;">✔</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Priority queues are implemented when demand for network bandwidth exceeds supply.</td>
+      <td></td>
+      <td></td>
+      <td style="text-align: center; vertical-align: middle;">✔</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Business and personal data must be protected.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td style="text-align: center; vertical-align: middle;">✔</td>
+    </tr>
+    <tr>
+      <td>Developing a plan for priority queuing is a strategy for quality delivery of information.</td>
+      <td></td>
+      <td></td>
+      <td style="text-align: center; vertical-align: middle;">✔</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Networks can grow or expand with minimal impact on performance.</td>
+      <td></td>
+      <td style="text-align: center; vertical-align: middle;">✔</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Data can travel through more than one route for delivery from a remote source</td>
+      <td style="text-align: center; vertical-align: middle;">✔</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Common network standards allow hardware and software vendors to focus on product improvements and services.</td>
+      <td></td>
+      <td style="text-align: center; vertical-align: middle;">✔</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+  </article>
+</section>
+
+
+      </div>
+      
+    </main>
+
+    
+
+  <script src="/js/app.js"></script>
+  
+  </body>
+</html>
