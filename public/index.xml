@@ -302,6 +302,16 @@ A collection of potentially useful data that models real-world or conceptual obj
     </item>
     
     <item>
+      <title>Network - Protocols</title>
+      <link>https://tanducmai.com/blog/network/introduction-to-networks/network-protocols-and-communications/network-protocols/</link>
+      <pubDate>Tue, 26 Oct 2021 18:32:44 +0930</pubDate>
+      
+      <guid>https://tanducmai.com/blog/network/introduction-to-networks/network-protocols-and-communications/network-protocols/</guid>
+      <description>Table of Contents  Protocols  Protocol Suite Protocol Stack Network Protocols   Protocol Interaction  HTTP TCP IP Ethernet   Communication Process  Protocols rules that govern communications.  Protocols define standardised formats for data packets, techniques for detecting and correcting errors, and so on.
+Protocol Suite a set of protocols that work together to provide comprehensive network communication services.  Protocol suites are implemented by hosts and networking devices in software, hardware, or both.</description>
+    </item>
+    
+    <item>
       <title>Network - Rules of Communication</title>
       <link>https://tanducmai.com/blog/network/introduction-to-networks/network-protocols-and-communications/network-rules-of-communication/</link>
       <pubDate>Mon, 25 Oct 2021 00:19:48 +0930</pubDate>

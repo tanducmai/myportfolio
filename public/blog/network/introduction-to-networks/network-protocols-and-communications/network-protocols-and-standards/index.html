@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Tan Duc Mai">
+    <meta name="description" content="https://tanducmai.com">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta property="og:site_name" content="Tan Duc Mai">
+    <meta property="og:title" content="
+  Network - Protocols and Standards - Tan Duc Mai
+">
+    <meta property="og:description" content="Network Protocols and Standards">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tanducmai.com/blog/network/introduction-to-networks/network-protocols-and-communications/network-protocols-and-standards/">
+    <meta property="og:image" content="https://tanducmai.comimages/tn.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://tanducmai.com/blog/network/introduction-to-networks/network-protocols-and-communications/network-protocols-and-standards/">
+    <meta name="twitter:image" content="https://tanducmai.comimages/tn.png">
+
+    <base href="https://tanducmai.com/blog/network/introduction-to-networks/network-protocols-and-communications/network-protocols-and-standards/">
+    <title>
+  Network - Protocols and Standards - Tan Duc Mai
+</title>
+
+    <link rel="canonical" href="https://tanducmai.com/blog/network/introduction-to-networks/network-protocols-and-communications/network-protocols-and-standards/">
+    
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="/css/normalize.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    
+      <link rel="alternate" href="https://tanducmai.com/index.xml" type="application/rss+xml" title="Tan Duc Mai">
+      <link href="https://tanducmai.com/index.xml" rel="feed" type="application/rss+xml" title="Tan Duc Mai" />
+    
+
+    <meta name="generator" content="Hugo 0.68.3" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">Tan Duc Mai</a>
+    <input type="checkbox" id="menu-control"/>
+    <label class="menu-mobile  float-right " for="menu-control">
+      <span class="btn-mobile  float-right ">&#9776;</span>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/about">About</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/blog">Blog</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/project">Portfolio</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/glossary">Glossary</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/contact">Contact</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            <li class= " mobile-menu-lang-separator-centered ">
+              <hr />
+            </li>
+          
+          
+            
+          
+            
+              
+                
+                  <li class="multilingual-separator">
+                    <p>|</p>
+                  </li>
+                
+                
+              
+              <li class="navigation-item  align-center ">
+                <a href="https://tanducmai.com/ja/">Japanese</a>
+              </li>
+            
+          
+        
+      </ul>
+    </label>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Network - Protocols and Standards</h1>
+    </header>
+
+    <h3 id="table-of-contents">Table of Contents</h3>
+<!-- vim-markdown-toc GFM -->
+<ol>
+<li><a href="#protocols">Protocols</a>
+<ol>
+<li><a href="#protocol-suite">Protocol Suite</a></li>
+<li><a href="#protocol-stack">Protocol Stack</a></li>
+<li><a href="#network-protocols">Network Protocols</a></li>
+</ol>
+</li>
+<li><a href="#protocol-interaction">Protocol Interaction</a>
+<ol>
+<li><a href="#http">HTTP</a></li>
+<li><a href="#tcp">TCP</a></li>
+<li><a href="#ip">IP</a></li>
+<li><a href="#ethernet">Ethernet</a></li>
+</ol>
+</li>
+<li><a href="#communication-process">Communication Process</a></li>
+</ol>
+<!-- vim-markdown-toc -->
+<h3 id="protocols">Protocols</h3>
+<pre><code>rules that govern communications.
+</code></pre>
+<p>Protocols define standardised formats for data packets, techniques for detecting
+and correcting errors, and so on.</p>
+<h5 id="protocol-suite">Protocol Suite</h5>
+<pre><code>a set of protocols that work together to provide comprehensive network
+communication services.
+</code></pre>
+<p>Protocol suites are implemented by hosts and networking devices in software,
+hardware, or both.</p>
+<p>One of the best ways to visualise how the protocols within a suite interact is
+to view the interaction as a stack.</p>
+<h5 id="protocol-stack">Protocol Stack</h5>
+<pre><code>shows how the individual protocols within a suite are implemented.
+</code></pre>
+<p>The protocols are viewed in terms of <strong>layers</strong>, with each higher level service
+depending on the functionality defined by the protocols shown in the lower
+levels. The lower layers of the stack are concerned with moving data over the
+network and providing services to the upper layers, which focus on the content
+of the message being sent.</p>
+<h5 id="network-protocols">Network Protocols</h5>
+<pre><code>define a common format and set of rules for exchanging messages between
+devices.
+</code></pre>
+<p>Some common networking protocols:</p>
+<ul>
+<li>Hypertext Transfer Protocol (HTTP)</li>
+<li>Transmission Control Protocol (TCP)</li>
+<li>Internet Protocol (IP)</li>
+</ul>
+<p>Some processes performed by networking protocols:</p>
+<ul>
+<li>How the message is formatted or structured.</li>
+<li>The process by which networking devices share information about pathways with
+other networks.</li>
+<li>How and when error and system messages are passed between devices.</li>
+<li>The setup and termination of data transfer sessions.</li>
+</ul>
+<h3 id="protocol-interaction">Protocol Interaction</h3>
+<p>Communication between a web server and web client is an example of an
+interaction between several protocols.</p>
+<h5 id="http">HTTP</h5>
+<p>An application protocol that governs the way a web server and a web client
+interact. HTTP defines the content and formatting of the requests and responses
+that are exchanged between the client and server. Both the client and the web
+server software implement HTTP as part of the application. HTTP relies on other
+protocols to govern how the messages are transported between the client and
+server.</p>
+<h5 id="tcp">TCP</h5>
+<p>A transport protocol that manages the individual conversations. TCP divides the
+HTTP messages into smaller pieces, called segments. These segments are sent
+between the web server and client processes running at the destination host. TCP
+is also responsible for controlling the size and rate at which messages are
+exchanged between the server and the client.</p>
+<h5 id="ip">IP</h5>
+<p>An Internet protocol that is responsible for taking the formatted segments from
+TCP, encapsulating them into packets, assigning them the appropriate addresses,
+and delivering them to the destination host.</p>
+<h5 id="ethernet">Ethernet</h5>
+<p>A network access protocol that describes two primary functions: communication
+over a data link and the physical transmission of data on the network media.
+Network access protocols are responsible for taking the packets from IP and
+formatting them to be transmitted over the media.</p>
+<h3 id="communication-process">Communication Process</h3>
+<p>Let&rsquo;s demonstrate the complete communication process using an example of a web
+server transmitting data to a client.</p>
+<ol>
+<li>The web server preparing the Hypertext Markup Language (HTML) page as data to
+be sent.</li>
+<li>The application protocol HTTP header is added to the front of the HTML data.
+The header contains various information, including the HTTP version the
+server is using and a status code indicating it has information for the web
+client.</li>
+<li>The HTTP application layer protocol delivers the HTML-formatted web page data
+to the transport layer. The TCP transport layer protocol is used to manage
+individual conversations, in this example between the web server and web
+client.</li>
+<li>The IP information is added to the front of the TCP information. IP assigns
+the appropriate source and destination IP addresses. This information is
+known as an IP packet.</li>
+<li>The Ethernet protocol adds information to both ends of the IP packet, known
+as a data link frame. This frame is delivered to the nearest router along the
+path towards the web client. This router removes the Ethernet information,
+analyzes the IP packet, determines the best path for the packet, inserts the
+packet into a new frame, and sends it to the next neighboring router towards
+the destination. Each router removes and adds new data link information
+before forwarding the packet.</li>
+<li>This data is now transported through the internetwork, which consists of
+media and intermediary devices.</li>
+<li>The client receiving the data link frames that contain the data. Each
+protocol header is processed and then removed in the opposite order it was
+added. The Ethernet information is processed and removed, followed by the IP
+protocol information, the TCP information, and finally the HTTP information.</li>
+<li>The web page information is then passed on to the client’s web browser
+software.</li>
+</ol>
+
+  </article>
+</section>
+
+
+      </div>
+      
+    </main>
+
+    
+
+  <script src="/js/app.js"></script>
+  
+  </body>
+</html>
