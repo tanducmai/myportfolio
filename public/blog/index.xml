@@ -264,6 +264,15 @@ A collection of potentially useful data that models real-world or conceptual obj
     </item>
     
     <item>
+      <title>Network - Rules of Communication</title>
+      <link>https://tanducmai.com/blog/network/introduction-to-networks/network-protocols-and-communications/network-rules-of-communication/</link>
+      <pubDate>Mon, 25 Oct 2021 00:19:48 +0930</pubDate>
+      
+      <guid>https://tanducmai.com/blog/network/introduction-to-networks/network-protocols-and-communications/network-rules-of-communication/</guid>
+      <description>Table of Contents  Communication Fundamentals Rule Establishment Message Encoding Message Formatting and Encapsulation Message Size  Segmentation   Message Timing  Access Method Flow Control Response Timeout   Message Delivery Options  Unicast (one-to-one) Multicast (one-to-many) Broadcast (one-to-all)    Communication Fundamentals A network can be as complex as devices connected across the Internet, or as simple as two computers directly connected to one another with a single cable, and anything in-between.</description>
+    </item>
+    
+    <item>
       <title>Network - Architecture</title>
       <link>https://tanducmai.com/blog/network/introduction-to-networks/explore-the-network/network-architecture/</link>
       <pubDate>Thu, 14 Oct 2021 15:28:52 +0930</pubDate>
