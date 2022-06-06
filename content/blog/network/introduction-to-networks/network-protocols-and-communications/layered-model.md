@@ -109,7 +109,7 @@ Note:
       <th scope="col">#</th>
       <th scope="col">Layer Name</th>
       <th scope="col">Protocols</th>
-      <th scope="col">Functionality</th>
+      <th scope="col">Functional Description</th>
     </tr>
   </thead>
   <tbody>
@@ -215,7 +215,7 @@ perform:
       <th scope="col">#</th>
       <th scope="col">Layer Name</th>
       <th scope="col">Protocols</th>
-      <th scope="col">Functionality</th>
+      <th scope="col">Functional Description</th>
     </tr>
   </thead>
   <tbody>
