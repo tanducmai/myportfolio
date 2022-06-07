@@ -21,7 +21,6 @@ draft = false
 1. [Message Encoding](#message-encoding)
 1. [Message Formatting and Encapsulation](#message-formatting-and-encapsulation)
 1. [Message Size](#message-size)
-    1. [Segmentation](#segmentation)
 1. [Message Timing](#message-timing)
     1. [Access Method](#access-method)
     1. [Flow Control](#flow-control)
@@ -117,7 +116,6 @@ destination host.
 
     When a long message is sent from one host to another over a network, it is
     necessary to break the it into smaller pieces.
-    This approach is called segmentation.
 
 The rules that govern the size of the pieces, or frames, communicated across the
 network are very strict. They can also be different, depending on the channel
@@ -129,17 +127,6 @@ The long message will be sent in separate frames, with each frame containing a
 piece of the original message. Each frame will also have its own addressing
 information. At the receiving host, the individual pieces of the message are
 reconstructed into the original message.
-
-##### Segmentation
-
-Advantages:
-1. Multiplexing: the segment of more than two messages shuffle into each other
-   and share the medium.
-1. Increased efficiency of network communications.
-
-Disadvantage:
-1. Added level of complexity: since there are now many pieces that need to be
-   handled, instead of one big piece.
 
 ### Message Timing
 
