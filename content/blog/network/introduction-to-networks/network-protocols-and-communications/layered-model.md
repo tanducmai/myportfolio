@@ -94,8 +94,8 @@ layers directly above and below.
 
 Mnemonic:
 
-- Top - Bottom: APSTNDP - All People Seem To Need Data Processing
-- Bottom - Top: PDNTSPA - Please Do Not Throw Sausage Pizza Away
+    Top - Bottom: APSTNDP - All People Seem To Need Data Processing
+    Bottom - Top: PDNTSPA - Please Do Not Throw Sausage Pizza Away
 
 Note:
 

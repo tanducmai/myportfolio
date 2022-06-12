@@ -6,15 +6,24 @@
     <description>Recent content in network on Tan Duc Mai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 26 Oct 2021 21:42:13 +0930</lastBuildDate>
+    <lastBuildDate>Thu, 28 Oct 2021 23:27:09 +0930</lastBuildDate>
     
 	<atom:link href="https://tanducmai.com/categories/network/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Network - Data Transfer</title>
+      <link>https://tanducmai.com/blog/network/introduction-to-networks/network-protocols-and-communications/network-data-transfer/</link>
+      <pubDate>Thu, 28 Oct 2021 23:27:09 +0930</pubDate>
+      
+      <guid>https://tanducmai.com/blog/network/introduction-to-networks/network-protocols-and-communications/network-data-transfer/</guid>
+      <description>Table of Contents  Message Segmentation  Advantages Disadvantages   Protocol Data Units (PDU) Sending and Receiving Process  Sending a Message Receiving a Message   Encapsulation Example Network Addresses and Data Link Addresses  Layer 3 Logical Addresses Layer 2 Physical Addresses    Message Segmentation In theory, a single communication, such as a music video or an email message, could be sent across a network from a source to a destination as one massive, uninterrupted stream of bits.</description>
+    </item>
+    
+    <item>
       <title>Network - Layered Model</title>
       <link>https://tanducmai.com/blog/network/introduction-to-networks/network-protocols-and-communications/network-layered-model/</link>
-      <pubDate>Tue, 26 Oct 2021 21:42:13 +0930</pubDate>
+      <pubDate>Wed, 27 Oct 2021 21:42:13 +0930</pubDate>
       
       <guid>https://tanducmai.com/blog/network/introduction-to-networks/network-protocols-and-communications/network-layered-model/</guid>
       <description>Table of Contents  Benefits of Using Layered Models The OSI Reference Model  Layers Communication Process   The TCP/IP Protocol Model  Layers Communication Process   Model Comparision  Benefits of Using Layered Models The benefits to using a layered model to describe network protocols and operations include:
@@ -37,7 +46,7 @@ Protocol Suite a set of protocols that work together to provide comprehensive ne
       <pubDate>Mon, 25 Oct 2021 00:19:48 +0930</pubDate>
       
       <guid>https://tanducmai.com/blog/network/introduction-to-networks/network-protocols-and-communications/network-rules-of-communication/</guid>
-      <description>Table of Contents  Communication Fundamentals Rule Establishment Message Encoding Message Formatting and Encapsulation Message Size  Segmentation   Message Timing  Access Method Flow Control Response Timeout   Message Delivery Options  Unicast (one-to-one) Multicast (one-to-many) Broadcast (one-to-all)    Communication Fundamentals A network can be as complex as devices connected across the Internet, or as simple as two computers directly connected to one another with a single cable, and anything in-between.</description>
+      <description>Table of Contents  Communication Fundamentals Rule Establishment Message Encoding Message Formatting and Encapsulation Message Size Message Timing  Access Method Flow Control Response Timeout   Message Delivery Options  Unicast (one-to-one) Multicast (one-to-many) Broadcast (one-to-all)    Communication Fundamentals A network can be as complex as devices connected across the Internet, or as simple as two computers directly connected to one another with a single cable, and anything in-between.</description>
     </item>
     
     <item>

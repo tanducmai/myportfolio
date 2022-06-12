@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Tan Duc Mai">
+    <meta name="description" content="https://tanducmai.com">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta property="og:site_name" content="Tan Duc Mai">
+    <meta property="og:title" content="
+  Network - Data Transfer - Tan Duc Mai
+">
+    <meta property="og:description" content="Data Transfer in the Network">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tanducmai.com/blog/network/introduction-to-networks/network-protocols-and-communications/network-data-transfer/">
+    <meta property="og:image" content="https://tanducmai.comimages/tn.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://tanducmai.com/blog/network/introduction-to-networks/network-protocols-and-communications/network-data-transfer/">
+    <meta name="twitter:image" content="https://tanducmai.comimages/tn.png">
+
+    <base href="https://tanducmai.com/blog/network/introduction-to-networks/network-protocols-and-communications/network-data-transfer/">
+    <title>
+  Network - Data Transfer - Tan Duc Mai
+</title>
+
+    <link rel="canonical" href="https://tanducmai.com/blog/network/introduction-to-networks/network-protocols-and-communications/network-data-transfer/">
+    
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="/css/normalize.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    
+      <link rel="alternate" href="https://tanducmai.com/index.xml" type="application/rss+xml" title="Tan Duc Mai">
+      <link href="https://tanducmai.com/index.xml" rel="feed" type="application/rss+xml" title="Tan Duc Mai" />
+    
+
+    <meta name="generator" content="Hugo 0.68.3" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">Tan Duc Mai</a>
+    <input type="checkbox" id="menu-control"/>
+    <label class="menu-mobile  float-right " for="menu-control">
+      <span class="btn-mobile  float-right ">&#9776;</span>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/about">About</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/blog">Blog</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/project">Portfolio</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/glossary">Glossary</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/contact">Contact</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            <li class= " mobile-menu-lang-separator-centered ">
+              <hr />
+            </li>
+          
+          
+            
+          
+            
+              
+                
+                  <li class="multilingual-separator">
+                    <p>|</p>
+                  </li>
+                
+                
+              
+              <li class="navigation-item  align-center ">
+                <a href="https://tanducmai.com/ja/">Japanese</a>
+              </li>
+            
+          
+        
+      </ul>
+    </label>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Network - Data Transfer</h1>
+    </header>
+
+    <h3 id="table-of-contents">Table of Contents</h3>
+<!-- vim-markdown-toc GFM -->
+<ol>
+<li><a href="#message-segmentation">Message Segmentation</a>
+<ol>
+<li><a href="#advantages">Advantages</a></li>
+<li><a href="#disadvantages">Disadvantages</a></li>
+</ol>
+</li>
+<li><a href="#protocol-data-units-pdu">Protocol Data Units (PDU)</a></li>
+<li><a href="#sending-and-receiving-process">Sending and Receiving Process</a>
+<ol>
+<li><a href="#sending-a-message">Sending a Message</a></li>
+<li><a href="#receiving-a-message">Receiving a Message</a></li>
+</ol>
+</li>
+<li><a href="#encapsulation-example">Encapsulation Example</a></li>
+<li><a href="#network-addresses-and-data-link-addresses">Network Addresses and Data Link
+Addresses</a>
+<ol>
+<li><a href="#layer-3-logical-addresses">Layer 3 Logical Addresses</a></li>
+<li><a href="#layer-2-physical-addresses">Layer 2 Physical Addresses</a></li>
+</ol>
+</li>
+</ol>
+<!-- vim-markdown-toc -->
+<h3 id="message-segmentation">Message Segmentation</h3>
+<p>In theory, a single communication, such as a music video or an email message,
+could be sent across a network from a source to a destination as one massive,
+uninterrupted stream of bits. If messages were actually transmitted in this
+manner, it would mean that no other device would be able to send or receive
+messages on the same network while this data transfer was in progress. These
+large streams of data would result in significant delays. Further, if a link in
+the interconnected network infrastructure failed during the transmission, the
+complete message would be lost and have to be retransmitted in full.</p>
+<p>A better approach is to divide the data into smaller, more manageable pieces to
+send over the network. This division of the data stream into smaller pieces is
+called <strong>segmentation</strong>.</p>
+<h5 id="advantages">Advantages</h5>
+<ol>
+<li>By sending smaller individual pieces from source to destination, many
+different conversations can be interleaved on the network, called
+multiplexing.
+<ul>
+<li><em>Multiplexing</em>: the segment of more than two messages shuffle into each
+other and share the medium.</li>
+</ul>
+</li>
+<li>Segmentation can <em>increase the efficiency of network communications</em>. If part
+of the message fails to make it to the destination, due to failure in the
+network or network congestion, only the missing parts need to be retransmitted.</li>
+</ol>
+<h5 id="disadvantages">Disadvantages</h5>
+<p>The challenge to using segmentation and multiplexing to transmit messages across
+a network is the <em>level of complexity that is added to the process</em>. Imagine if
+you had to send a 100-page letter, but each envelope would only hold one page.
+The process of addressing, labeling, sending, receiving, and opening the entire
+100 envelopes would be time-consuming for both the sender and the recipient.</p>
+<p>In network communications, each segment of the message must go through a similar
+process to ensure that it gets to the correct destination and can be reassembled
+into the content of the original message.</p>
+<h3 id="protocol-data-units-pdu">Protocol Data Units (PDU)</h3>
+<p>As application data is passed down the protocol stack on its way to be
+transmitted across the network media, various protocol information, or <em>control
+information</em>, is added at each level. This is known as the <strong>encapsulation</strong>
+process.</p>
+<p>The form that a piece of data takes at any layer is called a <strong>protocol data
+unit (PDU)</strong>. During encapsulation, each succeeding layer encapsulates the PDU
+that it receives from the layer above in accordance with the protocol being
+used.</p>
+<p>At each stage of the process, a PDU has a different name to reflect its new
+functions. Since there is no universal naming convention for PDUs, the PDUs
+are named according to the protocols of the TCP/IP suite.</p>
+<pre><code>Mnemonic: Do Some People Fear Binary?
+</code></pre>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">PDU Name</th>
+      <th scope="col">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Data</td>
+      <td>Application layer PDU</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Segment</td>
+      <td>Transport layer PDU</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Packet (or Datagram)</td>
+      <td>Internet layer PDU</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Frame (medium dependent)</td>
+      <td>Data link layer PDU</td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Bits</td>
+      <td>
+        Physical layer PDU<br />Used for the physical transmission of binary
+        data over the medium
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="sending-and-receiving-process">Sending and Receiving Process</h3>
+<p>The common task of sending an e-mail has many steps in the process.</p>
+<h5 id="sending-a-message">Sending a Message</h5>
+<p>When sending messages on a network, the encapsulation process works from top to
+bottom. At each layer, the upper layer information is considered data within the
+encapsulated protocol. For example, the TCP segment is considered data within
+the IP packet.</p>
+<ol>
+<li>An end user, using an e-mail application, creates data. The <strong>application
+layer</strong> codes the data as e-mail and sends the data to the transport layer.</li>
+<li>The message is segmented for transport. The <strong>transport layer</strong> adds control
+information in a header so that it can be assigned to the correct process and
+all segments put into proper order at the destination. The segment is sent
+down to the internet layer.</li>
+<li>The <strong>internet layer</strong> adds IP addressing information in an IP header. The
+segment is now an addressed packet that can be handled by routers en route to
+the destination. The internet layer sends the packet down to the network
+access layer.</li>
+<li>The <strong>network access layer</strong> creates an Ethernet frame with local network MAC
+address information in the header. This enables the packet to get to the
+local rout and out to the web. The frame also contains a trailer with
+error-checking information. After the frame is created, it is encoded into
+bits and sent onto the media to the destination.</li>
+</ol>
+<h5 id="receiving-a-message">Receiving a Message</h5>
+<p>This process is reversed at the receiving host, and is known as
+de-encapsulation. <strong>De-encapsulation</strong> is the process used by a receiving device
+to remove one or more of the protocol headers. The data is de-encapsulated as it
+moves up the stack toward the end-user application.</p>
+<ol>
+<li>The frame is de-encapsulated to a packet, then to a segment, and then the
+<strong>transport layer</strong> puts all segments into the proper order.</li>
+<li>When all data has arrived and is ready, it is sent to the <strong>application
+layer</strong>, and then the original application data goes to the receiver’s e-mail
+application.</li>
+</ol>
+<h3 id="encapsulation-example">Encapsulation Example</h3>
+<p>In the web server example, we can use the TCP/IP model to illustrate the process
+of sending an HTML web page to a client.</p>
+<ol>
+<li>The application layer protocol, HTTP, begins the process by delivering the
+HTML formatted web page data to the transport layer. There the application
+data is broken into TCP segments.</li>
+<li>Each TCP segment is given a label, called a <strong>header</strong>, containing
+information about which process running on the destination computer should
+receive the message.
+<ul>
+<li>It also contains the information that enables the destination process to
+reassemble the data back to its original format.</li>
+</ul>
+</li>
+<li>The transport layer encapsulates the web page HTML data within the segment
+and sends it to the internet layer, where the IP protocol is implemented.</li>
+<li>Here the entire TCP segment is encapsulated within an IP packet, which adds
+another label, called the IP header.</li>
+<li>The IP header contains source and destination host IP addresses, as well as
+information necessary to deliver the packet to its corresponding destination
+process.</li>
+<li>Next, the IP packet is sent to the network access layer where it is
+encapsulated within a frame header and trailer.
+<ul>
+<li>Each frame header contains a source and destination physical address.</li>
+<li>The physical address uniquely identifies the devices on the local network.</li>
+<li>The trailer contains error-checking information.</li>
+</ul>
+</li>
+</ol>
+<p>Finally the bits are encoded onto the media by the server network interface card
+(NIC).</p>
+<h3 id="network-addresses-and-data-link-addresses">Network Addresses and Data Link Addresses</h3>
+<p>The network and data link layers are responsible for delivering the data from
+the source device to the destination device. Protocols at both layers contain a
+source and destination address, but their addresses have different purposes.</p>
+<ul>
+<li><strong>Network layer source and destination addresses</strong> - responsible for
+delivering the IP packet from the original source to the final destination,
+either on the same network or to a remote network.</li>
+<li><strong>Data link layer source and destination addresses</strong> – responsible for
+delivering the data link frame from one network interface card (NIC) to
+another NIC on the same network.</li>
+</ul>
+<h5 id="layer-3-logical-addresses">Layer 3 Logical Addresses</h5>
+<p>An IP packet contains two IP addresses:</p>
+<ul>
+<li><strong>Source IP address</strong> - the IP address of the sending device, the original
+source of the packet.</li>
+<li><strong>Destination IP address</strong> - the IP address of the receiving device, the final
+destination of the packet.
+<ul>
+<li>Used by routers to forward a packet to its destination.</li>
+</ul>
+</li>
+</ul>
+<p>The network layer addresses, or (layer 3) IP addresses, indicate the original
+source and final destination. An IP address contains two parts:</p>
+<ol>
+<li><strong>Network prefix</strong> - the left-most part of the address that indicates which
+network the IP address is a member. All devices on the same network will have
+the same network portion of the address.
+<ul>
+<li>Used by routers to forward the packet to the proper network.</li>
+</ul>
+</li>
+<li><strong>Host part</strong> - The remaining part of the address that identifies a specific
+device on the network. The host portion is unique for each device on the
+network.
+<ul>
+<li>used by the last router in the path to deliver the packet to the
+destination device.</li>
+</ul>
+</li>
+</ol>
+<p>When the sender and receiver of the IP packet are on the same network, the
+network portion of both the source IP address and destination IP address are the
+same.</p>
+<p>When the sender of the packet is on a different network from the receiver, the
+source and destination IP addresses will represent hosts on different networks.
+This will be indicated by the network portion of the IP address of the
+destination host.</p>
+<h5 id="layer-2-physical-addresses">Layer 2 Physical Addresses</h5>
+<p>As the IP packet travels from host-to-router, router-to-router, and finally
+router-to-host, at each point along the way the IP packet is encapsulated in a
+new data link frame.</p>
+<p>A data link frame contains two data link addresses.</p>
+<ol>
+<li><strong>Source data link address</strong> - the physical address of the device’s NIC that
+is sending the data link frame.</li>
+<li><strong>Destination data link address</strong> - the physical address of the device&rsquo;s NIC
+that is receiving the data link frame.
+<ul>
+<li>This address is either the next hop router or of the final destination
+device.</li>
+</ul>
+</li>
+</ol>
+<p>The layer 2, data link protocol is only used to deliver the packet from
+NIC-to-NIC on the same network. The router removes the layer 2 information as it
+is received on one NIC and adds new data link information before forwarding out
+the exit NIC on its way towards the final destination.</p>
+<p>When the sender and receiver of the IP packet are on the same network, the data
+link frame is sent directly to the receiving device. On an Ethernet network, the
+data link addresses are known as Ethernet (Media Access Control) addresses. MAC
+addresses are physically embedded on the Ethernet NIC.</p>
+<ol>
+<li><strong>Source MAC address</strong> - this is the data link address, or the Ethernet MAC
+address, of the device that sends the data link frame with the encapsulated
+IP packet. The MAC address of the Ethernet NIC of PC1 is AA-AA-AA-AA-AA-AA,
+written in hexadecimal notation.</li>
+<li><strong>Destination MAC address</strong> - when the receiving device is on the same
+network as the sending device, this is the data link address of the receiving
+device. In this example, the destination MAC address is the MAC address of
+the FTP server: CC-CC-CC-CC-CC-CC, written in hexadecimal notation.</li>
+</ol>
+<p>When the sender and receiver of the IP packet are on different networks, the
+Ethernet data link frame cannot be sent directly to the destination host because
+the host is not directly reachable in the network of the sender. The Ethernet
+frame must be sent to another device known as the <em>router</em> or <em>default gateway</em>.</p>
+<ul>
+<li><strong>Source MAC address</strong> - the Ethernet MAC address of the sending device.</li>
+<li><strong>Destination MAC address</strong> - when the receiving device, the destination IP
+address, is on a different network from the sending device, the sending device
+uses the Ethernet MAC address of the default gateway or router.</li>
+</ul>
+<p>The Ethernet frame with the encapsulated IP packet can now be transmitted to the
+default gateway. The default gateway forwards the packet to the destination.
+This may mean that the default gateway forwards the packet to another router or
+directly to destination host if the host is on a network connected to the
+default gateway.</p>
+<p>It is important that the IP address of the default gateway be configured on each
+host on the local network. All packets to a destination on remote networks are
+sent to the default gateway.</p>
+
+  </article>
+</section>
+
+
+      </div>
+      
+    </main>
+
+    
+
+  <script src="/js/app.js"></script>
+  
+  </body>
+</html>

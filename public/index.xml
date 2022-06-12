@@ -6,10 +6,19 @@
     <description>Recent content on Tan Duc Mai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 04 Jun 2022 22:23:32 +0930</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jun 2022 12:26:54 +0930</lastBuildDate>
     
 	<atom:link href="https://tanducmai.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Idiom</title>
+      <link>https://tanducmai.com/glossary/idiom/</link>
+      <pubDate>Sat, 11 Jun 2022 12:26:54 +0930</pubDate>
+      
+      <guid>https://tanducmai.com/glossary/idiom/</guid>
+      <description>  # Idiom Expression Definition     1 behind bars 🔗   in prison  -- 1 -- behind bars -- -- -- -- in prison -- -- -- 1 -- behind bars -- -- -- -- in prison -- --   </description>
+    </item>
     
     <item>
       <title>Network</title>
@@ -302,9 +311,18 @@ A collection of potentially useful data that models real-world or conceptual obj
     </item>
     
     <item>
+      <title>Network - Data Transfer</title>
+      <link>https://tanducmai.com/blog/network/introduction-to-networks/network-protocols-and-communications/network-data-transfer/</link>
+      <pubDate>Thu, 28 Oct 2021 23:27:09 +0930</pubDate>
+      
+      <guid>https://tanducmai.com/blog/network/introduction-to-networks/network-protocols-and-communications/network-data-transfer/</guid>
+      <description>Table of Contents  Message Segmentation  Advantages Disadvantages   Protocol Data Units (PDU) Sending and Receiving Process  Sending a Message Receiving a Message   Encapsulation Example Network Addresses and Data Link Addresses  Layer 3 Logical Addresses Layer 2 Physical Addresses    Message Segmentation In theory, a single communication, such as a music video or an email message, could be sent across a network from a source to a destination as one massive, uninterrupted stream of bits.</description>
+    </item>
+    
+    <item>
       <title>Network - Layered Model</title>
       <link>https://tanducmai.com/blog/network/introduction-to-networks/network-protocols-and-communications/network-layered-model/</link>
-      <pubDate>Tue, 26 Oct 2021 21:42:13 +0930</pubDate>
+      <pubDate>Wed, 27 Oct 2021 21:42:13 +0930</pubDate>
       
       <guid>https://tanducmai.com/blog/network/introduction-to-networks/network-protocols-and-communications/network-layered-model/</guid>
       <description>Table of Contents  Benefits of Using Layered Models The OSI Reference Model  Layers Communication Process   The TCP/IP Protocol Model  Layers Communication Process   Model Comparision  Benefits of Using Layered Models The benefits to using a layered model to describe network protocols and operations include:
@@ -327,7 +345,7 @@ Protocol Suite a set of protocols that work together to provide comprehensive ne
       <pubDate>Mon, 25 Oct 2021 00:19:48 +0930</pubDate>
       
       <guid>https://tanducmai.com/blog/network/introduction-to-networks/network-protocols-and-communications/network-rules-of-communication/</guid>
-      <description>Table of Contents  Communication Fundamentals Rule Establishment Message Encoding Message Formatting and Encapsulation Message Size  Segmentation   Message Timing  Access Method Flow Control Response Timeout   Message Delivery Options  Unicast (one-to-one) Multicast (one-to-many) Broadcast (one-to-all)    Communication Fundamentals A network can be as complex as devices connected across the Internet, or as simple as two computers directly connected to one another with a single cable, and anything in-between.</description>
+      <description>Table of Contents  Communication Fundamentals Rule Establishment Message Encoding Message Formatting and Encapsulation Message Size Message Timing  Access Method Flow Control Response Timeout   Message Delivery Options  Unicast (one-to-one) Multicast (one-to-many) Broadcast (one-to-all)    Communication Fundamentals A network can be as complex as devices connected across the Internet, or as simple as two computers directly connected to one another with a single cable, and anything in-between.</description>
     </item>
     
     <item>
@@ -394,7 +412,7 @@ Small Home Networks connect a few computers to one another and to the internet.<
       <pubDate>Sun, 10 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://tanducmai.com/project/caesar-cipher-cryptography/</guid>
-      <description>→ GitHub Table of Contents  Aim Introduction Mainly Used Functions Module options Encryption Process Decryption Process Sample Output  Aim Use Caesar Cipher technique to encrypt or decrypt an inputted message.
+      <description>→ GitHub Table of Contents  Aim Introduction Mainly Used Functions Options Encryption Process Decryption Process Sample Output  Aim Use Caesar Cipher technique to encrypt or decrypt an inputted message.
 Introduction A simple way to encrypt data is attributed to Julius Caesar, the Roman Emperor. This method takes each character in a message and replaces it with one which is a certain distance (offset) along the alphabet from it.</description>
     </item>
     

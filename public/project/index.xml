@@ -55,7 +55,7 @@ Throughout the project, I will use sever standard modules, three third party one
       <pubDate>Sun, 10 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://tanducmai.com/project/caesar-cipher-cryptography/</guid>
-      <description>→ GitHub Table of Contents  Aim Introduction Mainly Used Functions Module options Encryption Process Decryption Process Sample Output  Aim Use Caesar Cipher technique to encrypt or decrypt an inputted message.
+      <description>→ GitHub Table of Contents  Aim Introduction Mainly Used Functions Options Encryption Process Decryption Process Sample Output  Aim Use Caesar Cipher technique to encrypt or decrypt an inputted message.
 Introduction A simple way to encrypt data is attributed to Julius Caesar, the Roman Emperor. This method takes each character in a message and replaces it with one which is a certain distance (offset) along the alphabet from it.</description>
     </item>
     
