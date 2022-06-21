@@ -1,10 +1,10 @@
 +++
 date = 2022-04-13T00:09:35+09:30
 title = "Computer Shop Management"
-slug = "computer-shop-management"
-aliases = "/computer-shop-management/"
+slug = "computer-shop-management-system"
+aliases = "/computer-shop-management-system/"
 description = "Computer Shop Management"
-thumbnail = "/images/python/portfolio/computer-shop-management.jpg"
+thumbnail = "/images/python/portfolio/computer-shop-management-system.jpg"
 tags = [
     "python",
 ]
@@ -14,7 +14,7 @@ categories = [
 draft = false
 +++
 
-### → [GitHub](https://github.com/tanducmai/computer-shop-management)
+### → [GitHub](https://github.com/tanducmai/computer-shop-management-system)
 
 ### Table of Contents
 
@@ -33,7 +33,7 @@ allows users to create a Wishlist.
 
 ### UML Design
 
-![UML Design](/images/python/portfolio/computer-shop-management.jpg)
+![UML Design](/images/python/portfolio/computer-shop-management-system.jpg)
 
 ### Libraries
 
