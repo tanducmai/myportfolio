@@ -10,6 +10,9 @@ tags = [
     "syntax",
     "clean-code",
 ]
+categories = [
+    "python",
+]
 +++
 
 ### Table of Contents
