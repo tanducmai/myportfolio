@@ -4,14 +4,6 @@ title = "Solar System Turtle Graphics"
 slug = "solar-system-turtle-graphics"
 thumbnail = "images/python/portfolio/turtle-graphics/solar-system.jpg"
 description = "Solar System Turtle Graphics"
-tags = [
-    "python",
-    "turtle",
-]
-categories = [
-    "python",
-    "turtle",
-]
 aliases = "/solar-system-turtle-graphics/"
 +++
 

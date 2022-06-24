@@ -1,6 +1,6 @@
 +++
 date = 2022-03-08T23:19:58+10:30
-title = "Database - Logical Design"
+title = "Logical Design"
 slug = "database-logical-design"
 aliases = "/database-logical-design/"
 description = "Database - Logical Design"

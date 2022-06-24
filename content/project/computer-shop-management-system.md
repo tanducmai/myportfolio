@@ -5,12 +5,6 @@ slug = "computer-shop-management-system"
 aliases = "/computer-shop-management-system/"
 description = "Computer Shop Management"
 thumbnail = "/images/python/portfolio/computer-shop-management-system.jpg"
-tags = [
-    "python",
-]
-categories = [
-    "python",
-]
 draft = false
 +++
 

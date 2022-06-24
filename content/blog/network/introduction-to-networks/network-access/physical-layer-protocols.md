@@ -1,6 +1,6 @@
 +++
 date = 2021-11-01T14:29:24+09:30
-title = "Network - Physical Layer Protocols"
+title = "Physical Layer Protocols"
 slug = "physical-layer-protocols"
 aliases = "physical-layer-protocols"
 description = "Network - Physical Layer Protocols"

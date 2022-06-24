@@ -1,6 +1,6 @@
 +++
 date = 2022-03-11T11:53:55+10:30
-title = "Database - SQL - Data Manipulation"
+title = "Data Manipulation"
 slug = "database-sql-data-manipulation"
 aliases = "/database-sql-data-manipulation"
 description = "Database - SQL - Data Manipulation"

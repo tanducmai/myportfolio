@@ -1,6 +1,6 @@
 +++
 date = 2021-10-28T23:27:09+09:30
-title = "Network - Data Transfer"
+title = "Data Transfer"
 slug = "network-data-transfer"
 aliases = "network-data-transfer"
 description = "Data Transfer in the Network"

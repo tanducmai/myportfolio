@@ -41,7 +41,7 @@ Throughout the project, I will use sever standard modules, three third party one
     </item>
     
     <item>
-      <title>Database - SQL - Stored Procedures</title>
+      <title>Stored Procedures</title>
       <link>https://tanducmai.com/blog/database/sql/database-sql-stored-procedures/</link>
       <pubDate>Tue, 05 Apr 2022 17:34:07 +0930</pubDate>
       
@@ -51,7 +51,7 @@ Unlike views they may contain INSERT, UPDATE, DELETE, SELECT queries or any comb
     </item>
     
     <item>
-      <title>Database - SQL - Views</title>
+      <title>Views</title>
       <link>https://tanducmai.com/blog/database/sql/database-sql-views/</link>
       <pubDate>Mon, 04 Apr 2022 17:33:58 +0930</pubDate>
       
@@ -62,7 +62,7 @@ Views are necessary to express certain queries queries that combine and nest agg
     </item>
     
     <item>
-      <title>Database - SQL - Control Statements</title>
+      <title>Control Statements</title>
       <link>https://tanducmai.com/blog/database/sql/database-sql-control-statements/</link>
       <pubDate>Tue, 29 Mar 2022 17:37:46 +1030</pubDate>
       
@@ -73,7 +73,7 @@ Why control statement Control statements allow actions to happen depending on a 
     </item>
     
     <item>
-      <title>Database - SQL - Common Functions</title>
+      <title>Common Functions</title>
       <link>https://tanducmai.com/blog/database/sql/database-sql-common-functions/</link>
       <pubDate>Mon, 28 Mar 2022 17:37:46 +1030</pubDate>
       
@@ -84,7 +84,7 @@ Working with String Common functions include:
     </item>
     
     <item>
-      <title>Python - OOP - Class Variables</title>
+      <title>Class Variables</title>
       <link>https://tanducmai.com/blog/python/oop/python-oop-class-variables/</link>
       <pubDate>Wed, 23 Mar 2022 09:51:54 +1030</pubDate>
       
@@ -93,7 +93,7 @@ Working with String Common functions include:
     </item>
     
     <item>
-      <title>Database - SQL - Aggregate Functions</title>
+      <title>Aggregate Functions</title>
       <link>https://tanducmai.com/blog/database/sql/database-sql-aggregate-functions/</link>
       <pubDate>Tue, 22 Mar 2022 17:34:33 +1030</pubDate>
       
@@ -103,7 +103,7 @@ SQL provides users with many aggregate functions for aggregate queries, includin
     </item>
     
     <item>
-      <title>Database - SQL - Set Operators</title>
+      <title>Set Operators</title>
       <link>https://tanducmai.com/blog/database/sql/database-sql-set-operators/</link>
       <pubDate>Mon, 21 Mar 2022 10:34:07 +1030</pubDate>
       
@@ -115,7 +115,7 @@ Standard SQL syntax with set operators:
     </item>
     
     <item>
-      <title>Database - SQL - Nested Queries</title>
+      <title>Nested Queries</title>
       <link>https://tanducmai.com/blog/database/sql/database-sql-nested-queries/</link>
       <pubDate>Wed, 16 Mar 2022 16:15:06 +1030</pubDate>
       
@@ -124,7 +124,7 @@ Standard SQL syntax with set operators:
     </item>
     
     <item>
-      <title>Python - OOP - Inheritance</title>
+      <title>Inheritance</title>
       <link>https://tanducmai.com/blog/python/oop/python-oop-inheritance/</link>
       <pubDate>Wed, 16 Mar 2022 10:23:54 +1030</pubDate>
       
@@ -133,7 +133,7 @@ Standard SQL syntax with set operators:
     </item>
     
     <item>
-      <title>Database - SQL - Table Joins</title>
+      <title>Table Joins</title>
       <link>https://tanducmai.com/blog/database/sql/database-sql-table-joins/</link>
       <pubDate>Tue, 15 Mar 2022 15:38:40 +1030</pubDate>
       
@@ -143,7 +143,7 @@ This relation can have a combination of the attributes from the tables used in t
     </item>
     
     <item>
-      <title>Database - SQL - Query Writing</title>
+      <title>Query Writing</title>
       <link>https://tanducmai.com/blog/database/sql/database-sql-query-writing/</link>
       <pubDate>Mon, 14 Mar 2022 22:16:08 +1030</pubDate>
       
@@ -155,7 +155,7 @@ SELECT &amp;lt;selectList&amp;gt; FROM &amp;lt;tableName&amp;gt; WHERE &amp;lt;c
     </item>
     
     <item>
-      <title>Database - SQL - Data Manipulation</title>
+      <title>Data Manipulation</title>
       <link>https://tanducmai.com/blog/database/sql/database-sql-data-manipulation/</link>
       <pubDate>Fri, 11 Mar 2022 11:53:55 +1030</pubDate>
       
@@ -166,7 +166,7 @@ SELECT &amp;lt;selectList&amp;gt; FROM &amp;lt;tableName&amp;gt; WHERE &amp;lt;c
     </item>
     
     <item>
-      <title>Database - SQL - Table Constraints</title>
+      <title>Table Constraints</title>
       <link>https://tanducmai.com/blog/database/sql/database-sql-table-constraints/</link>
       <pubDate>Thu, 10 Mar 2022 23:40:53 +1030</pubDate>
       
@@ -178,7 +178,7 @@ Data that does not meet the rules of a given constraint will not be saved to the
     </item>
     
     <item>
-      <title>Database - Physical Design</title>
+      <title>Physical Design</title>
       <link>https://tanducmai.com/blog/database/database-physical-design/</link>
       <pubDate>Wed, 09 Mar 2022 23:40:53 +1030</pubDate>
       
@@ -189,7 +189,7 @@ CREATE TABLE Project ( projectName varchar(200), budget decimal(6,2), manager va
     </item>
     
     <item>
-      <title>Database - Logical Design</title>
+      <title>Logical Design</title>
       <link>https://tanducmai.com/blog/database/database-logical-design/</link>
       <pubDate>Tue, 08 Mar 2022 23:19:58 +1030</pubDate>
       
@@ -199,7 +199,7 @@ CREATE TABLE Project ( projectName varchar(200), budget decimal(6,2), manager va
     </item>
     
     <item>
-      <title>Database - Conceptual Design</title>
+      <title>Conceptual Design</title>
       <link>https://tanducmai.com/blog/database/database-conceptual-design/</link>
       <pubDate>Mon, 07 Mar 2022 19:30:29 +1030</pubDate>
       
@@ -209,7 +209,7 @@ CREATE TABLE Project ( projectName varchar(200), budget decimal(6,2), manager va
     </item>
     
     <item>
-      <title>Database - Normalisation</title>
+      <title>Normalisation</title>
       <link>https://tanducmai.com/blog/database/database-normalisation/</link>
       <pubDate>Sat, 26 Feb 2022 01:05:26 +1030</pubDate>
       
@@ -221,7 +221,7 @@ It should be noted that more than one design are plausible.
     </item>
     
     <item>
-      <title>Database - Identify the Primary Key</title>
+      <title>Identify the Primary Key</title>
       <link>https://tanducmai.com/blog/database/database-identify-the-primary-key/</link>
       <pubDate>Fri, 25 Feb 2022 17:54:53 +1030</pubDate>
       
@@ -233,7 +233,7 @@ Keep The Primary Key As Small As Possible Imagine that the PK will be distribute
     </item>
     
     <item>
-      <title>Database - Key Concepts</title>
+      <title>Key Concepts</title>
       <link>https://tanducmai.com/blog/database/database-key-concepts/</link>
       <pubDate>Thu, 24 Feb 2022 21:29:52 +1030</pubDate>
       
@@ -245,7 +245,7 @@ There are generally eight types of keys:
     </item>
     
     <item>
-      <title>Database - Relational Concepts</title>
+      <title>Relational Concepts</title>
       <link>https://tanducmai.com/blog/database/database-relational-concepts/</link>
       <pubDate>Wed, 23 Feb 2022 07:58:02 +1030</pubDate>
       
@@ -255,7 +255,7 @@ Within a Table every row must be UNIQUE (no duplicate data!).</description>
     </item>
     
     <item>
-      <title>Database - Why?</title>
+      <title>Why Database?</title>
       <link>https://tanducmai.com/blog/database/database-why/</link>
       <pubDate>Tue, 22 Feb 2022 06:23:37 +1030</pubDate>
       
@@ -264,7 +264,7 @@ Within a Table every row must be UNIQUE (no duplicate data!).</description>
     </item>
     
     <item>
-      <title>Database - Fundamentals</title>
+      <title>Fundamentals</title>
       <link>https://tanducmai.com/blog/database/database-fundamentals/</link>
       <pubDate>Mon, 21 Feb 2022 05:11:42 +1030</pubDate>
       
@@ -284,7 +284,7 @@ A collection of potentially useful data that models real-world or conceptual obj
     </item>
     
     <item>
-      <title>Python - OOP - Class Fundamentals</title>
+      <title>Class Fundamentals</title>
       <link>https://tanducmai.com/blog/python/oop/python-oop-class-fundamentals/</link>
       <pubDate>Mon, 13 Dec 2021 00:00:00 +1030</pubDate>
       
@@ -302,16 +302,16 @@ A collection of potentially useful data that models real-world or conceptual obj
     </item>
     
     <item>
-      <title>Git - Branch</title>
-      <link>https://tanducmai.com/blog/git/branch/</link>
+      <title>Branch</title>
+      <link>https://tanducmai.com/blog/git/git-branch/</link>
       <pubDate>Mon, 22 Nov 2021 17:13:05 +1030</pubDate>
       
-      <guid>https://tanducmai.com/blog/git/branch/</guid>
+      <guid>https://tanducmai.com/blog/git/git-branch/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Network - Physical Layer Protocols</title>
+      <title>Physical Layer Protocols</title>
       <link>https://tanducmai.com/blog/network/introduction-to-networks/network-access/physical-layer-protocols/</link>
       <pubDate>Mon, 01 Nov 2021 14:29:24 +0930</pubDate>
       
@@ -320,7 +320,7 @@ A collection of potentially useful data that models real-world or conceptual obj
     </item>
     
     <item>
-      <title>Network - Data Transfer</title>
+      <title>Data Transfer</title>
       <link>https://tanducmai.com/blog/network/introduction-to-networks/network-protocols-and-communications/network-data-transfer/</link>
       <pubDate>Thu, 28 Oct 2021 23:27:09 +0930</pubDate>
       
@@ -329,7 +329,7 @@ A collection of potentially useful data that models real-world or conceptual obj
     </item>
     
     <item>
-      <title>Network - Layered Model</title>
+      <title>Layered Model</title>
       <link>https://tanducmai.com/blog/network/introduction-to-networks/network-protocols-and-communications/network-layered-model/</link>
       <pubDate>Wed, 27 Oct 2021 21:42:13 +0930</pubDate>
       
@@ -339,7 +339,7 @@ A collection of potentially useful data that models real-world or conceptual obj
     </item>
     
     <item>
-      <title>Network - Protocols</title>
+      <title>Network Protocols</title>
       <link>https://tanducmai.com/blog/network/introduction-to-networks/network-protocols-and-communications/network-protocols/</link>
       <pubDate>Tue, 26 Oct 2021 18:32:44 +0930</pubDate>
       
@@ -349,7 +349,7 @@ Protocol Suite a set of protocols that work together to provide comprehensive ne
     </item>
     
     <item>
-      <title>Network - Rules of Communication</title>
+      <title>Rules of Communication</title>
       <link>https://tanducmai.com/blog/network/introduction-to-networks/network-protocols-and-communications/network-rules-of-communication/</link>
       <pubDate>Mon, 25 Oct 2021 00:19:48 +0930</pubDate>
       
@@ -358,7 +358,7 @@ Protocol Suite a set of protocols that work together to provide comprehensive ne
     </item>
     
     <item>
-      <title>Network - Architecture</title>
+      <title>Network Architecture</title>
       <link>https://tanducmai.com/blog/network/introduction-to-networks/explore-the-network/network-architecture/</link>
       <pubDate>Thu, 14 Oct 2021 15:28:52 +0930</pubDate>
       
@@ -377,7 +377,7 @@ There are four basic characteristics that the underlying architectures need to a
     </item>
     
     <item>
-      <title>Network - LANs, WANs, and the Internet</title>
+      <title>LANs, WANs, and the Internet</title>
       <link>https://tanducmai.com/blog/network/introduction-to-networks/explore-the-network/network-lans-wans-internet/</link>
       <pubDate>Wed, 13 Oct 2021 01:06:11 +0930</pubDate>
       
@@ -387,7 +387,7 @@ There are four basic characteristics that the underlying architectures need to a
     </item>
     
     <item>
-      <title>Network - Components</title>
+      <title>Network Components</title>
       <link>https://tanducmai.com/blog/network/introduction-to-networks/explore-the-network/network-components/</link>
       <pubDate>Tue, 12 Oct 2021 23:07:50 +0930</pubDate>
       
@@ -396,7 +396,7 @@ There are four basic characteristics that the underlying architectures need to a
     </item>
     
     <item>
-      <title>Network - Provide Resources</title>
+      <title>Provide Resources</title>
       <link>https://tanducmai.com/blog/network/introduction-to-networks/explore-the-network/provide-resources-in-a-network/</link>
       <pubDate>Mon, 11 Oct 2021 20:54:40 +0930</pubDate>
       
@@ -406,7 +406,7 @@ Small Home Networks connect a few computers to one another and to the internet.<
     </item>
     
     <item>
-      <title>Python - Naming Conventions</title>
+      <title>Naming Conventions</title>
       <link>https://tanducmai.com/blog/python/python-naming-conventions/</link>
       <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
       

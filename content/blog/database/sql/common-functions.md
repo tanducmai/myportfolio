@@ -1,6 +1,6 @@
 +++
 date = 2022-03-28T17:37:46+10:30
-title = "Database - SQL - Common Functions"
+title = "Common Functions"
 slug = "database-sql-common-functions"
 aliases = "/database-sql-common-functions"
 description = "Database - SQL - Common Functions"

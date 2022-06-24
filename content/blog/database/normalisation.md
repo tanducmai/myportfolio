@@ -1,6 +1,6 @@
 +++
 date = 2022-02-26T01:05:26+10:30
-title = "Database - Normalisation"
+title = "Normalisation"
 slug = "database-normalisation"
 aliases = "/database-normalisation"
 description = "Database - Normalisation"

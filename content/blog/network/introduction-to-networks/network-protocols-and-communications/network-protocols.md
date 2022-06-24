@@ -1,6 +1,6 @@
 +++
 date = 2021-10-26T18:32:44+09:30
-title = "Network - Protocols"
+title = "Network Protocols"
 slug = "network-protocols"
 aliases = "network-protocols"
 description = "Network Protocols"

@@ -1,6 +1,6 @@
 +++
 date = 2022-03-21T10:34:07+10:30
-title = "Database - SQL - Set Operators"
+title = "Set Operators"
 slug = "database-sql-set-operators"
 aliases = "/database-sql-set-operators"
 description = "Database - SQL - Set Operators"

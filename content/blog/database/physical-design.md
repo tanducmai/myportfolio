@@ -1,6 +1,6 @@
 +++
 date = 2022-03-09T23:40:53+10:30
-title = "Database - Physical Design"
+title = "Physical Design"
 slug = "database-physical-design"
 aliases = "/database-physical-design/"
 description = "Database - Physical Design"

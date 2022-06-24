@@ -1,6 +1,6 @@
 +++
 date = 2022-02-21T05:11:42+10:30
-title = "Database - Fundamentals"
+title = "Fundamentals"
 slug = "database-fundamentals"
 aliases = "/database-fundamentals/"
 description = "Database Fundamentals"

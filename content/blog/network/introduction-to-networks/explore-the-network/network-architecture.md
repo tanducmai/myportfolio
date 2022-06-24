@@ -1,6 +1,6 @@
 +++
 date = 2021-10-14T15:28:52+09:30
-title = "Network - Architecture"
+title = "Network Architecture"
 slug = "network-architecture"
 aliases = "network-architecture"
 description = "Network Architecture"

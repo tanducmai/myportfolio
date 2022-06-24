@@ -4,12 +4,6 @@ title = "List Module"
 slug = "list-module"
 thumbnail = "images/python/portfolio/list-module.png"
 description = "List Module"
-tags = [
-    "python",
-]
-categories = [
-    "python",
-]
 aliases = "/list-module/"
 +++
 

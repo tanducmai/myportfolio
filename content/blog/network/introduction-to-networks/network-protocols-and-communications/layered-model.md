@@ -1,6 +1,6 @@
 +++
 date = 2021-10-27T21:42:13+09:30
-title = "Network - Layered Model"
+title = "Layered Model"
 slug = "network-layered-model"
 aliases = "network-layered-model"
 description = "Network - Layered Model"

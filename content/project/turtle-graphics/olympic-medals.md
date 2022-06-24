@@ -4,14 +4,6 @@ title = "Olympic Medals Turtle Graphics"
 slug = "olympic-medals-turtle-graphics"
 thumbnail = "images/python/portfolio/turtle-graphics/olympic-medals/output.jpg"
 description = "Olympic Medals Turtle Graphics"
-tags = [
-    "python",
-    "turtle",
-]
-categories = [
-    "python",
-    "turtle",
-]
 aliases = "/olympic-medals-turtle-graphics/"
 +++
 

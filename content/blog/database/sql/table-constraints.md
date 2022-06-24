@@ -1,6 +1,6 @@
 +++
 date = 2022-03-10T23:40:53+10:30
-title = "Database - SQL - Table Constraints"
+title = "Table Constraints"
 slug = "database-sql-table-constraints"
 aliases = "/database-sql-table-constraints"
 description = "Database - SQL - Table Constraints"

@@ -1,6 +1,6 @@
 +++
 date = 2022-03-15T15:38:40+10:30
-title = "Database - SQL - Table Joins"
+title = "Table Joins"
 slug = "database-sql-table-joins"
 aliases = "/database-sql-table-joins"
 description = "Database - SQL - Table Joins"

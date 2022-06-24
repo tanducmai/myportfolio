@@ -1,6 +1,6 @@
 +++
 date = 2021-10-25T00:19:48+09:30
-title = "Network - Rules of Communication"
+title = "Rules of Communication"
 slug = "network-rules-of-communication"
 aliases = "network-rules-of-communication"
 description = "Network - Rules of Communication"

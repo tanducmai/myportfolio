@@ -1,6 +1,6 @@
 +++
 date = 2022-03-29T17:37:46+10:30
-title = "Database - SQL - Control Statements"
+title = "Control Statements"
 slug = "database-sql-control-statements"
 aliases = "/database-sql-control-statements"
 description = "Database - SQL - Control Statements"

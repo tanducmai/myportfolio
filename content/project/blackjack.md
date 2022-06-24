@@ -4,12 +4,6 @@ title = "Blackjack"
 slug = "blackjack"
 thumbnail = "images/python/portfolio/blackjack.png"
 description = "Blackjack"
-tags = [
-    "python",
-]
-categories = [
-    "python",
-]
 aliases = "/blackjack/"
 +++
 

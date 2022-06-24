@@ -1,6 +1,6 @@
 +++
 date = 2022-02-25T17:54:53+10:30
-title = "Database - Identify the Primary Key"
+title = "Identify the Primary Key"
 slug = "database-identify-the-primary-key"
 aliases = "/database-identify-the-primary-key/"
 description = "Database - Identify the Primary Key"

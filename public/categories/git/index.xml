@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on Tan Duc Mai</title>
+    <link>https://tanducmai.com/categories/git/</link>
+    <description>Recent content in git on Tan Duc Mai</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 22 Nov 2021 17:13:05 +1030</lastBuildDate>
+    
+	<atom:link href="https://tanducmai.com/categories/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Branch</title>
+      <link>https://tanducmai.com/blog/git/git-branch/</link>
+      <pubDate>Mon, 22 Nov 2021 17:13:05 +1030</pubDate>
+      
+      <guid>https://tanducmai.com/blog/git/git-branch/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -4,14 +4,6 @@ title = "City Life Turtle Graphics"
 slug = "city-life-turtle-graphics"
 thumbnail = "images/python/portfolio/turtle-graphics/city-life.jpg"
 description = "City Life Turtle Graphics"
-tags = [
-    "python",
-    "turtle",
-]
-categories = [
-    "python",
-    "turtle",
-]
 aliases = "/city-life-turtle-graphics/"
 +++
 

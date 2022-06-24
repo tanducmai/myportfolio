@@ -1,6 +1,6 @@
 +++
 date = 2022-03-16T16:15:06+10:30
-title = "Database - SQL - Nested Queries"
+title = "Nested Queries"
 slug = "database-sql-nested-queries"
 aliases = "/database-sql-nested-queries"
 description = "Database - SQL - Nested Queries"

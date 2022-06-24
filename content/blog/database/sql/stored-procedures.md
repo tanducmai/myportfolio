@@ -1,6 +1,6 @@
 +++
 date = 2022-04-05T17:34:07+09:30
-title = "Database - SQL - Stored Procedures"
+title = "Stored Procedures"
 slug = "database-sql-stored-procedures"
 aliases = "/database-sql-stored-procedures"
 description = "Database - SQL - Stored Procedures"

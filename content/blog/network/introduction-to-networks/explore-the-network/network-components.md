@@ -1,6 +1,6 @@
 +++
 date = 2021-10-12T23:07:50+09:30
-title = "Network - Components"
+title = "Network Components"
 slug = "network-components"
 aliases = "network-components"
 description = "Network - Components"

@@ -33,8 +33,23 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/categories/</loc>
+    <loc>https://tanducmai.com/project/computer-shop-management-system/</loc>
     <lastmod>2022-04-13T00:09:35+09:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/project/</loc>
+    <lastmod>2022-04-13T00:09:35+09:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/blog/</loc>
+    <lastmod>2022-04-05T17:34:07+09:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/categories/</loc>
+    <lastmod>2022-04-05T17:34:07+09:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -48,57 +63,12 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/project/computer-shop-management-system/</loc>
-    <lastmod>2022-04-13T00:09:35+09:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/project/</loc>
-    <lastmod>2022-04-13T00:09:35+09:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/tags/python/</loc>
-    <lastmod>2022-04-13T00:09:35+09:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/categories/python/</loc>
-    <lastmod>2022-04-13T00:09:35+09:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/tags/</loc>
-    <lastmod>2022-04-13T00:09:35+09:30</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://tanducmai.com/ja/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tanducmai.com/tags/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/blog/</loc>
-    <lastmod>2022-04-05T17:34:07+09:30</lastmod>
-  </url>
-  
-  <url>
     <loc>https://tanducmai.com/tags/database/</loc>
     <lastmod>2022-04-05T17:34:07+09:30</lastmod>
   </url>
   
   <url>
     <loc>https://tanducmai.com/categories/database/</loc>
-    <lastmod>2022-04-05T17:34:07+09:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/blog/database/sql/database-sql-stored-procedures/</loc>
     <lastmod>2022-04-05T17:34:07+09:30</lastmod>
   </url>
   
@@ -118,6 +88,26 @@
   </url>
   
   <url>
+    <loc>https://tanducmai.com/blog/database/sql/database-sql-stored-procedures/</loc>
+    <lastmod>2022-04-05T17:34:07+09:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/tags/</loc>
+    <lastmod>2022-04-05T17:34:07+09:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://tanducmai.com/ja/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tanducmai.com/tags/"
+                />
+  </url>
+  
+  <url>
     <loc>https://tanducmai.com/blog/database/sql/database-sql-views/</loc>
     <lastmod>2022-04-04T17:33:58+09:30</lastmod>
   </url>
@@ -133,12 +123,22 @@
   </url>
   
   <url>
+    <loc>https://tanducmai.com/blog/python/oop/python-oop-class-variables/</loc>
+    <lastmod>2022-03-23T09:51:54+10:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://tanducmai.com/tags/oop/</loc>
     <lastmod>2022-03-23T09:51:54+10:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/blog/python/oop/python-oop-class-variables/</loc>
+    <loc>https://tanducmai.com/tags/python/</loc>
+    <lastmod>2022-03-23T09:51:54+10:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/categories/python/</loc>
     <lastmod>2022-03-23T09:51:54+10:30</lastmod>
   </url>
   
@@ -183,17 +183,17 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/blog/database/sql/database-sql-table-constraints/</loc>
-    <lastmod>2022-03-10T23:40:53+10:30</lastmod>
-  </url>
-  
-  <url>
     <loc>https://tanducmai.com/tags/fundamentals/</loc>
     <lastmod>2022-03-10T23:40:53+10:30</lastmod>
   </url>
   
   <url>
     <loc>https://tanducmai.com/tags/physical-design/</loc>
+    <lastmod>2022-03-10T23:40:53+10:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/blog/database/sql/database-sql-table-constraints/</loc>
     <lastmod>2022-03-10T23:40:53+10:30</lastmod>
   </url>
   
@@ -223,12 +223,12 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/tags/conceptual-design/</loc>
+    <loc>https://tanducmai.com/blog/database/database-conceptual-design/</loc>
     <lastmod>2022-03-07T19:30:29+10:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/blog/database/database-conceptual-design/</loc>
+    <loc>https://tanducmai.com/tags/conceptual-design/</loc>
     <lastmod>2022-03-07T19:30:29+10:30</lastmod>
   </url>
   
@@ -308,7 +308,17 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/blog/git/branch/</loc>
+    <loc>https://tanducmai.com/blog/git/git-branch/</loc>
+    <lastmod>2021-11-22T17:13:05+10:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/tags/git/</loc>
+    <lastmod>2021-11-22T17:13:05+10:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/categories/git/</loc>
     <lastmod>2021-11-22T17:13:05+10:30</lastmod>
   </url>
   
@@ -378,7 +388,7 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/categories/clean-code/</loc>
+    <loc>https://tanducmai.com/tags/clean-code/</loc>
     <lastmod>2021-10-11T00:00:00+00:00</lastmod>
   </url>
   
@@ -393,27 +403,12 @@
   </url>
   
   <url>
-    <loc>https://tanducmai.com/categories/syntax/</loc>
-    <lastmod>2021-10-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://tanducmai.com/project/caesar-cipher-cryptography/</loc>
     <lastmod>2021-10-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://tanducmai.com/project/petals-around-the-rose/</loc>
-    <lastmod>2021-10-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/tags/turtle/</loc>
-    <lastmod>2021-10-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/categories/turtle/</loc>
     <lastmod>2021-10-06T00:00:00+00:00</lastmod>
   </url>
   

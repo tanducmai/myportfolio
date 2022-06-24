@@ -1,6 +1,6 @@
 +++
 date = 2021-10-11T20:54:40+09:30
-title = "Network - Provide Resources"
+title = "Provide Resources"
 slug = "provide-resources-in-a-network"
 aliases = "provide-resources-in-a-network"
 description = "Network - Provide Resources"

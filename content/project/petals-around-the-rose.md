@@ -4,14 +4,6 @@ title = "Petals Around The Rose"
 slug = "petals-around-the-rose"
 thumbnail = "images/python/portfolio/petals/thumbnail.png"
 description = "Credit Card Validator"
-tags = [
-    "python",
-    "turtle",
-]
-categories = [
-    "python",
-    "turtle",
-]
 aliases = "/petals-around-the-rose/"
 +++
 

@@ -1,6 +1,6 @@
 +++
 date = 2022-02-24T21:29:52+10:30
-title = "Database - Key Concepts"
+title = "Key Concepts"
 slug = "database-key-concepts"
 aliases = "/database-key-concepts/"
 description = "Database - Key Concepts"

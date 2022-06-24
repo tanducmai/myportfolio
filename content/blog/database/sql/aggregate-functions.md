@@ -1,6 +1,6 @@
 +++
 date = 2022-03-22T17:34:33+10:30
-title = "Database - SQL - Aggregate Functions"
+title = "Aggregate Functions"
 slug = "database-sql-aggregate-functions"
 aliases = "/database-sql-aggregate-functions"
 description = "Database - SQL - Aggregate Functions"

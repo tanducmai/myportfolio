@@ -1,6 +1,6 @@
 +++
 date = 2021-10-13T01:06:11+09:30
-title = "Network - LANs, WANs, and the Internet"
+title = "LANs, WANs, and the Internet"
 slug = "network-lans-wans-internet"
 aliases = "network-lans-wans-internet"
 description = "Network - LANs, WANs, and the Internet"

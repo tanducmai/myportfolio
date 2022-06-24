@@ -93,7 +93,7 @@ disqusShortname = "tan-duc-mai" # Enable or disable Disqus.
         [[languages.en.menu.main]]
         name = "Blog"
         weight = 2.0
-        url = "blog"
+        url = "categories"
 
         [[languages.en.menu.main]]
         name = "Portfolio"

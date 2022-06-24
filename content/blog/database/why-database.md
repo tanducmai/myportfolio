@@ -1,6 +1,6 @@
 +++
 date = 2022-02-22T06:23:37+10:30
-title = "Database - Why?"
+title = "Why Database?"
 slug = "database-why"
 aliases = "/database-why/"
 description = "Why Databases?"

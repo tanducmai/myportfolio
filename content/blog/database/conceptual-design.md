@@ -1,6 +1,6 @@
 +++
 date = 2022-03-07T19:30:29+10:30
-title = "Database - Conceptual Design"
+title = "Conceptual Design"
 slug = "database-conceptual-design"
 aliases = "/database-conceptual-design/"
 description = "Database - Conceptual Design"

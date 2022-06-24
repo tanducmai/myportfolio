@@ -1,6 +1,6 @@
 +++
 date = 2022-02-23T07:58:02+10:30
-title = "Database - Relational Concepts"
+title = "Relational Concepts"
 slug = "database-relational-concepts"
 aliases = "/database-relational-concepts/"
 description = "Database - Relational Concepts"

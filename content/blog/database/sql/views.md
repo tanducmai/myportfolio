@@ -1,6 +1,6 @@
 +++
 date = 2022-04-04T17:33:58+09:30
-title = "Database - SQL - Views"
+title = "Views"
 slug = "database-sql-views"
 aliases = "/database-sql-views"
 description = "Database - SQL - Views"
