@@ -16,8 +16,8 @@
 ### :zap: Highlights:
 
 <p>
-  <a href="https://github.com/tronghieu60s">
-    <img width="55%" align="right" alt="Onimur's github stats" src="https://github-readme-stats.vercel.app/api?username=tanducmai&show_icons=true&hide_border=true&count_private=true&bg_color=161b22&icon_color=79c0ff&text_color=c9d1d9&title_color=79c0ff" />
+  <a href="https://github.com/tanducmai">
+    <img width="55%" align="right" alt="Tan Duc Mai's github stats" src="https://github-readme-stats.vercel.app/api?username=tanducmai&show_icons=true&hide_border=true&count_private=true&bg_color=161b22&icon_color=79c0ff&text_color=c9d1d9&title_color=79c0ff" />
   </a>
   <code><img width="10%" src="https://www.vectorlogo.zone/logos/python/python-ar21.svg"></code>
   <code><img width="10%" src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg"></code>
