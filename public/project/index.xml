@@ -13,10 +13,10 @@
     
     <item>
       <title>Computer Shop Management</title>
-      <link>https://tanducmai.com/project/computer-shop-management/</link>
+      <link>https://tanducmai.com/project/computer-shop-management-system/</link>
       <pubDate>Wed, 13 Apr 2022 00:09:35 +0930</pubDate>
       
-      <guid>https://tanducmai.com/project/computer-shop-management/</guid>
+      <guid>https://tanducmai.com/project/computer-shop-management-system/</guid>
       <description>→ GitHub Table of Contents  Aim UML Design Libraries Implementation Authenticator Test Driver Project Organisation  Aim Management of a computer shop, with various stocks stored in the database which allows users to create a Wishlist.
 UML Design Libraries Note: run pip install -r requirements.txt to get all the required libraries.
 Throughout the project, I will use sever standard modules, three third party ones which require installation via pip.</description>

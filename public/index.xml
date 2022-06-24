@@ -31,10 +31,10 @@
     
     <item>
       <title>Computer Shop Management</title>
-      <link>https://tanducmai.com/project/computer-shop-management/</link>
+      <link>https://tanducmai.com/project/computer-shop-management-system/</link>
       <pubDate>Wed, 13 Apr 2022 00:09:35 +0930</pubDate>
       
-      <guid>https://tanducmai.com/project/computer-shop-management/</guid>
+      <guid>https://tanducmai.com/project/computer-shop-management-system/</guid>
       <description>→ GitHub Table of Contents  Aim UML Design Libraries Implementation Authenticator Test Driver Project Organisation  Aim Management of a computer shop, with various stocks stored in the database which allows users to create a Wishlist.
 UML Design Libraries Note: run pip install -r requirements.txt to get all the required libraries.
 Throughout the project, I will use sever standard modules, three third party ones which require installation via pip.</description>
@@ -308,6 +308,15 @@ A collection of potentially useful data that models real-world or conceptual obj
       
       <guid>https://tanducmai.com/blog/git/branch/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Network - Physical Layer Protocols</title>
+      <link>https://tanducmai.com/blog/network/introduction-to-networks/network-access/physical-layer-protocols/</link>
+      <pubDate>Mon, 01 Nov 2021 14:29:24 +0930</pubDate>
+      
+      <guid>https://tanducmai.com/blog/network/introduction-to-networks/network-access/physical-layer-protocols/</guid>
+      <description>Table of Contents  Types of Connections Network Interface Cards (NICs)  Types of Connections Whether connecting to a local printer in the home or a website in another country, before any network communications can occur, a physical connection to a local network must be established. A physical connection can be a wired connection using a cable or a wireless connection using radio waves. The type of physical connection used is dependent upon the setup of the network.</description>
     </item>
     
     <item>
