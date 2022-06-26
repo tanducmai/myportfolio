@@ -79,7 +79,7 @@ disqusShortname = "tan-duc-mai" # Enable or disable Disqus.
         # You can configure the theme parameter for each language.
         [languages.en.params]
         author = "Tan Duc Mai"
-        info = "Python Developer"
+        info = "Network Security Engineer"
         description = "My Programming Portfolio and Personal Website"
         keywords = "blog,developer,personal"
 
@@ -116,9 +116,9 @@ disqusShortname = "tan-duc-mai" # Enable or disable Disqus.
 
         [languages.ja.params]
         author = "ヘンリ マイ"
+        info = "ネットワーク セキュリティ エンジニア"
         description = "石見 優丞のサイト"
         keywords = "blog,developer, ブログ, エンジニア"
-        info = "PYTHON エンジニア"
 
         [languages.ja.menu]
 
