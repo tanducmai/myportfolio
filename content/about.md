@@ -13,27 +13,13 @@ of Information Technology at Eynesbury Institute of Business and Technology
 degree in Networking and Cybersecurity at the University of South Australia
 (UniSA).
 
-- Information Technology student with a variety of transferrable skills
-  and IT technical experience.
-- Skilled in aligning end-user needs with long-term resolutions to
-  common technical issues and complex IT challenges.
-- Passionate about maximising working outcomes. Confident in working
-  collaboratively through past work experience.
-- Actively seek an internship with opportunity growth and a learning
-  potential that reinforces my practical knowledge.
-
 ### Highlights
 
 - Proficient: Python (Scripting, Networking), SQL, Bash
 - Previous experience: HTML, CSS, Pascal, PowerShell
 - Operating systems: Linux, macOS, Windows
-- Solid Business and Accounting skills
-- Typing speed: 85 WPM
-- Troubleshooting of POS, printers, and phone
 - Virtualisation (VMware), StackOverFlow, Git
 - DHCP/DNS, Ethernet, and Firewall proficient
-- Cisco, Adobe Suite, and MS Office proficient
-- Remote desktop support and services
 
 ### Contact
 
