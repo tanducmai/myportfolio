@@ -264,12 +264,21 @@ A collection of potentially useful data that models real-world or conceptual obj
     </item>
     
     <item>
+      <title>Network Media</title>
+      <link>https://tanducmai.com/blog/network/introduction-to-networks/network-access/network-media/</link>
+      <pubDate>Tue, 02 Nov 2021 00:20:24 +0930</pubDate>
+      
+      <guid>https://tanducmai.com/blog/network/introduction-to-networks/network-access/network-media/</guid>
+      <description>Table of Contents </description>
+    </item>
+    
+    <item>
       <title>Physical Layer Protocols</title>
       <link>https://tanducmai.com/blog/network/introduction-to-networks/network-access/physical-layer-protocols/</link>
       <pubDate>Mon, 01 Nov 2021 14:29:24 +0930</pubDate>
       
       <guid>https://tanducmai.com/blog/network/introduction-to-networks/network-access/physical-layer-protocols/</guid>
-      <description>Table of Contents  Types of Connections Network Interface Cards (NICs)  Types of Connections Whether connecting to a local printer in the home or a website in another country, before any network communications can occur, a physical connection to a local network must be established. A physical connection can be a wired connection using a cable or a wireless connection using radio waves. The type of physical connection used is dependent upon the setup of the network.</description>
+      <description>Table of Contents  Types of Connections Network Interface Cards (NICs) Performance Level OSI Physical Layer Physical Layer Media  Types of Connections Whether connecting to a local printer in the home or a website in another country, before any network communications can occur, a physical connection to a local network must be established. A physical connection can be a wired connection using a cable or a wireless connection using radio waves.</description>
     </item>
     
     <item>

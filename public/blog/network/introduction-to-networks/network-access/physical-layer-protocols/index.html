@@ -124,6 +124,9 @@
 <ul>
 <li><a href="#types-of-connections">Types of Connections</a></li>
 <li><a href="#network-interface-cards-nics">Network Interface Cards (NICs)</a></li>
+<li><a href="#performance-level">Performance Level</a></li>
+<li><a href="#osi-physical-layer">OSI Physical Layer</a></li>
+<li><a href="#physical-layer-media">Physical Layer Media</a></li>
 </ul>
 <!-- vim-markdown-toc -->
 <h3 id="types-of-connections">Types of Connections</h3>
@@ -131,46 +134,79 @@
 country, before any network communications can occur, a physical connection to a
 local network must be established. A physical connection can be a wired
 connection using a cable or a wireless connection using radio waves. The type of
-physical connection used is dependent upon the setup of the network.</p>
+physical connection used is dependent upon the set-up of the network.</p>
 <p>For example, in many corporate offices employees have desktop or laptop
 computers that are physically connected, via cable, to a shared switch. This
 type of setup is a <strong>wired network</strong>. Data is transmitted through a <em>physical
 cable</em>.</p>
 <p>In addition to wired connections, many businesses also offer <strong>wireless
 connections</strong> for laptops, tablets, and smartphones. With wireless devices, data
-is transmitted using <em>radio waves</em>. To offer wireless capability, devices on a
-wireless network must be connected to a <em>wireless access point (AP)</em>.</p>
-<p>Switch devices and wireless access points are often two separate dedicated
-devices within a network implementation. However, there are also devices that
-offer both wired and wireless connectivity. In many homes, for example,
-individuals are implementing home <em>integrated service routers (ISRs)</em>. ISRs
-offer a switching component with multiple ports, allowing multiple devices to be
-connected to the LAN using cables. Additionally, many ISRs also include an AP,
-which allows wireless devices to connect as well.</p>
+is transmitted using <em>radio waves</em>. To bring wireless capability to a wired
+network, devices on a wireless network must be connected to a wireless <strong>access
+point (AP)</strong>.</p>
+<p>Switch devices (wired) and access points (wireless) are often two separate
+dedicated devices within a network implementation. However, there are also
+networking devices that offer both wired and wireless connectivity. In many
+homes, for example, individuals are implementing home <strong>integrated service
+routers</strong> (ISR, IP router, or network router). ISRs offer a switching component
+with multiple ports, allowing multiple devices to be connected to the LAN using
+cables. Additionally, many ISRs also include an AP, which allows wireless
+devices to connect as well.</p>
 <h3 id="network-interface-cards-nics">Network Interface Cards (NICs)</h3>
 <pre><code>connect a device to the network.
 </code></pre>
-<p>Ethernet NICs are used for a wired connection. An end-user device may include
-one or both types of NICs. A network printer, for example, may only have an
-Ethernet NIC, and therefore, must connect to the network using an Ethernet
-cable. Other devices, such as tablets and smartphones, might only contain a WLAN
-NIC and must use a wireless connection.</p>
-<p>Not all physical connections are equal, in terms of the performance level, when
-connecting to a network.</p>
+<p><strong>Ethernet NICs</strong> are used for a wired connection. An end-user device may
+include one or both types of NICs. For instance, a network printer may only have
+an Ethernet NIC and therefore must connect to the network using an Ethernet
+cable. Other devices, such as tablets and smartphones, might only contain a
+<strong>WLAN NIC</strong> and therefore must use a wireless connection.</p>
+<h3 id="performance-level">Performance Level</h3>
+<pre><code>Not all physical connections are equal, in terms of the performance level,
+when connecting to a network.
+</code></pre>
 <p>For example, a wireless device will experience degradation in performance based
-on its distance from a wireless access point. The further the device is from the
-access point, the weaker the wireless signal it receives. This can mean less
-bandwidth or no wireless connection at all. Figure 2 shows that a wireless range
-extender can be used to regenerate the wireless signal to other parts of the
-house that are too far from the wireless access point. Alternatively, a wired
-connection will not degrade in performance.</p>
-<p>All wireless devices must share access to the airwaves connecting to the
-wireless access point. This means slower network performance may occur as more
-wireless devices access the network simultaneously. A wired device does not need
-to share its access to the network with other devices. Each wired device has a
-separate communications channel over its Ethernet cable. This is important when
-considering some applications, such as online gaming, streaming video, and video
-conferencing, which require more dedicated bandwidth than other applications.</p>
+on its distance from an AP. The further the device is from the AP, the weaker
+the wireless signal it receives. This can mean less bandwidth or no wireless
+connection at all.</p>
+<p>All wireless devices must share access to the airwaves connecting to the AP.
+This means slower network performance may occur as more wireless devices access
+the network simultaneously. A wired device does not need to share its access to
+the network with other devices. Each wired device has a separate communications
+channel over its Ethernet cable. This is important when considering some
+applications, such as online gaming, streaming video, and video conferencing,
+which require more dedicated bandwidth than other applications.</p>
+<p>For wireless connections, to strengthen the signal, a wireless <strong>range
+extender</strong> can be used to regenerate the wireless signal to other parts that are
+too far from the AP. Alternatively, a wired connection will not degrade in
+performance no matter how far the device is from the AP.</p>
+<h3 id="osi-physical-layer">OSI Physical Layer</h3>
+<pre><code>provides the means to transport the bits making up a data link layer frame
+across the network media.
+</code></pre>
+<p>It accepts a complete frame from the data link layer and encodes it as a series
+of signals, called bits, that are transmitted onto the local media. The encoded
+bits that comprise a frame are received by either an end device or an
+intermediary device.</p>
+<p>The process that data undergoes from a source node to a destination node is:</p>
+<ol>
+<li>The user data is segmented by the transport layer, placed into packets by the
+network layer, and further encapsulated into frames by the data link layer.</li>
+<li>The physical layer encodes the frames and creates the electrical, optical, or
+radio wave signals that represent the bits in each frame.</li>
+<li>These signals are then sent on the <a href="#physical-layer-media">media</a>, one at a
+time.</li>
+<li>The destination node&rsquo;s physical layer retrieves these individual signals from
+the media, restores them to their bit representations, and passes the bits up
+to the data link layer as a complete frame.</li>
+</ol>
+<h3 id="physical-layer-media">Physical Layer Media</h3>
+<p>There are three basic forms of network media. The physical layer produces the
+representation and groupings of bits for each type of media as:</p>
+<ol>
+<li><strong>Copper cable</strong>: The signals are patterns of electrical pulses.</li>
+<li><strong>Fiber-optic cable</strong>: The signals are patterns of light.</li>
+<li><strong>Wireless</strong>: The signals are patterns of microwave transmissions.</li>
+</ol>
 
   </article>
 </section>
