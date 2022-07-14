@@ -6,27 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="author" content="Tan Duc Mai">
-    <meta name="description" content="My Programming Portfolio and Personal Website">
+    <meta name="description" content="https://tanducmai.com">
     <meta name="keywords" content="blog,developer,personal">
 
     <meta property="og:site_name" content="Tan Duc Mai">
     <meta property="og:title" content="
-  Categories - Tan Duc Mai
+  Data Link Layer Protocols - Tan Duc Mai
 ">
-    <meta property="og:description" content="My Programming Portfolio and Personal Website">
+    <meta property="og:description" content="Data Link Layer Protocols">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://tanducmai.com/categories/">
+    <meta property="og:url" content="https://tanducmai.com/blog/network/introduction-to-networks/network-access/data-link-layer-protocols/">
     <meta property="og:image" content="https://tanducmai.comimages/tn.png">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="https://tanducmai.com/categories/">
+    <meta name="twitter:site" content="https://tanducmai.com/blog/network/introduction-to-networks/network-access/data-link-layer-protocols/">
     <meta name="twitter:image" content="https://tanducmai.comimages/tn.png">
 
-    <base href="https://tanducmai.com/categories/">
+    <base href="https://tanducmai.com/blog/network/introduction-to-networks/network-access/data-link-layer-protocols/">
     <title>
-  Categories - Tan Duc Mai
+  Data Link Layer Protocols - Tan Duc Mai
 </title>
 
-    <link rel="canonical" href="https://tanducmai.com/categories/">
+    <link rel="canonical" href="https://tanducmai.com/blog/network/introduction-to-networks/network-access/data-link-layer-protocols/">
     
     <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
     <link rel="stylesheet" href="/css/normalize.min.css">
@@ -113,34 +113,37 @@
 
       <div class="content">
         
-  <section class="container list">
-  <h1 class="title">Categories</h1>
-  <ul>
-    
-    <li>
-      <span>April 5, 2022</span><a href="https://tanducmai.com/categories/database/">database</a>
-    </li>
-    
-    <li>
-      <span>March 23, 2022</span><a href="https://tanducmai.com/categories/python/">python</a>
-    </li>
-    
-    <li>
-      <span>November 22, 2021</span><a href="https://tanducmai.com/categories/git/">git</a>
-    </li>
-    
-    <li>
-      <span>November 3, 2021</span><a href="https://tanducmai.com/categories/network/">network</a>
-    </li>
-    
-  </ul>
-  
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Data Link Layer Protocols</h1>
+    </header>
 
+    <h3 id="table-of-contents">Table of Contents</h3>
+<!-- vim-markdown-toc GFM -->
+<ul>
+<li><a href="#osi-data-link-layer">OSI Data Link Layer</a></li>
+</ul>
+<!-- vim-markdown-toc -->
+<h3 id="osi-data-link-layer">OSI Data Link Layer</h3>
+<p>The data link layer of the OSI model (Layer 2) is responsible for:</p>
+<ul>
+<li>Allowing the upper layers to access the media</li>
+<li>Accepting Layer 3 packets and packaging them into frames</li>
+<li>Preparing network data for the physical network</li>
+<li>Controlling how data is placed and received on the media</li>
+<li>Exchanging frames between nodes over a physical network media, such as UTP or
+fiber-optic</li>
+<li>Receiving and directing packets to an upper layer protocol</li>
+<li>Performing error detection</li>
+</ul>
+<p>The Layer 2 notation for network devices connected to a common media is called a
+<strong>node</strong>. Nodes build and forward frames. The OSI data link layer is responsible
+for the exchange of Ethernet frames between source and destination nodes over a
+physical network media.</p>
+<p>The data link layer effectively separates the media transitions that occur as the packet is forwarded from the communication processes of the higher layers. The data link layer receives packets from and directs packets to an upper layer protocol, in this case IPv4 or IPv6. This upper layer protocol does not need to be aware of which media the communication will use.</p>
 
-
-
-
-
+  </article>
 </section>
 
 

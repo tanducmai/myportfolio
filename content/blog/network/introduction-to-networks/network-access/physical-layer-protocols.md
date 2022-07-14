@@ -18,11 +18,11 @@ draft = false
 
 <!-- vim-markdown-toc GFM -->
 
-* [Types of Connections](#types-of-connections)
-* [Network Interface Cards (NICs)](#network-interface-cards-nics)
-* [Performance Level](#performance-level)
-* [OSI Physical Layer](#osi-physical-layer)
-* [Physical Layer Media](#physical-layer-media)
+1. [Types of Connections](#types-of-connections)
+1. [Network Interface Cards (NICs)](#network-interface-cards-nics)
+1. [Performance Level](#performance-level)
+1. [OSI Physical Layer](#osi-physical-layer)
+1. [Physical Layer Media](#physical-layer-media)
 
 <!-- vim-markdown-toc -->
 
