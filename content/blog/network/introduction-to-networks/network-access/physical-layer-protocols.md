@@ -89,8 +89,8 @@ performance no matter how far the device is from the AP.
 
 ### OSI Physical Layer
 
-    provides the means to transport the bits making up a data link layer frame
-    across the network media.
+    defines the means of transmitting a stream of raw bits over a physical data
+    link connecting network nodes.
 
 It accepts a complete frame from the data link layer and encodes it as a series
 of signals, called bits, that are transmitted onto the local media. The encoded
