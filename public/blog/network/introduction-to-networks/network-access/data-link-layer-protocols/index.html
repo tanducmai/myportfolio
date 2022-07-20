@@ -121,12 +121,16 @@
 
     <h3 id="table-of-contents">Table of Contents</h3>
 <!-- vim-markdown-toc GFM -->
-<ul>
+<ol>
 <li><a href="#osi-data-link-layer">OSI Data Link Layer</a></li>
-</ul>
+<li><a href="#data-link-sublayers">Data Link Sublayers</a></li>
+<li><a href="#providing-access-to-media">Providing Access to Media</a></li>
+</ol>
 <!-- vim-markdown-toc -->
 <h3 id="osi-data-link-layer">OSI Data Link Layer</h3>
-<p>The data link layer of the OSI model (Layer 2) is responsible for:</p>
+<pre><code>accepts a packet from the network layer and prepares it for transport on the physical media.
+</code></pre>
+<p>The data link layer of the OSI model (layer 2) is responsible for:</p>
 <ul>
 <li>Allowing the upper layers to access the media</li>
 <li>Accepting Layer 3 packets and packaging them into frames</li>
@@ -141,7 +145,51 @@ fiber-optic</li>
 <strong>node</strong>. Nodes build and forward frames. The OSI data link layer is responsible
 for the exchange of Ethernet frames between source and destination nodes over a
 physical network media.</p>
-<p>The data link layer effectively separates the media transitions that occur as the packet is forwarded from the communication processes of the higher layers. The data link layer receives packets from and directs packets to an upper layer protocol, in this case IPv4 or IPv6. This upper layer protocol does not need to be aware of which media the communication will use.</p>
+<p>The data link layer effectively separates the media transitions that occur as
+the packet is forwarded from the communication processes of the higher layers.
+The data link layer receives packets from and directs packets to an upper layer
+protocol (IPv4 or IPv6). This upper layer protocol does not need to be aware of
+which media the communication will use.</p>
+<h3 id="data-link-sublayers">Data Link Sublayers</h3>
+<p>To facilitate its purpose, the data link layer consists of two sublayers:</p>
+<ol>
+<li><strong>Logical Link Control (LLC)</strong> - This upper sublayer communicates with the
+network layer. It places information in the frame that identifies which
+network layer protocol is being used for the frame. This information allows
+multiple Layer 3 protocols, such as IPv4 and IPv6, to utilise the same
+network interface and media.</li>
+<li><strong>Media Access Control (MAC)</strong> - This lower sublayer defines the media access
+processes performed by the hardware. It provides data link layer addressing
+and access to various network technologies.</li>
+</ol>
+<p>The LLC communicates with the network layer while the MAC sublayer allows
+various network access technologies. For instance, the MAC sublayer communicates
+with Ethernet LAN technology to send and receive frames over copper or
+fiber-optic cable. The MAC sublayer also communicates with wireless technologies
+such as Wi-Fi and Bluetooth to send and receive frames wirelessly.</p>
+<h3 id="providing-access-to-media">Providing Access to Media</h3>
+<p>Different media access control methods may be required during a single
+communication. Each network environment that packets encounter as they travel
+from a local host to a remote host can have different characteristics. For
+example, an Ethernet LAN consists of many hosts contending to access the network
+medium. Serial links consist of a direct connection between only two devices.</p>
+<p>Router interfaces encapsulate the packet into the appropriate frame, and a
+suitable media access control method is used to access each link. In any given
+exchange of network layer packets, there may be numerous data link layers and
+media transitions.</p>
+<p>At each hop along the path, a router:</p>
+<ol>
+<li>Accepts a frame from a medium</li>
+<li>De-encapsulates the frame</li>
+<li>Re-encapsulates the packet into a new frame</li>
+<li>Forwards the new frame appropriate to the medium of that segment of the
+physical network</li>
+</ol>
+<p>For example, a router has an Ethernet interface to connect to the LAN and a
+serial interface to connect to the WAN. As the router processes frames, it will
+use data link layer services to receive the frame from one medium,
+de-encapsulate it to the Layer 3 PDU, re-encapsulate the PDU into a new frame,
+and place the frame on the medium of the next link of the network.</p>
 
   </article>
 </section>

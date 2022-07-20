@@ -311,12 +311,21 @@ A collection of potentially useful data that models real-world or conceptual obj
     </item>
     
     <item>
+      <title>Media Access Control</title>
+      <link>https://tanducmai.com/blog/network/introduction-to-networks/network-access/media-access-control/</link>
+      <pubDate>Thu, 04 Nov 2021 20:57:14 +0930</pubDate>
+      
+      <guid>https://tanducmai.com/blog/network/introduction-to-networks/network-access/media-access-control/</guid>
+      <description>Table of Contents </description>
+    </item>
+    
+    <item>
       <title>Data Link Layer Protocols</title>
       <link>https://tanducmai.com/blog/network/introduction-to-networks/network-access/data-link-layer-protocols/</link>
       <pubDate>Wed, 03 Nov 2021 23:42:49 +0930</pubDate>
       
       <guid>https://tanducmai.com/blog/network/introduction-to-networks/network-access/data-link-layer-protocols/</guid>
-      <description>Table of Contents  OSI Data Link Layer  OSI Data Link Layer The data link layer of the OSI model (Layer 2) is responsible for:
+      <description>Table of Contents  OSI Data Link Layer Data Link Sublayers Providing Access to Media  OSI Data Link Layer accepts a packet from the network layer and prepares it for transport on the physical media.  The data link layer of the OSI model (layer 2) is responsible for:
  Allowing the upper layers to access the media Accepting Layer 3 packets and packaging them into frames Preparing network data for the physical network Controlling how data is placed and received on the media Exchanging frames between nodes over a physical network media, such as UTP or fiber-optic Receiving and directing packets to an upper layer protocol Performing error detection  The Layer 2 notation for network devices connected to a common media is called a node.</description>
     </item>
     
