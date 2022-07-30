@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Tan Duc Mai">
+    <meta name="description" content="https://tanducmai.com">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta property="og:site_name" content="Tan Duc Mai">
+    <meta property="og:title" content="
+  CIA Triad - Tan Duc Mai
+">
+    <meta property="og:description" content="CIA Triad">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tanducmai.com/blog/security/cia-triad/">
+    <meta property="og:image" content="https://tanducmai.comimages/tn.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://tanducmai.com/blog/security/cia-triad/">
+    <meta name="twitter:image" content="https://tanducmai.comimages/tn.png">
+
+    <base href="https://tanducmai.com/blog/security/cia-triad/">
+    <title>
+  CIA Triad - Tan Duc Mai
+</title>
+
+    <link rel="canonical" href="https://tanducmai.com/blog/security/cia-triad/">
+    
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="/css/normalize.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    
+      <link rel="alternate" href="https://tanducmai.com/index.xml" type="application/rss+xml" title="Tan Duc Mai">
+      <link href="https://tanducmai.com/index.xml" rel="feed" type="application/rss+xml" title="Tan Duc Mai" />
+    
+
+    <meta name="generator" content="Hugo 0.68.3" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">Tan Duc Mai</a>
+    <input type="checkbox" id="menu-control"/>
+    <label class="menu-mobile  float-right " for="menu-control">
+      <span class="btn-mobile  float-right ">&#9776;</span>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/about">About</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/categories">Blog</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/project">Portfolio</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/glossary">Glossary</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://tanducmai.com/contact">Contact</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            <li class= " mobile-menu-lang-separator-centered ">
+              <hr />
+            </li>
+          
+          
+            
+          
+            
+              
+                
+                  <li class="multilingual-separator">
+                    <p>|</p>
+                  </li>
+                
+                
+              
+              <li class="navigation-item  align-center ">
+                <a href="https://tanducmai.com/ja/">Japanese</a>
+              </li>
+            
+          
+        
+      </ul>
+    </label>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>CIA Triad</h1>
+    </header>
+
+    <h3 id="table-of-contents">Table of Contents</h3>
+<!-- vim-markdown-toc GFM -->
+<ol>
+<li><a href="#definition">Definition</a></li>
+<li><a href="#confidentiality">Confidentiality</a></li>
+<li><a href="#integrity">Integrity</a></li>
+<li><a href="#availability">Availability</a></li>
+<li><a href="#how-a-hacker-sees-a-network">How a Hacker sees a network</a>
+<ol>
+<li><a href="#confidentiality-1">Confidentiality</a></li>
+<li><a href="#integrity-1">Integrity</a></li>
+<li><a href="#availability-1">Availability</a></li>
+</ol>
+</li>
+<li><a href="#how-an-admin-sees-a-network">How an Admin sees a network</a>
+<ol>
+<li><a href="#confidentiality-2">Confidentiality</a></li>
+<li><a href="#integrity-2">Integrity</a></li>
+<li><a href="#availability-2">Availability</a></li>
+</ol>
+</li>
+</ol>
+<!-- vim-markdown-toc -->
+<h3 id="definition">Definition</h3>
+<pre><code>Confidentiality, Integrity and Availability, aka the CIA triad, is a model
+designed to guide policies for information security within an organisation.
+</code></pre>
+<p>The Goal of the Triad?</p>
+<pre><code>when we want to protect a network and the data contained within it.
+</code></pre>
+<p>The How?</p>
+<pre><code>use a security model like the CIA Triad to design our security plan.
+</code></pre>
+<h3 id="confidentiality">Confidentiality</h3>
+<pre><code>ability of a system to ensure that an asset is viewed only by authorised
+entities.
+</code></pre>
+<p>Providing this assurance can be described using three major steps:</p>
+<p><strong>Step 1</strong></p>
+<p>Information must have controls that are capable of preventing some users from
+accessing the information.</p>
+<p>These controls must be sufficiently
+<a href="https://www.merriam-webster.com/dictionary/granular">granular</a> depending on the
+rationale for the access control. The requirement for granularity is based
+partially on technical requirements and partially on benefits to the business.</p>
+<p>Examples of how to achieve Confidentiality:</p>
+<ol>
+<li>Data at rest and in transit uses data encryption</li>
+<li>Access Control Lists</li>
+<li>Non technical – Physical Security</li>
+<li>Role-based access control (RBAC)</li>
+</ol>
+<p>Risks to Confidentiality:</p>
+<ol>
+<li>Privilege Escalation</li>
+<li>Employee Negligence</li>
+<li>Bring your own device (BYOD)</li>
+<li>Man in the Middle Attacks (MITM Attack)
+<a href="https://www.csoonline.com/article/3340117/man-in-the-middle-attack-definition-and-examples.html">🔗</a></li>
+</ol>
+<p><strong>Step 2</strong></p>
+<p>It must be possible to limit access to information to authorised users.</p>
+<p>Authorisation is defined as:</p>
+<pre><code>access privileges granted to a user, program, or process or the act of
+granting those privileges.
+</code></pre>
+<p><strong>Step 3</strong></p>
+<p>An authentication system must be in place to validate the identity of those
+requesting access to data.</p>
+<p>Authentication is defined as:</p>
+<pre><code>the process of verifying the identity or other attributes claimed by or
+assumed of an entity (user, process, or device), or to verify the source and
+integrity of data.
+</code></pre>
+<p>Authentication generally prefaces authorisation decisions (i.e. the system must
+identify the user before it can determine which authorisations the user holds).</p>
+<p>Examples:</p>
+<ol>
+<li>Biometrics</li>
+<li>2FA / MFA - the best way to secure any network, yet it is difficult
+(time-consuming) to implement.</li>
+<li>Something you know (username/password)</li>
+<li>Something you have (smart card)</li>
+<li>Something you are (fingerprint)</li>
+</ol>
+<p>Risks:</p>
+<ol>
+<li>Social Engineering</li>
+<li>Phishing</li>
+<li>Shoulder Surfing</li>
+<li>Theft</li>
+</ol>
+<h3 id="integrity">Integrity</h3>
+<pre><code>ability of a system to ensure that an asset is modified only by authorised
+entities.
+</code></pre>
+<p>A more comprehensive definition is:</p>
+<pre><code>guarding against improper information modification or destruction, and
+includes ensuring information non-repudiation and authenticity.
+</code></pre>
+<p>Data is commonly made available for viewing by users, however they should not
+have the ability to change the data. Your course grades on the student portal is
+an example.</p>
+<p>Questions to ask could be:</p>
+<ol>
+<li>
+<p>How correct is the information sent and/or received?</p>
+</li>
+<li>
+<p>Has the data been modified during transit, retrieval, or at rest?</p>
+</li>
+<li>
+<p>If data has been modified without permission, do you have
+<strong>non-repudiation</strong>?</p>
+<p>Assurance the sender of data is provided with proof of delivery and the
+recipient is provided with proof of the sender&rsquo;s identity, so neither can
+later deny having processed the information.</p>
+</li>
+</ol>
+<p>Example – Hacker imitates a lecturer to request a grade change for a student.</p>
+<p>So what can be used to guarantee the correctness of data? Hashing can be used.
+Here are three examples:</p>
+<p><strong>MD5</strong></p>
+<pre><code>An MD5 hash function encodes a string of information and encodes it into a
+128-bit fingerprint.
+</code></pre>
+<p>MD5 is often used as a checksum to verify data integrity. However, due to its
+age, MD5 is also known to suffer from extensive hash collision vulnerabilities,
+but it is still one of the most widely used algorithms in the world.</p>
+<p>For example, Cisco routers clear text password:</p>
+<pre><code>enable password cisco123
+</code></pre>
+<p>The same password hashed using the MD5 hash:</p>
+<pre><code>enable secret 5 $1$mERr$5.a6P4JqbNiMKOlusIfka/
+</code></pre>
+<p><strong>SHA-2</strong></p>
+<pre><code>developed by the National Security Agency (NSA); a cryptographic hash
+function.
+</code></pre>
+<p>The SHA-2 family consists of six hash functions with digests (hash values) that
+are 224, 256, 384 or 512 bits.</p>
+<p>Is it secure? Here is the hash value for [Password123].</p>
+<pre><code>008c70392e3abfbd0fa47bbc2ed96aa99bd49e159727fcba0f2e6abeb3a9d601
+</code></pre>
+<p>Copy the hash above and paste it into this <a href="https://md5decrypt.net/en/Sha256/">website</a>.</p>
+<p><strong>CRC32</strong></p>
+<pre><code>a cyclic redundancy check (CRC) is an error-detecting code often used for
+detection of accidental changes to data.
+</code></pre>
+<p>Cyclic Redundancy Check is a number mathematically calculated for a packet by
+its source computer, and then recalculated by the destination computer. If the
+original and recalculated versions at the destination computer differ, the
+packet is corrupt and needs to be resent or ignored.</p>
+<h3 id="availability">Availability</h3>
+<pre><code>ability of a system to ensure that an asset is accessible and useable upon
+demand by authorised entities.
+</code></pre>
+<p>There is limited utility in having a confidential and integral system if it is
+not available to authorised users.</p>
+<p>This is the reason that &lsquo;<a href="https://dictionary.cambridge.org/dictionary/english/pull-the-plug">pulling the
+plug</a>&rsquo; during
+a cyberattack is rarely an option.</p>
+<p><strong>Denial-of-service (DoS) attacks</strong>, and its variants, are one of the most
+common attacks that affect availability.</p>
+<p>Examples of how to provide Availability:</p>
+<ol>
+<li>Increase redundancy</li>
+<li>Backup strategies</li>
+<li>Disaster recovery plan</li>
+</ol>
+<p>Risks to availability:</p>
+<ol>
+<li>Hardware Failure</li>
+<li>Denial-of-service (DoS) attacks</li>
+<li>Distributed denial-of-service (DDoS) attacks</li>
+</ol>
+<h3 id="how-a-hacker-sees-a-network">How a Hacker sees a network</h3>
+<h5 id="confidentiality-1">Confidentiality</h5>
+<ol>
+<li><strong>Packet Capturing</strong> - These tools allow the attacker to view the data passing
+across a network <a href="https://www.dnsstuff.com/packet-sniffers">Ten Packet Sniffers</a>.
+<ul>
+<li>Packet Capture (sniffer) video - <a href="https://www.youtube.com/watch?v=r0l_54thSYU">Packet Sniffers</a></li>
+<li>Learn Wireshark - <a href="https://www.youtube.com/watch?v=lb1Dw0elw0Q">Wireshark Tutorial</a></li>
+</ul>
+</li>
+<li><strong>Keylogging</strong> - Installing a key logger will allow an attacker to attempt to
+capture login credentials <a href="https://www.offensive-security.com/metasploit-unleashed/keylogging/">Key Logging Tool</a>.
+<ul>
+<li>Key Logging video - <a href="https://www.youtube.com/watch?v=L8169DHNeQ0">Key Logging</a></li>
+</ul>
+</li>
+<li><strong>Access files</strong> - Once within a target system the attacker will attempt to
+locate sensitive files.</li>
+<li><strong>Exfiltrate Data</strong> - Once data has been identifed the attacker could choose to
+exfiltrate for offsite inspection.</li>
+<li><strong>Delete data</strong> - If the attackers intent is disruption then they may choose to
+delete discovered files.</li>
+</ol>
+<h5 id="integrity-1">Integrity</h5>
+<ol>
+<li><strong>Encrypt data</strong> - If the intent is Ransomware an attacker may encrypt data
+and demand a ransom for the decryption keys. Ransomware defined -
+<a href="https://www.youtube.com/watch?v=Vkjekr6jacg">Ransomware</a></li>
+<li><strong>Man-in-the-middle attacks</strong> - An attacker will place themselves between two
+hosts and capture the data flow. ARP Poisoning (Man-In-The-Middle Attack) -
+<a href="https://www.youtube.com/watch?v=A7nih6SANYs">MITM Attack</a></li>
+<li><strong>Delete data</strong> - A form of denial of service can be the attacker deleting or
+threatening to delete data.</li>
+</ol>
+<h5 id="availability-1">Availability</h5>
+<ol>
+<li><strong>Disrupt services (DoS, DDoS)</strong> - any attack that prevents legitimate users
+of a resource from accessing that resource. Can be performed by bandwidth
+saturation (flooding) or service disruption.
+<ul>
+<li>Denial Of Service Explained - <a href="https://www.youtube.com/watch?v=YcH7qx6HTII">Denial of Service</a></li>
+</ul>
+</li>
+<li><strong>Deny access (Account manipulation)</strong> - Stealing or changing a users login
+details to prevent access.</li>
+</ol>
+<h3 id="how-an-admin-sees-a-network">How an Admin sees a network</h3>
+<h5 id="confidentiality-2">Confidentiality</h5>
+<ol>
+<li><strong>Protect data</strong> - From the perspective of the CIA Triad this would involve
+encrypting data both at rest and in transit. If an attacker were to gain
+access the encryption would render the data unreadable unless they had the
+relevant decryption keys.
+<ul>
+<li>Data at Rest <a href="https://en.wikipedia.org/wiki/Data_at_rest">article</a></li>
+<li>Data in Transit <a href="https://en.wikipedia.org/wiki/Data_in_transit">article</a></li>
+</ul>
+</li>
+<li><strong>Restrict access</strong> - A big part of providing confidentiality of data is
+controlling who has access to it. Providing access to only those who are
+authorised to use it and need to use it. This can be achieved through strong
+share permissions and multifactor authentication.</li>
+</ol>
+<h5 id="integrity-2">Integrity</h5>
+<ol>
+<li><strong>Backup data</strong> - A backup is the process of making a copy of your systems
+data and storing it on a separate device, drive or physical location. A
+backup will protect your data from attacks on the integrity of your
+information. If an attack on integrity was to be performed and the data was
+encrypted a simple restore will mitigate the impact.</li>
+<li><strong>Restore plan</strong> - Data restoration is the process of retrieving the
+encrypted, lost or corrupted data from your storage, media or files. A
+restore plan must be in place and tested to ensure it restores correctly and
+in a timely manner.</li>
+<li><strong>Update</strong> - System or software update are critical in patching potential
+security holes in Operating Systems and applications. Left unpatched an
+application or OS could leave an open door into your network via exploits or
+vulnerabilities.</li>
+</ol>
+<h5 id="availability-2">Availability</h5>
+<ol>
+<li><strong>Firewalls</strong> - Watch this video for a simple explanation on what a Firewall
+does. <a href="https://www.youtube.com/watch?v=5geL5yHpa2Q">The Firewall</a></li>
+<li><strong>IDS</strong> - Watch the following video on Intrusion Detection Systems work, both
+Host based and Network Based. <a href="https://www.youtube.com/watch?v=YTWO7Q5iWzE">The
+IDS</a></li>
+<li><strong>DDoS Protection Services</strong> - DDoS mitigation refers to the technique of
+protecting a targeted service or network from a distributed denial-of-service
+(DDoS) attack. By deploying specially designed network equipment or a
+cloud-based protection service, a targeted victim is able to mitigate the
+threat.</li>
+<li><strong>Pen Test</strong> - Known as a Penetration test this form of auditing a network is
+designed to identify any &ldquo;holes&rdquo; in your network&rsquo;s perimeter. A specially
+trained ethical hacker will run a series of test to see if there are any
+vulnerabilities on the network and report back the results.</li>
+</ol>
+
+  </article>
+</section>
+
+
+      </div>
+      
+    </main>
+
+    
+
+  <script src="/js/app.js"></script>
+  
+  </body>
+</html>

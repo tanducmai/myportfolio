@@ -64,7 +64,7 @@
       
       <guid>https://tanducmai.com/blog/network/introduction-to-networks/network-protocols-and-communications/network-layered-model/</guid>
       <description>Table of Contents  Benefits of Using Layered Models The OSI Reference Model  Layers Communication Process   The TCP/IP Protocol Model  Layers Communication Process   Model Comparision  Benefits of Using Layered Models The benefits to using a layered model to describe network protocols and operations include:
- Assisting in protocol design because protocols that operate at a specific layer have defined information that they act upon and a defined interface to the layers above and below.</description>
+ Understanding how a network functions. Assisting in protocol design because protocols that operate at a specific layer have defined information that they act upon and a defined interface to the layers above and below.</description>
     </item>
     
     <item>

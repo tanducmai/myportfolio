@@ -3,18 +3,58 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://tanducmai.com/glossary/</loc>
-    <lastmod>2022-06-11T12:26:54+09:30</lastmod>
+    <loc>https://tanducmai.com/blog/</loc>
+    <lastmod>2022-07-25T21:25:28+09:30</lastmod>
   </url>
   
   <url>
-    <loc>https://tanducmai.com/glossary/idiom/</loc>
-    <lastmod>2022-06-11T12:26:54+09:30</lastmod>
+    <loc>https://tanducmai.com/categories/</loc>
+    <lastmod>2022-07-25T21:25:28+09:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://tanducmai.com/ja/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tanducmai.com/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/blog/security/cia-triad/</loc>
+    <lastmod>2022-07-25T21:25:28+09:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/tags/security/</loc>
+    <lastmod>2022-07-25T21:25:28+09:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/categories/security/</loc>
+    <lastmod>2022-07-25T21:25:28+09:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/tags/</loc>
+    <lastmod>2022-07-25T21:25:28+09:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://tanducmai.com/ja/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tanducmai.com/tags/"
+                />
   </url>
   
   <url>
     <loc>https://tanducmai.com/</loc>
-    <lastmod>2022-06-11T12:26:54+09:30</lastmod>
+    <lastmod>2022-07-25T21:25:28+09:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -25,6 +65,31 @@
                 hreflang="en"
                 href="https://tanducmai.com/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/tags/business-resilience/</loc>
+    <lastmod>2022-07-20T22:43:05+09:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/categories/business-resilience/</loc>
+    <lastmod>2022-07-20T22:43:05+09:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/blog/business-resilience/business-resilience-concepts/</loc>
+    <lastmod>2022-07-20T22:43:05+09:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/glossary/</loc>
+    <lastmod>2022-06-11T12:26:54+09:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/glossary/idiom/</loc>
+    <lastmod>2022-06-11T12:26:54+09:30</lastmod>
   </url>
   
   <url>
@@ -40,26 +105,6 @@
   <url>
     <loc>https://tanducmai.com/project/</loc>
     <lastmod>2022-04-13T00:09:35+09:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/blog/</loc>
-    <lastmod>2022-04-05T17:34:07+09:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/categories/</loc>
-    <lastmod>2022-04-05T17:34:07+09:30</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://tanducmai.com/ja/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tanducmai.com/categories/"
-                />
   </url>
   
   <url>
@@ -90,21 +135,6 @@
   <url>
     <loc>https://tanducmai.com/blog/database/sql/database-sql-stored-procedures/</loc>
     <lastmod>2022-04-05T17:34:07+09:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/tags/</loc>
-    <lastmod>2022-04-05T17:34:07+09:30</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://tanducmai.com/ja/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tanducmai.com/tags/"
-                />
   </url>
   
   <url>

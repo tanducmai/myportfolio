@@ -6,10 +6,32 @@
     <description>Recent content in Blogs on Tan Duc Mai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 05 Apr 2022 17:34:07 +0930</lastBuildDate>
+    <lastBuildDate>Mon, 25 Jul 2022 21:25:28 +0930</lastBuildDate>
     
 	<atom:link href="https://tanducmai.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CIA Triad</title>
+      <link>https://tanducmai.com/blog/security/cia-triad/</link>
+      <pubDate>Mon, 25 Jul 2022 21:25:28 +0930</pubDate>
+      
+      <guid>https://tanducmai.com/blog/security/cia-triad/</guid>
+      <description>Table of Contents  Definition Confidentiality Integrity Availability How a Hacker sees a network  Confidentiality Integrity Availability   How an Admin sees a network  Confidentiality Integrity Availability    Definition Confidentiality, Integrity and Availability, aka the CIA triad, is a model designed to guide policies for information security within an organisation.  The Goal of the Triad?
+when we want to protect a network and the data contained within it.</description>
+    </item>
+    
+    <item>
+      <title>Concepts</title>
+      <link>https://tanducmai.com/blog/business-resilience/business-resilience-concepts/</link>
+      <pubDate>Wed, 20 Jul 2022 22:43:05 +0930</pubDate>
+      
+      <guid>https://tanducmai.com/blog/business-resilience/business-resilience-concepts/</guid>
+      <description>Table of Contents Business Resilience Definition The term resilience is defined as:
+the ability to survive, adapt, and flourish in the face of turbulent change.  Applying this to a business gives us the concept of business resilience.
+Business resilience is:
+the ability of a business to withstand, adapt and thrive in the face of turbulent change that originates from both internal and external sources as well as anticipated or unanticipated events.</description>
+    </item>
     
     <item>
       <title>Stored Procedures</title>
@@ -316,7 +338,7 @@ A collection of potentially useful data that models real-world or conceptual obj
       
       <guid>https://tanducmai.com/blog/network/introduction-to-networks/network-protocols-and-communications/network-layered-model/</guid>
       <description>Table of Contents  Benefits of Using Layered Models The OSI Reference Model  Layers Communication Process   The TCP/IP Protocol Model  Layers Communication Process   Model Comparision  Benefits of Using Layered Models The benefits to using a layered model to describe network protocols and operations include:
- Assisting in protocol design because protocols that operate at a specific layer have defined information that they act upon and a defined interface to the layers above and below.</description>
+ Understanding how a network functions. Assisting in protocol design because protocols that operate at a specific layer have defined information that they act upon and a defined interface to the layers above and below.</description>
     </item>
     
     <item>
