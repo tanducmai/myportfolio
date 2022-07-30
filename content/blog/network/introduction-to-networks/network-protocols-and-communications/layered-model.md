@@ -34,6 +34,7 @@ draft = false
 The benefits to using a layered model to describe network protocols and
 operations include:
 
+1. Understanding how a network functions.
 1. Assisting in protocol design because protocols that operate at a specific
    layer have defined information that they act upon and a defined interface to
    the layers above and below.
@@ -145,8 +146,9 @@ Note:
       <td>Transport</td>
       <td>TCP, UDP, Port Numbers</td>
       <td>
-        Defines data segments and numbers them at the source, transfers the
-        data, and reassembles the data at the destination.
+        Provides end-to-end communication control.<br />e.g. defines data
+        segments and numbers them at the source, transfers the data, and
+        reassembles the data at the destination.
       </td>
     </tr>
     <tr>
@@ -154,8 +156,9 @@ Note:
       <td>Network</td>
       <td>IP Address, ICMP, Routers </td>
       <td>
-        Creates and addresses packets for end-to-end delivery through
-        intermediary devices in other networks.
+        Routes the information in the network.<br />e.g. creates and addresses
+        packets for end-to-end delivery through intermediary devices in other
+        networks.
       </td>
     </tr>
     <tr>
@@ -163,8 +166,8 @@ Note:
       <td>Data Link</td>
       <td>MAC Address, Ethernet, Switches</td>
       <td>
-        Creates and addresses frames for host-to-host delivery on the local LANs
-        and between WAN devices.
+        Provides error control.<br />e.g. creates and addresses frames for
+        host-to-host delivery on the local LANs and between WAN devices.
       </td>
     </tr>
     <tr>
@@ -172,10 +175,11 @@ Note:
       <td>Physical</td>
       <td>Coax, Cable, Fiber, Wireless, NICs, Hubs</td>
       <td>
-        Encodes the binary digits that represent data link layer frames into
-        signals and to transmit and receive these signals across the physical
-        media (copper wires, optical fiber, and wireless) that connect network
-        devices. Physical layer protocols define media specifications.
+        Connects the entity to the transmission media.<br />e.g. encodes the
+        binary digits that represent data link layer frames into signals and to
+        transmit and receive these signals across the physical media (copper
+        wires, optical fiber, and wireless) that connect network devices.
+        Physical layer protocols define media specifications.
       </td>
     </tr>
   </tbody>
