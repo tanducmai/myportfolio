@@ -48,8 +48,8 @@ The How?
 
 ### Confidentiality
 
-    ability of a system to ensure that an asset is viewed only by authorised
-    entities.
+    ability of a system to ensure that the information asset is viewed only by
+    authorised entities.
 
 Providing this assurance can be described using three major steps:
 
@@ -119,8 +119,8 @@ Risks:
 
 ### Integrity
 
-    ability of a system to ensure that an asset is modified only by authorised
-    entities.
+    ability of a system to ensure that the information asset is modified only by
+    authorised entities.
 
 A more comprehensive definition is:
 
@@ -190,8 +190,8 @@ packet is corrupt and needs to be resent or ignored.
 
 ### Availability
 
-    ability of a system to ensure that an asset is accessible and useable upon
-    demand by authorised entities.
+    ability of a system to ensure that the information asset is always
+    accessible and useable upon the demand of authorised entities.
 
 There is limited utility in having a confidential and integral system if it is
 not available to authorised users.
