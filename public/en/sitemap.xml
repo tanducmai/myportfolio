@@ -4,12 +4,22 @@
   
   <url>
     <loc>https://tanducmai.com/blog/</loc>
-    <lastmod>2022-07-25T21:25:28+09:30</lastmod>
+    <lastmod>2022-07-25T22:43:05+09:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/tags/business-resilience/</loc>
+    <lastmod>2022-07-25T22:43:05+09:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/categories/business-resilience/</loc>
+    <lastmod>2022-07-25T22:43:05+09:30</lastmod>
   </url>
   
   <url>
     <loc>https://tanducmai.com/categories/</loc>
-    <lastmod>2022-07-25T21:25:28+09:30</lastmod>
+    <lastmod>2022-07-25T22:43:05+09:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -19,6 +29,41 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://tanducmai.com/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/blog/business-resilience/business-resilience-concepts/</loc>
+    <lastmod>2022-07-25T22:43:05+09:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/tags/</loc>
+    <lastmod>2022-07-25T22:43:05+09:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://tanducmai.com/ja/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tanducmai.com/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://tanducmai.com/</loc>
+    <lastmod>2022-07-25T22:43:05+09:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://tanducmai.com/ja/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tanducmai.com/"
                 />
   </url>
   
@@ -35,51 +80,6 @@
   <url>
     <loc>https://tanducmai.com/categories/security/</loc>
     <lastmod>2022-07-25T21:25:28+09:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/tags/</loc>
-    <lastmod>2022-07-25T21:25:28+09:30</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://tanducmai.com/ja/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tanducmai.com/tags/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/</loc>
-    <lastmod>2022-07-25T21:25:28+09:30</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://tanducmai.com/ja/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tanducmai.com/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/tags/business-resilience/</loc>
-    <lastmod>2022-07-20T22:43:05+09:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/categories/business-resilience/</loc>
-    <lastmod>2022-07-20T22:43:05+09:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tanducmai.com/blog/business-resilience/business-resilience-concepts/</loc>
-    <lastmod>2022-07-20T22:43:05+09:30</lastmod>
   </url>
   
   <url>

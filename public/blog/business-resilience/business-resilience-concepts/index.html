@@ -121,38 +121,133 @@
 
     <h3 id="table-of-contents">Table of Contents</h3>
 <!-- vim-markdown-toc GFM -->
+<ol>
+<li><a href="#business-resilience-definition">Business Resilience Definition</a></li>
+<li><a href="#business-continuity-definition">Business Continuity Definition</a></li>
+<li><a href="#information-security-in-business-resilience">Information Security in Business Resilience</a>
+<ol>
+<li><a href="#confidentiality">Confidentiality</a></li>
+<li><a href="#integrity">Integrity</a></li>
+<li><a href="#availability">Availability</a></li>
+</ol>
+</li>
+<li><a href="#roles-and-responsibilities">Roles and responsibilities</a></li>
+</ol>
 <!-- vim-markdown-toc -->
 <h3 id="business-resilience-definition">Business Resilience Definition</h3>
-<p>The term resilience is defined as:</p>
+<p>The term <strong>resilience</strong> is defined as:</p>
 <pre><code>the ability to survive, adapt, and flourish in the face of turbulent change.
 </code></pre>
-<p>Applying this to a business gives us the concept of business resilience.</p>
-<p>Business resilience is:</p>
+<p>Applying this to a business gives us the concept of <strong>business resilience</strong> -</p>
 <pre><code>the ability of a business to withstand, adapt and thrive in the face of
 turbulent change that originates from both internal and external sources as
 well as anticipated or unanticipated events.
 </code></pre>
 <p>A resilient business can adapt to disruptions and keep operating while looking
-after its people, assets and brand equity.</p>
-<p>While the focus of this course is Information Security, it is important to know
-that Information Security is not Business Resilience. Business Resilience drives
-the need for Information Security as todays businesses are heavily reliant on
-technology and the interconnected world we live in.</p>
-<p>We will look at Business Resilience from two different perspectives. Both begin
-with a risk scenario.</p>
+after its people, assets, and brand equity.</p>
+<p>It is important to know that Information Security is not Business Resilience.
+Business Resilience drives the need for Information Security as todays
+businesses are heavily reliant on technology and the interconnected world we
+live in.</p>
+<p>We will look at Business Resilience from two different perspectives.</p>
+<ol>
+<li><strong>Business Continuity Management System (BCMS)</strong>: a reactive system which
+assumes a threat has occurred and a Business Continuity Plan is in place to
+deal with it.</li>
+<li><strong>Information Security Management System (ISMS) - ISO 27001</strong>: a preventative
+plan that does not assume a threat has occurred as yet.</li>
+</ol>
 <h3 id="business-continuity-definition">Business Continuity Definition</h3>
-<p>To achieve business resilience, an organisation must be able to resume
-operations in the aftermath of a disaster.</p>
-<p>A business continuity plan provides procedures for returning critical business
-functions, the people and systems that support them, and the facilities where
-the work is done to a state where the organisation can fulfill its commitments
-and obligations.</p>
-<p>Here is an overview of Business Continuity:</p>
-<ul>
-<li>Identifying potential risks: Look at the business and decide what are the
+<pre><code>To achieve business resilience, an organisation must be able to resume
+operations in the aftermath of a disaster.
+</code></pre>
+<p>This requires a <strong>business continuity plan</strong> -</p>
+<pre><code>provides procedures for returning critical business functions, the people
+and systems that support them, and the facilities where the work is done to
+a state where the organisation can fulfill its commitments and obligations.
+</code></pre>
+<p>Here is an overview of <em>Business Continuity</em>:</p>
+<ol>
+<li><strong>Identifying Potential Risks</strong>: Look at the business and decide what are the
 risks to continuity should what you have identified become unavailable.</li>
-<li>Understanding business impacts: What impact would an attack or significant
-event have on your assets and the running of the business.</li>
+<li><strong>Understanding Business Impacts</strong>: What impact would an attack or
+significant event have on your assets and the running of the business.</li>
+<li><strong>Recovery Time Objectives</strong>: Decide on an acceptable timeframe that critical
+assets are restored.</li>
+<li><strong>Incident Response Plan</strong>: An incident response plan is a documented,
+written plan with distinct phases that helps IT professionals and staff
+recognize and deal with a cybersecurity incident.</li>
+<li><strong>Organisation-wide Communications</strong>: All user communication is critical to
+keep staff and customers advised on current events.</li>
+<li><strong>Dummy Testing</strong>: The testing phase of your plan to see if the implemented
+strategies work.</li>
+<li><strong>Timely Updates</strong>: Ensure all systems and software are updated on a regular
+basis.</li>
+</ol>
+<h3 id="information-security-in-business-resilience">Information Security in Business Resilience</h3>
+<p>It is important to understand that information security is one of the main
+concepts to consider when thinking about how to avoid and/or recover from
+disaster.</p>
+<p>Consider how many businesses are reliant on technology to enable their business
+processes. This can include email, banking, ordering, shipping, client accounts,
+communications, etc.</p>
+<p>Any cybersecurity threat that results in exposure of data also exposes the
+company to a significant reputational risk that threatens the company’s ongoing
+operations.</p>
+<p>Information Security often involves using the <a href="https://tanducmai.com/blog/security/cia-triad/">CIA
+Triad</a> to apply protection
+techniques to the information assets of a business.</p>
+<h5 id="confidentiality">Confidentiality</h5>
+<p>Applying the tenet of Confidentiality to an asset involves the following techniques:</p>
+<ol>
+<li>Limiting access through Access Control that uses AAA
+<ol>
+<li>Authentication (requires the validation of a users identity)</li>
+<li>Authorisation (matches authenticated users to an access level of an
+asset)</li>
+<li>Accounting (ensures an action on an asset can be attributed to an
+authenticated identity)</li>
+</ol>
+</li>
+<li>Encrypting data in transit and at rest</li>
+<li>Secure storage</li>
+<li>End user education on how they should use the data</li>
+</ol>
+<h5 id="integrity">Integrity</h5>
+<p>Integrity of Information assets is ensuring the asset has not been modified in
+transit or at rest.</p>
+<p>This can be achieved via:</p>
+<ol>
+<li>Hashing assets</li>
+<li>Backup and Restore procedures</li>
+</ol>
+<h5 id="availability">Availability</h5>
+<p>Availability means to ensure the information asset is only available to
+authorised users as needed.</p>
+<p>This can be achieved via:</p>
+<ol>
+<li>Firewalls</li>
+<li>Intrusion Detection Systems</li>
+<li>DDoS protection</li>
+</ol>
+<h3 id="roles-and-responsibilities">Roles and responsibilities</h3>
+<p>Information security is no longer the role the sole responsibility of a small,
+dedicated group of professional in the company. It is now the responsibility of
+all employees.</p>
+<p>Following is a brief list of roles in an organisation and their main
+responsibilities.</p>
+<ul>
+<li>Chief Information Security Officer (CISO): Primarily responsible for the
+assessment, management, and the implementation of the program that secures the
+organisation’s information.</li>
+<li>Information Security Manager: Accountable for day-to-day operations of the
+infosec program.</li>
+<li>Network Security Engineer: These people take policies or security requirements
+and engineer or design technical solutions that will make these policies an
+enforceable methodology.</li>
+<li>Network Security Analysts: These people mostly analyse logs (log analysis),
+tweak IDS rules, decide when there’s a breach or potential breach and other
+similar functions.</li>
 </ul>
 
   </article>
